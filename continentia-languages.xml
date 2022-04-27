@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Languages</name>
+		<update version="0.0.1">
+			<file name="continentia-languages.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/languages.xml" />
+		</update>
+	</info>
+
+    <!-- standard -->
+    	<element name="Arityian" type="Language" source="Continentia: The Second Cruel War" id="ID_LANGUAGE_ARITYIAN">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken in Arity and Contan.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">humans</set>
+		</setters>
+	</element>
+
+    <element name="Deuish" type="Language" source="Continentia: The Second Cruel War" id="ID_LANGUAGE_DEUISH">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken in Deuland and Norden.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">humans</set>
+		</setters>
+	</element>
+
+    	<element name="Ican" type="Language" source="Continentia: The Second Cruel War" id="ID_LANGUAGE_ICAN">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken in Ica.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">icans</set>
+		</setters>
+	</element>
+
+    	<element name="Khalid (Standard)" type="Language" source="Continentia: The Second Cruel War" id="ID_LANGUAGE_KHALID_STANDARD">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken in Suterland, Norden, and Trelonia.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">khalids</set>
+		</setters>
+	</element>
+
+    <element name="Khalid (Traditional)" type="Language" source="Continentia: The Second Cruel War" id="ID_LANGUAGE_KHALID_TRADITIONAL">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken in Khalid and Trelonia.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">khalids</set>
+		</setters>
+	</element>
+
+    	<element name="Orajan" type="Language" source="Continentia: The Second Cruel War" id="ID_LANGUAGE_ORAJAN">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken in Oraja.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">orajans</set>
+		</setters>
+	</element>
+
+    	<element name="Florish" type="Language" source="Continentia: The Second Cruel War" id="ID_LANGUAGE_FLORISH">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken in Florland and Pyruvia.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">humans</set>
+		</setters>
+	</element>
+</elements>
