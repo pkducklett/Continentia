@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Firearms</name>
+		<update version="0.0.2">
+            <!-- Update Notes: -added gunsmith's tools, bayonets, axe heads, and special firearms
+							   -added feats: bayonet charger and fastest somatics in ford
+							   -changed firearm proficiencies to reduce sheet clutter-->
+		    <description>The firearms rules, options, and proficiencies for Continentia.</description>
+		    <author url="https://github.com/pkducklett/">Corey Welch</author>
+			<file name="continentia-items-firearms.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+		</update>
+	</info>
+
+	<!-- firearms option -->
+	<element name="Continentia Firearms" type="Option" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_OPTION_FIREARMS">
+		<description>
+			<p>A Gentlemen's Guide to Firearms is a reworking/retooling of the original firearms rules that were written in the Dungeon Master's Guide and added rules written by Matt Mercer for the hit DND podcast, Critical Role, and his other writings for the site, Dungeon Master's Guild. With this reworking, we hope that we have fixed many of the issues that plagued firearm related combat in gameplay and added new features that would make becoming proficient in firearms more fun and fair for everyone at the table. In order to opt into, and gain access to the rules of this additional source, please select the Continentia Firearms option on the character options in your copy of Aurora.</p>
+		</description>
+		<setters>
+			<set name="short">Introducing these optional rules will allow you to gain the benefits of a new way to play with firearms in your campaign.</set>
+		</setters>
+	</element>
+
+	<!-- firearm class/multiclass proficiencies -->
+	<append id="ID_WOTC_ERLW_CLASS_ARTIFICER">
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_LIGHT_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_MEDIUM_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_ERLW_CLASS_ARTIFICER">
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_LIGHT_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_MEDIUM_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+		</rules>
+	</append>
+
+	<append id="ID_WOTC_PHB_CLASS_BARBARIAN">
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_MULTICLASS_BARBARIAN">
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+		</rules>
+	</append>
+
+	<append id="ID_WOTC_PHB_CLASS_BARD">
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_LIGHT_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_MULTICLASS_BARD">
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_LIGHT_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+		</rules>
+	</append>
+
+	<append id="ID_WOTC_PHB_CLASS_CLERIC">
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_MULTICLASS_CLERIC">
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+		</rules>
+	</append>
+
+	<append id="ID_WOTC_PHB_CLASS_FIGHTER">
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_MULTICLASS_FIGHTER">
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+		</rules>
+	</append>
+
+	<append id="ID_WOTC_PHB_CLASS_PALADIN">
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_MULTICLASS_PALADIN">
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+		</rules>
+	</append>
+
+	<append id="ID_WOTC_PHB_CLASS_RANGER">
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_MULTICLASS_RANGER">
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+		</rules>
+	</append>
+
+	<append id="ID_WOTC_PHB_CLASS_ROGUE">
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_LIGHT_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_MULTICLASS_ROGUE">
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_LIGHT_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+		</rules>
+	</append>
+
+	<append id="ID_WOTC_PHB_CLASS_WARLOCK">
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_LIGHT_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_MULTICLASS_WARLOCK">
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_LIGHT_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+		</rules>
+	</append>
+
+    <!-- firearm category proficiencies -->
+	<element name="Weapon Proficiency (Simple Light Firearms)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_LIGHT_FIREARMS">
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Simple Light Firearms" />
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_FLINTLOCK_PISTOL" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SINGLEACTION_REVOLVER" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SEMIAUTO_PISTOL" />
+		</rules>
+	</element>
+
+	<element name="Weapon Proficiency (Martial Light Firearms)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_LIGHT_FIREARMS">
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Martial Light Firearms" />
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_DOUBLEACTION_REVOLVER" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_INFANTRY_SEMIAUTO_PISTOL" />
+		</rules>
+	</element>
+
+	<element name="Weapon Proficiency (Simple Medium Firearms)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_MEDIUM_FIREARMS">
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Simple Medium Firearms" />
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_HUNTING_RIFLE" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_DOUBLE_BARREL_SHOTGUN" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SAWED_OFF_SHOTGUN" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MUSKET" />
+		</rules>
+	</element>
+
+	<element name="Weapon Proficiency (Martial Medium Firearms)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_MEDIUM_FIREARMS">
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Martial Medium Firearms" />
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_STANDARD_INFANTRY_RIFLE" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_STANDARD_INFANTRY_SHOTGUN" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_REPEATING_INFANTRY_RIFLE" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_COMPACT_INFANTRY_SHOTGUN" />
+		</rules>
+	</element>
+
+	<element name="Weapon Proficiency (Simple Heavy Firearms)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_HEAVY_FIREARMS">
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Simple Heavy Firearms" />
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_PUCKLE_GUN" />
+		</rules>
+	</element>
+
+	<element name="Weapon Proficiency (Martial Heavy Firearms)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_HEAVY_FIREARMS">
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Martial Heavy Firearms" />
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_AUTOMATIC_HEAVY_RIFLE" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_HEAVY_SUBMACHINE_GUN" />
+		</rules>
+	</element>
+
+	<element name="Weapon Proficiency (Light Firearms)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_LIGHT_FIREARMS">
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Light Firearms" />
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_LIGHT_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_LIGHT_FIREARMS" />
+		</rules>
+	</element>
+
+	<element name="Weapon Proficiency (Medium Firearms)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MEDIUM_FIREARMS">
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Medium Firearms" />
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_MEDIUM_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_MEDIUM_FIREARMS" />
+		</rules>
+	</element>
+
+	<element name="Weapon Proficiency (Heavy Firearms)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_HEAVY_FIREARMS">
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Heavy Firearms" />
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_HEAVY_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_HEAVY_FIREARMS" />
+		</rules>
+	</element>
+
+	<element name="Weapon Proficiency (Simple Firearms)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_FIREARMS">
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Simple Firearms" />
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_LIGHT_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_MEDIUM_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_HEAVY_FIREARMS" />
+		</rules>
+	</element>
+
+	<element name="Weapon Proficiency (Martial Firearms)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_FIREARMS">
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Martial Firearms" />
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_LIGHT_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_MEDIUM_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_HEAVY_FIREARMS" />
+		</rules>
+	</element>
+
+    <!-- firearm items and proficiencies -->
+	<element name="Single-Action Revolver" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_SINGLEACTION_REVOLVER">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_LIGHT_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_SIX</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">100/150 ft.</set>
+			<set name="damage" type="piercing">1d12</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SINGLEACTION_REVOLVER</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Single-Action Revolver)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SINGLEACTION_REVOLVER">
+		<supports>Weapon, Simple, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_LIGHT_FIREARM, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Single-Action Revolver" />
+	</element>
+
+	<element name="Semi-Auto Pistol" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_SEMIAUTO_PISTOL">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_LIGHT_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_SIX, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MAGAZINE</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">75/100 ft.</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SEMIAUTO_PISTOL</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Semi-Auto Pistol)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SEMIAUTO_PISTOL">
+		<supports>Weapon, Simple, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_LIGHT_FIREARM, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Semi-Auto Pistol" />
+	</element>
+
+	<element name="Flintlock Pistol" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_FLINTLOCK_PISTOL">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_LIGHT_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_LOADING</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">50/100 ft.</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_FLINTLOCK_PISTOL</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Flintlock Pistol)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_FLINTLOCK_PISTOL">
+		<supports>Weapon, Simple, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_LIGHT_FIREARM, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Flintlock Pistol" />
+	</element>
+
+	<element name="Double-Action Revolver" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_DOUBLEACTION_REVOLVER">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_LIGHT_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_SIX, </supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">20</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">100/150 ft.</set>
+			<set name="damage" type="piercing">3d4</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_DOUBLEACTION_REVOLVER</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Double-Action Revolver)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_DOUBLEACTION_REVOLVER">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_LIGHT_FIREARM, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Double-Action Revolver" />
+	</element>
+
+	<element name="Infantry Semi-Auto Pistol" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_INFANTRY_SEMIAUTO_PISTOL">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_LIGHT_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_SIX, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MAGAZINE</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">100/150 ft.</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_INFANTRY_SEMIAUTO_PISTOL</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Infantry Semi-Auto Pistol)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_INFANTRY_SEMIAUTO_PISTOL">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_LIGHT_FIREARM, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Infantry Semi-Auto Pistol" />
+	</element>
+
+	<element name="Hunting Rifle" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_HUNTING_RIFLE">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_MEDIUM_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_EIGHT, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MAGAZINE</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="9">9 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">260/600 ft. </set>
+			<set name="damage" type="piercing">1d12</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_HUNTING_RIFLE</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Hunting Rifle)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_HUNTING_RIFLE">
+		<supports>Weapon, Simple, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_MEDIUM_FIREARM, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Hunting Rifle" />
+	</element>
+
+	<element name="Double Barrel Shotgun" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_DOUBLE_BARREL_SHOTGUN">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_MEDIUM_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_TWO, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_CONE</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">80x10 ft.</set>
+			<set name="damage" type="slashing">2d8</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_DOUBLE_BARREL_SHOTGUN</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Double Barrel Shotgun)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_DOUBLE_BARREL_SHOTGUN">
+		<supports>Weapon, Simple, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_MEDIUM_FIREARM, ID_INTERNAL_DAMAGE_TYPE_SLASHING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Double Barrel Shotgun" />
+	</element>
+
+	<element name="Sawed Off Shotgun" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_SAWED_OFF_SHOTGUN">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_MEDIUM_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_TWO, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_CONE</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">80x10 ft.</set>
+			<set name="damage" type="slashing">2d4</set>
+			<set name="versatile">2d6</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SAWED_OFF_SHOTGUN</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Sawed Off Shotgun)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SAWED_OFF_SHOTGUN">
+		<supports>Weapon, Simple, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_MEDIUM_FIREARM, ID_INTERNAL_DAMAGE_TYPE_SLASHING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Sawed Off Shotgun" />
+	</element>
+
+	<element name="Musket" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_MUSKET">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_MEDIUM_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_CONE</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">160/525 ft. </set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MUSKET</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Musket)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MUSKET">
+		<supports>Weapon, Simple, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_MEDIUM_FIREARM, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Musket" />
+	</element>
+
+	<element name="Standard Infantry Rifle" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_STANDARD_INFANTRY_RIFLE">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_MEDIUM_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_TEN, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MAGAZINE</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">65</set>
+			<set name="weight" lb="9">9 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">260/600 ft. </set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_STANDARD_INFANTRY_RIFLE</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Standard Infantry Rifle)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_STANDARD_INFANTRY_RIFLE">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_MEDIUM_FIREARM, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Standard Infantry Rifle" />
+	</element>
+
+	<element name="Standard Infantry Shotgun" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_STANDARD_INFANTRY_SHOTGUN">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_MEDIUM_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_FOUR, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MAGAZINE</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">65</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">80x10 ft. </set>
+			<set name="damage" type="slashing">4d4</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_STANDARD_INFANTRY_SHOTGUN</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Standard Infantry Shotgun)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_STANDARD_INFANTRY_SHOTGUN">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_MEDIUM_FIREARM, ID_INTERNAL_DAMAGE_TYPE_SLASHING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Standard Infantry Shotgun" />
+	</element>
+
+	<element name="Repeating Infantry Rifle" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_REPEATING_INFANTRY_RIFLE">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_MEDIUM_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_TEN, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MAGAZINE, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AUTO</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">260/400 ft. </set>
+			<set name="damage" type="piercing">1d6*1d4</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_REPEATING_INFANTRY_RIFLE</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Repeating Infantry Rifle)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_REPEATING_INFANTRY_RIFLE">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_MEDIUM_FIREARM, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Repeating Infantry Rifle" />
+	</element>
+
+	<element name="Compact Infantry Shotgun" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_COMPACT_INFANTRY_SHOTGUN">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_MEDIUM_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_THREE, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_CONE</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">60</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">80x10 ft. </set>
+			<set name="damage" type="slashing">2d6</set>
+			<set name="versatile">2d8</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_COMPACT_INFANTRY_SHOTGUN</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Compact Infantry Shotgun)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_COMPACT_INFANTRY_SHOTGUN">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_MEDIUM_FIREARM, ID_INTERNAL_DAMAGE_TYPE_SLASHING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Compact Infantry Shotgun" />
+	</element>
+
+	<element name="Puckle Gun" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PUCKLE_GUN">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_HEAVY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_EIGHT, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AUTO</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">60</set>
+			<set name="weight" lb="28">28 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/260 ft.</set>
+			<set name="damage" type="piercing">1d8*1d4</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_PUCKLE_GUN</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Puckle Gun)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_PUCKLE_GUN">
+		<supports>Weapon, Simple, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_HEAVY_FIREARM, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS, [str:13]</requirements>
+		<sheet alt="Puckle Gun" />
+	</element>
+
+	<element name="Automatic Heavy Rifle" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_AUTOMATIC_HEAVY_RIFLE">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_HEAVY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_TWENTYFOUR, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AUTO, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MAGAZINE</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">80</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">130/400 ft.</set>
+			<set name="damage" type="piercing">1d6*1d6</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_AUTOMATIC_HEAVY_RIFLE</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Automatic Heavy Rifle)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_AUTOMATIC_HEAVY_RIFLE">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_HEAVY_FIREARM, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS, [str:13]</requirements>
+		<sheet alt="Automatic Heavy Rifle" />
+	</element>
+
+	<element name="Heavy Submachine Gun" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_HEAVY_SUBMACHINE_GUN">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_HEAVY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_THIRTY, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AUTO, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MAGAZINE</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">80</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/260 ft.</set>
+			<set name="damage" type="piercing">1d4*1d10</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_HEAVY_SUBMACHINE_GUN</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Heavy Submachine Gun)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_HEAVY_SUBMACHINE_GUN">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_HEAVY_FIREARM, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS, [str:13]</requirements>
+		<sheet alt="Heavy Submachine Gun" />
+	</element>
+
+	<element name="Flammenwerfer" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_FLAMMENWERFER">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_HEAVY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_SPECIAL_FLAMMENWERFER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_SIXTEEN, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_CONE</supports>
+		<description>
+			<p></p>
+			<div element="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_SPECIAL_FLAMMENWERFER" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">80</set>
+			<set name="weight" lb="40">40 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">25x10 ft.</set>
+			<set name="damage" type="fire">3d8</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_FLAMMENWERFER</set>
+		</setters>
+	</element>
+	<element name="Special Weapon Property (Flammenwerfer)" type="Weapon Property" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_SPECIAL_FLAMMENWERFER">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_FLAMMENWERFER</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<description>The Flammenwerfer is an uncommon weapon of Deuish design, intended for the purpose of urban warfare. The Flammenwerfer requires gasoline in place of standard ammunition and fires in a cone. It takes 5 minutes to reload a Flammenwerfer with a gallon of gasoline. One attack with the Flammenwerfer will use 8 ounces of gasoline. All enemies in the cone will be required to make a saving throw with a DC15. Those who fail the saving throw will take 3d8 fire damage, and half as much on a success.</description>
+	</element>
+	<element name="Weapon Proficiency (Flammenwerfer)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_FLAMMENWERFER">
+		<supports>Weapon, Martial, Ranged, Special, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_HEAVY_FIREARM, ID_INTERNAL_DAMAGE_TYPE_FIRE</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS, [str:13]</requirements>
+		<sheet alt="Flammenwerfer" />
+	</element>
+
+	<element name="General 1875 Revolver" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_GENERAL_REVOLVER">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_LIGHT_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_SPECIAL_GENERAL_REVOLVER, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_SIX, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_ONE, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_CONE</supports>
+		<description>
+			<p></p>
+			<div element="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_SPECIAL_GENERAL_REVOLVER" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">100/150 ft.</set>
+			<set name="damage" type="piercing">1d12</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_GENERAL_REVOLVER</set>
+		</setters>
+	</element>
+	<element name="Special Weapon Property (General 1875 Revolver)" type="Weapon Property" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_SPECIAL_GENERAL_REVOLVER">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_GENERAL_REVOLVER</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<description>The General 1875 revolver was a commonly used weapon by the commanders of the Arityian Duchies during the Arityian Civil War. The General 1875 has two different attacks that must be reloaded independently of each other. The standard attack comes from the first barrel, and is like a standard six shooter revolver attack in a 100/150 ft range that deals 1d12 piercing per hit. The second attack comes from the second barrel below the first, and is like a shotgun blast in a 40x10 foot cone that deals 2d8 slashing damage within that cone. The first barrel can hold six shots before needing to be reloaded, the second barrel can only hold one shot before needing to be reloaded.</description>
+	</element>
+	<element name="Weapon Proficiency (General 1875 Revolver)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_GENERAL_REVOLVER">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_LIGHT_FIREARM, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_SLASHING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="General 1875 Revolver" />
+	</element>
+
+	<element name="Bayonet" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_BAYONET">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_MEDIUM_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+		<description>
+			<p></p>
+			<div element="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_SPECIAL_BAYONET" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">3</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">5 ft. </set>
+			<set name="damage" type="slashing">1d6</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_BAYONET</set>
+		</setters>
+	</element>
+	<element name="Special Weapon Property (Bayonet)" type="Weapon Property" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_SPECIAL_BAYONET">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_BAYONET</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<description>The Bayonet takes 1 action to remove and to attach to a medium firearm. When attached, it adds an additional attack that deals 1d6 piercing damage within a range of 5 ft. that your firearm can perform without the need of changing weapons. When unattached, it can be equipped as a separate weapon that deals 1d6 slashing damage within a range of 5 ft. and has the thrown property.</description>
+	</element>
+	<element name="Weapon Proficiency (Bayonet)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_BAYONET">
+		<supports>Weapon, Martial, Melee, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_MEDIUM_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_SLASHING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Bayonet" />
+	</element>
+
+	<element name="Axe Head" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_AXE_HEAD">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_MEDIUM_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_DAMAGE_TYPE_SLASHING</supports>
+		<description>
+			<p></p>
+			<div element="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_SPECIAL_AXE_HEAD" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="2.5">2 1/2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">5 ft. </set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="versatile">1d10</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_AXE_HEAD</set>
+		</setters>
+	</element>
+	<element name="Special Weapon Property (Axe Head)" type="Weapon Property" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_SPECIAL_AXE_HEAD">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_AXE_HEAD</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<description>The Axe Head takes 1 action to remove and to attach to a medium firearm. When attached, it adds an additional attack that your firearm can perform without the need of changing weapons. If the Axe Head is attached to a weapon that is Two-Handed, it can only be used as a Two-Handed attack.</description>
+	</element>
+	<element name="Weapon Proficiency (Axe Head)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_AXE_HEAD">
+		<supports>Weapon, Martial, Melee, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_MEDIUM_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Axe Head" />
+	</element>
+
+	<!-- gunsmith's tools and other items -->
+	<element name="Gunsmith's Tools" type="Item" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_ITEM_TOOL_GUNSMITHS_TOOLS">
+		<description>
+			<p>Having proficiency in Gunsmith's Tools allows you to add your proficiency modifier to checks made with it. Gunsmith's tool checks are affected by your Dexterity modifier.</p>
+			<p class="indent"><strong><em>Components.</em></strong> Gunsmith's tools include files, a hammer, a punch, gauges, wrenches, a vernier, a portable vise, brushes, and specialized wrenches.</p>
+			<p class="indent"><strong><em>History.</em></strong> Proficiency with gunsmith's tools allows you to better understand the history and age of a firarm based on its make and model.</p>
+			<p class="indent"><strong><em>Investigation.</em></strong> When you inspect a firearm, proficiency with gunsmith's tools grants addtional insight in various aspects of the weapon's make and ammunition.</p>
+			<h5>GUNSMITH'S TOOLS</h5>
+			<p>During a long rest you can perform tasks with your Gunsmith's tools.</p>
+			<table>
+				<thead>
+					<tr><td>Activity</td><td>Description</td></tr>
+				</thead>
+				<tr><td>Fixing Firearms</td><td>If you have access to Gunsmith's Tools and scrap metal you can fix any broken firearm with a successful DC 15 Gunsmith’s Tools check, and about 5 hours of work time.</td></tr>
+				<tr><td>Creating Firearms</td><td>If you have access to Gunsmith's Tools and an amount of scrap metal that is worth the value of the firearm you’re making, you can create a firearm with a successful DC 15 Gunsmith’s Tools check, and about 2 days of work time.</td></tr>
+				<tr><td>Create Basic Ammunition</td><td>If you have access to Gunsmith's Tools and 6 ounces of copper you can create 6 bullets with a successful DC 10 Gunsmith’s Tools check, and about 2 hours of work.</td></tr>
+				<tr><td>Create Advanced Ammunition</td><td>If you have access to Gunsmith's Tools and 6 ounces of the metal listed below you can create advanced 6 bullets with a successful DC 13 Gunsmith’s Tools check, and about 3 hours of work.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="5">5 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_GUNSMITHS_TOOLS</set>
+		</setters>
+	</element>
+	<element name="Tool Proficiency (Gunsmith's Tools)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_PROFICIENCY_TOOL_PROFICIENCY_GUNSMITHS_TOOLS">
+		<supports>tools</supports>	
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Gunsmith's Tools" />
+	</element>
+
+	<element name="Magazine" type="Item" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_ITEM_MAGAZINE">
+		<description>
+			<p>The magazine is required to fire weapons with the Auto property.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Silencer" type="Item" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_ITEM_SILENCER">
+		<description>
+			<p>The silencer requires 1 action to remove and attach to a medium or light firearm. While attached it allows the user to make their attacks with the firearm silent. You can not attach a bayonet, or an axe head while the silencer is attached.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Counter Weight" type="Item" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_ITEM_COUNTER_WEIGHT">
+		<description>
+			<p>The counter weight requires 1 action to remove and attach to a heavy, medium, or light firearm. While attached it gives the firearm the Finesse property.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Mount" type="Item" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_ITEM_MOUNT">
+		<description>
+			<p>The mount requires 1 action to remove and attach to a heavy, or medium firearm. Allows the user to make attacks without disadvantage while prone.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Scope" type="Item" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_ITEM_SCOPE">
+		<description>
+			<p>The scope requires 1 action to remove and attach to a heavy, or medium firearm that does not possess the Cone property. You gain disadvantage on your optimal range, but don’t gain disadvantage on your extended range.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!-- ammunition -->
+	<element name="Basic Ammunition" type="Item" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_ITEM_BASIC_AMMUNITION">
+		<description>
+			<p>Requires 1 ounce of copper. The ammunition of a firearm is destroyed upon use.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.1">1/10 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Silver Bullet" type="Item" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_ITEM_SILVER_BULLET">
+		<description>
+			<p>Requires 1 ounce of silver. Can be used to break resistances of certain enemies.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.1">1/10 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Golden Bullet" type="Item" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_ITEM_GOLDEN_BULLET">
+		<description>
+			<p>Requires 1 ounce of gold. <i>"I love gold!..."</i></p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.1">1/10 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Square Bullet" type="Item" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_ITEM_SQUARE_BULLET">
+		<description>
+			<p>Requires 1 ounce of lead and 1 vial of holy water. Reduces the range of your firearm by 10 feet, but can break resistances of certain enemies.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.1">1/10 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Dragonbreath Bullet" type="Item" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_ITEM_DRAGONBREATH_BULLET">
+		<description>
+			<p>Requires 1 ounce of magnesium. Replaces the damage type of your firearm with fire damage.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.1">1/10 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Slug Round" type="Item" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_ITEM_SLUG_ROUND">
+		<description>
+			<p>Requires 1 ounce of iron. Can only be fired with weapons with the Cone property. This bullet is not affected by the Cone property.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.1">1/10 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="A Gallon of Gasoline" type="Item" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_ITEM_GASOLINE">
+		<description>
+			<p>The ammunition required for a Flammenwerfer. One attack with the Flammenwerfer uses 8 ounces of gasoline. One gallon of gasoline can allow the player to make 16 attacks with the Flammenwerfer before needing to reload.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!-- firearm properties -->
+	<element name="Ammunition" type="Weapon Property" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION">
+		<description>
+			<p>The ammunition of a firearm is destroyed upon use. Most firearms use bullets, however there are varying types of ammunition for different types of firearms.</p>
+		</description>
+	</element>
+
+	<element name="Magazine" type="Weapon Property" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MAGAZINE">
+		<description>
+			<p>When the Magazine quality is present in a firearm it will require a loaded Magazine item to operate the firearm. The Magazine will have a number of bullets equal to the Reload quality of the firearm. To reload a firearm with the Magazine quality it requires a bonus action to swap out the empty Magazine with a loaded one. It takes a short or long rest to reload an empty Magazine.</p>
+		</description>
+	</element>
+
+	<element name="Cone" type="Weapon Property" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_CONE">
+		<description>
+			<p>Firearms with the Cone property fire in a cone shape. The first number on the range of the firearm designates how far the bullet will travel, and the second represents the maximum spread of the bullet when it travels to its maximum range. Divide the damage dice equally among all creatures who are caught in the cone of the firearm, and roll to hit. All creatures who's AC you roll equal to or higher then take damage equal to how the damage dice was divided. Creatures who's AC you fail to break simply don't take their divided damage. Your damage modifier is added to the damage taken by each creature.</p>
+		</description>
+	</element>
+
+	<element name="Auto" type="Weapon Property" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AUTO">
+		<description>
+			<p>Firearms with the Auto property deal damage equal to one die X a second die. This second die will determine how much you multiply the damage of the first die and how many bullets are expended from the firearm. When dealing critical damage you do not add an additional multiplication die. You do not multiply any additional dice added to the damage roll.</p>
+		</description>
+	</element>
+
+	<element name="Misfire" type="Weapon Property" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE">
+		<description>
+			<p>All firearms have the misfire property. When rolling a critical failure with a firearm <i>(1)</i> you must roll 1d20 on the misfire roll table to determine the outcome.</p>
+			<table>
+			    <thead>			        
+					<tr><td>d20</td><td>Effect</td></tr>
+			    </thead>
+	            <tr><td>1</td><td>Your firearm explodes dealing damage equal to twice the damage dice of the firearm to yourself in fire damage. The firearm becomes unusable until you make a successful DC 15 Gunsmith's Tools check during a long rest.</td></tr>
+	            <tr><td>2-10</td><td>Your firearm jams and becomes unusable until you make a successful DC 10 Tinker's or Gunsmith's Tools check as an action.</td></tr>
+	            <tr><td>11-15</td><td>Your firearm jams and becomes unusable until you make a successful DC 8 Tinker's or Gunsmith's Tools check as a bonus action.</td></tr>
+	            <tr><td>16-20</td><td>Your firearm does not fire, but will work fine on your next attack.</td></tr>
+			</table>
+		</description>
+	</element>
+
+	<element name="Reload 1" type="Weapon Property" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_ONE">
+		<description>
+			<p>Reload is a separate quality from loading. All firearms will have a quality called Reload with a number after it. This number represents how many times you can make an attack with the firearm before you need to reload. It takes one action to reload and set the number back to max.</p>
+		</description>
+	</element>
+
+	<element name="Reload 2" type="Weapon Property" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_TWO">
+		<description>
+			<p>Reload is a separate quality from loading. All firearms will have a quality called Reload with a number after it. This number represents how many times you can make an attack with the firearm before you need to reload. It takes one action to reload and set the number back to max.</p>
+		</description>
+	</element>
+
+	<element name="Reload 3" type="Weapon Property" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_THREE">
+		<description>
+			<p>Reload is a separate quality from loading. All firearms will have a quality called Reload with a number after it. This number represents how many times you can make an attack with the firearm before you need to reload. It takes one action to reload and set the number back to max.</p>
+		</description>
+	</element>
+
+	<element name="Reload 4" type="Weapon Property" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_FOUR">
+		<description>
+			<p>Reload is a separate quality from loading. All firearms will have a quality called Reload with a number after it. This number represents how many times you can make an attack with the firearm before you need to reload. It takes one action to reload and set the number back to max.</p>
+		</description>
+	</element>
+
+	<element name="Reload 6" type="Weapon Property" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_SIX">
+		<description>
+			<p>Reload is a separate quality from loading. All firearms will have a quality called Reload with a number after it. This number represents how many times you can make an attack with the firearm before you need to reload. It takes one action to reload and set the number back to max.</p>
+		</description>
+	</element>
+
+	<element name="Reload 8" type="Weapon Property" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_EIGHT">
+		<description>
+			<p>Reload is a separate quality from loading. All firearms will have a quality called Reload with a number after it. This number represents how many times you can make an attack with the firearm before you need to reload. It takes one action to reload and set the number back to max.</p>
+		</description>
+	</element>
+
+	<element name="Reload 10" type="Weapon Property" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_TEN">
+		<description>
+			<p>Reload is a separate quality from loading. All firearms will have a quality called Reload with a number after it. This number represents how many times you can make an attack with the firearm before you need to reload. It takes one action to reload and set the number back to max.</p>
+		</description>
+	</element>
+
+	<element name="Reload 16" type="Weapon Property" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_SIXTEEN">
+		<description>
+			<p>Reload is a separate quality from loading. All firearms will have a quality called Reload with a number after it. This number represents how many times you can make an attack with the firearm before you need to reload. It takes one action to reload and set the number back to max.</p>
+		</description>
+	</element>
+
+	<element name="Reload 24" type="Weapon Property" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_TWENTYFOUR">
+		<description>
+			<p>Reload is a separate quality from loading. All firearms will have a quality called Reload with a number after it. This number represents how many times you can make an attack with the firearm before you need to reload. It takes one action to reload and set the number back to max.</p>
+		</description>
+	</element>
+
+	<element name="Reload 30" type="Weapon Property" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_THIRTY">
+		<description>
+			<p>Reload is a separate quality from loading. All firearms will have a quality called Reload with a number after it. This number represents how many times you can make an attack with the firearm before you need to reload. It takes one action to reload and set the number back to max.</p>
+		</description>
+	</element>
+
+    <!-- firearm categories -->
+	<element name="Simple Light Firearms" type="Weapon Category" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_LIGHT_FIREARM">
+		<supports>Weapon Category</supports>
+		<description>
+			<p>Firearm proficiencies are split into three types that come in Simple and Martial varieties. These types are: Light, Medium, and Heavy. If you’re proficient in a type you learn all firearms associated with it.</p>
+		</description>
+	</element>
+
+	<element name="Martial Light Firearms" type="Weapon Category" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_LIGHT_FIREARM">
+		<supports>Weapon Category</supports>
+		<description>
+			<p>Firearm proficiencies are split into three types that come in Simple and Martial varieties. These types are: Light, Medium, and Heavy. If you’re proficient in a type you learn all firearms associated with it.</p>
+		</description>
+	</element>
+
+	<element name="Simple Medium Firearms" type="Weapon Category" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_MEDIUM_FIREARM">
+		<supports>Weapon Category</supports>
+		<description>
+			<p>Firearm proficiencies are split into three types that come in Simple and Martial varieties. These types are: Light, Medium, and Heavy. If you’re proficient in a type you learn all firearms associated with it.</p>
+		</description>
+	</element>
+
+	<element name="Martial Medium Firearms" type="Weapon Category" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_MEDIUM_FIREARM">
+		<supports>Weapon Category</supports>
+		<description>
+			<p>Firearm proficiencies are split into three types that come in Simple and Martial varieties. These types are: Light, Medium, and Heavy. If you’re proficient in a type you learn all firearms associated with it.</p>
+		</description>
+	</element>
+
+	<element name="Simple Heavy Firearms" type="Weapon Category" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_HEAVY_FIREARM">
+		<supports>Weapon Category</supports>
+		<description>
+			<p>Firearm proficiencies are split into three types that come in Simple and Martial varieties. These types are: Light, Medium, and Heavy. If you’re proficient in a type you learn all firearms associated with it.</p>
+		</description>
+	</element>
+
+	<element name="Martial Heavy Firearms" type="Weapon Category" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_HEAVY_FIREARM">
+		<supports>Weapon Category</supports>
+		<description>
+			<p>Firearm proficiencies are split into three types that come in Simple and Martial varieties. These types are: Light, Medium, and Heavy. If you’re proficient in a type you learn all firearms associated with it.</p>
+		</description>
+	</element>
+
+	<!-- firearm feats -->
+	<element name="Firearm Expert" type="Feat" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_FEAT_FIREARM_EXPERT">
+		<prerequisite>Proficiency with a type of firearm</prerequisite>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS, ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_LIGHT_FIREARMS</requirements>
+		<description>
+			<p><i>Prerequisite: Proficiency with a type of firearm</i></p>
+			<p>Your knowledge with firearms has granted you the following benefits:</p>
+			<ul>
+				<li>You gain proficiency in all martial and simple firearms.</li>
+				<li>You can Reload a firearm with only the Reload property as a Bonus Action, and you can reload firearms with the Loading and Magazine property as a free action.</li>
+				<li>You do not gain disadvantage from taking the attack action while using a firearm within 5 feet of a target.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can Reload a firearm with only the Reload property as a Bonus Action, and you can reload firearms with the Loading and Magazine property as a free action.
+			You do not gain disadvantage from taking the attack action while using a firearm within 5 feet of a target.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+		</rules>
+	</element>
+
+	<element name="Bayonet Charger" type="Feat" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_FEAT_BAYONET_CHARGER">
+		<prerequisite>Proficiency with medium firearms</prerequisite>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS, ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_MEDIUM_FIREARMS</requirements>
+		<description>
+			<p><i>Prerequisite: Proficiency with medium firearms</i></p>
+			<p>Your training with bayonets and bayonet tactics has granted you the following benefits:</p>
+			<ul>
+				<li>When moving 10ft in a straight line before making an attack with an attached bayonet, you may add +3 damage to the damage.</li>
+				<li>When you attach a bayonet to a firearm, the bayonet gains the Reach property.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you attach a bayonet to a firearm, the bayonet gains the Reach property.
+			When moving 10ft in a straight line before making an attack with an attached bayonet, you may add +3 damage to the damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Fastest Somatics in Ford" type="Feat" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_FEAT_FASTEST_SOMATICS_FORD">
+		<prerequisite>Mage Gun Cantrip</prerequisite>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS, ID_CONT_CONTINENTIA_SPELL_MAGE_GUN</requirements>
+		<description>
+			<p><i>Prerequisite: Must know the Mage Gun cantrip</i></p>
+			<p>Your quick draw with the cantrip Mage Gun is improved with the following benefits:</p>
+			<ul>
+				<li>You may cast the cantrip, Mage Gun, without using verbal components.</li>
+				<li>The sound of your Mage Gun firing will be silenced to all creatures except the target of the attack. </li>
+				<li>You can make sneak attacks with the cantrip, Mage Gun.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You may cast the cantrip, Mage Gun, without using verbal components.
+			The sound of your Mage Gun firing will be silenced to all creatures except the target of the attack.
+			You can make sneak attacks with the cantrip, Mage Gun.</description>
+		</sheet>
+	</element>
+
+	<!-- firearm fighting styles -->
+	<element name="Bar Fighter" type="Class Feature" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_CLASS_FEATURE_FIGHTINGSTYLE_BAR_FIGHTER">
+		<supports>Fighting Style, Fighter, Ranger, Paladin</supports>
+		<description>
+			<p>You gain proficiency in Improvised weapons that weigh between 5 and 10 lbs. When making an attack with an improvised weapon it deals 1d4 damage with the damage type left up to the DM's discretion.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in Improvised weapons that weigh between 5 and 10 lbs. When making an attack with an improvised weapon it deals 1d4 damage with the damage type left up to the DM's discretion.</description>
+		</sheet>
+	</element>
+
+	<element name="Scattershot" type="Class Feature" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_CLASS_FEATURE_FIGHTINGSTYLE_SCATTERSHOT">
+		<supports>Fighting Style, Fighter, Ranger, Paladin</supports>
+		<description>
+			<p>When you roll a 1 on a damage die for an attack you make with a firearm with the Cone property, you may reroll the die and must use the new roll, even if the new roll is 1.</p>
+		</description>
+		<sheet>
+			<description>When you roll a 1 on a damage die for an attack you make with a firearm with the Cone property, you may reroll the die and must use the new roll, even if the new roll is 1.</description>
+		</sheet>
+	</element>
+
+	<element name="Steady Finger" type="Class Feature" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_CLASS_FEATURE_FIGHTINGSTYLE_STEADY_FINGER">
+		<supports>Fighting Style, Fighter, Ranger, Paladin</supports>
+		<description>
+			<p>When you roll a 1 on the multiplication die while wielding a firearm with Auto property you may instead replace the 1 with a 2.</p>
+		</description>
+		<sheet>
+			<description>When you roll a 1 on the multiplication die while wielding a firearm with Auto property you may instead replace the 1 with a 2.</description>
+		</sheet>
+	</element>
+</elements>
