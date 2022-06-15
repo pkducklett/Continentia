@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="continentia-gentlemens-guide-source.xml" url="https://github.com/pkducklett/Continentia/blob/0a510f9e64feb8b6a9f6e1bdade173f0dae9cbb4/continentia-cruel-war-source.xml" />
+		</update>
+	</info>
+	<element name="Continentia: Gentleman’s Guide To Firearms" type="Source" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_SOURCE_CONTINENTIA_SECOND_CRUEL_WAR">
+		<description>
+			<![CDATA[<p></p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">CONT</set>
+			<set name="url">https://github.com/pkducklett/Continentia</set>
+			<set name="author" url="https://github.com/pkducklett/Continentia">Corey Welch and the Amazing Dicey Dudes</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>
