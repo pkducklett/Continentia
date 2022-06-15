@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Durgan</name>
+        <update version="0.0.4">
+			<!-- update notes:	added height and weight modifiers-->
+		    <description>The Durgan Race from Continentia.</description>
+		    <author url="https://github.com/pkducklett/">Corey Welch</author>
+			<file name="continentia-race-durgan.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+		</update>
+	</info>
+
+    <element name="Durgan" type="Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACE_DURGAN">
+	    <description>
+			<p class="flavor">Durgans are a race proud of their simplistic lifestyle. They prefer living where other races are minimal, but have been known to venture into more urban life if they feel drawn to it.</p>
+           	<h4>MYTHICAL APPEARANCE</h4>
+			<p>Durgans are often compared to goats upon first glance. Although it is true they possess goat-like eyes and horns, their skin comes in a wide variety of purples and occasional pinks. Durgans are a genderless species that reproduce asexually, but they often appear feminine. Some however, can appear masculine or androgynous. They often stand at widely varying heights of 5ft - 7ft, and bleed a purple glitter like residue.</p>
+			<h4>CREATURES OF LEGEND</h4>
+			<p>The earliest accounts of Durgans were by Icans during the age of Ican expansion. The Icans came across the Durgan homeland of the same name. The Durgans were described as fierce mages under the banner of a Durgan named Eya. A war followed between the two sides which has been heavily mythologised in both cultures, but in the end the Durgan forest was left alone for hundreds of years. When Humans eventually discovered the Durgan forest years later they found no evidence of these army killing master mages, but instead a loose society of Tribes which possessed no understanding of war or conflict. Being that Durgans have no recorded history it is still unknown how this occurred, but the Durgans moved more toward an easy living lifestyle where they put all their faith in their God and their strange magic that only they themselves seem to be able to possess.</p>
+            <h4>DURGAN NAMES</h4>
+		    <p>Durgan names follow no alphabet, instead Durgan names often consist of a patchwork of letters from all languages that the name holder considers adequate. Because of this it is nearly impossible to list Durgan names, as two names may be spelled in a different way depending on the Durgan’s preference. As for pronunciation, it is easier to ask the Durgan.</p>
+            <h4>DURGAN TRAITS</h4>
+            <p>Durgans possess the following traits.</p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b> Your Wisdom score increases by 1. Your Charisma score increases by 2.</p>
+			<p class="indent"><b><i>Age.</i></b> Durgans are born with the appearance of adults and do not physically age,  but don’t mentally mature to adulthood until 20. If they live outside of their forest they live until about 80, but can live upwards of 140 years if they do not leave the Durgan forest.</p>
+        	<p class="indent"><b><i>Alignment.</i></b> Durgans often enjoy the chaos of average life, and their alignment reflects this. Although chaotic, Durgans are only rarely evil.</p>
+			<p class="indent"><b><i>Size.</i></b> Durgans are generally the same weight as humans, but vary in height considerably. Durgans average between 5ft - 7ft in height and weigh on average 120lbs. Your size is medium.</p>
+			<p class="indent"><b><i>Speed.</i></b> Your base walking speed is 30 feet.</p>
+			<p class="indent"><b><i>Forest Born.</i></b> You have advantage against being charmed, and you leave behind a strange magical residue that can be picked up by Detect Magic.</p>
+			<p class="indent"><b><i>Durgish Tongue.</i></b> You gain the ability to understand and speak all languages, however, you can only write and read languages you are proficient in.</p>
+			<p class="indent"><b><i>Durgish Magic.</i></b> You can cast the spell Detect Magic once and regain the ability to do so after a long rest. When you reach 3rd level you learn one of the following cantrips: Druidcraft, Friends, or Shillelagh. When you reach 5th level you can cast the spell Detect Magic at will. Charisma is your spellcasting ability for these spells.</p>
+			<p class="indent"><b><i>Wubby Skin.</i></b> Your magical body gives you the ability to change your appearance. However, you must retain the look of a Durgan (Horns, purple skin, etc.) You can change your height to a maximum of 8 feet and to a minimum of 4 feet. And change your weight to a maximum of 300lbs and a minimum of 90lbs. Your size will stay medium. You may use this ability once per long rest.</p>
+			<p class="indent"><b><i>Languages.</i></b> You speak using your Durgish Tongue ability. However, you can only write and read in languages you are proficient in.</p>
+			<p class="indent"><b><i>Creature Type.</i></b> Your creature type is humanoid and fey.</p>
+		</description>
+        <sheet display="false" />
+		
+		<setters>
+			<set name="names" type="nickname">Mæz, Jā, Sssst, X Æ A-Xii, Pess, Ceros, Favio, Ruta, Lao, Kāzo, Mekaio, Shoo, Clover, Yimmel'yip, Nee, Telva, Zesha</set>
+			<set name="names-format">{{nickname}}</set>
+			<set name="height" modifier="2d6">5'0"</set>
+			<set name="weight" modifier="1d4">120 lb.</set>
+		</setters>
+        <rules>
+            <stat name="wisdom" value="1" />
+            <stat name="charisma" value="2" />
+            <stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_FOREST_BORN" />
+	    	<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_DURGISH_TONGUE" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_DURGAN_DURGISH_MAGIC" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_WUBBY_SKIN" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_DURGAN_CREATURE_TYPE" />
+		</rules>
+    </element>
+
+	<element name="Forest Born" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_FOREST_BORN">
+		<description>
+			<p>You have advantage against being charmed, and you leave behind a strange magical residue that can be picked up by Detect Magic.</p>
+		</description>
+		<sheet>
+			<description>Advantage on saving throws against being charmed, and leave behind a strange magical residue that can be picked up by Detect Magic.</description>
+		</sheet>
+	</element>
+
+	<element name="Durgish Tongue" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_DURGISH_TONGUE">
+		<description>
+			<p>You gain the ability to understand and speak all languages, however, you can only write and read languages you are proficient in.</p>
+		</description>
+		<sheet>
+			<description>Can understand and speak all languages, but can only write and read languages you are proficient in.</description>
+		</sheet>
+	</element>
+
+	<element name="Durgish Magic" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_DURGAN_DURGISH_MAGIC">
+		<description>
+			<p>You can cast the spell Detect Magic once and regain the ability to do so after a long rest. When you reach 3rd level you learn one of the following cantrips: Druidcraft, Friends, or Shillelagh. When you reach 5th level you can cast the spell Detect Magic at will. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You know the spell Detect Magic, and can cast it once per long rest. Charisma is your spellcasting ability for this spell.</description>
+			<description level="3">You know the spell Detect Magic, and can cast it once per long rest. You also know one of the following cantrips: Druidcraft, Friends, or Shillelagh. Charisma is your spellcasting ability for these spells.</description>
+			<description level="5">You know the spell Detect Magic, and can cast it at will. You also know one of the following cantrips: Druidcraft, Friends, or Shillelagh. Charisma is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+			<select type="Spell" name= "Durgish Magic" supports="ID_PHB_SPELL_DRUIDCRAFT|ID_PHB_SPELL_FRIENDS|ID_PHB_SPELL_SHILLELAGH" level="3"/>
+		</rules>
+	</element>
+
+	<element name="Wubby Skin" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_WUBBY_SKIN">
+		<description>
+			<p>Your magical body gives you the ability to change your appearance. However, you must retain the look of a Durgan (Horns, purple skin, etc.) You can change your height to a maximum of 8 feet and to a minimum of 4 feet. And change your weight to a maximum of 300lbs and a minimum of 90lbs. Your size will stay medium. You may use this ability once per long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can alter your appearance to appear taller (to a max of 8 feet) or shorter (to a min of 4 feet). You can also change your weight to a maximum of 300 lbs and a minimum of 90 lbs. You must retain the appearance of a Durgan, and your size will stay medium.</description>
+		</sheet>
+	</element>
+
+	<element name="Creature Type" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_DURGAN_CREATURE_TYPE">
+		<description>
+			<p>Your creature type is humanoid and fey.</p>
+		</description>
+		<sheet>
+			<description>Your creature type is humanoid and fey.</description>
+		</sheet>
+	</element>
+</elements>

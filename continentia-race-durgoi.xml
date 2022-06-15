@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Durgoi</name>
+        <update version="0.0.3">
+			<!-- update notes:	add height and weight modifiers-->
+		    <description>The Durgoi Race from Continentia.</description>
+		    <author url="https://github.com/pkducklett/">Corey Welch</author>
+			<file name="continentia-race-durgoi.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+		</update>
+	</info>
+
+    <element name="Durgoi" type="Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACE_DURGOI">
+        <description>
+            <p class="flavor">Durgois are a race native to the Durgan forest, but reside in the Northern volcanic fissures of Continentia. They are a race proud in their rigid social structure.</p>
+		    <h4>INTIMIDATING APPEARANCE</h4>
+		    <p>Durgois are often compared to Narwhals due to their single horn. However their eyes are generally sharp and cat-like, and always yellow. They stand in a wide variety of heights from 5-7ft with skin coming in several different shades of grey. Durgois are an asexual species, and reproduce as such. Durgois often appear feminine, but can also appear masculine or androgynous.</p>
+            <h4>CREATURES OF EXILE</h4>
+		    <p>Durgoi history is illusive, but what does exist is confusing. Durgois were once the leaders of the Durgan forest, but were expelled after some confrontation with Durgans. After this, they migrated North to the volcanic fissures of Suterland and Deuland. After humans arrived, Durgois began a love/hate relationship with them. Durgois often travel away from their tribes to seek work with the humans. The money they gain from the humans is given back to the Gentry (their leader) and is used to fund projects and gain power.</p>
+            <p>Much Durgoi history was lost after their exile, and Durgois are aware of this. This loss has caused Durgois to create extensive archives on all matters of events that affect them, no matter how menial. The largest of these archives is in the Krag, and is said to be the largest collection of texts of all time.</p>
+            <h4>PEOPLE OF THE KRAG AND THEIR QUEEN</h4>
+		    <p>Durgoi tribes have long been the dominating force in the underground societies of the Northernlands, and they’ve made a name for themselves through shady dealings and illicit activity. The largest of these tribes is owned by one Krag Queen. Although little is known about her, it can not be understated the extensiveness of her tribe which can be felt in almost every major city in the world as long as you know where to look.</p>
+            <h4>DURGOI NAMES</h4>
+		    <p>Like Durgans, Durgoi names also follow no alphabet; instead Durgoi names often consist of a patchwork of letters from all languages that the name holder considers adequate. Because of this it is nearly impossible to list Durgoi names, as two names may be spelled in a different way depending on the Durgoi’s preference. Durgoi names also tend to sound rougher or harsher than Durgan names. As for pronunciation, it is easier to ask the Durgoi. But they may not tell you even if you do.</p>
+            <h4>DURGOI TRAITS</h4>
+            <p>Durgois possess the following traits.</p>
+		    <p class="indent"><b><i>Ability Score Increase.</i></b> Your Constitution increases by 1. Your Intelligence score increases by 2.</p>
+		    <p class="indent"><b><i>Age.</i></b> Durgois are born with the appearance of adults, and do not physically age. However, Durgois don’t mentally mature to adulthood until 20. If they live outside of their tribe they live until about 80, but can live upwards of 140 years if they do not leave the Krag.</p>
+		    <p class="indent"><b><i>Alignment.</i></b> Durgois are calculated, and care little of anyone outside of their tribe. Durgois are generally lawful, but rarely good.</p>
+            <p class="indent"><b><i>Size.</i></b> Durgois are generally the same weight as humans, but vary in height considerably. Durgois average between 5ft - 7ft in height and weigh on average 120lbs. Your size is medium.</p>
+		    <p class="indent"><b><i>Speed.</i></b> Your base walking speed is 30 feet.</p>
+		    <p class="indent"><b><i>Krag Born.</i></b> You have resistance to fire damage. You leave behind a strange magical residue that can be picked up by Detect Magic.</p>
+		    <p class="indent"><b><i>Durgish Tongue.</i></b> You gain the ability to understand and speak all languages, however, you can only write and read languages you are proficient in.</p>
+		    <p class="indent"><b><i>Durgish Magic.</i></b> You can cast the spell Detect Magic once and regain the ability to do so after a long rest. When you reach 3rd level you learn one of the following cantrips: Druidcraft, Control Flames, or Create Bonfire. When you reach 5th level you can cast the spell Detect Magic at will. Intelligence is your spellcasting ability for these spells.</p>
+		    <p class="indent"><b><i>Fluid Skin.</i></b> Your magical body gives you the ability to change your appearance. However, you must retain the look of a Durgoi (Grey skin, yellow eyes, single horn, etc.) You can change your height to a maximum of 8 feet and to a minimum of 4 feet. And change your weight to a maximum of 300lbs and a minimum of 90lbs. Your size will stay medium. You may use this ability once per long rest.</p>
+		    <p class="indent"><b><i>Languages.</i></b> You gain the ability to read and write in your choice of: Deuish or Khalid (Standard).</p>
+		    <p class="indent"><b><i>Creature Type.</i></b> Your creature type is humanoid and devil.</p>
+        </description>
+        <sheet display="false" />
+
+        <setters>
+			<set name="names" type="nickname">Flip, Pickles, Jürgen, Niklas, Gižla, Dannika, Zlata, Jaromir, Radek, Motka, Jeiríf, Floy, Bõgdasha, Oksąnā</set>
+			<set name="names-format">{{nickname}}</set>
+			<set name="height" modifier="2d6">5'0"</set>
+			<set name="weight" modifier="1d6d">120 lb.</set>
+		</setters>
+        <rules>
+            <stat name="constitution" value="1" />
+            <stat name="intelligence" value="2" />
+            <stat name="innate speed" value="30" bonus="base" />
+		    <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <select type="Language" name="Durgoi Language" supports="ID_CONT_CONTINENTIA_LANGUAGE_DEUISH|ID_CONT_CONTINENTIA_LANGUAGE_KHALID_STANDARD" />
+            <grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_KRAG_BORN" />
+            <grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_DURGISH_TONGUE" />
+            <grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_DURGOI_DURGISH_MAGIC" />
+            <grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_FLUID_SKIN" />
+            <grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_DURGOI_CREATURE_TYPE" />
+        </rules>
+    </element>
+
+    <element name="Krag Born" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_KRAG_BORN">
+		<description>
+			<p>You have resistance to fire damage. You leave behind a strange magical residue that can be picked up by Detect Magic.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to fire damage. You leave behind a strange magical residue that can be picked up by Detect Magic.</description>
+		</sheet>
+        <rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+
+    <element name="Durgish Magic" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_DURGOI_DURGISH_MAGIC">
+		<description>
+			<p>You can cast the spell Detect Magic once and regain the ability to do so after a long rest. When you reach 3rd level you learn one of the following cantrips: Druidcraft, Control Flames, or Create Bonfire. When you reach 5th level you can cast the spell Detect Magic at will. Intelligence is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You know the spell Detect Magic, and can cast it once per long rest. Intelligence is your spellcasting ability for this spell.</description>
+			<description level="3">You know the spell Detect Magic, and can cast it once per long rest. You also know one of the following cantrips: Druidcraft, Control Flames, or Create Bonfire.. Intelligence is your spellcasting ability for these spells.</description>
+			<description level="5">You know the spell Detect Magic, and can cast it at will. You also know one of the following cantrips: Druidcraft, Control Flames, or Create Bonfire. Intelligence is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+			<select type="Spell" name= "Durgish Magic" supports="ID_PHB_SPELL_DRUIDCRAFT|ID_XGTE_SPELL_CONTROL_FLAMES|ID_XGTE_SPELL_CREATE_BONFIRE" level="3"/>
+		</rules>
+	</element>
+
+    <element name="Fluid Skin" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_FLUID_SKIN">
+		<description>
+			<p>Your magical body gives you the ability to change your appearance. However, you must retain the look of a Durgoi (Grey skin, yellow eyes, single horn, etc.) You can change your height to a maximum of 8 feet and to a minimum of 4 feet. And change your weight to a maximum of 300lbs and a minimum of 90lbs. Your size will stay medium. You may use this ability once per long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can alter your appearance to appear taller (to a max of 8 feet) or shorter (to a min of 4 feet). You can also change your weight to a maximum of 300 lbs and a minimum of 90 lbs. You must retain the appearance of a Durgoi, and your size will stay medium.</description>
+		</sheet>
+	</element>
+
+    <element name="Creature Type" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_DURGOI_CREATURE_TYPE">
+		<description>
+			<p>Your creature type is humanoid and devil.</p>
+		</description>
+		<sheet>
+			<description>Your creature type is humanoid and devil.</description>
+		</sheet>
+	</element>
+</elements>
