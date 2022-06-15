@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="continentia-gentlemens-guide-source.xml" url="https://github.com/pkducklett/Continentia/blob/0a510f9e64feb8b6a9f6e1bdade173f0dae9cbb4/continentia-cruel-war-source.xml" />
+			<file name="continentia-gentlemens-guide-source.xml" url="https://github.com/pkducklett/Continentia/blob/5e8d7d6b0cd89d1bdd4a4495713e81ff1d1079a6/continentia-gentlemens-guide-source.xml" />
 		</update>
 	</info>
 	<element name="Continentia: Gentleman’s Guide To Firearms" type="Source" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_SOURCE_CONTINENTIA_SECOND_CRUEL_WAR">
