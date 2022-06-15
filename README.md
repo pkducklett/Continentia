@@ -6,4 +6,5 @@ Information about the Continentia setting is best found [here](https://docs.goog
 
 ## Disclaimer
 Continentia is not affiliated with either Wizards of the Coast or Aurora Builder. This is merely a fan-made project to extend your Aurora Elements and play with the rules of this new setting. 
+
 Much of this content is still in playtesting, so edits will be added as changes are made. 
