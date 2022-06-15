@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="continentia-cruel-war-source.xml" url="https://raw.githubusercontent.com/community-elements/elements-dndwiki/master/dndwiki/sources.xml" />
+		</update>
+	</info>
+	<element name="Continentia: The Second Cruel War" type="Source" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SOURCE_CONTINENTIA_SECOND_CRUEL_WAR">
+		<description>
+			<![CDATA[<p></p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">CONT</set>
+			<set name="url">https://github.com/pkducklett/Continentia</set>
+			<set name="author" url="https://github.com/pkducklett/Continentia">Corey Welch and the amazing Dicey Dudes</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>
