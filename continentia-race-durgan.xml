@@ -6,7 +6,7 @@
 			<!-- update notes:	added height and weight modifiers-->
 		    <description>The Durgan Race from Continentia.</description>
 		    <author url="https://github.com/pkducklett/">Corey Welch</author>
-			<file name="continentia-race-durgan.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+			<file name="continentia-race-durgan.xml"  url="https://github.com/pkducklett/Continentia/blob/c14e6b92e1b570556dc314a9f57cd6d96e5f4a5b/continentia-race-durgan.xml" />
 		</update>
 	</info>
 
