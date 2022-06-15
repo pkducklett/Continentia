@@ -8,7 +8,7 @@
 							   -changed firearm proficiencies to reduce sheet clutter-->
 		    <description>The firearms rules, options, and proficiencies for Continentia.</description>
 		    <author url="https://github.com/pkducklett/">Corey Welch</author>
-			<file name="continentia-items-firearms.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+			<file name="continentia-items-firearms.xml"  url="https://github.com/pkducklett/Continentia/blob/4607f95fd0483e925cac92896003273a9fbd27c9/continentia-items-firearms.xml" />
 		</update>
 	</info>
 
