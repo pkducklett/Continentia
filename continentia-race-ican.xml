@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ican</name>
+        <update version="0.0.1">
+			<!-- update notes: -->
+		    	<description>The Ican Race from Continentia.</description>
+		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
+			<file name="continentia-race-ican.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+		</update>
+	</info>
+
+	<element name="Ican" type="Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACE_ICAN">
+		<description>
+			<p class="flavor">Icans are a proud, legalistic, matriarchal society located in the mountains of central Continentia.</p>
+			<h4>APPEARANCE</h4>
+			<p>Icans are a tall race that average about 7 to 8 feet in height, with a thin stature. They have outward exposed wings on their back that do not function, and reptilian eyes that come in dark colors like browns and greys with small patterns of scale that surround the eyelid. Ican hair is most commonly brown or black, but can occasionally come in greys and whites. They have generally tanned skin, and sharp pointed facial features.</p>
+			<h4>CULTURE</h4>
+			<p>Ica is a country known for its exclusivity, yet its never ending thirst for territorial and militaristic expansion. Because of this Ica has always had a hatred toward anything that does not reflect its culture. Located deep in the central mountains of Continentia, Ica is nearly impenetrable from human forces, and has played a major role in undermining human authority. Due to their position as one of the last completely autonomous dragon nations, many Icans have adopted the belief that no other people hold the same levels of power as Icans. Creating an “us versus them” narrative that nearly all Icans practice in some way.</p>
+			<p>Since the unification of the Ican tribes the country has been dominated by the belief of female superiority. In Ican culture it is common for young men to marry women for the sole purpose of reproducing and starting a family. Once the woman is pregnant she will begin a hormonal shift to prepare for her to give birth. The effects on her body cause her to crave meat which in traditional Ican culture led to her cannibalizing the man. This is a less practiced custom as of modern time. Newer customs will have a woman prepared to marry another woman before she gives birth and quietly divorce her husband before this hormonal shift takes place. The resulting child will be raised by the two women; the birth mother and a second “raising” mother.</p>
+			<h4>RELIGION</h4>
+			<p>Ican religion, or Polyicanism, is a fundamental aspect of the lives of nearly all Icans. The religion is based on the idea of dedication to a specific God, yet being knowledgeable in the stories and philosophies of the other Ican Gods. The God you choose dictates the lifestyle, and standards you are to be held to. In other words, your God's morals and practices are to be a reflection of you.</p>
+			<p>The two ruling Goddesses of Polyicanism are: Noi the Goddess of war and Und the Goddess of chaos. Noi rules the underground city of Noiette, whereas Und rules the mountainous hellscape of Undette. These Goddesses also own “Circles”, which encompass all the Gods under their influence of power. When an Ican chooses to dedicate themselves to a God, they are choosing a side in a war of morality.</p>
+			<h4>ICAN NAMES</h4>
+			<p>Ican feminine names generally consist of three or less letters. Ican maculine names generally consist of four or more letters, and must always include a title. An Ican’s family name is the name of their matriarch. (for example: Acht, daughter of Noi)</p>
+			<p>Ican titles are gendered, and are usually only for men. There are some titles that are strictly feminine however, and some that are gender-neutral. </p>
+			<p><i>Note: “ch” is one letter in Ican</i></p>
+			<table>
+				<thead>
+					<tr><td>Title (gender)</td><td>Meaning</td></tr>
+				</thead>
+				<tr><td>‘ka (Feminine)</td><td>A title which is intended to represent the name of a past female ancestor generally of great importance.</td></tr>
+				<tr><td>‘sta (Neutral)</td><td>A gender neutral term used in the same way that one might use the suffix “jr.” In most cases, it implies that you are named after your matriarch. (ie. Yun’sta Daughter of Yun)</td></tr>
+				<tr><td>‘mah (Neutral)</td><td>A term given to children who were not expected to survive childbirth. It loosely translates to “Miracle”.</td></tr>
+				<tr><td>‘ed (Masculine)</td><td>A title which means masculine in appearance, or it denotes the masculine version of a name.</td></tr>
+				<tr><td>‘ek (Masculine)</td><td>Refers to the man's physical strength. In the church of Noi if one has the title ‘ed, and they prove themselves worthy, it will be replaced with ‘ek.</td></tr>
+				<tr><td>‘tan (Masculine)</td><td>‘tan is a title used almost like an advertisement for potential brides. It translates loosely to a "Handsome man who will give you a daughter."</td></tr>
+				<tr><td>‘ech (Masculine)</td><td>A title which has been used so often it basically just means "Male". An example from English would be how often the name "Jack" is used.</td></tr>
+			</table>
+			<h4>ICAN TRAITS</h4>
+			<p>Icans possess the following traits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Strength score increases by 2, and your Constitution increases by 1.</p>
+			<p class="indent"><b><i>Age.</i></b> Icans reach adulthood at 18 and live to be about 100.</p>
+			<p class="indent"><b><i>Alignment.</i></b> Icans usually range from Lawful Neutral to Lawful Evil in alignment.</p>
+			<p class="indent"><b><i>Size.</i></b> Icans range in height from 7 to 8 feet, but some can be shorter. Icans weigh on average 145-160 lbs. Your size is medium.</p>
+			<p class="indent"><b><i>Speed.</i></b> Your base walking speed is 30 feet.</p>
+			<p class="indent"><b><i>Darkvision.</i></b> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+			<p class="indent"><b><i>Sleep Cycles.</i></b> Icans sleep by falling unconscious for approximately 8 hours in an almost comatose way; they can still be awoken while in this state however. During a short rest, if you expend a hit die, you may add an additional die to the roll equal to your highest hit die type, this ability does not work if you have a level of exhaustion.</p>
+			<p class="indent"><b><i>Mountain Adept.</i></b> You do not lose movement when walking in steep or mountainous terrain.</p>
+			<p class="indent"><b><i>Expansive Culture.</i></b> You gain proficiency in two skills of your choice.</p>
+			<p class="indent"><b><i>Languages.</i></b> You can speak, read, and write in Ican.</p>
+			<h4>ICAN DRACONIC TRAITS</h4>
+			<p>Icans possess the following traits while in a draconic form.</p>
+			<p class="indent"><b><i>Draconic Hit Points.</i></b> While in a draconic form, you gain temporary hit points equal to your Constitution modifier x your level.</p>
+			<p class="indent"><b><i>Draconic Armor Class.</i></b> While in a draconic form, your armor class is 10 + Dexterity modifier + Constitution modifier.</p>
+			<p class="indent"><b><i>Hardened Claw.</i></b> 2d6 Slashing + Strength modifer. Allows the user to burrow in soft soil.</p>
+			<p class="indent"><b><i>Bite.</i></b> 1d8 Slashing + Strength modifer.</p>
+			<p class="indent"><b><i>Size.</i></b> While in a draconic form, your size becomes large.</p>
+			<p class="indent"><b><i>Speed.</i></b> While in a draconic form, your walking speed is 30 feet, and you have a burrowing speed of 25 feet.</p>
+		</description>
+		<sheet display="false" />
+
+		<setters>
+			<set name="names" type="male">Graal’ed, Durch’di, Der’ed, Or’tan, Erk’dah, Ann’tan, Lo’ech, Und’ed, Luz’mah, Ked’ek, Urd’ek, Nov’tan </set>
+			<set name="names" type="female">Noi, Und, Acht, Uch, Lof, Jun, Jo, Hef, Val’sta, Til, Mot, Vra </set>
+			<set name="names" type="family">child of, spouse of</set>
+			<set name="names" type="matriarch">Noi, Und, Vahn, Kev, Xav, Iga, Ela, Val, Cam, Ami’ka, Luz, Mun </set>
+			<set name="names-format">{{name}} {{family}} {{matriarch}}</set>
+			<set name="height" modifier="2d8">7'0"</set>
+			<set name="weight" modifier="1d8">145 lb.</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="1" requirements="!ID_CONT_CONTINENTIA_SUB_RACE_GREAT_ICAN" />
+	   		<stat name="strength" value="2" requirements="!ID_CONT_CONTINENTIA_SUB_RACE_GREAT_ICAN" />
+	   		<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_SLEEP_CYCLES" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_MOUNTAIN_ADEPT" />
+			<select type="Racial Trait" name="Racial Traits" supports="ID_CONT_CONTINENTIA_RACIAL_TRAIT_EXPANSIVE_CULTURE|ID_CONT_CONTINENTIA_RACIAL_TRAIT_EARTH_SHAKER|ID_CONT_CONTINENTIA_RACIAL_TRAIT_MASTER_OF_THE_HOUSE" requirements="!ID_CONT_CONTINENTIA_GRANTS_ICAN_SUBRACE"/>
+			<select type="Sub Race" name="Ican Subrace" supports="Ican" optional="true"/>
+		</rules>
+	</element>
+
+	<element name="Sleep Cycles" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_SLEEP_CYCLES">
+		<description>
+			<p>Icans sleep by falling unconscious for approximately 8 hours in an almost comatose way; they can still be awoken while in this state however. During a short rest, if you expend a hit die, you may add an additional die to the roll equal to your highest hit die type, this ability does not work if you have one or more levels of exhaustion.</p>
+		</description>
+		<sheet>
+			<description>Icans sleep by falling unconscious for approximately 8 hours in an almost comatose way; they can still be awoken while in this state however. During a short rest, if you expend a hit die, you may add an additional die to the roll equal to your highest hit die type, this ability does not work if you have one or more levels of exhaustion.</description>
+		</sheet>
+	</element>
+
+	<element name="Mountain Adept" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_MOUNTAIN_ADEPT">
+		<description>
+			<p>You do not lose movement when walking in steep or mountainous terrain.</p>
+		</description>
+		<sheet>
+			<description>You do not lose movement when walking in steep or mountainous terrain.</description>
+		</sheet>
+	</element>
+
+	<element name="Expansive Culture" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_EXPANSIVE_CULTURE">
+		<description>
+			<p>You gain proficiency in two skills of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ICAN" />
+			<select type="Proficiency" name="Expansive Culture" supports="Skill" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Earth Shaker" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_EARTH_SHAKER">
+		<description>
+			<p>You may take this racial trait in place of your Expansive Culture ability. Your draconic form has been cursed with the unnatural ability to control magical energies around you.</p>
+			<p>You gain the cantrip Mold Earth. You may cast this spell while in a draconic form. You also gain the 1st level spell Earth Tremor. You may cast this spell a number of times equal to your proficiency modifier and it has a spell save DC of 10 + your proficiency modifier, but it can only be cast while in your draconic state.</p>
+			<p>Your burrowing speed increases to 30 feet while you are transformed.</p>
+		</description>
+		<sheet>
+			<description>You gain the cantrip Mold Earth. You may cast this spell while in a draconic form. You also gain the 1st level spell Earth Tremor. You may cast this spell {{earth tremor:number times}} times and it has a spell save DC of {{earth tremor:dc}}, but it can only be cast while in your draconic state. Your burrowing speed increases to 30 feet while you are transformed.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ICAN" />
+
+			<grant type="Spell" id="ID_XGTE_SPELL_MOLD_EARTH" />
+			<grant type="Spell" id="ID_XGTE_SPELL_EARTH_TREMOR" />
+
+			<stat name="earth tremor:dc" value="10" />
+			<stat name="earth tremor:dc" value="proficiency" />
+			<stat name="earth tremor:number times" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Matriarch/Patriarch of the House" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_MASTER_OF_THE_HOUSE">
+		<description>
+			<p>You may take this racial trait in place of your Expansive Culture ability. You are the eternal mother of your clan, and your children and spouse share your name. Or you are the last surviving father of your family, cursed with the buried name of your former matriarch with no women who can take control and bring your family back to glory.</p>
+			<p>Your parental instincts give you advantage on Medicine checks to stabilize any person that you have been traveling with for more than 24 hours.</p>
+			<p>During a short rest, you may expend one of your hit dice and give it to an ally to roll in place of yourself.</p>
+			<p>At the end of a long rest, you may give a number of allies equal to 3 + your proficiency modifier 1d4, which they can add to their next saving throw.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Medicine checks to stabilize any person that you have been traveling with for more than 24 hours. During a short rest, you may expend one of your hit dice and give it to an ally to roll in place of yourself. At the end of a long rest, you may give {{allies:number}} allies 1d4, which they can add to their next saving throw.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ICAN" />
+
+			<stat name="allies:number" value="3" />
+			<stat name="allies:number" value="proficiency" />
+		</rules>
+	</element>
+
+	<!-- Grants Ican Subraces -->
+	<element name="Ican Subrace" type="Grants" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_GRANTS_ICAN_SUBRACE" />
+
+	<!-- Basiner: -->
+	<element name="Basiner Ican" type="Sub Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SUBRACE_BASINER">
+		<supports>Ican</supports>
+		<description>
+			<p>The basin of Ica is the central lands of the country with mountains on all sides, giving it the appearance of a bowl or basin. This area contains some of the only fertile land in the country and has become the agricultural hub for the country. The land in the basin is hilly with rocks naturally occurring along its carpet like sheets of green grass. The people in these lands are well equipped for the jobs as farmers and laborers, and are prepared for the unpredictable weather.</p>
+			<p class="indent"><b><i>Serf Below Them.</i></b> Surviving the food shortages common in the Basin has given you proficiency in Cook’s Tools and the Survival and Nature skills. When making Survival Checks to locate food you may double your proficiency modifier. When making Nature checks to determine whether something is safe to eat or not you may double your proficiency modifier.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_SERF_BELOW_THEM" />
+			<grant type="Grants" id="ID_CONT_CONTINENTIA_GRANTS_ICAN_SUBRACE" />
+		</rules>
+	</element>
+
+	<element name="Serf Below Them" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_SERF_BELOW_THEM">
+		<description>
+			<p>When making Survival Checks to locate food you may double your proficiency modifier. When making Nature checks to determine whether something is safe to eat or not you may double your proficiency modifier.</p>
+		</description>
+		<sheet>
+			<description>When making Survival Checks to locate food you may double your proficiency modifier. When making Nature checks to determine whether something is safe to eat or not you may double your proficiency modifier.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ICAN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<!-- Kreotian: -->
+	<element name="Kreotian Ican" type="Sub Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SUB_RACE_KREOTIAN">
+		<supports>Ican</supports>
+		<description>
+			<p>During the Great Muddling (A period of Ican history between the fall of the first dynasty and the beginning of the second dynasty), many Und worshiping Icans fled South into Arity to avoid persecution by a string of incompetent and militant empresses. These Icans would be forced from the Arityian mainland onto the island of Kreote, where they would be left to their own devices. The diversity of Kreote has given these Icans knowledge and understanding they would not have gained from the empire, and has led to a sort of cultural renaissance on the island of Kreote.</p>
+			<p class="indent"><b><i>Satellite Culture.</i></b> The island's diversity has given you knowledge in concepts that other Icans would never dream of learning of. This education has caused you to gain a skill proficiency of your choice, two tools proficiencies of your choice, and a musical instrument or gaming set proficiency of your choice.</p>
+			<p class="indent"><b><i>Languages.</i></b> Instead of the usual Ican language proficiencies, you can speak, read, and write in two languages of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_KREOTIAN_LANGUAGES" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_SATELLITE_CULTURE" />
+			<grant type="Grants" id="ID_CONT_CONTINENTIA_GRANTS_ICAN_SUBRACE" />
+		</rules>
+	</element>
+
+	<element name="Kreotian Languages" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_KREOTIAN_LANGUAGES">
+		<description>
+			<p>Instead of the usual Ican language proficiencies, you can speak, read, and write in two languages of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Kreotian Language" supports="ID_CONT_CONTINENTIA_LANGUAGE_ARITYIAN|ID_CONT_CONTINENTIA_LANGUAGE_DEUISH|ID_CONT_CONTINENTIA_LANGUAGE_ICAN|ID_CONT_CONTINENTIA_LANGUAGE_KHALID_STANDARD|ID_CONT_CONTINENTIA_LANGUAGE_KHALID_TRADITIONAL|ID_CONT_CONTINENTIA_LANGUAGE_ORAJAN|ID_CONT_CONTINENTIA_LANGUAGE_FLORISH" />
+			<select type="Language" name="Kreotian Language" supports="ID_CONT_CONTINENTIA_LANGUAGE_ARITYIAN|ID_CONT_CONTINENTIA_LANGUAGE_DEUISH|ID_CONT_CONTINENTIA_LANGUAGE_ICAN|ID_CONT_CONTINENTIA_LANGUAGE_KHALID_STANDARD|ID_CONT_CONTINENTIA_LANGUAGE_KHALID_TRADITIONAL|ID_CONT_CONTINENTIA_LANGUAGE_ORAJAN|ID_CONT_CONTINENTIA_LANGUAGE_FLORISH|ID_CONT_CONTINENTIA_LANGUAGE_ILLITIAN|ID_CONT_CONTINENTIA_LANGUAGE_NAGEAN|ID_CONT_CONTINENTIA_LANGUAGE_OLD_ICAN|ID_CONT_CONTINENTIA_LANGUAGE_PYRUVIAN|ID_CONT_CONTINENTIA_LANGUAGE_TERRADYSIAN|ID_CONT_CONTINENTIA_LANGUAGE_YITTIAN" />
+		</rules>
+	</element>
+
+	<element name="Satellite Culture" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_SATELLITE_CULTURE">
+		<description>
+			<p>The island's diversity has given you knowledge in concepts that other Icans would never dream of learning of. This education has caused you to gain a skill proficiency of your choice, two tools proficiencies of your choice, and a musical instrument or gaming set proficiency of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Satellite Culture" supports="Skill"  requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Satellite Culture" supports="Artisan tools" number="2" />
+			<select type="Proficiency" name="Satellite Culture" supports="Gaming Set||Musical Instrument" />
+		</rules>
+	</element>
+
+	<!-- Yittian: -->
+	<element name="Yittian" type="Sub Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SUB_RACE_YITTIAN">
+		<supports>Ican</supports>
+		<description>
+			<p>Yittians are an Ican minority who have existed alongside their more known neighbors for centuries. They have been all but forced to live in a specific region in the Southern mountains of Yit, and are frequently oppressed by the Ican monarchy and other structures of Ican rule. Their culture, although similar, has more of a focus on the concept of honor and helping your fellow man. Because of this, all Yittians are taught to fight at a young age, in hopes they will use this knowledge to defend those who cannot defend themselves.</p>
+			<p class="indent"><b><i>Honorable Combat Training.</i></b> Your training in the way of combat at a young age has prepared you for the unjust people of the world. You gain proficiency in a sword of your choice from the following list: Greatsword, Long Sword, Rapier, or Shortsword. In addition, you learn one maneuver with a d4 superiority die. You regain this superiority die after finishing a short or long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_HONORABLE_COMBAT_TRAINING" />
+			<grant type="Grants" id="ID_CONT_CONTINENTIA_GRANTS_ICAN_SUBRACE" />
+		</rules>
+	</element>
+
+	<element name="Honorable Combat Training" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_HONORABLE_COMBAT_TRAINING">
+		<description>
+			<p>Your training in the way of combat at a young age has prepared you for the unjust people of the world. You gain proficiency in a sword of your choice from the following list: Greatsword, Long Sword, Rapier, or Shortsword. In addition, you learn one maneuver with a d4 superiority die. You regain this superiority die after finishing a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>You learn one maneuver with a d4 superiority die. You regain this superiority die after finishing a short or long rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ICAN" />
+			<select type="Proficiency" name="Honorable Combat Training" supports="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD|ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD|ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER|ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+			
+			<stat name="honorable combat:ability" value="strength:modifier" bonus="honorable combat:ability" />
+			<stat name="honorable combat:ability" value="dexterity:modifier" bonus="honorable combat:ability" />
+
+			<stat name="honorable combat:dc" value="8" />
+			<stat name="honorable combat:dc" value="proficiency" />
+			<stat name="honorable combat:dc" value="honorable combat:ability" />
+
+			<stat name="honorable combat:dice:amount" value="1" />
+			<stat name="honorable combat:dice:size" value="4" />
+
+			<select type="Archetype Feature" name="honorable combat Training" supports="Maneuver,Battle Master" />
+
+			<!-- for battle masters -->
+			<stat name="superiority dice:amount" value="1" requirements="ID_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY" />
+		</rules>
+	</element>
+
+	<!-- Great Ican -->
+	<element name="Great Ican" type="Sub Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SUB_RACE_GREAT_ICAN">
+		<supports>Ican</supports>
+		<description>
+			<p>Great Icans in mythology are described as Icans who more resemble their original purpose in creation, ie. They are more godlike. Great Icans hold the most reverence in society; and in almost all cases only Great Icans have been empresses of the nation. However, this societal praise has its limits. Due to their large stature, Great Icans do not have as long of a lifespan as other Icans, and are prone to heart conditions. This does not stop the belief that Great Icans are more attractive than other Icans, or that they are more pure.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2, and your Charisma increases by 1. These scores replace your other score increases.</p>
+			<p class="indent"><b><i>Size.</i></b> Great Icans range in height from 9 to 14 feet, and weigh on average 160-200lbs. Your size is Large.</p>
+			<p class="indent"><b><i>Special Sub-racial Trait 1.</i></b> Describe the special racial trait.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" />
+			<stat name="wisdom" value="2" />
+			<grant type="Size" id="ID_SIZE_LARGE" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_MISLEADING_PHYSIQUE" />
+			<grant type="Grants" id="ID_CONT_CONTINENTIA_GRANTS_ICAN_SUBRACE" />
+			<select type="Racial Trait" name="Great Ican Subrace Or Racial Trait" supports="ID_CONT_CONTINENTIA_RACIAL_TRAIT_EXPANSIVE_CULTURE|ID_CONT_CONTINENTIA_RACIAL_TRAIT_EARTH_SHAKER|ID_CONT_CONTINENTIA_RACIAL_TRAIT_MASTER_OF_THE_HOUSE|ID_CONT_CONTINENTIA_RACIAL_TRAIT_GREAT_BASINER|ID_CONT_CONTINENTIA_RACIAL_TRAIT_GREAT_KREOTIAN|ID_CONT_CONTINENTIA_RACIAL_TRAIT_GREAT_YITTIAN" />
+		</rules>
+	</element>
+
+	<element name="Misleading Physique" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_MISLEADING_PHYSIQUE">
+		<description>
+			<p>Despite your larger size, you are affected by spells and abilities as though you were a size medium. You gain disadvantage when making Stealth Checks, and you have a vulnerability to bludgeoning damage.</p>
+		</description>
+		<sheet>
+			<description>Despite your larger size, you are affected by spells and abilities as though you were a size medium. You gain disadvantage when making Stealth Checks, and you have a vulnerability to bludgeoning damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_BLUDGEONING" />
+		</rules>
+	</element>
+
+	<element name="Great Basiner Ican" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_GREAT_BASINER">
+		<description>
+			<p>You are a Great Basiner Ican.</p>
+		</description>
+		<sheet>
+			<description>You are a Great Basiner Ican.</description>
+		</sheet>
+		<rules>
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_SERF_BELOW_THEM" />
+		</rules>
+	</element>
+
+	<element name="Great Kreotian Ican" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_GREAT_KREOTIAN">
+		<description>
+			<p>You are a Great Kreotian Ican.</p>
+		</description>
+		<sheet>
+			<description>You are a Great Kreotian Ican.</description>
+		</sheet>
+		<rules>
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_KREOTIAN_LANGUAGES" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_SATELLITE_CULTURE" />
+		</rules>
+	</element>
+
+	<element name="Great Yittian" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_GREAT_YITTIAN">
+		<description>
+			<p>You are a Great Yittian.</p>
+		</description>
+		<sheet>
+			<description>You are a Great Yittian.</description>
+		</sheet>
+		<rules>
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_HONORABLE_COMBAT_TRAINING" />
+		</rules>
+	</element>
+</elements>

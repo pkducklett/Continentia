@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Nagean</name>
+        <update version="0.0.2">
+			<!-- update notes: added height and weight modifiers-->
+		    	<description>The Nagean Race from Continentia.</description>
+		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
+			<file name="continentia-race-nagean.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+		</update>
+	</info>
+
+	
+    <element name="Nagean" type="Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACE_NAGEAN">
+        <description>
+			<p class="flavor">Nageans generally live in small religious communities throughout Arity. They mostly keep to themselves, but settle close to humans to sell their wares.</p>
+			<h4>APPEARANCE</h4>
+			<p>Nageans are considered the most “human” looking of the dragon species. Nagean hair comes in varieties of mint green, blonde, red, and greenish white. Their eye color is almost always green with the standard reptilian shape for all dragons. Occasionally a Nagean may be born with wings that appear in their humanoid form, these wings do not function and it is an extremely rare trait.</p>
+			<h4>RELGION AND HISTORY</h4>
+			<p>Nageans believe that they are the chosen people of the God Arit, a being that grants them eternal protection as long as they practice his will. Because of this, Nageans are incredibly religious, and are taught to be unswayed by the pressure of other religions. </p>
+			<p>Nageans were the first draconic species to be discovered by humans during the Great Migration. Unlike other dragons, Nageans were quite accepting of humans and worked with them closely. They even converted many humans to the teachings of Arit, which is the predominant religion of Arity today. Overtime, the Nagaeans would become slaves during the age of Human Oppression, but would be allowed the most rights over any other dragon race. They were allowed to run churches and even create what were called “Temple Towns”, which are small communities that formed near human ones. Despite this, Nageans were still not free, and were often heavily monitored by sheriffs hired by the local reigning Duke.</p>
+			<p>Today Nageans are legally equal to humans in the country of Arity, but old practices die slowly. Many humans still have hatred toward Nageans, and some even attempt to practice slavery despite its abolishment.</p>
+			<h4>NAGEAN NAMES</h4>
+			<p>Nagean names are generally quick and soft spoken. Male names always end in “a”, female names always end in “i”, and gender neutral always end in “o”.</p>
+			<ul class="unstyled">
+				<li><strong>Male Names:</strong> Kama, Lora, Duma, Numa, Jurda, Tama, Kana</li>
+				<li><strong>Female Names:</strong> Kiki, Nagi, Lemi, Zani, Foyri, Tiki, Nowi</li>
+				<li><strong>Gender Neutral Names:</strong> Nago, Jomo, Wijo, Pamo, Koko, Milo, Juno</li>
+			</ul>
+			<h4>NAGEAN TRAITS</h4>
+            <p>Nageans possess the following traits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Constitution score increases by 1. Your Wisdom score increases by 2.</p>
+			<p class="indent"><b><i>Age.</i></b> Nageans go through a coming of age transformation at the age of 13, but don’t reach full maturity until 17. They can generally live up to 110 years old. </p>
+			<p class="indent"><b><i>Alignment.</i></b> Nageans are almost always Neutral, but tend to lean more toward Good.</p>
+        	<p class="indent"><b><i>Size.</i></b> Nageans males are on average 5 feet 8 inches tall, and weigh 140lbs. Nagean females are on average 5 feet 4 inches tall, and weigh 130lbs. Your size is medium.</p>
+			<p class="indent"><b><i>Speed.</i></b> Your base walking speed is 30 feet.</p>
+			<p class="indent"><b><i>Gift of Arit.</i></b> You know one of the following spells: Bless, Protection from Evil and Good, or Detect Evil and Good. Wisdom is your spellcasting ability for this spell. This spell can be cast once per long rest without expending a spell slot. You can also cast this spell using any spell slots you have.</p>
+			<p class="indent"><b><i>Choral Tradition.</i></b> Once per long rest, you may sing a heavenly tune that will grant allies in a 30ft radius hit points equal to 1d4 plus your level.</p>
+			<p class="indent"><b><i>Acidic Saliva.</i></b> Your saliva can be used as a mild acid. When your saliva is exposed to the skin of another creature that creature must make a Constitution saving throw. On a fail they take 1d4 Acid damage. If your saliva is exposed to sunlight for an hour, it dilutes and loses all effects. This Racial Ability does not apply to creatures that share it.</p>
+			<p class="indent"><b><i>Languages.</i></b> You can speak, read, and write in Arityian.</p>
+			<h4>NAGEAN DRACONIC TRAITS</h4>
+			<p>Nageans possess the following traits while in a draconic form.</p>
+			<p class="indent"><b><i>Draconic Hit Points.</i></b> While in a draconic form, you gain temporary hit points equal to your Constitution modifier x your level.</p>
+			<p class="indent"><b><i>Draconic Armor Class.</i></b> While in a draconic form, your armor class is 10 + Dexterity modifier + Constitution modifier.</p>
+			<p class="indent"><b><i>Gift of Arit.</i></b> While in a draconic form, you have resistance to radiant damage.</p>
+			<p class="indent"><b><i>Bite.</i></b> 1d8 Piercing + Strength modifer.</p>
+			<p class="indent"><b><i>Breath Weapon.</i></b> You release a line of pure light targeting one creature dealing 3d6 Radiant damage. You gain a bonus to hit equal to twice your proficiency modifier without the use of any other stat.</p>
+			<p class="indent"><b><i>Size.</i></b> While in a draconic form, your size becomes large.</p>
+			<p class="indent"><b><i>Speed.</i></b> While in a draconic form, your walking speed is 30 feet, and you have a flying speed of 30 feet.</p>
+		</description>
+    	<sheet display="false" />
+
+		<setters>
+			<set name="names" type="male">Kama, Lora, Duma, Numa, Jurda, Tama, Kana, Nago, Jomo, Wijo, Pamo, Koko, Milo, Juno</set>
+			<set name="names" type="female">Kiki, Nagi, Lemi, Zani, Foyri, Tiki, Nowi, Nago, Jomo, Wijo, Pamo, Koko, Milo, Juno</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d6">5'4"</set>
+			<set name="weight" modifier="1d4">130 lb.</set>
+		</setters>
+		<rules>
+       		<stat name="constitution" value="1" />
+       		<stat name="wisdom" value="2" />
+       		<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ARITYIAN" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_GIFT_ARIT" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_CHORAL_TRADITION" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_NAGEAN_ACIDIC_SALIVA" />
+		</rules>
+	</element>
+
+	<element name="Gift of Arit" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_GIFT_ARIT">
+		<description>
+			<p>You know one of the following spells: Bless, Protection from Evil and Good, or Detect Evil and Good. Wisdom is your spellcasting ability for this spell. This spell can be cast once per long rest without expending a spell slot. You can also cast this spell using any spell slots you have.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You know one of the following spells: Bless, Protection from Evil and Good, or Detect Evil and Good. Wisdom is your spellcasting ability for this spell. This spell can be cast once per long rest without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name= "Gift of Arit" supports="ID_PHB_SPELL_BLESS|ID_PHB_SPELL_DETECT_EVIL_AND_GOOD|ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD"/>
+		</rules>
+	</element>
+
+	<element name="Choral Tradition" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_CHORAL_TRADITION">
+		<description>
+			<p>Once per long rest, you may sing a heavenly tune that will grant allies in a 30ft radius hit points equal to 1d4 plus your level.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You sing a heavenly tune that will grant allies in a 30ft radius hit points equal to 1d4 + {{choral-traditon:level}}.</description>
+		</sheet>
+		<rules>
+			<stat name="choral-traditon:level" value="level" />
+		</rules>
+	</element>
+
+	<element name="Acidic Saliva" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_NAGEAN_ACIDIC_SALIVA">
+		<description>
+			<p>When your saliva is exposed to the skin of another creature that creature must make a Constitution saving throw. On a fail they take 1d4 Acid damage.</p>
+		</description>
+		<sheet>
+			<description>When your saliva is exposed to the skin of another creature that creature must make a DC {{acidic-saliva:dc}} Constitution saving throw. On a fail they take 1d4 Acid damage.</description>
+		</sheet>
+		<rules>
+			<stat name="acidic-saliva:dc" value="8" />
+			<stat name="acidic-saliva:dc" value="constitution:modifier" />
+			<stat name="acidic-saliva:dc" value="proficiency" />
+		</rules>
+	</element>
+</elements>

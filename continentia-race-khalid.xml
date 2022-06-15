@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Khalid</name>
+        <update version="0.0.2">
+			<!-- update notes: added more names
+							   added height/weight mods
+							   added Tre subrace-->
+		    	<description>The Khalid Race from Continentia.</description>
+		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
+			<file name="continentia-race-khalid.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+		</update>
+	</info>
+
+    <element name="Khalid" type="Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACE_KHALID">
+        <description>
+		    <p class="flavor">Khalids tend to live in the Northern regions of Continentia, but have a distinct divide between urban and rural populations.</p>
+		    <h4>APPEARANCE</h4>
+		    <p>Khalids are known for their blue eyes and stocky build. Their skin is often pale. Khalid hair is generally light blue, but can also be white. They have small hornlike ridges going down their nose, as well as unnaturally large bottom canine teeth.</p>
+			<h4>A HISTORY OF DIVIDE</h4>
+			<p>Khalids have long been an elusive race, living far North where other races did not. For most of their history Khalids lived in separate communities across the Northernlands, with their own cultures and technologies. In fact, the word Khalid to describe the race as a whole is rather new and is derived from the confederation of tribes of the same name.</p>
+			<p>Humans would arrive in the Northernlands and establish farming villages. Most Khalids saw humans as nothing to worry about, as most of them stayed to the South and mostly just wanted to trade. However, as more aggressive humans moved North, skirmishes did happen.</p>
+			<h4>A PEOPLE OF TWO CULTURES</h4>
+			<p>Khalids are a race who have a never ending search for knowledge, either scientific or mythical. After humans settled in their lands some Khalids moved South and integrated with the humans. While others stayed North to continue their culture of mysticism.</p>
+			<h4>KHALID NAMES</h4>
+			<p>Khalid names vary wildly due to their many sub groups. However, Khalid last names tend to end in “tun.”</p>
+			<ul class="unstyled">
+				<li><strong>Male Names:</strong> Hallr, Björn, Emil, Jóhannes, Ragnar, Snorri, Arne</li>
+				<li><strong>Female Names:</strong> Fríða, Katla, Brynhildr, Elsa, Asta, Camilla, Hilda</li>
+				<li><strong>Surames:</strong> Haltun, Alvartun, Daltun, Lotun, Ötun, Södertun, Westertun</li>
+			</ul>
+			<h4>KHALID TRAITS</h4>
+            <p>Khalids possess the following traits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Constitution score increases by 2.</p>
+			<p class="indent"><b><i>Age.</i></b> Khalids reach adulthood at age 16, and live to be about 90 years old.</p>
+			<p class="indent"><b><i>Alignment.</i></b> Khalids are generally Lawful, and rarely stray to Evil.</p>
+        	<p class="indent"><b><i>Size.</i></b> On average, Khalids are between 5’0” and 5’10”. They usually average around 150-200 lbs. Your size is medium.</p>
+			<p class="indent"><b><i>Speed.</i></b> Your base walking speed is 30 feet.</p>
+			<p class="indent"><b><i>Cold Blood.</i></b> You have resistance to cold damage. Your unarmed strikes deal cold damage, instead of the usual bludgeoning.</p>
+			<h4>KHALID DRACONIC TRAITS</h4>
+			<p>Khalids possess the following traits while in a draconic form.</p>
+			<p class="indent"><b><i>Draconic Hit Points.</i></b> While in a draconic form, you gain temporary hit points equal to your (Constitution modifier + 1) x your level.</p>
+			<p class="indent"><b><i>Draconic Armor Class.</i></b> While in a draconic form, your armor class is 12 + Dexterity modifier + Constitution modifier.</p>
+			<p class="indent"><b><i>Bite.</i></b> 1d8 Piercing + Strength modifer.</p>
+			<p class="indent"><b><i>Breath Weapon.</i></b> You release a cone of cold up to 15 feet causing a creature to make a Constitution save, which deals 2d6 Cold damage on a failed save, and half as much on a success.</p>
+			<p class="indent"><b><i>Size.</i></b> While in a draconic form, your size becomes large.</p>
+			<p class="indent"><b><i>Speed.</i></b> While in a draconic form, your walking speed is 30 feet.</p>
+		</description>
+        <sheet display="false" />
+
+		<setters>
+			<set name="names" type="male">Hallr, Björn, Emil, Jóhannes, Ragnar, Snorri, Arne, Georgei, Miloš, Tomislav, Félagi, Friðþjófr</set>
+			<set name="names" type="female">Fríða, Katla, Brynhildr, Elsa, Asta, Camilla, Hilda, Šiwa, Myrgjǫl, Rúna, Vígdís, Desislava</set>
+			<set name="names" type="surname">Haltun, Alvartun, Daltun, Lotun, Ötun, Södertun, Westertun, Artun, Faltun, Göratun, Jørgentun, Nortun</set>
+			<set name="names-format">{{name}} {{surname}}</set>
+			<set name="height" modifier="2d8">5'0"</set>
+			<set name="weight" modifier="1d4">150 lb.</set>
+		</setters>
+		<rules>
+       		<stat name="constitution" value="2" />
+       		<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_COLD_BLOOD" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_KHALID_SUBRACE" />
+   	 	</rules>
+    </element>
+
+	<element name="Cold Blood" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_COLD_BLOOD">
+		<description>
+			<p>You have resistance to cold damage. Your unarmed strikes deal cold damage, instead of the usual bludgeoning.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to cold damage. Your unarmed strikes deal cold damage, instead of the usual bludgeoning.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+
+	<!-- Enables Khalid Subraces -->
+    <element name="Khalid Subrace" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_KHALID_SUBRACE">
+        <description>
+            <p>There are two subraces of Khalids: Northern Khalids and Khalmuts.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Sub Race" name="Khalid Subrace" supports="Khalid" />
+        </rules>
+    </element>
+
+	<!-- Northern Khalid -->
+	<element name="Northern Khalid" type="Sub Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SUB_RACE_NORTHERN_KHALID">
+		<supports>Khalid</supports>
+		<description>
+			<p>Northern Khalids consider themselves the true race of Khalids. After human integration, they remained North to continue their traditions. Northern Khalids consider the Southern Khalmuts a blight on Khalid culture, and often try to ensure that Khalmuts can not enter Northern lands.</p>
+			<p>Khalids rarely go South, but the ones that do are entrusted in providing for the tribe by trading with the humans.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength or Wisdom increases by 1.</p>
+			<p class="indent"><b><i>Mystics of the Tundra.</i></b> At the end of a long rest you take a moment to reflect on your travels, and where you’re going. Roll 1d12 and record the number. You may replace your roll, or the roll of someone within 15 feet of you with the recorded number until your next long rest.</p>
+			<p class="indent"><b><i>Survivors of Fallen Clouds.</i></b> You do not lose movement when walking in snow covered terrain. When making Survival checks related to snow, or cold temperatures you are considered proficient, and you may double your proficiency modifier.</p>
+			<p class="indent"><b><i>Languages.</i></b> You can speak, read, and write in Khalid (Traditional).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Northern Khalid Ability Score Improvement" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_WISDOM" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_KHALID_TRADITIONAL" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_MYSTICS_OF_TUNDRA" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_SURVIVORS_FALLEN_CLOUDS" />
+		</rules>
+	</element>
+
+	<element name="Mystics of the Tundra" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_MYSTICS_OF_TUNDRA">
+		<description>
+			<p>At the end of a long rest you take a moment to reflect on your travels, and where you’re going. Roll 1d12 and record the number. You may replace your roll, or the roll of someone within 15 feet of you with the recorded number until your next long rest.</p>
+		</description>
+		<sheet>
+			<description>After a long rest, you may roll 1d12 and record the number. You may replace your roll, or the roll of someone within 15 feet of you with the recorded number until your next long rest.</description>
+		</sheet>
+	</element>
+
+		<element name="Survivors of Fallen Clouds" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_SURVIVORS_FALLEN_CLOUDS">
+		<description>
+			<p>You do not lose movement when walking in snow covered terrain. When making Survival checks related to snow, or cold temperatures you are considered proficient, and you may double your proficiency modifier.</p>
+		</description>
+		<sheet>
+			<description>You do not lose movement when walking in snow covered terrain. When making Survival checks related to snow, or cold temperatures you are considered proficient, and you may double your proficiency modifier.</description>
+		</sheet>
+	</element>
+
+	<!-- Khalmut -->
+	<element name="Khalmut" type="Sub Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SUB_RACE_KHALMUT">
+		<supports>Khalid</supports>
+		<description>
+			<p>Southern Khalmuts are a race of enterprising individuals. During the late 1700’s many Khalids moved South to integrate with human culture, in order to receive a human education. Because of this many Khalmuts moved away from their original culture, and have begun their own culture, rejecting the concept of mystics.</p>
+			<p>Khalmuts considered the War of Three Knives in 1802, as the moment they were accepted as a race equal to humans. Because of this Khalmuts are drilled at a young age to know every detail of this war, and to look up to the Khalid generals who won it.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength or Intelligence increases by 1.</p>
+			<p class="indent"><b><i>Drilled for War.</i></b> Once per long rest on your first turn of combat you may use your knowledge of past battles to your advantage. As an action you may choose a single target. Until the beginning of your next turn allies may add your proficiency modifier plus your intelligence modifier to their attack rolls against the chosen target.</p>
+			<p class="indent"><b><i>Forged From Three Knives.</i></b> When making History checks related to past battles you are considered proficient, and you may double your proficiency modifier.</p>
+			<p class="indent"><b><i>Languages.</i></b> You can speak, read, and write in your choice of: Khalid (Standard) or Deuish.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Khalmut Ability Score Improvement" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_INTELLIGENCE" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Language" name="Khalmut Language" supports="ID_CONT_CONTINENTIA_LANGUAGE_KHALID_STANDARD|ID_CONT_CONTINENTIA_LANGUAGE_DEUISH" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_DRILLED_FOR_WAR" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_FORGED_FROM_THREE_KNIVES" />
+		</rules>
+	</element>
+
+	<element name="Drilled for War" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_DRILLED_FOR_WAR">
+		<description>
+			<p>Once per long rest on your first turn of combat you may use your knowledge of past battles to your advantage. As an action you may choose a single target. Until the beginning of your next turn allies may add your proficiency modifier plus your intelligence modifier to their attack rolls against the chosen target.</p>
+		</description>
+		<sheet>
+			<description>Once per long rest on your first turn of combat you may use your knowledge of past battles to your advantage. As an action you may choose a single target. Until the beginning of your next turn allies may add your proficiency modifier plus your intelligence modifier to their attack rolls against the chosen target.</description>
+		</sheet>
+	</element>
+
+	<element name="Forged From Three Knives" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_FORGED_FROM_THREE_KNIVES">
+		<description>
+			<p>When making History checks related to past battles you are considered proficient, and you may double your proficiency modifier.</p>
+		</description>
+		<sheet>
+			<description>When making History checks related to past battles you are considered proficient, and you may double your proficiency modifier.</description>
+		</sheet>
+	</element>
+
+	<!-- Tre -->
+	<element name="Tre" type="Sub Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SUB_RACE_TRE">
+		<supports>Khalid</supports>
+		<description>
+			<p>The Tre are native to the lands of Trelonia, and the islands that surround it. They are known for their famous raids of ages past; and the taming of the seas that surround them. Although much of their conquered land is gone, their culture remains. As the words that remain carved permanently in the rock of Ingarta say:</p>
+			<p><i>“Born from the depths,</i></p>
+			<p><i>We are the descendants of the great raiders,</i></p>
+			<p><i>Inheritors of all that the sea graces.”</i></p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength or Wisdom increases by 1.</p>
+			<p class="indent"><b><i>Born From the Depths.</i></b> The Tre have adapted to their coastal environment by developing spiny fins, which line their back and limbs while in a draconic form. While in a humanoid form, this takes the form of a small bit of webbing between the fingers and toes. You gain a 25ft swimming speed. While in a draconic form, your swimming speed is 30ft and you can hold your breath for up to 10 minutes.</p>
+			<p class="indent"><b><i>Descendants of the Great Raiders.</i></b> You gain proficiency in Shields and one of the following weapons: Battleaxe, Longsword, Morningstar, Warhammer.</p>
+			<p class="indent"><b><i>Inheritors of All That the Sea Graces.</i></b> You gain proficiency in Navigator’s Tools and Sea Vehicles.</p>
+			<p class="indent"><b><i>Languages.</i></b> You can speak, read, and write in Khalid (Traditional).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Northern Khalid Ability Score Improvement" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_WISDOM" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_KHALID_TRADITIONAL" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_BORN_FROM_THE_DEPTHS" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_DESCENDANTS_GREAT_RAIDERS" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_INHERITORS_SEA_GRACES" />
+		</rules>
+	</element>
+
+	<element name="Born From the Depths" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_BORN_FROM_THE_DEPTHS">
+		<description>
+			<p>The Tre have adapted to their coastal environment by developing spiny fins, which line their back and limbs while in a draconic form. While in a humanoid form, this takes the form of a small bit of webbing between the fingers and toes. You gain a 25ft swimming speed. While in a draconic form, your swimming speed is 30ft and you can hold your breath for up to 10 minutes.</p>
+		</description>
+		<sheet>
+			<description>You gain a 25ft swimming speed. While in a draconic form, your swimming speed is 30ft and you can hold your breath for up to 10 minutes.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:swim" value="25" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Descendants of the Great Raiders" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_DESCENDANTS_GREAT_RAIDERS">
+		<description>
+			<p>You gain proficiency in Shields and one of the following weapons: Battleaxe, Longsword, Morningstar, or Warhammer.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in Shields and one of the following weapons: Battleaxe, Longsword, Morningstar, or Warhammer.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<select type="Proficiency" name="Descendants of the Great Raiders Weapon Proficiency" supports="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE|ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD|ID_PROFICIENCY_WEAPON_PROFICIENCY_MORNINGSTAR|ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" />
+		</rules>
+	</element>
+
+	<element name="Inheritors of All That the Sea Graces" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_INHERITORS_SEA_GRACES">
+		<description>
+			<p>You gain proficiency in Navigator’s Tools and Sea Vehicles.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in Navigator’s Tools and Sea Vehicles.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_WATER" />
+		</rules>
+	</element>
+</elements>

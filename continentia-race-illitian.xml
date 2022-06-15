@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Illitian</name>
+        <update version="0.0.1">
+			<!-- update notes: -->
+		    	<description>The Illitian Race from Continentia.</description>
+		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
+			<file name="continentia-race-illitian.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+		</update>
+	</info>
+
+    <element name="Illitian" type="Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACE_ILLITIAN">
+        <description>
+		    <p class="flavor">Illitians are one of the main races of dragon shifters that reside in Central Continentia. Historical records indicate that the island of Illitius was once a hub of scientific, artistic, and philosophical innovation. However, this history has now become lost to time due to the many wars and subjugations of the Illitian people. Once a proud unified race of dragon shifters, the Illitians are now a split people who reside on either Illitius or the mainland. </p>
+		    <h4>APPEARANCE</h4>
+		    <p>The shortest among the draconic shifters, Illitians average between 3 to 4 feet in height and 30 to 40 pounds in weight. They have noticeably large wings that stick out whilst not shifted. Unusually, these wings are feathered like that of a bird rather than the scaled wings of other dragons. Patches of feathers are not unusual around the Illitian’s body, particularly on the shoulder blades, neck, or chest. The forearm down to the fingers of an Illitian are almost always feathered with sharper claws at the end of their fingers. Illitian hair color will almost always match their feather color and ranges from light browns, golds, grays, and whites. The most common eye color is blue, but shades of green or gray have become more common. Their skin tone usually ranges from tones of pale to olive.</p>
+            <h4>A LOST HISTORY</h4>
+		    <p>Once a proud technologically advanced race - years of cultural suppression, enslavement, and numerous raids have left the Illitians a people with little to no memory of their past culture. They are left with traditions with no origins, religious rituals with no gods, and sacred sites with no meaning. There was an attempt to preserve what culture they had left by an elite group of scholars some time ago, but it is unknown if or how well they had succeeded.</p>
+            <p>In the absence of culture, the island of Illitius is one of broken dreams. The ones who hold the keys to unlocking their lost past are not in the habit of sharing. So, in defiance, the people have forged their own culture of anti-Mainland sentiment. It varies from one to another on how far they take this ideal - minor annoyance to outright rebellion. Some even have underground societies planning to retake the island once and for all.</p>
+            <h4>ENSLAVED AND BEATEN DOWN</h4>
+		    <p>Many Illitians were forcibly taken from their homeland at a young age to be sold into the Ican Domestic trade, a practice in which a child Illitian is taken in by a wealthy noble family to act as a pet to the matriarch or her children. Many more Illitians are forcibly bred with other Domestics to produce more appealing offspring to be sold off at top prices to other wealthy families. </p>
+            <p>This practice is illegal in countries like Contan and Arity, however it is only recently that this practice has begun to die in Ica. Many of those who can afford Domestics are the wealthy elite, and they are willing to pay top dollar to get what they want, laws or not. As such, there is an unfortunate black market trade of Illitian children both on the mainland and island. Islander parents needn’t worry about affording food by giving up their child, for the price can set them comfortably for life.</p>
+            <h4>ISLAND OF RUINED PROMISE</h4>
+		    <p>Ilitius is a sad sight of an island compared to the glory it originally held. The higher class of people on the island are wealthier Contanian merchants who use the port for their trade. The lower classes are filled with the native population that have been ostracized from the job market of their own island. The area is rife with crime and martial law is doing their best to keep peace, but it’s rough. Where the Contanian forces fail, there is always the Illitian gangs to keep what control they can.</p>
+            <h4>ILLITIAN NAMES</h4>
+			<p>Illitian names are not universal. Some Mainlander Illitians will take on names following more traditional Ican naming conventions. Islander Illitians almost always utilize traditional Illitian names. Only Islander Illitians widely utilize surnames.</p>
+			<ul class="unstyled">
+				<li><strong>Male Names:</strong> Adonis, Pieces, Julius, Claudio, Dante, Giosuè, Luigi, Mario, Serafino, Loukas, Nicolaos, Zacharias</li>
+				<li><strong>Female Names:</strong> Caelia, Tatiana, Bianca, Claudia, Fabrizia, Floriana, Livia, Lucia, Rosaria, Demetra, Theodosia, Yanna</li>
+				<li><strong>Surames:</strong> Affini, Agresta, Barzetti, Capello, Columbo, Favero, Samaras, Pachis, Kontos, Angelov, Palumbo, Serafini</li>
+			</ul>
+			<h4>ILLITIAN TRAITS</h4>
+            <p>Illitians possess the following traits.</p>
+		    <p class="indent"><b><i>Ability Score Increase.</i></b> Your Dexterity score increases by 2.</p>
+		    <p class="indent"><b><i>Age.</i></b> Illitians reach adulthood at 18, and can live to be a century under proper living conditions.</p>
+		    <p class="indent"><b><i>Alignment.</i></b> Illitians have a tendency to be chaotic, but are rarely evil.</p>
+        	<p class="indent"><b><i>Size.</i></b> Illitians range from 3 to 4 feet in height and 30 to 40 pounds in weight. Your size is small.</p>
+		    <p class="indent"><b><i>Speed.</i></b> Your base walking speed is 25 feet.</p>
+		    <p class="indent"><b><i>Flight.</i></b> You have a flying speed of 15 feet. In order to use this speed, you cannot be wearing medium or heavy armor.</p>
+			<p class="indent"><b><i>Talons.</i></b> Your talons are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<h4>ILLITIAN DRACONIC TRAITS</h4>
+			<p>Illitians possess the following traits while in a draconic form.</p>
+			<p class="indent"><b><i>Draconic Hit Points.</i></b> While in a draconic form, you gain temporary hit points equal to your Constitution modifier x your level.</p>
+			<p class="indent"><b><i>Draconic Armor Class.</i></b> While in a draconic form, your armor class is 10 + Dexterity modifier + Constitution modifier.</p>
+			<p class="indent"><b><i>Masters of Wind.</i></b> You learn the Gust cantrip. This spell can only be cast while in a draconic form. You may choose to cast this spell with either your Intelligence or Charisma modifier. </p>
+			<p class="indent"><b><i>Agile Form.</i></b> Your Draconic Racial Traits gain the Finesse property. While in a draconic state you are proficient in the Acrobatics and Stealth skills. You may double your proficiency modifier if you are already proficient in these skills.</p>
+			<p class="indent"><b><i>Claw.</i></b> 1d6 Slashing + Strength/Dexterity modifer.</p>
+			<p class="indent"><b><i>Size.</i></b> While in a draconic form, your size becomes medium.</p>
+			<p class="indent"><b><i>Speed.</i></b> While in a draconic form, your walking speed is 30 feet, and you have a flying speed of 40 feet.</p>
+        </description>
+        <sheet display="false" />
+
+		<setters>
+			<set name="names" type="male">Adonis, Pieces, Julius, Claudio, Dante, Giosuè, Luigi, Mario, Serafino, Loukas, Nicolaos, Zacharias</set>
+			<set name="names" type="female">Caelia, Tatiana, Bianca, Claudia, Fabrizia, Floriana, Livia, Lucia, Rosaria, Demetra, Theodosia, Yanna</set>
+			<set name="names" type="surname">Affini, Agresta, Barzetti, Capello, Columbo, Favero, Samaras, Pachis, Kontos, Angelov, Palumbo, Serafini</set>
+			<set name="names-format">{{name}} “{{surname}}”</set>
+			<set name="height" modifier="2d6">3'0"</set>
+			<set name="weight" modifier="1d4">30 lb.</set>
+		</setters>
+		<rules>
+       		<stat name="dexterity" value="2" />
+       		<stat name="innate speed" value="25" bonus="base" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_ILLITIAN_FLIGHT" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_MASTERS_OF_WIND" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_ILLITIAN_TALONS" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_ILLITIAN_SUBRACE" />
+		</rules>
+    </element>
+
+	<element name="Flight" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_ILLITIAN_FLIGHT">
+		<description>
+			<p>You have a flying speed of 15 feet. In order to use this speed, you cannot be wearing medium or heavy armor.</p>
+		</description>
+		<sheet>
+			<description>You have a flying speed of 15 feet. In order to use this speed, you cannot be wearing medium or heavy armor.</description>
+		</sheet>
+		<rules>
+            <stat name="innate speed:fly" value="15" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+        </rules>
+	</element>
+
+	<element name="Masters of Wind" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_MASTERS_OF_WIND">
+		<description>
+			<p>You learn the Gust cantrip. This spell can only be cast while in a draconic form. You may choose to cast this spell with either your Intelligence or Charisma modifier.</p>
+		</description>
+		<sheet>
+			<description>You learn the Gust cantrip. This spell can only be cast while in a draconic form. You may choose to cast this spell with either your Intelligence or Charisma modifier.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_GUST" />
+		</rules>
+	</element>
+
+	<element name="Talons" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_ILLITIAN_TALONS">
+		<description>
+			<p>Your talons are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>Your talons are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + {{strength:modifier}}, instead of the bludgeoning damage normal for an unarmed strike.</description>
+		</sheet>
+	</element>
+
+	<!-- Enables Illitian Subraces -->
+    <element name="Illitian Subrace" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_ILLITIAN_SUBRACE">
+        <description>
+            <p>There are two subraces of Illitians: Mainlanders and Islanders.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Sub Race" name="Illitian Subrace" supports="Illitian" />
+        </rules>
+    </element>
+
+	<!-- Mainlander -->
+	<element name="Mainlander Illitian" type="Sub Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SUB_RACE_MAINLANDER_ILLITIAN">
+		<supports>Illitian</supports>
+		<description>
+			<p>An unfortunate result of breeding from the Ican Domestic trade, life is not easy for the Mainlander Illitian. They are typically smaller than Islanders, and are almost entirely white hair and feathered. They also have larger wings and more patches of feathers on their body.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><b><i>Nimble Escape.</i></b> You can take the Disengage or Hide action as a bonus action on each of your turns.</p>
+			<p class="indent"><b><i>Languages.</i></b> You can speak, read, and write in Ican.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" />
+			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ICAN" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_ILLITIAN_NIMBLE_ESCAPE" />
+		</rules>
+	</element>
+
+	<element name="Nimble Escape" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_ILLITIAN_NIMBLE_ESCAPE">
+		<description>
+			<p>You can take the Disengage or Hide action as a bonus action on each of your turns.</p>
+		</description>
+		<sheet>
+			<description>You can take the Disengage or Hide action as a bonus action on each of your turns.</description>
+		</sheet>
+	</element>
+
+	<!-- Islander -->
+	<element name="Islander Illitian" type="Sub Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SUB_RACE_ISLANDER_ILLITIAN">
+		<supports>Illitian</supports>
+		<description>
+			<p>Islander Illitians consider themselves to be the purer race, untainted by the Ican’s filthy habits. They are more varied in size and color than Mainlanders. Islanders pride themselves on the rebuilding of Illitius and a return to culture to their island. </p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 1.</p>
+			<p class="indent"><b><i>Fury of the Small.</i></b> When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your level. Once you use this trait, you can't use it again until you finish a short or long rest.</p>
+			<p class="indent"><b><i>Languages.</i></b> You can speak, read, and write in Arityian.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="1" />
+			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ARITYIAN" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_ILLITIAN_FURY_OF_THE_SMALL" />
+		</rules>
+	</element>
+
+	<element name="Fury of the Small" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_ILLITIAN_FURY_OF_THE_SMALL">
+		<description>
+			<p>When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your level. Once you use this trait, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals {{level}}. Once you use this trait, you can't use it again until you finish a short or long rest.</description>
+		</sheet>
+	</element>
+</elements>

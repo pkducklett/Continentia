@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Pyruvian</name>
+        <update version="0.0.3">
+			<!-- update notes: added height and weight modifier
+							   added more names-->
+		    <description>The Pyruvian Race from Continentia.</description>
+		    <author url="https://github.com/pkducklett/">Corey Welch</author>
+			<file name="continentia-race-pyruvian.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+		</update>
+	</info>
+
+    <element name="Pyruvian" type="Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACE_PYRUVIAN">
+        <description>
+			<p class="flavor">Pyruvians are native to a chain of islands in the Eastern Sea. They’re a people which are bound by an oppressive crown.</p>
+			<h4>APPEARANCE</h4>
+			<p>Pyruvian eye, hair, and wing color are always the same of four colors. The most common being Red, then Yellow, then Blue, then the rarest being White. The less common the appearance, the less appealing their culture considers them to be. Besides this, Pyruvians generally have tanned to dark skin, with exposed wings. Pyruvians have the ability to control the temperature of certain parts of their body, which at times can make the wings appear to be smoldering.</p>
+    		<h4>THE ETERNAL FLAME</h4>
+			<p>Pyruvians are native to a chain of islands in the Eastern ocean of Continentia that shares their name. Pyruvian culture is heavily based on the idea of the “Eternal Flame,” which is the Pyruvian equivalent of someone's soul. The Eternal Flame of someone affects their physical appearance. Sadly, this practice has created a pseudo-caste system, which was easily exploited by the Florish people.</p>
+			<p>A long time before the Florish humans arrived, the Pyruvians had divided their people on what color their Eternal Flame was. Red Pyruvians took the roles of leaders and religious figures. Yellow Pyruvians were laborers and craftsmen. The rare Blue Pyruvians were shunned after a historically violent leader cursed their souls to be bound for damnation. History is unsure how White Pyruvians fared, but it is believed to not have been good. This divide was further pushed by the humans once they began to colonize the area, and has been the source of much instability and hate.</p>
+			<h4>THE JEWEL OF THE FLORISH CROWN</h4>
+			<p>During the age of human expansion the Florish people found their way to the Pyruvian Islands. These islands were incredibly profitable with rare jewels, and exotic fruit. The Florish Crown would begin colonization of their Southern Neighbors almost immediately. This of course, caused a drift between the Pyruvians and their Human rulers, creating an aura of distrust and violence between both peoples.</p>
+			<h4>PYRUVIAN NAMES</h4>
+			<p>Pyruvian names are smooth and use a lot of vowel sounds. Their syllables flow well into each other. Accented vowel sounds are also prevalent.</p>
+			<ul class="unstyled">
+				<li><strong>Male Names:</strong> Rangi, Félix, Galvão, Juan, Bruno, Javert, Sebastián</li>
+				<li><strong>Female Names:</strong> Kiri, Celeste, Mālie, Adriana, Imelda, Azelma, Patrícia</li>
+				<li><strong>Surames:</strong> Babineaux, Enjolras, Lamarque, Valjean, Thénardier, Pontmercy, Prouvaire</li>
+			</ul>
+			<h4>PYRUVIAN TRAITS</h4>
+            <p>Pyruvians possess the following traits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Your Constitution increases by 1. Your Charisma increases by 2. </p>
+			<p class="indent"><b><i>Age.</i></b> Pyruvians reach adulthood at 16, and live at most to around 110, but this varies with the type of Pyruvian.</p>
+			<p class="indent"><b><i>Alignment.</i></b> Pyruvians are generally chaotic, but rarely truly good or evil.</p>
+        	<p class="indent"><b><i>Size.</i></b> Pyruvians are typically the same height and weight as humans. Your size is medium.</p>
+			<p class="indent"><b><i>Speed.</i></b> Your base walking speed is 30 feet.</p>
+			<p class="indent"><b><i>Seared Hide and Scale.</i></b> You have resistance to fire damage.</p>
+			<p class="indent"><b><i>Gift From Ahi.</i></b> You learn the Fire Bolt cantrip. Charisma is your spellcasting ability for it. You may cast this spell while in a draconic form.</p>
+			<p class="indent"><b><i>Acidic Saliva.</i></b> Your saliva can be used as a mild acid. When your saliva is exposed to the skin of another creature that creature must make a Constitution saving throw. On a fail they take 2d4 Acid damage. If your saliva is exposed to sunlight for an hour, it dilutes and loses all effects. This Racial Ability does not apply to creatures that share it.</p>
+			<p class="indent"><b><i>Languages.</i></b>You can speak, read, and write in your choice of: Florish or Pyruvian.</p>
+			<h4>PYRUVIAN DRACONIC TRAITS</h4>
+			<p>Pyruvians possess the following traits while in a draconic form.</p>
+			<p class="indent"><b><i>Draconic Hit Points.</i></b> While in a draconic form, you gain temporary hit points equal to your Constitution modifier x your level.</p>
+			<p class="indent"><b><i>Draconic Armor Class.</i></b> While in a draconic form, your armor class is 10 + Dexterity modifier + Constitution modifier.</p>
+			<p class="indent"><b><i>Seared Hide and Scale.</i></b> While in a draconic form, you have advantage on saving throws against effects that deal fire damage.</p>
+			<p class="indent"><b><i>Bite.</i></b> 1d8 Piercing + Strength modifer.</p>
+			<p class="indent"><b><i>Breath Weapon.</i></b> You release a line of Fire causing a creature to make a Dexterity saving throw, which deals 2d6 fire damage on a failed save, and half on a success.</p>
+			<p class="indent"><b><i>Size.</i></b> While in a draconic form, your size becomes large.</p>
+			<p class="indent"><b><i>Speed.</i></b> While in a draconic form, your walking speed is 30 feet, and you have a flying speed of 30 feet.</p>
+		</description>
+        <sheet display="false" />
+
+		<setters>
+			<set name="names" type="male">Rangi, Félix, Galvão, Juan, Bruno, Javert, Sebastián, Gonçalo, Hermínio, Jerônimo, Régulo, Wálter</set>
+			<set name="names" type="female">Kiri, Celeste, Mālie, Adriana, Imelda, Azelma, Patrícia, Genoveva, Graça, Hermínia, Reina, Úrsula</set>
+			<set name="names" type="surname">Babineaux, Enjolras, Lamarque, Valjean, Thénardier, Pontmercy, Prouvaire, Villeneuve, Séverin, Charbonneau, Clément, Favreau</set>
+			<set name="names-format">{{name}} {{surname}}</set>
+			<set name="height" modifier="2d10">4'8"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+		<rules>
+       		<stat name="constitution" value="1" />
+       		<stat name="charisma" value="2" />
+       		<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<select type="Language" name="Pyruvian Language" supports="ID_CONT_CONTINENTIA_LANGUAGE_FLORISH|ID_CONT_CONTINENTIA_LANGUAGE_PYRUVIAN" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_SEARED_HIDE" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_GIFT_AHI" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_PYRUVIAN_ACIDIC_SALIVA" />
+   	 	</rules>
+	</element>
+
+	<element name="Seared Hide and Scale" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_SEARED_HIDE">
+		<description>
+			<p>You have resistance to fire damage. While in a draconic form, you have advantage on saving throws against effects that deal fire damage.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to fire damage. While in a draconic form, you have advantage on saving throws against effects that deal fire damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+
+	<element name="Gift From Ahi" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_GIFT_AHI">
+		<description>
+			<p>You learn the Fire Bolt cantrip. Charisma is your spellcasting ability for it. You may cast this spell while in a draconic form.</p>
+		</description>
+		<sheet>
+			<description>You learn the Fire Bolt cantrip. Charisma is your spellcasting ability for it. You may cast this spell while in a draconic form.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" />
+		</rules>
+	</element>
+
+	<element name="Acidic Saliva" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_PYRUVIAN_ACIDIC_SALIVA">
+		<description>
+			<p>When your saliva is exposed to the skin of another creature that creature must make a Constitution saving throw. On a fail they take 2d4 Acid damage.</p>
+		</description>
+		<sheet>
+			<description>When your saliva is exposed to the skin of another creature that creature must make a DC {{acidic-saliva:dc}} Constitution saving throw. On a fail they take 2d4 Acid damage.</description>
+		</sheet>
+		<rules>
+			<stat name="acidic-saliva:dc" value="8" />
+			<stat name="acidic-saliva:dc" value="constitution:modifier" />
+			<stat name="acidic-saliva:dc" value="proficiency" />
+		</rules>
+	</element>
+</elements>

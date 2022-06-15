@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Orajan</name>
+        <update version="0.0.1">
+			<!-- Update Notes: -->
+		    	<description>The Orajan Race from Continentia.</description>
+		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
+			<file name="continentia-race-orajan.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+		</update>
+	</info>
+
+    <element name="Orajan" type="Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACE_ORAJAN">
+        <description>
+		    <p class="flavor">Orajans are the draconic race of the desertous land of Oraja. Practitioners of magic and mystery, the Orajans are a wandering people who roam the desert sands with skill and ease. Though once believed to have been locked in a holy war with Arta and his people, the Orajans seem disinterested in ever unifying under one banner again.</p>
+		    <h4>APPEARANCE</h4>
+		    <p>Orajans are not dissimilar to humans in height and weight. Standing between 5 to 6 feet on average and weighing somewhere between 150-250 pounds. Their skin tone ranges from paler olive to darker tans and brown, and their hair color is almost always in the darker range of browns, blacks, and sometimes purple. Almost all Orajans have heterochromia (a condition where they have two different colored eyes), and cultural significance has been made on both the placement and color of each. Shades of each color will represent how pronounced the trait is. Outside of their transformed state, Orajans have one set of dark scaled wings which constantly stick out near the shoulder blade. However, when startled, a second set of wings nearer to the base of the ribs will pop out.</p>
+            <h5>ORAJAN EYE COLORS</h5>
+            <table>
+			    <thead>
+			        <tr><td>Color (1d8)</td><td>Left Eye</td><td>Right Eye</td></tr>
+			    </thead>
+	            <tr><td>1. Red</td><td>Anger</td><td>Bravery</td></tr>
+	            <tr><td>2. Blue</td><td>Apathy</td><td>Intelligence</td></tr>
+	            <tr><td>3. Yellow</td><td>Naive</td><td>Joyous</td></tr>
+	            <tr><td>4. Green</td><td>Overbearing</td><td>Giving</td></tr>
+	            <tr><td>5. Purple</td><td>Arrogant</td><td>Noble</td></tr>
+	            <tr><td>6. Orange</td><td>Quiet</td><td>Patient</td></tr>
+	            <tr><td>7. Black</td><td>Evil</td><td>Ambitious</td></tr>
+	            <tr><td>8. Gray</td><td>Timid</td><td>Calm</td></tr>
+		    </table>
+            <h4>AN UNJUST WAR</h4>
+		    <p>Orajans trace their history back to a war they waged with the Nagean people many millennia ago. The historical context to this war has been lost to time, but many Orajans cite this as the reason they have become such a scattered people. Continued blame is placed on Arta, the Conqueror, and his people for the loss of civilization and near genocide of the Orajan people. </p>
+            <p>Though the present cannot blame Arta completely for the sour luck that has befell Ora's people. Humans have moved into Oraja and have laid claim to much of the land the dragons once held. And the loss of life for land claims is soon to reach just as high as the loss to the Conqueror.</p>
+            <h4>SUPERSTITIOUS TO A FAULT</h4>
+		    <p>Orajans have many beliefs and hold to those beliefs tightly. Proverbs and idioms are treated as gospel within the clan structure. Some such beliefs revolve around the eye color of an individual. It is believed that every Orajan has a negative and a positive trait represented in their eye color. The left eye represents the negative trait and the right represents the positive. The stronger the color, the more pronounced the trait it gives shall be. Having two of the same eye color is considered unlucky (the two traits will cancel each other out and leave the individual with no personality at all) and it's believed that a parent can only pass down an eye color of the eye(s) they currently have. As such, missing eyes are believed to remove that trait from the individual. A left eye gone is often heralded as overcoming the negative trait, while a right eye gone is a curse to only wallow in that negative trait.</p>
+            <h4>A FAMILY TO THE EAST AND WEST</h4>
+		    <p>Orajans are organized in tightly knit groups called Clans. A Clan comprises several families. When a couple has a child, it is rare that the child would be raised by their parents alone. Often the Clan will pick up slack and bear the burden of child rearing together.</p>
+            <p>As fertile land in the West becomes a commodity, many Orajans have sought refuge Eastward in the land of Contan. Warring human civilization and opposing Clans leave little choice for many but to flee. Trekking through Arity is dangerous, Nageans and Arityian humans are not known for their hospitable nature when it comes to Orajan refugees. Survival rates on these journeys are low, but those who make it are greeted by the established Clan within Contan. A far more united unit, Contanian Orajans will sponsor citizenships for incoming refugees and take in those who were lucky enough to survive the journey Eastward. </p>
+            <h4>ORAJAN NAMES</h4>
+			<p>Traditional Orajan clan names are derived from the main profession of the clan. For example, a clan primarily known for fishing may be called the "Fisher Clan". Orajans will always include their clan name. Those who are born in (or have survived the journey to) Contan often use the clan name as a surname instead.</p>
+			<h4>ORAJAN TRAITS</h4>
+            <p>Orajans possess the following traits.</p>
+		    <p class="indent"><b><i>Ability Score Increase.</i></b> You increase one ability score of your choice between: Intelligence, Wisdom, or Charisma by 2, and another by 1.</p>
+		    <p class="indent"><b><i>Age.</i></b> Orajans go through a coming of age transformation at the age of 13, but don’t reach full maturity until 18. They can generally live up to 120 years.</p>
+		    <p class="indent"><b><i>Alignment.</i></b> Orajans are naturally distrustful of other races and are rarely good or evil. Instead they are mostly neutral.</p>
+        	<p class="indent"><b><i>Size.</i></b> Orajans are roughly the same size as humans. Your size is medium.</p>
+		    <p class="indent"><b><i>Speed.</i></b> Your base walking speed is 30 feet.</p>
+		    <p class="indent"><b><i>Blessings From the Dunes.</i></b> You know two cantrips and one 1st-level spell from a class that uses your +2 stat as its spellcasting ability. You may cast these spells while in a draconic form. You can cast the 1st level spell at its lowest level once using this ability and regain the ability to do so upon completing a long rest. You can still cast this spell using other spell slots you might have.</p>
+		    <p class="indent"><b><i>Wings of Warding.</i></b> As a bonus action, you can unfurl a second pair of wings for 1 hour. While these wings are unfurled, you are immune to the surprised condition, and you have advantage on Wisdom (Perception) checks made to perceive threats. You may use this ability once per long rest.</p>
+		    <p class="indent"><b><i>Languages.</i></b> You can speak, read, and write in Orajan.</p>
+            <h4>ORAJAN DRACONIC TRAITS</h4>
+			<p>Orajans possess the following traits while in a draconic form.</p>
+			<p class="indent"><b><i>Draconic Hit Points.</i></b> While in a draconic form, you gain temporary hit points equal to your Constitution modifier x your level.</p>
+			<p class="indent"><b><i>Draconic Armor Class.</i></b> While in a draconic form, your armor class is 10 + Dexterity modifier + Constitution modifier.</p>
+			<p class="indent"><b><i>Seared Hide and Scale.</i></b> While in a draconic form, you have advantage on saving throws against effects that deal fire damage.</p>
+			<p class="indent"><b><i>Bite.</i></b> 1d8 Piercing + Strength modifer.</p>
+			<p class="indent"><b><i>Size.</i></b> While in a draconic form, your size becomes large.</p>
+			<p class="indent"><b><i>Speed.</i></b> While in a draconic form, your walking speed is 30 feet, and you have a flying speed of 30 feet.</p>
+        </description>
+        <sheet display="false" />
+
+		<setters>
+			<set name="names" type="male">Amir, Abdul, Ghayth, Jamil, Basim, Chandrakant, Jafar, Hasan, Omid, Taher, Rais, Sa'id </set>
+			<set name="names" type="female">Amal, Dua, Hana, Nadia, Balqis, Dalia, Gol, Laleh, Parvaneh, Roshanak, Qamar, Sa'adah </set>
+			<set name="names" type="bridge">of the </set>
+			<set name="names" type="clan">Fisher Clan, Smithing Clan, Herbalist Clan, Mystic Clan, Shepherd Clan, Rancher Clan, Scriber Clan, Carpenter Clan, Trader Clan, Merchant Clan, Hunter Clan, Baker Clan </set>
+			<set name="names-format">{{name}} {{bridge}} {{clan}}</set>
+			<set name="height" modifier="2d8">5'4"</set>
+			<set name="weight" modifier="1d8">160 lb.</set>
+		</setters>
+        <rules>
+       	    <select type="Ability Score Improvement" name="Ability Score Increase +2" supports="ID_CONT_CONTINENTIA_ORAJAN_INTELLIGENCE|ID_CONT_CONTINENTIA_ORAJAN_WISDOM|ID_CONT_CONTINENTIA_ORAJAN_CHARISMA"/>
+       	    <stat name="innate speed" value="30" bonus="base" />
+		    <grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ORAJAN" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_WINGS_OF_WARDING" />
+        </rules>
+    </element>
+
+	<element name="Wings Of Warding" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_WINGS_OF_WARDING">
+		<description>
+			<p>As a bonus action, you can unfurl a second pair of wings for 1 hour. While these wings are unfurled, you are immune to the surprised condition, and you have advantage on Wisdom (Perception) checks made to perceive threats. You may use this ability once per long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>As a bonus action, you can unfurl a second pair of wings for 1 hour. While these wings are unfurled, you are immune to the surprised condition, and you have advantage on Wisdom (Perception) checks made to perceive threats. You may use this ability once per long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Intelligence" type="Ability Score Improvement" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ORAJAN_INTELLIGENCE">
+        <compendium display="false" />
+        <description>
+            <p>Your Intelligence score increases by 2, and your Wisdom or Charisma increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="intelligence" value="2" alt="Orajan" />
+			<select type="Ability Score Improvement" name="Ability Score Increase +1" supports="ID_INTERNAL_ASI_WISDOM|ID_INTERNAL_ASI_CHARISMA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_INTELLIGENCE_BLESSINGS_DUNES" />
+		</rules>
+    </element>
+
+	<element name="Wisdom" type="Ability Score Improvement" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ORAJAN_WISDOM">
+        <compendium display="false" />
+        <description>
+            <p>Your Wisdom score increases by 2, and your Intelligence or Charisma increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="wisdom" value="2" alt="Orajan" />
+			<select type="Ability Score Improvement" name="Ability Score Increase +1" supports="ID_INTERNAL_ASI_INTELLIGENCE|ID_INTERNAL_ASI_CHARISMA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_WISDOM_BLESSINGS_DUNES" />
+		</rules>
+    </element>
+
+	<element name="Charisma" type="Ability Score Improvement" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ORAJAN_CHARISMA">
+        <compendium display="false" />
+        <description>
+            <p>Your Charisma score increases by 2, and your Intelligence or Wisdom increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="charisma" value="2" alt="Orajan" />
+			<select type="Ability Score Improvement" name="Ability Score Increase +1" supports="ID_INTERNAL_ASI_INTELLIGENCE|ID_INTERNAL_ASI_WISDOM" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_CHARISMA_BLESSINGS_DUNES" />
+		</rules>
+    </element>
+
+	<element name="Blessings From the Dunes" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_INTELLIGENCE_BLESSINGS_DUNES">
+		<description>
+			<p>You know two cantrips and one 1st-level spell from a class that uses Intelligence as its spellcasting ability. You may cast these spells while in a draconic form. You can cast the 1st level spell at its lowest level once using this ability and regain the ability to do so upon completing a long rest. You can still cast this spell using other spell slots you might have.</p>
+		</description>
+		<sheet>
+			<description> You know two cantrips and one 1st-level spell from a class that uses Intelligence as its spellcasting ability. You may cast these spells while in a draconic form. You can cast the 1st level spell at its lowest level once using this ability and regain the ability to do so upon completing a long rest. You can still cast this spell using other spell slots you might have. </description>
+		</sheet>
+		<rules>
+			<stat name="blessings-dunes:slot" value="-1" />
+			<stat name="blessings-dunes:slot" value="proficiency" />
+			<select type="Spell" name="Cantrip (Blessings From the Dunes)" supports="0,Artificer||0,Wizard" number="2" />
+			<select type="Spell" name="1st-level Spell (Blessings From the Dunes)" supports="1,Artificer||1,Wizard" number="1"/>
+		</rules>
+	</element>
+
+	<element name="Blessings From the Dunes" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_WISDOM_BLESSINGS_DUNES">
+		<description>
+			<p>You know two cantrips and one 1st-level spell from a class that uses Wisdom as its spellcasting ability. You may cast these spells while in a draconic form. You can cast the 1st level spell at its lowest level once using this ability and regain the ability to do so upon completing a long rest. You can still cast this spell using other spell slots you might have.</p>
+		</description>
+		<sheet>
+			<description> You know two cantrips and one 1st-level spell from a class that uses Wisdom as its spellcasting ability. You may cast these spells while in a draconic form. You can cast the 1st level spell at its lowest level once using this ability and regain the ability to do so upon completing a long rest. You can still cast this spell using other spell slots you might have. </description>
+		</sheet>
+		<rules>
+			<stat name="blessings-dunes:slot" value="-1" />
+			<stat name="blessings-dunes:slot" value="proficiency" />
+			<select type="Spell" name="Cantrip (Blessings From the Dunes)" supports="0,Cleric||0,Druid" number="2" />
+			<select type="Spell" name="1st-level Spell (Blessings From the Dunes)" supports="1,Cleric||1,Druid||1,Ranger" number="1"/>
+		</rules>
+	</element>
+
+	<element name="Blessings From the Dunes" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_CHARISMA_BLESSINGS_DUNES">
+		<description>
+			<p>You know two cantrips and one 1st-level spell from a class that uses Charisma as its spellcasting ability. You may cast these spells while in a draconic form. You can cast the 1st level spell at its lowest level once using this ability and regain the ability to do so upon completing a long rest. You can still cast this spell using other spell slots you might have.</p>
+		</description>
+		<sheet>
+			<description> You know two cantrips and one 1st-level spell from a class that uses Charisma as its spellcasting ability. You may cast these spells while in a draconic form. You can cast the 1st level spell at its lowest level once using this ability and regain the ability to do so upon completing a long rest. You can still cast this spell using other spell slots you might have. </description>
+		</sheet>
+		<rules>
+			<stat name="blessings-dunes:slot" value="-1" />
+			<stat name="blessings-dunes:slot" value="proficiency" />
+			<select type="Spell" name="Cantrip (Blessings From the Dunes)" supports="0,Bard||0,Sorcerer||0,Warlock" number="2" />
+			<select type="Spell" name="1st-level Spell (Blessings From the Dunes)" supports="1,Bard||1,Paladin||1,Sorcerer||1,Warlock" number="1"/>
+		</rules>
+	</element>
+</elements>
