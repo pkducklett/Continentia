@@ -6,7 +6,7 @@
 			<!-- update notes: added height and weight modifiers-->
 		    	<description>The Nagean Race from Continentia.</description>
 		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
-			<file name="continentia-race-nagean.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+			<file name="continentia-race-nagean.xml"  url="https://github.com/pkducklett/Continentia/blob/a74b57cf5bf3761dce03890a9c305343b0e59cef/continentia-race-nagean.xml" />
 		</update>
 	</info>
 
