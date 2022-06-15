@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="continentia-cruel-war-source.xml" url="https://raw.githubusercontent.com/community-elements/elements-dndwiki/master/dndwiki/sources.xml" />
+			<file name="continentia-cruel-war-source.xml" url="https://github.com/pkducklett/Continentia/blob/0a510f9e64feb8b6a9f6e1bdade173f0dae9cbb4/continentia-cruel-war-source.xml" />
 		</update>
 	</info>
 	<element name="Continentia: The Second Cruel War" type="Source" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SOURCE_CONTINENTIA_SECOND_CRUEL_WAR">
