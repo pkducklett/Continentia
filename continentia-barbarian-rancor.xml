@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Rancor</name>
+        <update version="0.0.1">
+			<!-- Update Notes: -->
+		    	<description>The Rancor Sub-class from Continentia.</description>
+		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
+			<file name="continentia-barbarian-rancor.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+		</update>
+	</info>
+
+    <element name="Path of the Rancor" type="Archetype" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_PATH_OF_THE_RANCOR">
+        <supports>Primal Path</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ICAN||ID_CONT_CONTINENTIA_RACE_ILLITIAN||ID_CONT_CONTINENTIA_RACE_KHALID||ID_CONT_CONTINENTIA_RACE_NAGEAN||ID_CONT_CONTINENTIA_RACE_ORAJAN||ID_CONT_CONTINENTIA_RACE_PYRUVIAN</requirements>
+        <description>
+            <p>Long before dragonstones became purified and widely used, the draconic races relied on their fury to enter a draconic state.</p>
+            <p class="indent">Barbarians in the Path of the Rancor are following a long tradition of draconic fury. This means of transformation has fallen out of fashion in modern times, but many still lean on this tried and true way to enter a draconic state.</p>
+            <div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_EMOTIONAL_TRANSFORMATION" />
+            <div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_SHARPENED_CLAWS_AND_FANGS" />
+            <div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_BLIND_FURY" />
+            <div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_AURA_OF_FEAR" />
+            <div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_EXTRA_ATTACK_TWO" />
+        </description>
+		<sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_EMOTIONAL_TRANSFORMATION" level="3" />
+            <grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_SHARPENED_CLAWS_AND_FANGS" level="3" />
+            <grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_BLIND_FURY" level="6" />
+            <grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_AURA_OF_FEAR" level="10" />
+            <grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_EXTRA_ATTACK_TWO" level="14" />
+        </rules>
+    </element>
+
+    <!-- Emotional Transformation -->
+    <element name="Emotional Transformation" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_EMOTIONAL_TRANSFORMATION">
+        <description>
+            <p>Starting when you choose this path at 3rd level, when you enter a rage you also transform into a draconic state. Your transformation length is no longer determined by your Draconic Stamina, instead lasting until you end your rage. You lose the ability to transform from Dragonstone magic items.</p>
+            <p class="indent"><b><i>Ican. </i></b>Icans gain temporary draconic hit points equal to their level multiplied by their constitution modifier. Their draconic armor class is equal to 10 + their dexterity modifier + their constitution modifier. Their size becomes large, and they gain a Burrowing Speed of 25 feet in soft soil.</p>
+            <p class="indent"><b><i>Illitian. </i></b>Illitians do not gain additional draconic hit points. Their draconic armor class is equal to 10 + their dexterity modifier + their constitution modifier. Their size becomes medium, and they gain a Walking Speed of 30 feet and a Flying Speed of 40 feet.</p>
+            <p class="indent"><b><i>Khalid. </i></b>Khalids gain temporary draconic hit points equal to their level multiplied by their constitution modifier. Their draconic armor class is equal to 12 + their dexterity modifier + their constitution modifier. Their size becomes large.</p>
+            <p class="indent"><b><i>Nagean. </i></b>Nageans gain temporary draconic hit points equal to their level multiplied by their constitution modifier. Their draconic armor class is equal to 10 + their dexterity modifier + their constitution modifier. Their size becomes large, and they gain a Flying Speed of 30 feet.</p>
+            <p class="indent"><b><i>Orajan. </i></b>Orajans gain temporary draconic hit points equal to their level multiplied by their constitution modifier. Their draconic armor class is equal to 10 + their dexterity modifier + their constitution modifier. Their size becomes large, and they gain a Flying Speed of 30 feet.</p>
+            <p class="indent"><b><i>Pyruvian. </i></b>Pyruvians gain temporary draconic hit points equal to their level multiplied by their constitution modifier. Their draconic armor class is equal to 10 + their dexterity modifier + their constitution modifier. Their size becomes large, and they gain a Flying Speed of 30 feet.</p>
+        </description>
+        <sheet action="Rage">
+            <description>When you enter a rage, you transform into your draconic state. You have draconic stamina equal to {{draconic:stamina}}.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Draconic Transformation" supports="Rancor Draconic Transformation" level="3" />
+            <stat name="draconic:stamina" value="proficiency"/>
+            <stat name="draconic:stamina" value="constitution:modifier"/>
+        </rules>
+    </element>
+
+    <!-- Draconic Transformations -->
+    <element name="Ican Transformation" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_ICAN_TRANSFORMATION">
+        <supports>Rancor Draconic Transformation</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ICAN</requirements>
+        <description>
+            <p>Icans are the largest of the draconic races. Their large bodies are unfortunately, too large for their wings. However, they possess an incredible ability to burrow underground while in this draconic state.</p>
+        </description>
+        <sheet>
+            <description>While in your draconic state, you gain temporary hit points equal to {{draconic:con}} x {{draconic:level}}, and you also have an armor class equal to {{draconic:ac}}. Your size is large, and you gain a Burrowing Speed of 25 feet in soft soil. </description>
+        </sheet>
+        <rules>
+            <stat name="draconic:con" value="constitution:modifier"/>
+            <stat name="draconic:level" value="level"/>
+            <!-- <stat name="draconic:hp" value="draconic:con * draconic:level"/> -->
+
+            <stat name="draconic:ac" value="10"/>
+            <stat name="draconic:ac" value="constitution:modifier"/>
+            <stat name="draconic:ac" value="dexterity:modifier"/>
+        </rules>
+    </element>
+
+    <element name="Illitian Transformation" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_ILLITIAN_TRANSFORMATION">
+        <supports>Rancor Draconic Transformation</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ILLITIAN</requirements>
+        <description>
+            <p>Illitians are the smallest of the draconic races. However, their small bodies make them incredibly nimble. Their powerful wings make them the strongest fliers among the draconic races. Though they are notably more fragile than the other draconic races.</p>
+        </description>
+        <sheet>
+            <description>While in your draconic state, you have an armor class equal to {{draconic:ac}}. Your size is medium, and you gain a Walking Speed of 30 feet and a Flying Speed of 40 feet.</description>
+        </sheet>
+        <rules>
+            <stat name="draconic:ac" value="10"/>
+            <stat name="draconic:ac" value="constitution:modifier"/>
+            <stat name="draconic:ac" value="dexterity:modifier"/>
+        </rules>
+    </element>
+
+    <element name="Khalid Transformation" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_KHALID_TRANSFORMATION">
+        <supports>Rancor Draconic Transformation</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_KHALID</requirements>
+        <description>
+            <p>Khalids are notable in how sturdy their draconic states are. Do not let their lack of wings for flight or claws for burrowing fool you. These dragons can take a hit, and they aren't afraid to give a reminder of their power.</p>
+        </description>
+        <sheet>
+            <description>While in your draconic state, you gain temporary hit points equal to {{draconic:con}} x {{draconic:level}}, and you also have an armor class equal to {{draconic:ac}}. Your size is large. </description>
+        </sheet>
+        <rules>
+            <stat name="draconic:con" value="constitution:modifier"/>
+            <stat name="draconic:level" value="level"/>
+            <!-- <stat name="draconic:hp" value="draconic:con * draconic:level"/> -->
+
+            <stat name="draconic:ac" value="12"/>
+            <stat name="draconic:ac" value="constitution:modifier"/>
+            <stat name="draconic:ac" value="dexterity:modifier"/>
+        </rules>
+    </element>
+
+    <element name="Nagean Transformation" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_NAGEAN_TRANSFORMATION">
+        <supports>Rancor Draconic Transformation</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_NAGEAN</requirements>
+        <description>
+            <p>Nageans are the most traditional in draconic appearance. While in their draconic state, their two wings spring forth and stretch to grant them flight. They also possess a mighty breath attack to keep enemies at bay.</p>
+        </description>
+        <sheet>
+            <description>While in your draconic state, you gain temporary hit points equal to {{draconic:con}} x {{draconic:level}}, and you also have an armor class equal to {{draconic:ac}}. Your size is large, and you gain a Flying Speed of 30 feet. </description>
+        </sheet>
+        <rules>
+            <stat name="draconic:con" value="constitution:modifier"/>
+            <stat name="draconic:level" value="level"/>
+            <!-- <stat name="draconic:hp" value="draconic:con * draconic:level"/> -->
+
+            <stat name="draconic:ac" value="10"/>
+            <stat name="draconic:ac" value="constitution:modifier"/>
+            <stat name="draconic:ac" value="dexterity:modifier"/>
+        </rules>
+    </element>
+
+    <element name="Orajan Transformation" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_ORAJAN_TRANSFORMATION">
+        <supports>Rancor Draconic Transformation</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ORAJAN</requirements>
+        <description>
+            <p>Orajans possess two sets of wings while in their draconic state. While they do not have a conventional breath weapon, these dragons are masters of the arcane and can cast spells while transformed.</p>
+        </description>
+        <sheet>
+            <description>While in your draconic state, you gain temporary hit points equal to {{draconic:con}} x {{draconic:level}}, and you also have an armor class equal to {{draconic:ac}}. Your size is large, and you gain a Flying Speed of 30 feet. </description>
+        </sheet>
+        <rules>
+            <stat name="draconic:con" value="constitution:modifier"/>
+            <stat name="draconic:level" value="level"/>
+            <!-- <stat name="draconic:hp" value="draconic:con * draconic:level"/> -->
+
+            <stat name="draconic:ac" value="10"/>
+            <stat name="draconic:ac" value="constitution:modifier"/>
+            <stat name="draconic:ac" value="dexterity:modifier"/>
+        </rules>
+    </element>
+
+    <element name="Pyruvian Transformation" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_PYRUVIAN_TRANSFORMATION">
+        <supports>Rancor Draconic Transformation</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_PYRUVIAN</requirements>
+        <description>
+            <p>Pyruvians are as bright as the stars they resemble while transformed. Their firey wings grant them the ability of flight. They also have a strong breath attack that will make any enemy think twice to face again.</p>
+        </description>
+        <sheet>
+            <description>While in your draconic state, you gain temporary hit points equal to {{draconic:con}} x {{draconic:level}}, and you also have an armor class equal to {{draconic:ac}}. Your size is large, and you gain a Flying Speed of 30 feet. </description>
+        </sheet>
+        <rules>
+            <stat name="draconic:con" value="constitution:modifier"/>
+            <stat name="draconic:level" value="level"/>
+            <!-- <stat name="draconic:hp" value="draconic:con * draconic:level"/> -->
+
+            <stat name="draconic:ac" value="10"/>
+            <stat name="draconic:ac" value="constitution:modifier"/>
+            <stat name="draconic:ac" value="dexterity:modifier"/>
+        </rules>
+    </element>
+
+    <!-- Sharpened Claws and Fangs -->
+    <element name="Sharpened Claws and Fangs" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_SHARPENED_CLAWS_AND_FANGS">
+        <description>
+            <p>Starting when you choose this path at 3rd level, you gain +1 to your melee draconic racial traits. This increases to +2 at 10th level, and +3 at 14th level.</p>
+            <p class="indent">While raging, your Reckless Attack ability deals an additional damage die of that melee attack.</p>
+            <p class="indent"><b><i>Ican. </i></b>Icans possess very strong claws, which they mainly use for burrowing, but can also be used for a slash attack (2d6 + strength modifier slashing damage). They can also use their teeth for a bite attack (1d8 + strength modifier piercing damage).</p>
+            <p class="indent"><b><i>Illitian. </i></b>Illitians have sharp talons, which they can use for a slash attack (1d6 + strength or dexterity modifier slashing damage).</p>
+            <p class="indent"><b><i>Khalid. </i></b>Khalids have a breath attack that deals cold damage in a cone of 15 feet from them. It triggers a constitution saving throw to creatures within range, and deals 2d6 cold damage on a failed save, and half as much on a successful save. They can also use their teeth for a bite attack (1d8 + strength modifier piercing damage).</p>
+            <p class="indent"><b><i>Nagean. </i></b>Nageans have a breath attack that can target one creature. They have a bonus to hit equal to twice their proficiency modifier, and the attack deals 3d6 radiant damage on hit. They can also use their teeth for a bite attack (1d8 + strength modifier piercing damage).</p>
+            <p class="indent"><b><i>Orajan. </i></b>Orajans mainly attack with spells while in their draconic form. However they can also use their teeth for a bite attack (1d8 + strength modifier piercing damage).</p>
+            <p class="indent"><b><i>Pyruvian. </i></b>Pyruvians have a breath attack that can target one creature. That creature must succeed on a dexterity saving throw. It deals 2d6 fire damage on a failed save, and half as much on a successful save. They can also use their teeth for a bite attack (1d8 + strength modifier piercing damage).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype Feature" name="Draconic Weapons" supports="Rancor Draconic Weapons" level="3" />
+            
+            <stat name="draconic:breath:num" value="proficiency"/>
+
+            <stat name="draconic:breath:hit" value="proficiency"/>
+            <stat name="draconic:breath:hit" value="proficiency"/>
+
+            <stat name="draconic:breath:dc" value="10"/>
+            <stat name="draconic:breath:dc" value="proficiency"/>
+        </rules>
+    </element>
+
+    <element name="Ican Draconic Weapons" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_ICAN_DRACONIC_WEAPONS">
+        <supports>Rancor Draconic Weapons</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ICAN</requirements>
+        <description>
+            <p>Icans possess very strong claws, which they mainly use for burrowing, but can also be used for a slash attack (2d6 + strength modifier slashing damage). They can also use their teeth for a bite attack (1d8 + strength modifier piercing damage).</p>
+        </description>
+        <sheet action="Hardened Claw">
+            <description>While in a draconic state, your Hardened Claw attack deals {{ican:slash:num}}d{{ican:slash:die}} + {{ican:bonus}} Slashing damage. When you use your Reckless Attack ability, your slash deals an additional {{ican:slash:bonus:die}}d{{ican:slash:die}} of Slashing damage. </description>
+        </sheet>
+        <rules>
+            <grant type="Archtype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_ICAN_DRACONIC_BITE" />
+            <stat name="ican:slash:num" value="2"/>
+            <stat name="ican:slash:die" value="6"/>
+            <stat name="ican:slash:bonus:die" value="1"/>
+
+            <stat name="ican:bonus" value="strength:modifier"/>
+            <stat name="ican:bonus" value="1"/>
+            <stat name="ican:bonus" value="1" level="10"/>
+            <stat name="ican:bonus" value="1" level="14"/>
+        </rules>
+    </element>
+
+    <element name="Ican Draconic Weapons" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_ICAN_DRACONIC_BITE">
+        <supports>Rancor Draconic Weapons</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ICAN</requirements>
+        <description>
+            <p>Please don't select this feature. It's just how I have to code this. I hope to patch this eventually. For now, just ignore this one.</p>
+        </description>
+        <sheet action="Bite">
+            <description>While in a draconic state, your Bite attack deals {{ican:bite:num}}d{{ican:bite:die}} + {{ican:bonus}} Piercing damage. When you use your Reckless Attack ability, your slash deals an additional {{ican:bite:num}}d{{ican:bite:die}} of Piercing damage. </description>
+        </sheet>
+        <rules>
+            <stat name="ican:bite:num" value="1"/>
+            <stat name="ican:bite:die" value="8"/>
+        </rules>
+    </element>
+
+    <element name="Illitian Draconic Weapons" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_ILLITIAN_DRACONIC_WEAPONS">
+        <supports>Rancor Draconic Weapons</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ILLITIAN</requirements>
+        <description>
+            <p>Illitians have sharp talons, which they can use for a slash attack (1d6 + strength or dexterity modifier slashing damage).</p>
+        </description>
+        <sheet action="Slash">
+            <description>While in a draconic state, your Slash attack deals {{illitian:slash:num}}d{{illitian:slash:die}} + {{illitian:slash:str}} or {{illitian:slash:dex}} + {{illitian:bonus}} Slashing damage. When you use your Reckless Attack ability, your slash deals an additional {{illitian:slash:num}}d{{illitian:slash:die}} of Slashing damage. </description>
+        </sheet>
+        <rules>
+            <stat name="illitian:slash:num" value="1"/>
+            <stat name="illitian:slash:die" value="6"/>
+
+            <stat name="illitian:slash:str" value="strength:modifier"/>
+            <stat name="illitian:slash:dex" value="dexterity:modifier"/>
+            <stat name="illitian:bonus" value="1"/>
+            <stat name="illitian:bonus" value="1" level="10"/>
+            <stat name="illitian:bonus" value="1" level="14"/>
+        </rules>
+    </element>
+
+    <element name="Khalid Draconic Weapons" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_KHALID_DRACONIC_WEAPONS">
+        <supports>Rancor Draconic Weapons</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_KHALID</requirements>
+        <description>
+            <p>Khalids have a breath attack that deals cold damage in a cone 15 feet from them. It triggers a constitution saving throw to creatures within range, and deals 2d6 cold damage on a failed save, and half as much on a successful save. They can also use their teeth for a bite attack (1d8 + strength modifier piercing damage).</p>
+        </description>
+        <sheet action="Bite">
+            <description>While in a draconic state, your Bite attack deals {{khalid:bite:num}}d{{khalid:bite:die}} + {{khalid:bonus}} Piercing damage. When you use your Reckless Attack ability, your slash deals an additional {{khalid:bite:num}}d{{khalid:bite:die}} of Piercing damage. </description>
+        </sheet>
+        <rules>
+            <grant type="Archtype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_KHALID_DRACONIC_BREATH" />
+            <stat name="khalid:bite:num" value="1"/>
+            <stat name="khalid:bite:die" value="8"/>
+
+            <stat name="khalid:bonus" value="strength:modifier"/>
+            <stat name="khalid:bonus" value="1"/>
+            <stat name="khalid:bonus" value="1" level="10"/>
+            <stat name="khalid:bonus" value="1" level="14"/>
+        </rules>
+    </element>
+
+    <element name="Khalid Draconic Weapons" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_KHALID_DRACONIC_BREATH">
+        <supports>Rancor Draconic Weapons</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_KHALID</requirements>
+        <description>
+            <p>Please don't select this feature. It's just how I have to code this. I hope to patch this eventually. For now, just ignore this one.</p>
+        </description>
+        <sheet action="Breath Attack">
+            <description>You may use this attack up to {{draconic:breath:num}} times per long rest. You release a cone of cold up to 15 feet causing a creature to make a {{draconic:breath:dc}} DC Constitution Saving Throw, which deals {{khalid:breath:num}}d{{khalid:breath:die}} Cold damage on a failed save, and half as much on a successful save.</description>
+        </sheet>
+        <rules>
+            <stat name="khalid:breath:num" value="3"/>
+            <stat name="khalid:breath:die" value="6"/>
+        </rules>
+    </element>
+
+    <element name="Nagean Draconic Weapons" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_NAGEAN_DRACONIC_WEAPONS">
+        <supports>Rancor Draconic Weapons</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_NAGEAN</requirements>
+        <description>
+            <p>Nageans have a breath attack that deals radiant damage to one target within 30 feet of them, dealing 3d6 radiant damage on hit. They have a bonus to hit equal to twice their proficiency modifier. They can also use their teeth for a bite attack (1d8 + strength modifier piercing damage).</p>
+        </description>
+        <sheet action="Bite">
+            <description>While in a draconic state, your Bite attack deals {{nagean:bite:num}}d{{nagean:bite:die}} + {{nagean:bonus}} Piercing damage. When you use your Reckless Attack ability, your slash deals an additional {{nagean:bite:num}}d{{nagean:bite:die}} of Piercing damage. </description>
+        </sheet>
+        <rules>
+            <grant type="Archtype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_NAGEAN_DRACONIC_BREATH" />
+            <stat name="nagean:bite:num" value="1"/>
+            <stat name="nagean:bite:die" value="8"/>
+
+            <stat name="nagean:bonus" value="strength:modifier"/>
+            <stat name="nagean:bonus" value="1"/>
+            <stat name="nagean:bonus" value="1" level="10"/>
+            <stat name="nagean:bonus" value="1" level="14"/>
+        </rules>
+    </element>
+
+    <element name="Nagean Draconic Weapons" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_NAGEAN_DRACONIC_BREATH">
+        <supports>Rancor Draconic Weapons</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_NAGEAN</requirements>
+        <description>
+            <p>Please don't select this feature. It's just how I have to code this. I hope to patch this eventually. For now, just ignore this one.</p>
+        </description>
+        <sheet action="Breath Attack">
+            <description>You may use this attack up to {{draconic:breath:num}} times per long rest. You release a line of pure light targeting one creature within 30 feet of you. You have {{draconic:breath:hit}} to hit and it deals {{nagean:breath:num}}d{{nagean:breath:die}} radiant damage on hit.</description>
+        </sheet>
+        <rules>
+            <stat name="nagean:breath:num" value="3"/>
+            <stat name="nagean:breath:die" value="6"/>
+        </rules>
+    </element>
+
+    <element name="Orajan Draconic Weapons" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_ORAJAN_DRACONIC_WEAPONS">
+        <supports>Rancor Draconic Weapons</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ORAJAN</requirements>
+        <description>
+            <p>Orajans use their teeth for a bite attack (1d8 + strength modifier piercing damage).</p>
+        </description>
+        <sheet action="Bite">
+            <description>While in a draconic state, your Bite attack deals {{orajan:bite:num}}d{{orajan:bite:die}} + {{orajan:bonus}} Piercing damage. When you use your Reckless Attack ability, your slash deals an additional {{orajan:bite:num}}d{{orajan:bite:die}} of Piercing damage. </description>
+        </sheet>
+        <rules>
+            <stat name="orajan:bite:num" value="1"/>
+            <stat name="orajan:bite:die" value="8"/>
+
+            <stat name="orajan:bonus" value="strength:modifier"/>
+            <stat name="orajan:bonus" value="1"/>
+            <stat name="orajan:bonus" value="1" level="10"/>
+            <stat name="orajan:bonus" value="1" level="14"/>
+        </rules>
+    </element>
+
+    <element name="Pyruvian Draconic Weapons" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_PYRUVIAN_DRACONIC_WEAPONS">
+        <supports>Rancor Draconic Weapons</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_PYRUVIAN</requirements>
+        <description>
+            <p>Pyruvians have a breath attack that deals fire damage in a line 10 feet from them. It triggers a dexterity saving throw to creatures within range, and deals 2d6 fire damage on a failed save, and half as much on a successful save. They can also use their teeth for a bite attack (1d8 + strength modifier piercing damage).</p>
+        </description>
+        <sheet action="Bite">
+            <description>While in a draconic state, your Bite attack deals {{pyruvian:bite:num}}d{{pyruvian:bite:die}} + {{pyruvian:bonus}} Piercing damage. When you use your Reckless Attack ability, your slash deals an additional {{pyruvian:bite:num}}d{{pyruvian:bite:die}} of Piercing damage. </description>
+        </sheet>
+        <rules>
+            <grant type="Archtype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_PYRUVIAN_DRACONIC_BREATH" />
+            <stat name="pyruvian:bite:num" value="1"/>
+            <stat name="pyruvian:bite:die" value="8"/>
+
+            <stat name="pyruvian:bonus" value="strength:modifier"/>
+            <stat name="pyruvian:bonus" value="1"/>
+            <stat name="pyruvian:bonus" value="1" level="10"/>
+            <stat name="pyruvian:bonus" value="1" level="14"/>
+        </rules>
+    </element>
+
+    <element name="Pyruvian Draconic Weapons" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_PYRUVIAN_DRACONIC_BREATH">
+        <supports>Rancor Draconic Weapons</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_PYRUVIAN</requirements>
+        <description>
+            <p>Please don't select this feature. It's just how I have to code this. I hope to patch this eventually. For now, just ignore this one.</p>
+        </description>
+        <sheet action="Breath Attack">
+            <description>You may use this attack up to {{draconic:breath:num}} times per long rest. You release a line of fire up to 10 feet causing a creature to make a {{draconic:breath:dc}} DC Dexterity Saving Throw, which deals {{pyruvian:breath:num}}d{{pyruvian:breath:die}} Fire damage on a failed save, and half as much on a successful save.</description>
+        </sheet>
+        <rules>
+            <stat name="pyruvian:breath:num" value="3"/>
+            <stat name="pyruvian:breath:die" value="6"/>
+        </rules>
+    </element>
+
+    <element name="Blind Fury" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_BLIND_FURY">
+        <description>
+            <p>Beginning at 6th level after successfully hitting an enemy while raging, you may expend a number of Draconic Stamina dealing an additional 1d6 damage for each point spent.</p>
+        </description>
+        <sheet>
+            <description>Beginning at 6th level after successfully hitting an enemy while raging, you may expend a number of Draconic Stamina, up to {{draconic:stamina}}, dealing an additional 1d6 damage for each point spent, for a maximum of {{draconic:stamina}}d6.</description>
+        </sheet>
+    </element>
+
+    <element name="Aura of Fear" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_AURA_OF_FEAR">
+        <description>
+            <p>Starting at 10th level when you enter your rage, all creatures within 30ft of you must make a Wisdom saving throw (DC 8 + Your Proficiency Modifier + Your Constitution modifier) or be frightened of you until the end of your next turn.</p>
+        </description>
+        <sheet>
+            <description>Starting at 10th level when you enter your rage, all creatures within 30ft of you must make a DC {{aura:fear}} Wisdom saving throw or be frightened of you until the end of your next turn.</description>
+        </sheet>
+	    <rules>
+            <stat name="aura:fear" value="8"/>
+            <stat name="aura:fear" value="proficiency"/>
+            <stat name="aura:fear" value="constitution:modifier"/>
+	    </rules>
+    </element>
+
+    <element name="Extra Attack 2" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_PATH_OF_RANCOR_EXTRA_ATTACK_TWO">
+        <description>
+            <p>Beginning at 14th level, while you are raging, you can attack three times, instead of twice, whenever you take the attack action on your turn.</p>
+        </description>
+        <sheet>
+            <description>Beginning at 14th level, while you are raging, you can attack three times, instead of twice, whenever you take the attack action on your turn.</description>
+        </sheet>
+    </element>
+</elements>
