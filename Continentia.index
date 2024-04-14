@@ -5,7 +5,7 @@
 		<description>The content for Continentia sources.</description>
 		<author url="https://github.com/pkducklett/Continentia">Corie Welch and the Amazing Dicey Dudes</author>
 		<update version="0.0.1">
-			<file name="continentia.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core.index" />
+			<file name="Continentia.index" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/Continentia.index" />
 		</update>
 	</info>
 	<files>
