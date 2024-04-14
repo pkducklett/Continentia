@@ -225,7 +225,7 @@
             <p>Please don't select this feature. It's just how I have to code this. I hope to patch this eventually. For now, just ignore this one.</p>
         </description>
         <sheet action="Bite">
-            <description>While in a draconic state, your Bite attack deals {{ican:bite:num}}d{{ican:bite:die}} + {{ican:bonus}} Piercing damage. When you use your Reckless Attack ability, your slash deals an additional {{ican:bite:num}}d{{ican:bite:die}} of Piercing damage. </description>
+            <description>While in a draconic state, your Bite attack deals {{ican:bite:num}}d{{ican:bite:die}} + {{ican:bonus}} Piercing damage. When you use your Reckless Attack ability, your bite deals an additional {{ican:bite:num}}d{{ican:bite:die}} of Piercing damage. </description>
         </sheet>
         <rules>
             <stat name="ican:bite:num" value="1"/>
