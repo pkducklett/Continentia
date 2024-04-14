@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Continentia</name>
+		<description>The content for Continentia sources.</description>
+		<author url="https://github.com/pkducklett/Continentia">Corie Welch and the Amazing Dicey Dudes</author>
+		<update version="0.0.1">
+			<file name="continentia.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core.index" />
+		</update>
+	</info>
+	<files>
+		<file name="continentia-cruel-war-source.xml" url= "https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-cruel-war-source.xml"/>
+		<file name="continentia-gentlemens-guide-source.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-gentlemens-guide-source.xml" />
+		
+		<!-- Necessities -->
+		<file name="continentia-items-firearms.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-items-firearms.xml" />
+		<file name="continentia-languages.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-languages.xml" />
+		<file name="continentia-deities.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-deities.xml" />
+		<file name="continentia-feats.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-feats.xml" />
+		<file name="continentia-companions.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-companions.xml" />
+		<file name="continentia-items.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-items.xml" />
+		<file name="continentia-spells.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-spells.xml" />
+
+		<!-- Races -->
+		<file name="continentia-race-durgan.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-durgan.xml" />
+		<file name="continentia-race-durgoi.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-durgoi.xml" />
+		<file name="continentia-race-experimented.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-experimented.xml" />
+		<file name="continentia-race-half-dragon.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-half-dragon.xml" />
+		<file name="continentia-race-ican.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-ican.xml" />
+		<file name="continentia-race-illitian.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-illitian.xml" />
+		<file name="continentia-race-khalid.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-khalid.xml" />
+		<file name="continentia-race-nagean.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-nagean.xml" />
+		<file name="continentia-race-orajan.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-orajan.xml" />
+		<file name="continentia-race-pyruvian.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-pyruvian.xml" />
+
+		<!-- Classes -->
+		<file name="continentia-barbarian-rancor.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-barbarian-rancor.xml" />
+	</files>
+</index>
