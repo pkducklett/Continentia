@@ -7,12 +7,12 @@
 	</info>
 	<element name="Continentia: The Second Cruel War" type="Source" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SOURCE_CONTINENTIA_SECOND_CRUEL_WAR">
 		<description>
-			<![CDATA[<p></p>]]>
+			<!-- The content for Continentia sources. -->
 		</description>
 		<setters>
 			<set name="abbreviation">CONT</set>
 			<set name="url">https://github.com/pkducklett/Continentia</set>
-			<set name="author" url="https://github.com/pkducklett/Continentia">Corey Welch and the Amazing Dicey Dudes</set>
+			<set name="author" url="https://github.com/pkducklett/Continentia">Corie Welch and the Amazing Dicey Dudes</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>
