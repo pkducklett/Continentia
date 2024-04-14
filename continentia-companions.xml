@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Companions</name>
+        <update version="0.0.1">
+			<!-- Update Notes: -->
+		    	<description>Companion Animals and Familiars from Continentia.</description>
+		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
+			<file name="continentia-companions.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+		</update>
+	</info>
+
+    <element name="Raknok" type="Companion" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_COMPANION_RAKNOK">
+		<supports>Familiar, Variant Familiar, Ranger’s Companion</supports>
+		<description>
+			<p>Raknoks are a small chicken-like species native to the Basin of Ica. They possess 5 heads, and red scale-like wattles regardless of gender. They tend to live in small cliff sides, or in ground nests. Rarely however, will a Raknok dig their own nest. Preferring instead to find holes that have been dug by other creatures, or holes which are naturally occuring.</p>
+			<p class="indent">Raknoks are a species which have been domesticated to have most of their survival instincts removed. Because of this, they rarely are found in the wild; but when they are, they move in large flocks. Raknoks are considered sacred to the church of Und, and praised for their naturally chaotic nature. Because of this, raknoks have learned to trust symbols of Und; and can recognize who is and is not a member of their ranks.</p>
+			<p class="indent">In myth, raknoks were created by the Ican goddess of Monsters, Teya, as a gift to Und. Und fell in love with her new pets and spread them across Ica. She even adopted the raknok as the symbol of her church. Und is said to own many Raknoks. Some even believe that when a raknok dies, Und adopts their soul to raise until their owner can come and retrieve them.</p>
+        </description>
+		<setters>
+			<set name="strength">4</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">2</set>
+			<set name="wisdom">8</set>
+			<set name="charisma">12</set>
+			<set name="ac">12</set>
+			<set name="hp">2 (1d4+0)</set>
+			<set name="speed">30 ft., fly 10 ft.</set>
+			<set name="senses">darkvision 30 ft., passive Perception 9</set>
+			<set name="languages">—</set>
+			<set name="skills">Persuasion +3</set>
+			<set name="type">Beast</set>
+			<set name="size">Small</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">0</set>
+			<set name="traits">ID_CONT_CONTINENTIA_COMPANION_TRAIT_RAKNOK_CLUMSY_FLIER, ID_CONT_CONTINENTIA_COMPANION_TRAIT_RAKNOK_COMPANIONSHIP,ID_CONT_CONTINENTIA_COMPANION_TRAIT_RAKNOK_PATTERN_BASED_INTELLIGENCE</set>
+			<set name="actions">ID_CONT_CONTINENTIA_COMPANION_ACTION_RAKNOK_TALONS,ID_CONT_CONTINENTIA_COMPANION_ACTION_RAKNOK_MINOR_FIRE_BREATH,ID_CONT_CONTINENTIA_COMPANION_ACTION_RAKNOK_DEFENSIVE_RAGE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" />
+			<stat name="companion:hp:max" value="2" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:speed:fly" value="10" bonus="base" />
+			<stat name="companion:persuasion:proficiency" value="3" bonus="base" />
+		</rules>
+	</element>
+	<element name="Clumsy Flier" type="Companion Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_COMPANION_TRAIT_RAKNOK_CLUMSY_FLIER">
+		<description>
+			<p>A raknok cannot sustain flight for more than one turn.</p>
+		</description>
+		<sheet>
+			<description>A raknok cannot sustain flight for more than one turn.</description>
+		</sheet>
+	</element>
+    <element name="Companionship" type="Companion Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_COMPANION_TRAIT_RAKNOK_COMPANIONSHIP">
+		<description>
+			<p>On a successful DC 15 Animal Handling check, the racknok will follow you around, and treat you as an equal and companion. Those who worship the Ican Goddess Und make this check with advantage. The raknok will automatically consider you a companion if you have summoned through the spell, Find Familiar.</p>
+		</description>
+		<sheet>
+			<description>On a successful DC 15 Animal Handling check, the racknok will follow you around, and treat you as an equal and companion. Those who worship the Ican Goddess Und make this check with advantage. The raknok will automatically consider you a companion if you have summoned through the spell, Find Familiar.</description>
+		</sheet>
+	</element>
+    <element name="Pattern Based Intelligence" type="Companion Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_COMPANION_TRAIT_RAKNOK_PATTERN_BASED_INTELLIGENCE">
+		<description>
+			<p>Raknoks have disadvantage on all Intelligence based check; unless that check is to recognize a pattern involving food, survival, or to recognize their companion.</p>
+		</description>
+		<sheet>
+			<description>Raknoks have disadvantage on all Intelligence based check; unless that check is to recognize a pattern involving food, survival, or to recognize their companion.</description>
+		</sheet>
+	</element>
+    <element name="Talons" type="Companion Action" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_COMPANION_ACTION_RAKNOK_TALONS">
+		<description>
+			<p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 (1d1) slashing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 (1d1) slashing damage.</description>
+		</sheet>
+	</element>
+    <element name="Minor Fire Breath" type="Companion Action" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_COMPANION_ACTION_RAKNOK_MINOR_FIRE_BREATH">
+		<description>
+			<p>Ranged Weapon Attack. Once per short or long rest, the raknok can choose one target within 10 ft of them. The target must make a DC 11 Dexterity Saving Throw. On a fail, they take 1d4 fire damage, and half as much on a successful save.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>Ranged Weapon Attack. The raknok can choose one target within 10 ft of them. The target must make a DC 11 Dexterity Saving Throw. On a fail, they take 2 (1d4) fire damage, and half as much on a successful save.</description>
+		</sheet>
+	</element>
+    <element name="Defensive Rage" type="Companion Action" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_COMPANION_ACTION_RAKNOK_DEFENSIVE_RAGE">
+		<description>
+			<p>Once per long rest, if a raknok or their companion are threatened, they will enter a rage as a bonus action. While raging, their size becomes medium and their Minor Fire Breath damage will increase to 1d6 fire damage. If the raknok has a companion, they can add their companion's Charisma modifer as temporary hit points that only last during the rage. At the end of the raknok's turn, if the raknok has dealt or taken damage, their rage will continue into the next turn.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>If a raknok or their companion are threatened, they can enter a rage. While raging, their size becomes medium and their Minor Fire Breath damage will increase to 3 (1d6) fire damage. If the raknok has a companion, they can add their companion's Charisma modifer as temporary hit points that only last for the duration of the rage. At the end of the raknok's turn, if the raknok has dealt or taken damage, their rage will continue into the next turn.</description>
+		</sheet>
+	</element>
+</elements>
