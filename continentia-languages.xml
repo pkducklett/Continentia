@@ -2,17 +2,19 @@
 <elements>
 	<info>
 		<name>Languages</name>
-		<update version="0.0.3">
-		<!-- update notes:	fixed typo in Illitian language-->
+		<update version="0.0.4">
+		<!-- update notes:	Continentian languages now have their own unique tag 
+							Mystic is now a secret language
+							Continentian standard & exotic languages now can be chosen as customized languages as per rules in TCoE-->
             <description>Languages spoken in Continentia.</description>
             <author url="https://github.com/pkducklett/">Corey Welch</author>
-			<file name="continentia-languages.xml" url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+			<file name="continentia-languages.xml" url="https://github.com/pkducklett/Continentia/blob/1939db39c9c3ec3a9423cb9df2ccabc260f1f913/continentia-languages.xml" />
 		</update>
 	</info>
 
     <!-- standard/commonly spoken languages -->
     <element name="Arityian" type="Language" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_LANGUAGE_ARITYIAN">
-		<supports>Standard</supports>
+		<supports>Contintentian Standard</supports>
 		<description>
 			<p>Typically spoken in Arity and Contan.</p>
 		</description>
@@ -21,9 +23,12 @@
 			<set name="speakers">humans</set>
 		</setters>
 	</element>
+	<append id="ID_CONT_CONTINENTIA_LANGUAGE_ARITYIAN">
+		<supports>Custom Race Language</supports>
+	</append>
 
     <element name="Deuish" type="Language" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_LANGUAGE_DEUISH">
-		<supports>Standard</supports>
+		<supports>Contintentian Standard</supports>
 		<description>
 			<p>Typically spoken in Deuland and Norden.</p>
 		</description>
@@ -32,9 +37,12 @@
 			<set name="speakers">humans</set>
 		</setters>
 	</element>
+	<append id="ID_CONT_CONTINENTIA_LANGUAGE_DEUISH">
+		<supports>Custom Race Language</supports>
+	</append>
 
     <element name="Ican" type="Language" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_LANGUAGE_ICAN">
-		<supports>Standard</supports>
+		<supports>Contintentian Standard</supports>
 		<description>
 			<p>Typically spoken in Ica.</p>
 		</description>
@@ -43,9 +51,12 @@
 			<set name="speakers">icans</set>
 		</setters>
 	</element>
+	<append id="ID_CONT_CONTINENTIA_LANGUAGE_ICAN">
+		<supports>Custom Race Language</supports>
+	</append>
 
     <element name="Khalid (Standard)" type="Language" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_LANGUAGE_KHALID_STANDARD">
-		<supports>Standard</supports>
+		<supports>Contintentian Standard</supports>
 		<description>
 			<p>Typically spoken in Suterland, Norden, and Trelonia.</p>
 		</description>
@@ -54,9 +65,12 @@
 			<set name="speakers">khalids</set>
 		</setters>
 	</element>
+	<append id="ID_CONT_CONTINENTIA_LANGUAGE_KHALID_STANDARD">
+		<supports>Custom Race Language</supports>
+	</append>
 
     <element name="Khalid (Traditional)" type="Language" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_LANGUAGE_KHALID_TRADITIONAL">
-		<supports>Standard</supports>
+		<supports>Contintentian Standard</supports>
 		<description>
 			<p>Typically spoken in Khalid and Trelonia.</p>
 		</description>
@@ -65,9 +79,12 @@
 			<set name="speakers">khalids</set>
 		</setters>
 	</element>
+	<append id="ID_CONT_CONTINENTIA_LANGUAGE_KHALID_TRADITIONAL">
+		<supports>Custom Race Language</supports>
+	</append>
 
     <element name="Orajan" type="Language" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_LANGUAGE_ORAJAN">
-		<supports>Standard</supports>
+		<supports>Contintentian Standard</supports>
 		<description>
 			<p>Typically spoken in Oraja.</p>
 		</description>
@@ -76,9 +93,12 @@
 			<set name="speakers">orajans</set>
 		</setters>
 	</element>
+	<append id="ID_CONT_CONTINENTIA_LANGUAGE_ORAJAN">
+		<supports>Custom Race Language</supports>
+	</append>
 
     <element name="Florish" type="Language" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_LANGUAGE_FLORISH">
-		<supports>Standard</supports>
+		<supports>Contintentian Standard</supports>
 		<description>
 			<p>Typically spoken in Florland and Pyruvia.</p>
 		</description>
@@ -87,10 +107,13 @@
 			<set name="speakers">humans</set>
 		</setters>
 	</element>
+	<append id="ID_CONT_CONTINENTIA_LANGUAGE_FLORISH">
+		<supports>Custom Race Language</supports>
+	</append>
 
     <!-- exotic/obscure languages -->
 	<element name="Illitian" type="Language" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_LANGUAGE_ILLITIAN">
-		<supports>Exotic</supports>
+		<supports>Contintentian Exotic</supports>
 		<description>
 			<p>The original language of Illitius. Illitian is still used as a day to day language, but it has found a niche as a code language for underground Illitian societies.</p>
 		</description>
@@ -99,20 +122,12 @@
 			<set name="speakers">illitians</set>
 		</setters>
 	</element>
-
-	<element name="Mystic" type="Language" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_LANGUAGE_MYSTIC">
-		<supports>Exotic</supports>
-		<description>
-			<p>The common language of Vice Mystics. It is generally not spoken by other races.</p>
-		</description>
-		<setters>
-			<set name="exotic">true</set>
-			<set name="speakers">vice_mystics</set>
-		</setters>
-	</element>
+	<append id="ID_CONT_CONTINENTIA_LANGUAGE_ILLITIAN">
+		<supports>Custom Race Language</supports>
+	</append>
 
 	<element name="Nagean" type="Language" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_LANGUAGE_NAGEAN">
-		<supports>Exotic</supports>
+		<supports>Contintentian Exotic</supports>
 		<description>
 			<p>Nagean is the basis for Arityian, but in modern times it is used as a language for religious rituals.</p>
 		</description>
@@ -121,9 +136,12 @@
 			<set name="speakers">nageans</set>
 		</setters>
 	</element>
+	<append id="ID_CONT_CONTINENTIA_LANGUAGE_NAGEAN">
+		<supports>Custom Race Language</supports>
+	</append>
 
 	<element name="Old Ican" type="Language" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_LANGUAGE_OLD_ICAN">
-		<supports>Exotic</supports>
+		<supports>Contintentian Exotic</supports>
 		<description>
 			<p>The ancient Ican language. It is mostly spoken by historians.</p>
 		</description>
@@ -132,9 +150,12 @@
 			<set name="speakers">icans</set>
 		</setters>
 	</element>
+	<append id="ID_CONT_CONTINENTIA_LANGUAGE_OLD_ICAN">
+		<supports>Custom Race Language</supports>
+	</append>
 
 	<element name="Pyruvian" type="Language" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_LANGUAGE_PYRUVIAN">
-		<supports>Exotic</supports>
+		<supports>Contintentian Exotic</supports>
 		<description>
 			<p>The common language of the Pyruvian tribes. However, it is sorely underused in any other part of the world.</p>
 		</description>
@@ -143,9 +164,12 @@
 			<set name="speakers">pyruvians</set>
 		</setters>
 	</element>
+	<append id="ID_CONT_CONTINENTIA_LANGUAGE_PYRUVIAN">
+		<supports>Custom Race Language</supports>
+	</append>
 
 	<element name="Terradysian" type="Language" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_LANGUAGE_TERRADYSIAN">
-		<supports>Exotic</supports>
+		<supports>Contintentian Exotic</supports>
 		<description>
 			<p>Terradysian was created by Terradysian priests. It is only spoken outside of church, as a way to keep talk among priests private.</p>
 		</description>
@@ -154,9 +178,12 @@
 			<set name="speakers">humans</set>
 		</setters>
 	</element>
+	<append id="ID_CONT_CONTINENTIA_LANGUAGE_TERRADYSIAN">
+		<supports>Custom Race Language</supports>
+	</append>
 
 	<element name="Yittian" type="Language" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_LANGUAGE_YITTIAN">
-		<supports>Exotic</supports>
+		<supports>Contintentian Exotic</supports>
 		<description>
 			<p>An ancient language spoken by the Yittian people in Southern Ica.</p>
 		</description>
@@ -165,10 +192,13 @@
 			<set name="speakers">icans</set>
 		</setters>
 	</element>
+	<append id="ID_CONT_CONTINENTIA_LANGUAGE_YITTIAN">
+		<supports>Custom Race Language</supports>
+	</append>
 
 	<!-- secret/class specific languages -->
 	<element name="Durgish" type="Language" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_LANGUAGE_DURGISH">
-		<supports>Secret</supports>
+		<supports>Contintentian Secret</supports>
 		<description>
 			<p>The secret language of the Durgish races. Largely forgotten by the individuals, it is only really spoken by Gentries now.</p>
 		</description>
@@ -179,7 +209,7 @@
 	</element>
 
 	<element name="Rambler’s Tongue" type="Language" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_LANGUAGE_RAMBLERS_TONGUE">
-		<supports>Secret</supports>
+		<supports>Contintentian Secret</supports>
 		<description>
 			<p>An underground language for the Und churches of Ica. Typically spoken by rogues or those involved with crime.</p>
 		</description>
@@ -188,4 +218,15 @@
 			<set name="speakers">Rogues</set>
 		</setters>
 	</element>
+
+	<element name="Mystic" type="Language" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_LANGUAGE_MYSTIC">
+		<supports>Contintentian Secret</supports>
+		<description>
+			<p>The common language of Vice Mystics. It is generally not spoken by other races.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">vice_mystics</set>
+		</setters>
+	</element>	
 </elements>
