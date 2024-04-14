@@ -2,8 +2,9 @@
 <elements>
 	<info>
 		<name>Nagean</name>
-        <update version="0.0.2">
-			<!-- update notes: added height and weight modifiers-->
+        <update version="0.0.3">
+			<!-- update notes: Tasha's customized rules can now be used
+							   Removed Draconic HP-->
 		    	<description>The Nagean Race from Continentia.</description>
 		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
 			<file name="continentia-race-nagean.xml"  url="https://github.com/pkducklett/Continentia/blob/a74b57cf5bf3761dce03890a9c305343b0e59cef/continentia-race-nagean.xml" />
@@ -40,8 +41,8 @@
 			<p class="indent"><b><i>Languages.</i></b> You can speak, read, and write in Arityian.</p>
 			<h4>NAGEAN DRACONIC TRAITS</h4>
 			<p>Nageans possess the following traits while in a draconic form.</p>
-			<p class="indent"><b><i>Draconic Hit Points.</i></b> While in a draconic form, you gain temporary hit points equal to your Constitution modifier x your level.</p>
 			<p class="indent"><b><i>Draconic Armor Class.</i></b> While in a draconic form, your armor class is 10 + Dexterity modifier + Constitution modifier.</p>
+			<p class="indent"><b><i>Draconic Hit Points.</i></b> While in a draconic form, you gain temporary hit points equal to your Constitution modifier x your level.</p>
 			<p class="indent"><b><i>Gift of Arit.</i></b> While in a draconic form, you have resistance to radiant damage.</p>
 			<p class="indent"><b><i>Bite.</i></b> 1d8 Piercing + Strength modifer.</p>
 			<p class="indent"><b><i>Breath Weapon.</i></b> You release a line of pure light targeting one creature dealing 3d6 Radiant damage. You gain a bonus to hit equal to twice your proficiency modifier without the use of any other stat.</p>
@@ -58,11 +59,13 @@
 			<set name="weight" modifier="1d4">130 lb.</set>
 		</setters>
 		<rules>
-       		<stat name="constitution" value="1" />
-       		<stat name="wisdom" value="2" />
+       		<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+       		<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			 <select type="Ability Score Improvement" name="Ability Score Improvement Option (Nagean)" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
        		<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
-			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ARITYIAN" />
+			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ARITYIAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_GIFT_ARIT" />
 			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_CHORAL_TRADITION" />
 			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_NAGEAN_ACIDIC_SALIVA" />

@@ -41,8 +41,8 @@
 			<p class="indent"><b><i>Languages.</i></b>You can speak, read, and write in your choice of: Florish or Pyruvian.</p>
 			<h4>PYRUVIAN DRACONIC TRAITS</h4>
 			<p>Pyruvians possess the following traits while in a draconic form.</p>
-			<p class="indent"><b><i>Draconic Hit Points.</i></b> While in a draconic form, you gain temporary hit points equal to your Constitution modifier x your level.</p>
 			<p class="indent"><b><i>Draconic Armor Class.</i></b> While in a draconic form, your armor class is 10 + Dexterity modifier + Constitution modifier.</p>
+			<p class="indent"><b><i>Draconic Hit Points.</i></b> While in a draconic form, you gain temporary hit points equal to your Constitution modifier x your level.</p>
 			<p class="indent"><b><i>Seared Hide and Scale.</i></b> While in a draconic form, you have advantage on saving throws against effects that deal fire damage.</p>
 			<p class="indent"><b><i>Bite.</i></b> 1d8 Piercing + Strength modifer.</p>
 			<p class="indent"><b><i>Breath Weapon.</i></b> You release a line of Fire causing a creature to make a Dexterity saving throw, which deals 2d6 fire damage on a failed save, and half on a success.</p>
@@ -60,11 +60,13 @@
 			<set name="weight" modifier="2d4">110 lb.</set>
 		</setters>
 		<rules>
-       		<stat name="constitution" value="1" />
-       		<stat name="charisma" value="2" />
+       		<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+       		<stat name="charisma" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Pyruvian)" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
        		<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
-			<select type="Language" name="Pyruvian Language" supports="ID_CONT_CONTINENTIA_LANGUAGE_FLORISH|ID_CONT_CONTINENTIA_LANGUAGE_PYRUVIAN" />
+			<select type="Language" name="Pyruvian Language" supports="ID_CONT_CONTINENTIA_LANGUAGE_FLORISH|ID_CONT_CONTINENTIA_LANGUAGE_PYRUVIAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_SEARED_HIDE" />
 			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_GIFT_AHI" />
 			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_PYRUVIAN_ACIDIC_SALIVA" />

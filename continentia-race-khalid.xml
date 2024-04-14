@@ -2,10 +2,9 @@
 <elements>
 	<info>
 		<name>Khalid</name>
-        <update version="0.0.2">
-			<!-- update notes: added more names
-							   added height/weight mods
-							   added Tre subrace-->
+        <update version="0.0.3">
+			<!-- update notes: Fixed typos
+							   Tasha's customized rules can now be used-->
 		    	<description>The Khalid Race from Continentia.</description>
 		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
 			<file name="continentia-race-khalid.xml"  url="https://github.com/pkducklett/Continentia/blob/c28adff7f7411bf1ea400f57553da152eaa3b59e/continentia-race-khalid.xml" />
@@ -37,11 +36,11 @@
         	<p class="indent"><b><i>Size.</i></b> On average, Khalids are between 5’0” and 5’10”. They usually average around 150-200 lbs. Your size is medium.</p>
 			<p class="indent"><b><i>Speed.</i></b> Your base walking speed is 30 feet.</p>
 			<p class="indent"><b><i>Cold Blood.</i></b> You have resistance to cold damage. Your unarmed strikes deal cold damage, instead of the usual bludgeoning.</p>
-			<h4>KHALID DRACONIC TRAITS</h4>
+            <h4>KHALID DRACONIC TRAITS</h4>
 			<p>Khalids possess the following traits while in a draconic form.</p>
-			<p class="indent"><b><i>Draconic Hit Points.</i></b> While in a draconic form, you gain temporary hit points equal to your (Constitution modifier + 1) x your level.</p>
 			<p class="indent"><b><i>Draconic Armor Class.</i></b> While in a draconic form, your armor class is 12 + Dexterity modifier + Constitution modifier.</p>
-			<p class="indent"><b><i>Bite.</i></b> 1d8 Piercing + Strength modifer.</p>
+			<p class="indent"><b><i>Draconic Hit Points.</i></b> While in a draconic form, you gain temporary hit points equal to your (Constitution modifier + 1) x your level.</p>
+            <p class="indent"><b><i>Bite.</i></b> 1d8 Piercing + Strength modifer.</p>
 			<p class="indent"><b><i>Breath Weapon.</i></b> You release a cone of cold up to 15 feet causing a creature to make a Constitution save, which deals 2d6 Cold damage on a failed save, and half as much on a success.</p>
 			<p class="indent"><b><i>Size.</i></b> While in a draconic form, your size becomes large.</p>
 			<p class="indent"><b><i>Speed.</i></b> While in a draconic form, your walking speed is 30 feet.</p>
@@ -57,7 +56,6 @@
 			<set name="weight" modifier="1d4">150 lb.</set>
 		</setters>
 		<rules>
-       		<stat name="constitution" value="2" />
        		<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_COLD_BLOOD" />
@@ -101,8 +99,11 @@
 		</description>
 		<sheet display="false" />
 		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<select type="Ability Score Improvement" name="Northern Khalid Ability Score Improvement" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_WISDOM" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_KHALID_TRADITIONAL" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Northern Khalid)" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_KHALID_TRADITIONAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_MYSTICS_OF_TUNDRA" />
 			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_SURVIVORS_FALLEN_CLOUDS" />
 		</rules>
@@ -139,8 +140,11 @@
 		</description>
 		<sheet display="false" />
 		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<select type="Ability Score Improvement" name="Khalmut Ability Score Improvement" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_INTELLIGENCE" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<select type="Language" name="Khalmut Language" supports="ID_CONT_CONTINENTIA_LANGUAGE_KHALID_STANDARD|ID_CONT_CONTINENTIA_LANGUAGE_DEUISH" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Khalmut)" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Language" name="Khalmut Language" supports="ID_CONT_CONTINENTIA_LANGUAGE_KHALID_STANDARD|ID_CONT_CONTINENTIA_LANGUAGE_DEUISH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_DRILLED_FOR_WAR" />
 			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_FORGED_FROM_THREE_KNIVES" />
 		</rules>
@@ -180,8 +184,11 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Ability Score Improvement" name="Northern Khalid Ability Score Improvement" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_WISDOM" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_KHALID_TRADITIONAL" />
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Tre Ability Score Improvement" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_WISDOM" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Tre)" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_KHALID_TRADITIONAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_BORN_FROM_THE_DEPTHS" />
 			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_DESCENDANTS_GREAT_RAIDERS" />
 			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_INHERITORS_SEA_GRACES" />
@@ -208,8 +215,9 @@
 			<description>You gain proficiency in Shields and one of the following weapons: Battleaxe, Longsword, Morningstar, or Warhammer.</description>
 		</sheet>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
-			<select type="Proficiency" name="Descendants of the Great Raiders Weapon Proficiency" supports="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE|ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD|ID_PROFICIENCY_WEAPON_PROFICIENCY_MORNINGSTAR|ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Descendants of the Great Raiders Weapon Proficiency" supports="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE|ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD|ID_PROFICIENCY_WEAPON_PROFICIENCY_MORNINGSTAR|ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple/Martial Weapon or Tool (Descendants of the Great Raiders)" number="2"  supports="Weapon||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 		</rules>
 	</element>
 
@@ -221,8 +229,9 @@
 			<description>You gain proficiency in Navigator’s Tools and Sea Vehicles.</description>
 		</sheet>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_WATER" />
+			<select type="Proficiency" name="Simple Weapon or Tool (Inheritors of All That the Sea Graces)" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 		</rules>
 	</element>
 </elements>
