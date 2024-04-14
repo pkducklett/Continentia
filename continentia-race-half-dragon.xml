@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Half-Dragon</name>
+        <update version="0.0.2">
+			<!-- Update Notes: -Added appearance descriptions
+							   -Fixed second language not appearing-->
+		    	<description>The Half-Dragon Race from Continentia.</description>
+		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
+			<file name="continentia-race-half-dragon.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+		</update>
+	</info>
+
+	 <element name="Half-Dragon" type="Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACE_HALFDRAGON">
+        <description>
+			<p class="flavor">Half-dragons, also called Half-mutts or Half-drakes, are a combination of two different races where one (or both) of which must be draconic.</p>
+			<h4>APPEARANCE</h4>
+			<p>Half-dragons will appear as a mix of both parents, and may share or lack traits of either of their parent.</p>
+			<p class="indent"><b><i>Half-Icans.</i></b> Half-Icans will be shorter than their Ican parent, but usually will be taller than their non-Ican parent. They will usually have wings in their humanoid form, and may also have patches of scales. </p>
+			<p class="indent"><b><i>Half-Illitians.</i></b> Half-Illitians will be taller than their Illitian parent, but usually will be shorter than their non-Illititian parent. They will usually have feathery wings in their humanoid form, and may also have patches of feathers as well as sharper claws.</p>
+			<p class="indent"><b><i>Half-Khalids.</i></b> Half-Khalids will be bulky, but will typically be around the same size as both parents. They will have a noticeably colder body temperature, and may also have ridges on the bridge of their nose, like their Khalid parent. </p>
+			<p class="indent"><b><i>Half-Nagaens.</i></b> Half-Nagaens will usually have their Nagean parent’s hair and eye color. They rarely will possess wings in their humanoid form. </p>
+			<p class="indent"><b><i>Half-Orajans.</i></b> Half-Orajans often lack the heterochromia trait of their Orajan parent. They will usually have wings in their humanoid form, and may potentially either lack their second set of wings or have them permanently out even in humanoid form.</p>
+			<p class="indent"><b><i>Half-Pyruvians.</i></b> Half-Pyruvians often possess their Pyruvian parent’s hair and eye color. They will usually have wings in their humanoid form, and often will be warmer to the touch. They will have noticeably warmer body temperature. </p>
+			<h4>Of Two Races, But Belonging To Neither</h4>
+			<p>Though common in Contintentia, Half-Dragons are seen as existing outside both cultures they were conceived from. It's a hard life to never truly belong to either the culture of your mother or your father, but it is the life these folk endure. The nature of their birth and parentage will affect how accepted they are in the overall culture of their land. Contan is by far the most accepting of Half-Dragons, but that's not saying much. Some in the Northernlands also care little about the nature of one's parentage. Arity has gotten better since their Civil War about Half-Dragons, but many provinces still look down upon those of mixed lines. While places like Ica remain to be the most hostile toward those of mixed lineage.</p>
+            <h4>A Culture Built Off Exclusion</h4>
+			<p>In defiance of their parents' culture, Half-Dragons often carve their own path in life. Some seek to embrace both aspects of their mixed parentage, enjoying the blessings of both parents. Others choose to denounce both parent's individual culture in service to making their own. Either way, many Half-Dragons pride themselves on being their own person, bound to neither side of their lineage.</p>
+			<h4>HALF-DRAGON TRAITS</h4>
+            <p>Half-Dragons possess the following traits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> One ability score of your choice increases by 2, and another by 1.</p>
+			<p class="indent"><b><i>Age.</i></b> Half-Dragons typically mature around the age of 18. Rarely will Half-Dragon's live as long as their draconic parent(s), at most, they usually live to be around 100.</p>
+			<p class="indent"><b><i>Alignment.</i></b> Half-Dragons usually follow the alignment of one or both of their draconic parents. </p>
+        	<p class="indent"><b><i>Size.</i></b> Half-dragons will usually be around the same height as their parents. Your size is medium.</p>
+			<p class="indent"><b><i>Speed.</i></b> Your base walking speed is 30 feet.</p>
+            <p class="indent"><b><i>Languages.</i></b> You gain proficiency in two languages: one that is the common language of the country you grew up in, and the other is a language learned from one of the cultures of your parents.</p>
+			<div element="ID_CONT_CONTINENTIA_RACIAL_TRAIT_FLEXIBLE_CULTURE" />
+		</description>
+        <sheet display="false" />
+		<setters>
+			<set name="names" type="male">John</set>
+			<set name="names" type="female">Jane</set>
+			<set name="names" type="surname">Johnson</set>
+			<set name="names-format">{{name}} {{surname}}</set>
+			<set name="height" modifier="2d10">4'8"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+
+        <rules>
+       		<select type="Ability Score Improvement" name="Ability Score Improvement Option (Half-Dragon)" supports="Custom Ability Score Improvement Option" />
+       		<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+            <select type="Language" name="Common Language" supports="Contintentian Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Cultural Language" supports="Contintentian Standard||Contintentian Exotic" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_FLEXIBLE_CULTURE" />
+        </rules>
+    </element>
+
+    <element name="Flexible Culture" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_FLEXIBLE_CULTURE">
+        <description>
+            <p>You pick the two races of your character's parents, and gain one trait from each of your parents' races and the ability to select the racial feats specific to your parents' races.</p>
+            <p>After picking your chosen races you gain the ability to transform into the draconic form of one of your parents. If the other race you choose was human you may only pick the other draconic race you chose.</p>
+			<p><b>Note: </b>There are certain draconic races which cannot intermix and produce healthy offspring. Therefore, you cannot play: a half-Ican/half-Illitian, a half-Khalid/half-Pyruvian, or a half-Nagean/half-Orajan. Humans do not have such restrictions, so you may pick any second race as long as one of your parents is human. </p>
+			<p class="indent"><b><i>Human. </i></b>You gain the ability to choose all Human restricted feats.</p>
+            <p class="indent"><b><i>Bonus Proficiencies. </i></b>You gain two skill proficiencies of your choice and one additional language of your choice.</p>
+            <p>   </p>
+            <p class="indent"><b><i>Ican. </i></b>You gain the ability to choose all Ican restricted feats.</p>
+            <p class="indent"><b><i>Diverse Racial Trait. </i></b>You gain one trait of your choice between Darkvision, Expansive Culture, or Sleep Cycles.</p>
+            <p>   </p>
+            <p class="indent"><b><i>Illitian. </i></b>You gain the ability to choose all Illitian restricted feats.</p>
+            <p class="indent"><b><i>Limited Flight. </i></b>You have a flying speed of 15 feet. In order to use this speed, you cannot be wearing medium or heavy armor. You also cannot hover using your flying speed.</p>
+            <p>   </p>
+            <p class="indent"><b><i>Khalid. </i></b>You gain the ability to choose all Khalid restricted feats.</p>
+            <p class="indent"><b><i>Cold Blood. </i></b>You have resistance to cold damage. Your unarmed strikes deal cold damage instead of the usual bludgeoning.</p>
+            <p>   </p>
+            <p class="indent"><b><i>Nagean. </i></b>You gain the ability to choose all Nagean restricted feats.</p>
+            <p class="indent"><b><i>Gift of Arit. </i></b>You know one of the following spells: Bless, Protection from Evil and Good, or Detect Evil and Good. Wisdom is your spellcasting ability for this spell. This spell can be cast once per long rest without expending a spell slot. You can also cast this spell using any spell slots you have. In addition, while transformed you have resistance to radiant damage.</p>
+            <p>   </p>
+            <p class="indent"><b><i>Orajan. </i></b>You gain the ability to choose all Orajan restricted feats.</p>
+            <p class="indent"><b><i>Wings of Warding. </i></b>As a bonus action, you can unfurl a second pair of wings for 1 hour. While these wings are unfurled, you are immune to the surprised condition, and you have advantage on Wisdom (Perception) checks made to perceive threats. You may use this ability once per long rest.</p>
+            <p>   </p>
+            <p class="indent"><b><i>Pyruvian. </i></b>You gain the ability to choose all Pyruvian restricted feats.</p>
+            <p class="indent"><b><i>Seared Hide and Scale. </i></b>You have resistance to fire damage. In addition, while you are transformed you have advantage on saving throws that deal fire damage.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Racial Trait" name="Flexible Culture" number="2" supports="Flexible Culture"/>
+        </rules>
+    </element>
+
+    <!-- Human -->
+    <element name="Flexible Culture Human" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_FLEXIBLE_CULTURE_HUMAN">
+		<supports>Flexible Culture</supports>
+        <description>
+			<p>You gain two skill proficiencies of your choice and one additional language of your choice.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+            <select type="Proficiency" name="Flexible Culture" number="2" supports="Skill" />
+            <select type="Language" name="Additional Language" supports="Contintentian Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+	</element>
+
+    <!-- Ican -->
+    <element name="Flexible Culture Ican" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_FLEXIBLE_CULTURE_ICAN">
+		<supports>Flexible Culture</supports>
+		<requirements>!ID_CONT_CONTINENTIA_RACIAL_TRAIT_FLEXIBLE_CULTURE_ILLITIAN</requirements>
+        <description>
+			<p>You gain one trait of your choice between Darkvision, Expansive Culture, or Sleep Cycles.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Racial Trait" supports="ID_CONT_CONTINENTIA_RACIAL_TRAIT_ICAN_DARKVISION|ID_CONT_CONTINENTIA_RACIAL_TRAIT_EXPANSIVE_CULTURE|ID_CONT_CONTINENTIA_RACIAL_TRAIT_SLEEP_CYCLES" />
+		</rules>
+	</element>
+    <element name="Ican Darkvision" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_ICAN_DARKVISION">
+		<description>
+			<p>You gain darkvision up to 60 feet.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
+
+    <!-- Illitian -->
+    <element name="Flexible Culture Illitian" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_FLEXIBLE_CULTURE_ILLITIAN">
+		<supports>Flexible Culture</supports>
+		<requirements>!ID_CONT_CONTINENTIA_RACIAL_TRAIT_FLEXIBLE_CULTURE_ICAN</requirements>
+        <description>
+			<p>You have a flying speed of 15 feet. In order to use this speed, you cannot be wearing medium or heavy armor. You also cannot hover using your flying speed. </p>
+		</description>
+		<sheet display="false"/>
+		<rules>			
+			<stat name="innate speed:fly" value="15" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+		</rules>
+	</element>
+
+
+    <!-- Khalid -->
+    <element name="Flexible Culture Khalid" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_FLEXIBLE_CULTURE_KHALID">
+		<supports>Flexible Culture</supports>
+		<requirements>!ID_CONT_CONTINENTIA_RACIAL_TRAIT_FLEXIBLE_CULTURE_PYRUVIAN</requirements>
+        <description>
+			<p>You have resistance to cold damage. Your unarmed strikes deal cold damage instead of the usual bludgeoning. </p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_COLD_BLOOD" />
+		</rules>
+	</element>
+
+    <!-- Nagean  -->
+    <element name="Flexible Culture Nagean" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_FLEXIBLE_CULTURE_NAGEAN">
+		<supports>Flexible Culture</supports>
+		<requirements>!ID_CONT_CONTINENTIA_RACIAL_TRAIT_FLEXIBLE_CULTURE_ORAJAN</requirements>
+        <description>
+			<p>You know one of the following spells: Bless, Protection from Evil and Good, or Detect Evil and Good. Wisdom is your spellcasting ability for this spell. This spell can be cast once per long rest without expending a spell slot. You can also cast this spell using any spell slots you have. In addition, while transformed you have resistance to radiant damage.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_GIFT_ARIT" />
+		</rules>
+	</element>
+
+    <!-- Orajan  -->
+    <element name="Flexible Culture Orajan" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_FLEXIBLE_CULTURE_ORAJAN">
+		<supports>Flexible Culture</supports>
+		<requirements>!ID_CONT_CONTINENTIA_RACIAL_TRAIT_FLEXIBLE_CULTURE_NAGEAN</requirements>
+        <description>
+			<p>As a bonus action, you can unfurl a second pair of wings for 1 hour. While these wings are unfurled, you are immune to the surprised condition, and you have advantage on Wisdom (Perception) checks made to perceive threats. You may use this ability once per long rest.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_WINGS_OF_WARDING" />
+		</rules>
+	</element>
+
+    <!-- Pyruvian -->
+    <element name="Flexible Culture Pyruvian" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_FLEXIBLE_CULTURE_PYRUVIAN">
+		<supports>Flexible Culture</supports>
+		<requirements>!ID_CONT_CONTINENTIA_RACIAL_TRAIT_FLEXIBLE_CULTURE_KHALID</requirements>
+        <description>
+			<p>You have resistance to fire damage. While in a draconic form, you have advantage on saving throws against effects that deal fire damage. </p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_SEARED_HIDE" />
+		</rules>
+	</element>
+</elements>

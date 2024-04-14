@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Durgan</name>
-        <update version="0.0.4">
-			<!-- update notes:	added height and weight modifiers-->
+        <update version="0.0.5">
+			<!-- update notes:	Tasha's customized rules can now be used-->
 		    <description>The Durgan Race from Continentia.</description>
 		    <author url="https://github.com/pkducklett/">Corey Welch</author>
 			<file name="continentia-race-durgan.xml"  url="https://github.com/pkducklett/Continentia/blob/c14e6b92e1b570556dc314a9f57cd6d96e5f4a5b/continentia-race-durgan.xml" />
@@ -42,8 +42,9 @@
 			<set name="weight" modifier="1d4">120 lb.</set>
 		</setters>
         <rules>
-            <stat name="wisdom" value="1" />
-            <stat name="charisma" value="2" />
+            <stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="charisma" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Race)" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
             <stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_FOREST_BORN" />

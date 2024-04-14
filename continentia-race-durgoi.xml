@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Durgoi</name>
-        <update version="0.0.3">
-			<!-- update notes:	add height and weight modifiers-->
+        <update version="0.0.4">
+			<!-- update notes:	Tasha's customized rules can now be used -->
 		    <description>The Durgoi Race from Continentia.</description>
 		    <author url="https://github.com/pkducklett/">Corey Welch</author>
 			<file name="continentia-race-durgoi.xml"  url="https://github.com/pkducklett/Continentia/blob/8973eeff8b1c153bbec1e815ee92b0537dbb817b/continentia-race-durgoi.xml" />
@@ -45,11 +45,13 @@
 			<set name="weight" modifier="1d6d">120 lb.</set>
 		</setters>
         <rules>
-            <stat name="constitution" value="1" />
-            <stat name="intelligence" value="2" />
+            <stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="intelligence" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Durgoi)" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
             <stat name="innate speed" value="30" bonus="base" />
 		    <grant type="Size" id="ID_SIZE_MEDIUM" />
-            <select type="Language" name="Durgoi Language" supports="ID_CONT_CONTINENTIA_LANGUAGE_DEUISH|ID_CONT_CONTINENTIA_LANGUAGE_KHALID_STANDARD" />
+            <select type="Language" name="Durgoi Language" supports="ID_CONT_CONTINENTIA_LANGUAGE_DEUISH|ID_CONT_CONTINENTIA_LANGUAGE_KHALID_STANDARD" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
             <grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_KRAG_BORN" />
             <grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_DURGISH_TONGUE" />
             <grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_DURGOI_DURGISH_MAGIC" />

@@ -2,8 +2,9 @@
 <elements>
 	<info>
 		<name>Ican</name>
-        <update version="0.0.1">
-			<!-- update notes: -->
+        <update version="0.0.2">
+			<!-- update notes: Tasha's customized rules can now be used
+							   Removed Draconic HP-->
 		    	<description>The Ican Race from Continentia.</description>
 		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
 			<file name="continentia-race-ican.xml"  url="https://github.com/pkducklett/Continentia/blob/783a2a3efafa5ffde66d4a37984bb2abf6e0e6a4/continentia-race-ican.xml" />
@@ -51,7 +52,6 @@
 			<p class="indent"><b><i>Languages.</i></b> You can speak, read, and write in Ican.</p>
 			<h4>ICAN DRACONIC TRAITS</h4>
 			<p>Icans possess the following traits while in a draconic form.</p>
-			<p class="indent"><b><i>Draconic Hit Points.</i></b> While in a draconic form, you gain temporary hit points equal to your Constitution modifier x your level.</p>
 			<p class="indent"><b><i>Draconic Armor Class.</i></b> While in a draconic form, your armor class is 10 + Dexterity modifier + Constitution modifier.</p>
 			<p class="indent"><b><i>Hardened Claw.</i></b> 2d6 Slashing + Strength modifer. Allows the user to burrow in soft soil.</p>
 			<p class="indent"><b><i>Bite.</i></b> 1d8 Slashing + Strength modifer.</p>
@@ -70,8 +70,9 @@
 			<set name="weight" modifier="1d8">145 lb.</set>
 		</setters>
 		<rules>
-			<stat name="constitution" value="1" requirements="!ID_CONT_CONTINENTIA_SUB_RACE_GREAT_ICAN" />
-	   		<stat name="strength" value="2" requirements="!ID_CONT_CONTINENTIA_SUB_RACE_GREAT_ICAN" />
+			<stat name="constitution" value="1" requirements="!ID_CONT_CONTINENTIA_SUB_RACE_GREAT_ICAN||!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+	   		<stat name="strength" value="2" requirements="!ID_CONT_CONTINENTIA_SUB_RACE_GREAT_ICAN||!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Ican)" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 	   		<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
@@ -106,8 +107,9 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ICAN" />
-			<select type="Proficiency" name="Expansive Culture" supports="Skill" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ICAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Proficiency" name="Expansive Culture" supports="Skill" number="2" />
 		</rules>
 	</element>
 
@@ -121,14 +123,10 @@
 			<description>You gain the cantrip Mold Earth. You may cast this spell while in a draconic form. You also gain the 1st level spell Earth Tremor. You may cast this spell {{earth tremor:number times}} times and it has a spell save DC of {{earth tremor:dc}}, but it can only be cast while in your draconic state. Your burrowing speed increases to 30 feet while you are transformed.</description>
 		</sheet>
 		<rules>
-			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ICAN" />
+			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ICAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 
-			<grant type="Spell" id="ID_XGTE_SPELL_MOLD_EARTH" />
-			<grant type="Spell" id="ID_XGTE_SPELL_EARTH_TREMOR" />
-
-			<stat name="earth tremor:dc" value="10" />
-			<stat name="earth tremor:dc" value="proficiency" />
-			<stat name="earth tremor:number times" value="proficiency" />
+			<grant type="feat" id="ID_CONT_CONTINENTIA_FEAT_EARTH_SHAKER" />
 		</rules>
 	</element>
 
@@ -143,10 +141,10 @@
 			<description>You have advantage on Medicine checks to stabilize any person that you have been traveling with for more than 24 hours. During a short rest, you may expend one of your hit dice and give it to an ally to roll in place of yourself. At the end of a long rest, you may give {{allies:number}} allies 1d4, which they can add to their next saving throw.</description>
 		</sheet>
 		<rules>
-			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ICAN" />
+			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ICAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 
-			<stat name="allies:number" value="3" />
-			<stat name="allies:number" value="proficiency" />
+			<grant type="feat" id="ID_CONT_CONTINENTIA_FEAT_MASTER_OF_THE_HOUSE" />
 		</rules>
 	</element>
 
@@ -175,10 +173,13 @@
 			<description>When making Survival Checks to locate food you may double your proficiency modifier. When making Nature checks to determine whether something is safe to eat or not you may double your proficiency modifier.</description>
 		</sheet>
 		<rules>
-			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ICAN" />
+			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ICAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" number="2" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool (Serf Below Them)" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 		</rules>
 	</element>
 
@@ -204,8 +205,8 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Language" name="Kreotian Language" supports="ID_CONT_CONTINENTIA_LANGUAGE_ARITYIAN|ID_CONT_CONTINENTIA_LANGUAGE_DEUISH|ID_CONT_CONTINENTIA_LANGUAGE_ICAN|ID_CONT_CONTINENTIA_LANGUAGE_KHALID_STANDARD|ID_CONT_CONTINENTIA_LANGUAGE_KHALID_TRADITIONAL|ID_CONT_CONTINENTIA_LANGUAGE_ORAJAN|ID_CONT_CONTINENTIA_LANGUAGE_FLORISH" />
-			<select type="Language" name="Kreotian Language" supports="ID_CONT_CONTINENTIA_LANGUAGE_ARITYIAN|ID_CONT_CONTINENTIA_LANGUAGE_DEUISH|ID_CONT_CONTINENTIA_LANGUAGE_ICAN|ID_CONT_CONTINENTIA_LANGUAGE_KHALID_STANDARD|ID_CONT_CONTINENTIA_LANGUAGE_KHALID_TRADITIONAL|ID_CONT_CONTINENTIA_LANGUAGE_ORAJAN|ID_CONT_CONTINENTIA_LANGUAGE_FLORISH|ID_CONT_CONTINENTIA_LANGUAGE_ILLITIAN|ID_CONT_CONTINENTIA_LANGUAGE_NAGEAN|ID_CONT_CONTINENTIA_LANGUAGE_OLD_ICAN|ID_CONT_CONTINENTIA_LANGUAGE_PYRUVIAN|ID_CONT_CONTINENTIA_LANGUAGE_TERRADYSIAN|ID_CONT_CONTINENTIA_LANGUAGE_YITTIAN" />
+			<select type="Language" name="Kreotian Language" supports="Contintentian Standard" />
+			<select type="Language" name="Kreotian Language" supports="Contintentian Standard||Contintentian Exotic" />
 		</rules>
 	</element>
 
@@ -215,8 +216,9 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Proficiency" name="Satellite Culture" supports="Skill"  requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
-			<select type="Proficiency" name="Satellite Culture" supports="Artisan tools" number="2" />
+			<select type="Proficiency" name="Satellite Culture" supports="Skill" />
+			<select type="Proficiency" name="Satellite Culture" supports="Artisan tools" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool (Satellite Culture)" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 			<select type="Proficiency" name="Satellite Culture" supports="Gaming Set||Musical Instrument" />
 		</rules>
 	</element>
@@ -244,6 +246,7 @@
 		</sheet>
 		<rules>
 			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_ICAN" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Proficiency" name="Honorable Combat Training" supports="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD|ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD|ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER|ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
 			
 			<stat name="honorable combat:ability" value="strength:modifier" bonus="honorable combat:ability" />
@@ -270,12 +273,12 @@
 			<p>Great Icans in mythology are described as Icans who more resemble their original purpose in creation, ie. They are more godlike. Great Icans hold the most reverence in society; and in almost all cases only Great Icans have been empresses of the nation. However, this societal praise has its limits. Due to their large stature, Great Icans do not have as long of a lifespan as other Icans, and are prone to heart conditions. This does not stop the belief that Great Icans are more attractive than other Icans, or that they are more pure.</p>
 			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2, and your Charisma increases by 1. These scores replace your other score increases.</p>
 			<p class="indent"><b><i>Size.</i></b> Great Icans range in height from 9 to 14 feet, and weigh on average 160-200lbs. Your size is Large.</p>
-			<p class="indent"><b><i>Special Sub-racial Trait 1.</i></b> Describe the special racial trait.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
 			<stat name="charisma" value="1" />
 			<stat name="wisdom" value="2" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Ican)" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<grant type="Size" id="ID_SIZE_LARGE" />
 			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_MISLEADING_PHYSIQUE" />
 			<grant type="Grants" id="ID_CONT_CONTINENTIA_GRANTS_ICAN_SUBRACE" />
