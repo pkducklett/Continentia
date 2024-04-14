@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+        <update version="0.0.2">
+			<!-- Update Notes: -Fixed Orajan transformation not appearing
+                               -Fixed Pyruvian transformation erroring -->
+		    	<description>Feats from Contintentia</description>
+		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
+			<file name="continentia-feats.xml"  url="https://github.com/pkducklett/Continentia/blob/98607ce38cdf514291b3c0d9ec47e673d8c038be/continentia-barbarian-rancor.xml" />
+		</update>
+	</info>
+
+    <!-- Chugger -->
+    <element name="Chugger" type="Feat" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_CHUGGER">
+        <description>
+            <p>Your exposure to dubious liquids has given you a stomach of steel that will turn any drinking game into a drinking chore.</p>
+            <ul>
+				<li>You increase your Constitution by 1 to a maximum of 20.</li>
+				<li>You have advantage on Constitution saving throws made to prevent being poisoned.</li>
+				<li>You can drink 12 oz of liquid as a bonus action (this includes potions).</li>
+			</ul>
+        </description>
+        <sheet>
+			<description>You have advantage on Constitution saving throws made to prevent being poisoned.
+			You can drink 12 oz of liquid as a bonus action (this includes potions).</description>
+		</sheet>
+        <rules>
+            <stat name="constitution" value="1"  />
+        </rules>
+    </element>
+	
+	<!-- Pi’ech Expert -->
+	<element name="Pi’ech Expert" type="Feat" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_PIECH_EXPERT">
+	<prerequisite>Proficiency with the Pi’ech</prerequisite>
+	<requirements>ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_PIECH||ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS</requirements>
+        <description>
+            <p>You must be proficient in the Pi'ech in order to take this feat. Your mastery of the Pi'ech can finally be used in the heat of combat, and your years of training have created some shortcuts.</p>
+            <ul>
+				<li>Your charging spike ability can be used after running 5ft in a straight line rather than 10ft.</li>
+				<li>After making an attack with your charging spike, you may make an additional attack with your Pi'ech as a bonus action.</li>
+				<li>As a bonus action you may grab hold of your parry grip on your Pi'ech. If you are grasping your parry grip, you may add +2 to your AC, but you cannot make an attack with the Pi’ech.</li>
+			</ul>
+        </description>
+        <sheet>
+			<description>Your charging spike ability can be used after running 5ft in a straight line rather than 10ft.
+			After making an attack with your charging spike, you may make an additional attack with your Pi'ech as a bonus action.
+			As a bonus action you may grab hold of your parry grip on your Pi'ech. If you are grasping your parry grip, you may add +2 to your AC, but you cannot make an attack with the Pi’ech.</description>
+		</sheet>
+    </element>
+
+	<!-- Meditative Charge -->
+    <element name="Meditative Charge" type="Feat" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_MEDITATIVE_CHARGE">
+	<prerequisite>Draconic race</prerequisite>
+	<requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ICAN||ID_CONT_CONTINENTIA_RACE_ILLITIAN||ID_CONT_CONTINENTIA_RACE_KHALID||ID_CONT_CONTINENTIA_RACE_NAGEAN||ID_CONT_CONTINENTIA_RACE_ORAJAN||ID_CONT_CONTINENTIA_RACE_PYRUVIAN</requirements>
+        <description>
+            <p>You gain the ability to imbue stones with draconic energy.</p>
+            <ul>
+				<li>Increase your Constitution of Wisdom score by 1, to a maximum of 20.</li>
+				<li>During a short or long rest you can mediate for 30 minutes over a basic stone to imbue it with draconic energy. After 30 minutes the stone will gain a single charge, which can be expended to enter a draconic transformation. After 2 hours, or after the charge is expended, the stone will lose its charge and cease to be magical.</li>
+			</ul>
+        </description>
+        <sheet>
+			<description>During a short or long rest you can mediate for 30 minutes over a basic stone to imbue it with draconic energy. After 30 minutes the stone will gain a single charge, which can be expended to enter a draconic transformation. 
+			After 2 hours, or after the charge is expended, the stone will lose its charge and cease to be magical.</description>
+		</sheet>
+        <rules>
+        	<select type="Ability Score Improvement" name="Ability Score Increase (Meditative Charge)" supports="ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_WISDOM" />
+        </rules>
+    </element>
+
+	<!-- Primal Adrenaline -->
+    <element name="Primal Adrenaline" type="Feat" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_PRIMAL_ADRENALINE">
+	<prerequisite>Draconic race</prerequisite>
+	<requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ICAN||ID_CONT_CONTINENTIA_RACE_ILLITIAN||ID_CONT_CONTINENTIA_RACE_KHALID||ID_CONT_CONTINENTIA_RACE_NAGEAN||ID_CONT_CONTINENTIA_RACE_ORAJAN||ID_CONT_CONTINENTIA_RACE_PYRUVIAN</requirements>
+        <description>
+            <p>Prolonged exposure to transformation has given you the ability to sweat off the strain of a draconic form.</p>
+            <ul>
+				<li>When determining your draconic stamina you may add +1 to your maximum.</li>
+				<li>Taking the Dash, Dodge, or Disengage action does not take draconic stamina.</li>
+				<li>When taking an action to make an attack or a breath weapon attack using one of your draconic traits, you may use your Primal Adrenaline ability to not expend draconic stamina. You may use this ability 3 times per long rest.</li>
+			</ul>
+        </description>
+        <sheet>
+			<description>Taking the Dash, Dodge, or Disengage action does not take draconic stamina. 
+			When taking an action to make an attack or a breath weapon attack using one of your draconic traits, you may use your Primal Adrenaline ability to not expend draconic stamina. You may use this ability 3 times per long rest.</description>
+		</sheet>
+        <rules>
+        	<stat name="draconic:stamina" value="1"/>
+        </rules>
+    </element>
+
+	<!-- Draconic Transformation -->
+	<element name="Draconic Transformation" type="Feat" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_DRACONIC_TRANSFORMATION">
+        <prerequisite>Draconic race</prerequisite>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ICAN||ID_CONT_CONTINENTIA_RACE_ILLITIAN||ID_CONT_CONTINENTIA_RACE_KHALID||ID_CONT_CONTINENTIA_RACE_NAGEAN||ID_CONT_CONTINENTIA_RACE_ORAJAN||ID_CONT_CONTINENTIA_RACE_PYRUVIAN</requirements>
+        <description>
+            <p>The draconic races of Continentia possess the unique ability to transform into a separate form with new attacks and abilities. Any draconic race may transform, often using items like dragonstones, so this feat may be taken at anytime, or may be granted by certain subclasses.</p>
+        </description>
+        <rules>
+            <select type="Feat Feature" name="Draconic Transformation" supports="Draconic Transformation"/>
+            <stat name="draconic:stamina" value="proficiency"/>
+            <stat name="draconic:stamina" value="constitution:modifier"/>
+            <stat name="draconic:breath:num" value="proficiency"/>
+            <stat name="draconic:breath:hit" value="proficiency"/>
+            <stat name="draconic:breath:hit" value="proficiency"/>
+            <stat name="draconic:breath:dc" value="10"/>
+            <stat name="draconic:breath:dc" value="proficiency"/>
+        </rules>
+    </element>
+    <!-- Icans: -->
+    <element name="Ican Transformation" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_ICAN_TRANSFORMATION">
+        <supports>Draconic Transformation</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ICAN</requirements>
+        <description>
+            <p>Icans are the largest of the draconic races. Their large bodies are unfortunately, too large for their wings. However, they possess an incredible ability to burrow underground while in this draconic state.</p>
+            <h4>ICAN DRACONIC TRAITS</h4>
+            <p>Icans possess the following traits while in a draconic form.</p>
+            <p class="indent"><b><i>Draconic Stamina.</i></b> When you enter your draconic state, you gain a number of draconic stamina equal to your constitution modifier + your proficiency modifier.</p>
+            <p class="indent"><b><i>Draconic Hit Points.</i></b> While in a draconic form, you gain temporary hit points equal to your Constitution modifier x your level.</p>
+			<p class="indent"><b><i>Draconic Armor Class.</i></b> While in a draconic form, your armor class is 10 + Dexterity modifier + Constitution modifier.</p>
+			<p class="indent"><b><i>Hardened Claw.</i></b> 2d6 Slashing + Strength modifer. Allows the user to burrow in soft soil.</p>
+			<p class="indent"><b><i>Bite.</i></b> 1d8 Slashing + Strength modifer.</p>
+			<p class="indent"><b><i>Size.</i></b> While in a draconic form, your size becomes large.</p>
+			<p class="indent"><b><i>Speed.</i></b> While in a draconic form, your walking speed is 30 feet, and you have a burrowing speed of 25 feet.</p>
+        </description>
+        <sheet>
+            <description>When you transform into your draconic state, you have draconic stamina equal to {{draconic:stamina}}. While in your draconic state, you gain temporary hit points equal to {{draconic:con}} x {{draconic:level}}, and you also have an armor class equal to {{draconic:ac}}. Your size is large, and you gain a Burrowing Speed of 25 feet in soft soil. </description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_CONT_CONTINENTIA_FEAT_ICAN_HARDENED_CLAW" />
+            <grant type="Feat Feature" id="ID_CONT_CONTINENTIA_FEAT_ICAN_BITE" />
+            <stat name="draconic:con" value="constitution:modifier"/>
+            <stat name="draconic:level" value="level"/>
+            <!-- <stat name="draconic:hp" value="draconic:con * draconic:level"/> -->
+            <stat name="draconic:ac" value="10"/>
+            <stat name="draconic:ac" value="constitution:modifier"/>
+            <stat name="draconic:ac" value="dexterity:modifier"/>
+        </rules>
+    </element>
+    <element name="Hardened Claw" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_ICAN_HARDENED_CLAW">
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ICAN</requirements>
+        <description>
+            <p>Icans possess very strong claws, which they mainly use for burrowing, but can also be used for a slash attack (2d6 + strength modifier slashing damage).</p>
+        </description>
+        <sheet action="Hardened Claw">
+            <description>While in a draconic state, your Hardened Claw attack deals {{ican:slash:num}}d{{ican:slash:die}} + {{ican:bonus}} Slashing damage. </description>
+        </sheet>
+        <rules>
+            <stat name="ican:slash:num" value="2"/>
+            <stat name="ican:slash:die" value="6"/>
+            <stat name="ican:bonus" value="strength:modifier"/>
+        </rules>
+    </element>
+    <element name="Ican Bite" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_ICAN_BITE">
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ICAN</requirements>
+        <description>
+            <p>Icans can use their teeth for a bite attack (1d8 + strength modifier piercing damage).</p>
+        </description>
+        <sheet action="Bite">
+            <description>While in a draconic state, your Bite attack deals {{ican:bite:num}}d{{ican:bite:die}} + {{ican:bonus}} Piercing damage. </description>
+        </sheet>
+        <rules>
+            <stat name="ican:bite:num" value="1"/>
+            <stat name="ican:bite:die" value="8"/>
+        </rules>
+    </element>
+    <!-- Illitians: -->
+    <element name="Illitian Transformation" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_ILLITIAN_TRANSFORMATION">
+        <supports>Draconic Transformation</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ILLITIAN</requirements>
+        <description>
+            <p>Illitians are the smallest of the draconic races. However, their small bodies make them incredibly nimble. Their powerful wings make them the strongest fliers among the draconic races. Though they are notably more fragile than the other draconic races.</p>
+            <h4>ILLITIAN DRACONIC TRAITS</h4>
+			<p>Illitians possess the following traits while in a draconic form.</p>
+			<p class="indent"><b><i>Draconic Stamina.</i></b> When you enter your draconic state, you gain a number of draconic stamina equal to your constitution modifier + your proficiency modifier.</p>
+			<p class="indent"><b><i>Draconic Armor Class.</i></b> While in a draconic form, your armor class is 10 + Dexterity modifier + Constitution modifier.</p>
+			<p class="indent"><b><i>Masters of Wind.</i></b> You learn the Gust cantrip. This spell can only be cast while in a draconic form. You may choose to cast this spell with either your Intelligence or Charisma modifier. </p>
+			<p class="indent"><b><i>Agile Form.</i></b> Your Draconic Racial Traits gain the Finesse property. While in a draconic state you are proficient in the Acrobatics and Stealth skills. You may double your proficiency modifier if you are already proficient in these skills.</p>
+			<p class="indent"><b><i>Claw.</i></b> 1d6 Slashing + Strength/Dexterity modifer.</p>
+			<p class="indent"><b><i>Size.</i></b> While in a draconic form, your size becomes medium.</p>
+			<p class="indent"><b><i>Speed.</i></b> While in a draconic form, your walking speed is 30 feet, and you have a flying speed of 40 feet.</p>
+        </description>
+        <sheet>
+            <description>When you transform into your draconic state, you have draconic stamina equal to {{draconic:stamina}}. While in your draconic state, you have an armor class equal to {{draconic:ac}}. Your size is medium, and you gain a Walking Speed of 30 feet and a Flying Speed of 40 feet.</description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_CONT_CONTINENTIA_FEAT_ILLITIAN_AGILE_FORM" />
+            <stat name="draconic:ac" value="10"/>
+            <stat name="draconic:ac" value="constitution:modifier"/>
+            <stat name="draconic:ac" value="dexterity:modifier"/>
+        </rules>
+    </element>
+    <element name="Agile Form" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_ILLITIAN_AGILE_FORM">
+		<description>
+			<p>Your Draconic Racial Traits gain the Finesse property. While in a draconic state you are proficient in the Acrobatics and Stealth skills. You may double your proficiency modifier if you are already proficient in these skills.</p>
+		</description>
+		<sheet>
+			<description>While in a draconic state you are proficient in the Acrobatics and Stealth skills. You may double your proficiency modifier if you are already proficient in these skills.</description>
+		</sheet>
+        <rules>
+            <select type="Feat Feature" name="Illitian Draconic Weapon Stat" supports="Illitian Draconic Weapons"/>
+        </rules>
+	</element>
+    <element name="Illitian Draconic Weapons (Strength)" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_ILLITIAN_DRACONIC_WEAPONS_STRENGTH">
+        <supports>Illitian Draconic Weapons</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ILLITIAN</requirements>
+        <description>
+            <p>Illitians have sharp talons, which they can use for a slash attack (1d6 + strength modifier slashing damage).</p>
+        </description>
+        <sheet action="Slash">
+            <description>While in a draconic state, your Slash attack deals {{illitian:slash:num}}d{{illitian:slash:die}} + {{illitian:slash:str}}. </description>
+        </sheet>
+        <rules>
+            <stat name="illitian:slash:num" value="1"/>
+            <stat name="illitian:slash:die" value="6"/>
+            <stat name="illitian:slash:str" value="strength:modifier"/>
+        </rules>
+    </element>
+    <element name="Illitian Draconic Weapons (Dexterity)" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_ILLITIAN_DRACONIC_WEAPONS_DEXTERITY">
+        <supports>Illitian Draconic Weapons</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ILLITIAN</requirements>
+        <description>
+            <p>Illitians have sharp talons, which they can use for a slash attack (1d6 + dexterity modifier slashing damage).</p>
+        </description>
+        <sheet action="Slash">
+            <description>While in a draconic state, your Slash attack deals {{illitian:slash:num}}d{{illitian:slash:die}} + {{illitian:slash:dex}}. </description>
+        </sheet>
+        <rules>
+            <stat name="illitian:slash:num" value="1"/>
+            <stat name="illitian:slash:die" value="6"/>
+            <stat name="illitian:slash:dex" value="dexterity:modifier"/>
+        </rules>
+    </element>
+    <!-- Khalids: -->
+    <element name="Khalid Transformation" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_KHALID_TRANSFORMATION">
+        <supports>Draconic Transformation</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_KHALID</requirements>
+        <description>
+            <p>Khalids are notable in how sturdy their draconic states are. Do not let their lack of wings for flight or claws for burrowing fool you. These dragons can take a hit, and they aren't afraid to give a reminder of their power.</p>
+            <h4>KHALID DRACONIC TRAITS</h4>
+			<p>Khalids possess the following traits while in a draconic form.</p>
+			<p class="indent"><b><i>Draconic Armor Class.</i></b> While in a draconic form, your armor class is 12 + Dexterity modifier + Constitution modifier.</p>
+			<p class="indent"><b><i>Draconic Hit Points.</i></b> While in a draconic form, you gain temporary hit points equal to your (Constitution modifier + 1) x your level.</p>
+            <p class="indent"><b><i>Bite.</i></b> 1d8 Piercing + Strength modifer.</p>
+			<p class="indent"><b><i>Breath Weapon.</i></b> You release a cone of cold up to 15 feet causing a creature to make a Constitution save, which deals 2d6 Cold damage on a failed save, and half as much on a success.</p>
+			<p class="indent"><b><i>Size.</i></b> While in a draconic form, your size becomes large.</p>
+			<p class="indent"><b><i>Speed.</i></b> While in a draconic form, your walking speed is 30 feet.</p>
+        </description>
+        <sheet>
+            <description>When you transform into your draconic state, you have draconic stamina equal to {{draconic:stamina}}. While in your draconic state, you gain temporary hit points equal to {{draconic:con}} x {{draconic:level}}, and you also have an armor class equal to {{draconic:ac}}. Your size is large. </description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_CONT_CONTINENTIA_FEAT_KHALID_BITE" />
+            <grant type="Feat Feature" id="ID_CONT_CONTINENTIA_FEAT_KHALID_DRACONIC_BREATH" />
+            <stat name="draconic:con" value="constitution:modifier"/>
+            <stat name="draconic:con" value="1"/>
+            <stat name="draconic:level" value="level"/>
+            <!-- <stat name="draconic:hp" value="draconic:con * draconic:level"/> -->
+            <stat name="draconic:ac" value="12"/>
+            <stat name="draconic:ac" value="constitution:modifier"/>
+            <stat name="draconic:ac" value="dexterity:modifier"/>
+        </rules>
+    </element>
+        <element name="Khalid Bite" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_KHALID_BITE">
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_KHALID</requirements>
+        <description>
+            <p>Khalids can use their teeth for a bite attack (1d8 + strength modifier piercing damage).</p>
+        </description>
+        <sheet action="Bite">
+            <description>While in a draconic state, your Bite attack deals {{khalid:bite:num}}d{{khalid:bite:die}} + {{khalid:bonus}} Piercing damage.</description>
+        </sheet>
+        <rules>
+            <stat name="khalid:bite:num" value="1"/>
+            <stat name="khalid:bite:die" value="8"/>
+            <stat name="khalid:bonus" value="strength:modifier"/>
+        </rules>
+    </element>
+    <element name="Khalid Breath Weapon" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_KHALID_DRACONIC_BREATH">
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_KHALID</requirements>
+        <description>
+            <p>Khalids have a breath attack that deals cold damage in a cone 15 feet from them. It triggers a constitution saving throw to creatures within range, and deals 2d6 cold damage on a failed save, and half as much on a successful save.</p>
+        </description>
+        <sheet action="Breath Attack">
+            <description>You may use this attack up to {{draconic:breath:num}} times per long rest. You release a cone of cold up to 15 feet causing a creature to make a {{draconic:breath:dc}} DC Constitution Saving Throw, which deals {{khalid:breath:num}}d{{khalid:breath:die}} Cold damage on a failed save, and half as much on a successful save.</description>
+        </sheet>
+        <rules>
+            <stat name="khalid:breath:num" value="3"/>
+            <stat name="khalid:breath:die" value="6"/>
+        </rules>
+    </element>
+    <!-- Nageans: -->
+    <element name="Nagean Transformation" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_NAGEAN_TRANSFORMATION">
+        <supports>Draconic Transformation</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_NAGEAN</requirements>
+        <description>
+            <p>Nageans are the most traditional in draconic appearance. While in their draconic state, their two wings spring forth and stretch to grant them flight. They also possess a mighty breath attack to keep enemies at bay.</p>
+            <h4>NAGEAN DRACONIC TRAITS</h4>
+			<p>Nageans possess the following traits while in a draconic form.</p>
+			<p class="indent"><b><i>Draconic Armor Class.</i></b> While in a draconic form, your armor class is 10 + Dexterity modifier + Constitution modifier.</p>
+			<p class="indent"><b><i>Draconic Hit Points.</i></b> While in a draconic form, you gain temporary hit points equal to your Constitution modifier x your level.</p>
+			<p class="indent"><b><i>Gift of Arit.</i></b> While in a draconic form, you have resistance to radiant damage.</p>
+			<p class="indent"><b><i>Bite.</i></b> 1d8 Piercing + Strength modifer.</p>
+			<p class="indent"><b><i>Breath Weapon.</i></b> You release a line of pure light targeting one creature dealing 3d6 Radiant damage. You gain a bonus to hit equal to twice your proficiency modifier without the use of any other stat.</p>
+			<p class="indent"><b><i>Size.</i></b> While in a draconic form, your size becomes large.</p>
+			<p class="indent"><b><i>Speed.</i></b> While in a draconic form, your walking speed is 30 feet, and you have a flying speed of 30 feet.</p>
+        </description>
+        <sheet>
+            <description>While in your draconic state, you gain temporary hit points equal to {{draconic:con}} x {{draconic:level}}, and you also have an armor class equal to {{draconic:ac}}. Your size is large, and you gain a Flying Speed of 30 feet. </description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_CONT_CONTINENTIA_FEAT_NAGEAN_BITE" />
+            <grant type="Feat Feature" id="ID_CONT_CONTINENTIA_FEAT_NAGEAN_DRACONIC_BREATH" />
+            <stat name="draconic:con" value="constitution:modifier"/>
+            <stat name="draconic:level" value="level"/>
+            <!-- <stat name="draconic:hp" value="draconic:con * draconic:level"/> -->
+            <stat name="draconic:ac" value="10"/>
+            <stat name="draconic:ac" value="constitution:modifier"/>
+            <stat name="draconic:ac" value="dexterity:modifier"/>
+        </rules>
+    </element>
+        <element name="Nagean Bite" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_NAGEAN_BITE">
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_NAGEAN</requirements>
+        <description>
+            <p>Nageans can use their teeth for a bite attack (1d8 + strength modifier piercing damage).</p>
+        </description>
+        <sheet action="Bite">
+            <description>While in a draconic state, your Bite attack deals {{nagean:bite:num}}d{{nagean:bite:die}} + {{nagean:bonus}} Piercing damage.</description>
+        </sheet>
+        <rules>
+            <stat name="nagean:bite:num" value="1"/>
+            <stat name="nagean:bite:die" value="8"/>
+            <stat name="nagean:bonus" value="strength:modifier"/>
+        </rules>
+    </element>
+    <element name="Nagean Breath Weapon" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_NAGEAN_DRACONIC_BREATH">
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_NAGEAN</requirements>
+        <description>
+            <p>Nageans have a breath attack that deals radiant damage to one target within 30 feet of them, dealing 3d6 radiant damage on hit. They have a bonus to hit equal to twice their proficiency modifier.</p>
+        </description>
+        <sheet action="Breath Attack">
+            <description>You may use this attack up to {{draconic:breath:num}} times per long rest. You release a line of pure light targeting one creature within 30 feet of you. You have {{draconic:breath:hit}} to hit and it deals {{nagean:breath:num}}d{{nagean:breath:die}} radiant damage on hit.</description>
+        </sheet>
+        <rules>
+            <stat name="nagean:breath:num" value="3"/>
+            <stat name="nagean:breath:die" value="6"/>
+        </rules>
+    </element>
+    <!-- Orajans: -->
+    <element name="Orajan Transformation" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_ORAJAN_TRANSFORMATION">
+        <supports>Draconic Transformation</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ORAJAN</requirements>
+        <description>
+            <p>Orajans possess two sets of wings while in their draconic state. While they do not have a conventional breath weapon, these dragons are masters of the arcane and can cast spells while transformed.</p>
+            <h4>ORAJAN DRACONIC TRAITS</h4>
+			<p>Orajans possess the following traits while in a draconic form.</p>
+			<p class="indent"><b><i>Draconic Armor Class.</i></b> While in a draconic form, your armor class is 10 + Dexterity modifier + Constitution modifier.</p>
+			<p class="indent"><b><i>Draconic Hit Points.</i></b> While in a draconic form, you gain temporary hit points equal to your Constitution modifier x your level.</p>
+            <p class="indent"><b><i>Bite.</i></b> 1d8 Piercing + Strength modifer.</p>
+			<p class="indent"><b><i>Size.</i></b> While in a draconic form, your size becomes large.</p>
+			<p class="indent"><b><i>Speed.</i></b> While in a draconic form, your walking speed is 30 feet, and you have a flying speed of 30 feet.</p>
+        </description>
+        <sheet>
+            <description>While in your draconic state, you gain temporary hit points equal to {{draconic:con}} x {{draconic:level}}, and you also have an armor class equal to {{draconic:ac}}. Your size is large, and you gain a Flying Speed of 30 feet. </description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_CONT_CONTINENTIA_FEAT_ORAJAN_BITE" />
+            <stat name="draconic:con" value="constitution:modifier"/>
+            <stat name="draconic:level" value="level"/>
+            <!-- <stat name="draconic:hp" value="draconic:con * draconic:level"/> -->
+            <stat name="draconic:ac" value="10"/>
+            <stat name="draconic:ac" value="constitution:modifier"/>
+            <stat name="draconic:ac" value="dexterity:modifier"/>
+        </rules>
+    </element>
+    <element name="Orajan Bite" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_ORAJAN_BITE">
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ORAJAN</requirements>
+        <description>
+            <p>Orajans can use their teeth for a bite attack (1d8 + strength modifier piercing damage).</p>
+        </description>
+        <sheet action="Bite">
+            <description>While in a draconic state, your Bite attack deals {{orajan:bite:num}}d{{orajan:bite:die}} + {{orajan:bonus}} Piercing damage.</description>
+        </sheet>
+        <rules>
+            <stat name="orajan:bite:num" value="1"/>
+            <stat name="orajan:bite:die" value="8"/>
+            <stat name="orajan:bonus" value="strength:modifier"/>
+        </rules>
+    </element>
+    <!-- Pyruvians: -->
+    <element name="Pyruvian Transformation" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_PYRUVIAN_TRANSFORMATION">
+        <supports>Draconic Transformation</supports>
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_PYRUVIAN</requirements>
+        <description>
+            <p>Pyruvians are as bright as the stars they resemble while transformed. Their firey wings grant them the ability of flight. They also have a strong breath attack that will make any enemy think twice to face again.</p>
+            <h4>PYRUVIAN DRACONIC TRAITS</h4>
+			<p>Pyruvians possess the following traits while in a draconic form.</p>
+			<p class="indent"><b><i>Draconic Armor Class.</i></b> While in a draconic form, your armor class is 10 + Dexterity modifier + Constitution modifier.</p>
+			<p class="indent"><b><i>Draconic Hit Points.</i></b> While in a draconic form, you gain temporary hit points equal to your Constitution modifier x your level.</p>
+            <p class="indent"><b><i>Seared Hide and Scale.</i></b> While in a draconic form, you have advantage on saving throws against effects that deal fire damage.</p>
+			<p class="indent"><b><i>Bite.</i></b> 1d8 Piercing + Strength modifer.</p>
+			<p class="indent"><b><i>Breath Weapon.</i></b> You release a line of Fire causing a creature to make a Dexterity saving throw, which deals 2d6 fire damage on a failed save, and half on a success.</p>
+			<p class="indent"><b><i>Size.</i></b> While in a draconic form, your size becomes large.</p>
+			<p class="indent"><b><i>Speed.</i></b> While in a draconic form, your walking speed is 30 feet, and you have a flying speed of 30 feet.</p>
+        </description>
+        <sheet>
+            <description>While in your draconic state, you gain temporary hit points equal to {{draconic:con}} x {{draconic:level}}, and you also have an armor class equal to {{draconic:ac}}. Your size is large, and you gain a Flying Speed of 30 feet. </description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_CONT_CONTINENTIA_FEAT_PYRUVIAN_BITE" />
+            <grant type="Feat Feature" id="ID_CONT_CONTINENTIA_FEAT_PYRUVIAN_DRACONIC_BREATH" />
+            <stat name="draconic:con" value="constitution:modifier"/>
+            <stat name="draconic:level" value="level"/>
+            <!-- <stat name="draconic:hp" value="draconic:con * draconic:level"/> -->
+            <stat name="draconic:ac" value="10"/>
+            <stat name="draconic:ac" value="constitution:modifier"/>
+            <stat name="draconic:ac" value="dexterity:modifier"/>
+        </rules>
+    </element>
+    <element name="Pyruvian Draconic Weapons" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_PYRUVIAN_BITE">
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_PYRUVIAN</requirements>
+        <description>
+            <p>Pyruvians can also use their teeth for a bite attack (1d8 + strength modifier piercing damage).</p>
+        </description>
+        <sheet action="Bite">
+            <description>While in a draconic state, your Bite attack deals {{pyruvian:bite:num}}d{{pyruvian:bite:die}} + {{pyruvian:bonus}} Piercing damage.</description>
+        </sheet>
+        <rules>
+            <stat name="pyruvian:bite:num" value="1"/>
+            <stat name="pyruvian:bite:die" value="8"/>
+            <stat name="pyruvian:bonus" value="strength:modifier"/>
+        </rules>
+    </element>
+    <element name="Pyruvian Draconic Weapons" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_PYRUVIAN_DRACONIC_BREATH">
+        <requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_PYRUVIAN</requirements>
+        <description>
+            <p>Pyruvians have a breath attack that deals fire damage in a line 10 feet from them. It triggers a dexterity saving throw to creatures within range, and deals 2d6 fire damage on a failed save, and half as much on a successful save.</p>
+        </description>
+        <sheet action="Breath Attack">
+            <description>You may use this attack up to {{draconic:breath:num}} times per long rest. You release a line of fire up to 10 feet causing a creature to make a {{draconic:breath:dc}} DC Dexterity Saving Throw, which deals {{pyruvian:breath:num}}d{{pyruvian:breath:die}} Fire damage on a failed save, and half as much on a successful save.</description>
+        </sheet>
+        <rules>
+            <stat name="pyruvian:breath:num" value="3"/>
+            <stat name="pyruvian:breath:die" value="6"/>
+        </rules>
+    </element>
+
+	<!-- Earth Shaker -->
+	<element name="Earth Shaker" type="Feat" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_EARTH_SHAKER">
+	<prerequisite>Ican, Half-Ican</prerequisite>
+	<requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ICAN</requirements>
+	<description>
+		<p>Your draconic form has been cursed with the unnatural ability to control magical energies around you.</p>
+            <ul>
+				<li>You gain the cantrip Mold Earth. You may cast this spell while in a draconic form.</li>
+				<li>You also gain the 1st level spell Earth Tremor. You may cast this spell a number of times equal to your proficiency modifier and it has a spell save DC of 10 + your proficiency modifier, but it can only be cast while in your draconic state.</li>
+				<li>Your burrowing speed increases to 30 feet while you are transformed.</li>
+			</ul>
+	</description>
+		<sheet>
+			<description>You gain the cantrip Mold Earth. You may cast this spell while in a draconic form.
+			You also gain the 1st level spell Earth Tremor. You may cast this spell {{earth tremor:number times}} times and it has a spell save DC of {{earth tremor:dc}}, but it can only be cast while in your draconic state. 
+			Your burrowing speed increases to 30 feet while you are transformed.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_MOLD_EARTH" />
+			<grant type="Spell" id="ID_XGTE_SPELL_EARTH_TREMOR" />
+
+			<stat name="earth tremor:dc" value="10" />
+			<stat name="earth tremor:dc" value="proficiency" />
+			<stat name="earth tremor:number times" value="proficiency" />
+		</rules>
+	</element>
+
+    <!-- Matriarch/Patriarch of the House -->
+    <element name="Matriarch/Patriarch of the House" type="Feat" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_MASTER_OF_THE_HOUSE">
+    <prerequisite>Ican, Half-Ican</prerequisite>
+	<requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ICAN</requirements>
+		<description>
+			<p>You are the eternal mother of your clan, and your children and spouse share your name. Or you are the last surviving father of your family, cursed with the buried name of your former matriarch with no women who can take control and bring your family back to glory.</p>
+			<ul>
+				<li>Your parental instincts give you advantage on Medicine checks to stabilize any person that you have been traveling with for more than 24 hours.</li>
+				<li>During a short rest, you may expend one of your hit dice and give it to an ally to roll in place of yourself.</li>
+				<li>At the end of a long rest, you may give a number of allies equal to 3 + your proficiency modifier 1d4, which they can add to their next saving throw.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have advantage on Medicine checks to stabilize any person that you have been traveling with for more than 24 hours. 
+            During a short rest, you may expend one of your hit dice and give it to an ally to roll in place of yourself. 
+            At the end of a long rest, you may give {{allies:number}} allies 1d4, which they can add to their next saving throw.</description>
+		</sheet>
+		<rules>
+			<stat name="allies:number" value="3" />
+			<stat name="allies:number" value="proficiency" />
+		</rules>
+	</element>
+
+    <!-- Strengthened Gale -->
+    <element name="Strengthened Gale" type="Feat" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_STRENGTHENED_GALE">
+    <prerequisite>Illitian, Half-Illitian</prerequisite>
+	<requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ILLITIAN</requirements>
+        <description>
+            <p>Your wings have grown more powerful, becoming almost an extension of yourself.</p>
+            <ul>
+				<li>You gain the ability to hover while flying.</li>
+				<li>You can use your flight ability while wearing light or medium armor.</li>
+				<li>While transformed you may expend an additional point of draconic stamina to cast the spell Gust of Wind. This spell is affected by your choice of Intelligence, Wisdom, or Charisma. The spell will end after 1 minute, or if you enter back into a humanoid state.</li>
+			</ul>
+        </description>
+        <sheet>
+			<description>You gain the ability to hover while flying.
+			You can use your flight ability while wearing light or medium armor.
+            While transformed you may expend an additional point of draconic stamina to cast the spell Gust of Wind.
+            The spell will end after 1 minute, or if you enter back into a humanoid state.</description>
+		</sheet>
+        <rules>
+            <select type="Feat Feature" name="Strengthened Gale" supports="Strengthened Gale" />
+        </rules>
+    </element>
+
+    <element name="Strengthened Gale (Charisma)" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_STRENGTHENED_GALE_CHARISMA">
+		<supports>Strengthened Gale</supports>
+		<description>
+			<p>While transformed you may expend an additional point of draconic stamina to cast the spell Gust of Wind.</p>
+			<p class="indent">Your spellcasting ability for this spell is charisma.</p>
+		</description>
+		<sheet>
+			<description>Spellcasting ability: Charisma.
+            Spell Save DC = {{gust of wind:dc}}</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" />
+
+            <stat name="gust of wind:dc" value="8" />
+			<stat name="gust of wind:dc" value="proficiency" />
+			<stat name="gust of wind:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+
+    <element name="Strengthened Gale (Intelligence)" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_STRENGTHENED_GALE_INTELLIGENCE">
+		<supports>Strengthened Gale</supports>
+		<description>
+			<p>While transformed you may expend an additional point of draconic stamina to cast the spell Gust of Wind.</p>
+			<p class="indent">Your spellcasting ability for this spell is intelligence.</p>
+		</description>
+		<sheet>
+			<description>Spellcasting ability: Intelligence.
+            Spell Save DC = {{gust of wind:dc}}</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" />
+
+            <stat name="gust of wind:dc" value="8" />
+			<stat name="gust of wind:dc" value="proficiency" />
+			<stat name="gust of wind:dc" value="intelligence:modifier" />
+		</rules>
+	</element>
+
+    <element name="Strengthened Gale (Wisdom)" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_STRENGTHENED_GALE_WISDOM">
+		<supports>Strengthened Gale</supports>
+		<description>
+			<p>While transformed you may expend an additional point of draconic stamina to cast the spell Gust of Wind.</p>
+			<p class="indent">Your spellcasting ability for this spell is wisdom.</p>
+		</description>
+		<sheet>
+			<description>Spellcasting ability: Wisdom.
+            Spell Save DC = {{gust of wind:dc}}</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" />
+
+            <stat name="gust of wind:dc" value="8" />
+			<stat name="gust of wind:dc" value="proficiency" />
+			<stat name="gust of wind:dc" value="wisdom:modifier" />
+		</rules>
+	</element>
+
+    <!-- Winter's Bane -->
+    <element name="Winter's Bane" type="Feat" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_WINTERS_BANE">
+	<prerequisite>Khalid, Half-Khalid</prerequisite>
+	<requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_KHALID</requirements>
+	<description>
+		<p>Your command of the cold allows you to channel it against enemies.</p>
+            <ul>
+				<li>Increase your Strength or Constitution score by 1, to a maximum of 20.</li>
+				<li>When a creature successfully makes an attack against you, as a reaction, you may force that creature to make a constitution saving throw.</li>
+				<li>If they fail they take 2d10 cold damage and their movement speed is cut in half until the end of their next turn. If they succeed they take half as much damage and do not lose movement speed.</li>
+                <li>Your saving throw DC is equal to 10 + your proficiency modifier. You may use this ability a number of times equal to your proficiency modifier.</li>
+            </ul>
+	</description>
+		<sheet>
+			<description>When a creature successfully makes an attack against you, as a reaction, you may force that creature to make a constitution saving throw.
+			If they fail they take 2d10 cold damage and their movement speed is cut in half until the end of their next turn. If they succeed they take half as much damage and do not lose movement speed. 
+			Your saving throw DC is {{winters bane:dc}}. You may use this ability {{winters bane:number times}} times.</description>
+		</sheet>
+		<rules>
+            <select type="Ability Score Improvement" name="Ability Score Increase (Winter's Bane)" supports="ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_STRENGTH"/>
+
+			<stat name="winters bane:dc" value="10" />
+			<stat name="winters bane:dc" value="proficiency" />
+			<stat name="winters bane:number times" value="proficiency" />
+		</rules>
+	</element>
+</elements>

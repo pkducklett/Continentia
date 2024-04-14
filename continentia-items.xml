@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Continentia Items</name>
+		<update version="0.0.1">
+            <!-- Update Notes: -  -->
+		    <description>Additional items for Continentia.</description>
+		    <author url="https://github.com/pkducklett/">Corey Welch</author>
+			<file name="continentia-items.xml"  url="https://github.com/pkducklett/Continentia/blob/4607f95fd0483e925cac92896003273a9fbd27c9/continentia-items-firearms.xml" />
+		</update>
+	</info>
+
+    <!-- Weapons -->
+    <element name="Pi’ech" type="Weapon" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_WEAPON_PIECH">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_SPECIAL_PIECH</supports>
+		<description>
+			<p>The Pi’ech (also called an Ican Pike) is a two handed axe-like spear that was designed to penetrate the scales of dragons. The Pi’ech is used like an axe in close combat. However, it has the dual purpose of becoming a type of makeshift ram.</p>
+            <p class="indent">"The Pi’ech is not a hard weapon to use. It just has a few extra steps. </p>
+            <p class="indent">First, anchor the shoulder cushion in the pit of your dominant arm. Next, grip your primary and secondary hand tightly in place in the designated areas. Then simply charge toward the target you wish to hit. Your primary hand will hit the Halting Disc once you make impact.</p>
+            <p class="indent">Now, once you've made impact, you can choose to do two things. One, you can pull the weapon out by using your dominant foot on the target and pulling against the Halting Disc with your secondary hand. Or you can swing the weapon underneath your arm to hit the target with the Hip Blade."</p>
+            <p class="indent">-Karr, Pi’ech expert and teacher to the royal Ican family</p>
+			<div element="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_SPECIAL_PIECH" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d10</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_PIECH</set>
+		</setters>
+	</element>
+    <element name="Charging Spike" type="Weapon Property" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_WEAPON_PROPERTY_SPECIAL_PIECH">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_PIECH</supports>
+		<description>When you move in a straight line of at least 10ft before making an attack you gain the following benefits: The attack you make is not affected by piercing resistances. The attack follows the same properties as the Pi’ech, but deals 1d12 piercing damage in place of the normal damage die and damage type. You must be proficient in the Pi’ech to use this ability.</description>
+	</element>
+    <element name="Weapon Proficiency (Pi’ech)" type="Proficiency" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_PIECH">
+		<supports>Weapon, Martial, Melee, Special, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, </supports>
+		<sheet alt="Pi’ech" />
+	</element>
+</elements>

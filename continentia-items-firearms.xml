@@ -2,10 +2,11 @@
 <elements>
 	<info>
 		<name>Firearms</name>
-		<update version="0.0.2">
-            <!-- Update Notes: -added gunsmith's tools, bayonets, axe heads, and special firearms
-							   -added feats: bayonet charger and fastest somatics in ford
-							   -changed firearm proficiencies to reduce sheet clutter-->
+		<update version="0.0.5">
+            <!-- Update Notes: -Revised Ranges and Dice
+							   -Added Blunderbuss
+							   -Changed Bayonet Charger to Attachment Adept
+							   -Changed Bar Fighter to Naturalist -->
 		    <description>The firearms rules, options, and proficiencies for Continentia.</description>
 		    <author url="https://github.com/pkducklett/">Corey Welch</author>
 			<file name="continentia-items-firearms.xml"  url="https://github.com/pkducklett/Continentia/blob/4607f95fd0483e925cac92896003273a9fbd27c9/continentia-items-firearms.xml" />
@@ -25,14 +26,14 @@
 	<!-- firearm class/multiclass proficiencies -->
 	<append id="ID_WOTC_ERLW_CLASS_ARTIFICER">
 		<rules>
-			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_LIGHT_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
-			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_MEDIUM_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
 		</rules>
 	</append>
 	<append id="ID_WOTC_ERLW_CLASS_ARTIFICER">
 		<rules>
-			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_LIGHT_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
-			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_MEDIUM_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_FIREARMS" requirements="ID_CONT_CONTINENTIA_OPTION_FIREARMS" />
 		</rules>
 	</append>
 
@@ -178,7 +179,7 @@
 		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
 		<sheet alt="Simple Heavy Firearms" />
 		<rules>
-			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_PUCKLE_GUN" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_CRANK_CANNON" />
 		</rules>
 	</element>
 
@@ -248,7 +249,7 @@
 			<set name="weight" lb="2">2 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="range">100/150 ft.</set>
-			<set name="damage" type="piercing">1d12</set>
+			<set name="damage" type="piercing">2d4</set>
 			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SINGLEACTION_REVOLVER</set>
 		</setters>
 	</element>
@@ -266,7 +267,7 @@
 			<set name="cost" currency="gp">15</set>
 			<set name="weight" lb="3">3 lb.</set>
 			<set name="slot">onehand</set>
-			<set name="range">75/100 ft.</set>
+			<set name="range">80/120 ft.</set>
 			<set name="damage" type="piercing">1d8</set>
 			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SEMIAUTO_PISTOL</set>
 		</setters>
@@ -285,8 +286,8 @@
 			<set name="cost" currency="gp">30</set>
 			<set name="weight" lb="2">2 lb.</set>
 			<set name="slot">onehand</set>
-			<set name="range">50/100 ft.</set>
-			<set name="damage" type="piercing">1d8</set>
+			<set name="range">40/60 ft.</set>
+			<set name="damage" type="piercing">1d6</set>
 			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_FLINTLOCK_PISTOL</set>
 		</setters>
 	</element>
@@ -304,7 +305,7 @@
 			<set name="cost" currency="gp">20</set>
 			<set name="weight" lb="3">3 lb.</set>
 			<set name="slot">onehand</set>
-			<set name="range">100/150 ft.</set>
+			<set name="range">100 ft.</set>
 			<set name="damage" type="piercing">3d4</set>
 			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_DOUBLEACTION_REVOLVER</set>
 		</setters>
@@ -323,7 +324,7 @@
 			<set name="cost" currency="gp">25</set>
 			<set name="weight" lb="3">3 lb.</set>
 			<set name="slot">onehand</set>
-			<set name="range">100/150 ft.</set>
+			<set name="range">100 ft.</set>
 			<set name="damage" type="piercing">1d10</set>
 			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_INFANTRY_SEMIAUTO_PISTOL</set>
 		</setters>
@@ -342,8 +343,8 @@
 			<set name="cost" currency="gp">50</set>
 			<set name="weight" lb="9">9 lb.</set>
 			<set name="slot">twohand</set>
-			<set name="range">260/600 ft. </set>
-			<set name="damage" type="piercing">1d12</set>
+			<set name="range">260 ft. </set>
+			<set name="damage" type="piercing">1d10</set>
 			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_HUNTING_RIFLE</set>
 		</setters>
 	</element>
@@ -400,7 +401,7 @@
 			<set name="cost" currency="gp">75</set>
 			<set name="weight" lb="20">20 lb.</set>
 			<set name="slot">twohand</set>
-			<set name="range">160/525 ft. </set>
+			<set name="range">160 ft. </set>
 			<set name="damage" type="piercing">1d10</set>
 			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MUSKET</set>
 		</setters>
@@ -411,6 +412,25 @@
 		<sheet alt="Musket" />
 	</element>
 
+	<element name="Blunderbuss" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_BLUNDERBUSS">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_MEDIUM_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_ONE, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_CONE</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">20x15 ft. </set>
+			<set name="damage" type="slashing">6d4</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_BLUNDERBUSS</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Blunderbuss)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_BLUNDERBUSS">
+		<supports>Weapon, Simple, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_MEDIUM_FIREARM, ID_INTERNAL_DAMAGE_TYPE_SLASHING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
+		<sheet alt="Blunderbuss" />
+	</element>
+
 	<element name="Standard Infantry Rifle" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_STANDARD_INFANTRY_RIFLE">
 		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_MEDIUM_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_TEN, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MAGAZINE</supports>
 		<description />
@@ -419,7 +439,7 @@
 			<set name="cost" currency="gp">65</set>
 			<set name="weight" lb="9">9 lb.</set>
 			<set name="slot">twohand</set>
-			<set name="range">260/600 ft. </set>
+			<set name="range">260 ft. </set>
 			<set name="damage" type="piercing">2d6</set>
 			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_STANDARD_INFANTRY_RIFLE</set>
 		</setters>
@@ -488,23 +508,23 @@
 		<sheet alt="Compact Infantry Shotgun" />
 	</element>
 
-	<element name="Puckle Gun" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_PUCKLE_GUN">
-		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_HEAVY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_EIGHT, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AUTO</supports>
+		<element name="Crank Cannon" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_CRANK_CANNON">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_HEAVY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING</supports>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">60</set>
-			<set name="weight" lb="28">28 lb.</set>
+			<set name="weight" lb="100">100 lb.</set>
 			<set name="slot">twohand</set>
-			<set name="range">100/260 ft.</set>
+			<set name="range">80/120 ft.</set>
 			<set name="damage" type="piercing">1d8*1d4</set>
-			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_PUCKLE_GUN</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_CRANK_CANNON</set>
 		</setters>
 	</element>
-	<element name="Weapon Proficiency (Puckle Gun)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_PUCKLE_GUN">
+	<element name="Weapon Proficiency (Crank Cannon)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_CRANK_CANNON">
 		<supports>Weapon, Simple, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_HEAVY_FIREARM, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
 		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS, [str:13]</requirements>
-		<sheet alt="Puckle Gun" />
+		<sheet alt="Crank Cannon" />
 	</element>
 
 	<element name="Automatic Heavy Rifle" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_AUTOMATIC_HEAVY_RIFLE">
@@ -659,8 +679,8 @@
 		<description>
 			<p>Having proficiency in Gunsmith's Tools allows you to add your proficiency modifier to checks made with it. Gunsmith's tool checks are affected by your Dexterity modifier.</p>
 			<p class="indent"><strong><em>Components.</em></strong> Gunsmith's tools include files, a hammer, a punch, gauges, wrenches, a vernier, a portable vise, brushes, and specialized wrenches.</p>
-			<p class="indent"><strong><em>History.</em></strong> Proficiency with gunsmith's tools allows you to better understand the history and age of a firarm based on its make and model.</p>
-			<p class="indent"><strong><em>Investigation.</em></strong> When you inspect a firearm, proficiency with gunsmith's tools grants addtional insight in various aspects of the weapon's make and ammunition.</p>
+			<p class="indent"><strong><em>History.</em></strong> Proficiency with gunsmith's tools allows you to better understand the history and age of a firearm based on its make and model.</p>
+			<p class="indent"><strong><em>Investigation.</em></strong> When you inspect a firearm, proficiency with gunsmith's tools grants additional insight in various aspects of the weapon's make and ammunition.</p>
 			<h5>GUNSMITH'S TOOLS</h5>
 			<p>During a long rest you can perform tasks with your Gunsmith's tools.</p>
 			<table>
@@ -998,44 +1018,29 @@
 		</rules>
 	</element>
 
-	<element name="Bayonet Charger" type="Feat" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_FEAT_BAYONET_CHARGER">
+	<element name="Attachment Adept" type="Feat" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_FEAT_ATTACHMENT_ADEPT">
 		<prerequisite>Proficiency with medium firearms</prerequisite>
 		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS, ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_MEDIUM_FIREARMS</requirements>
 		<description>
 			<p><i>Prerequisite: Proficiency with medium firearms</i></p>
-			<p>Your training with bayonets and bayonet tactics has granted you the following benefits:</p>
+			<p>Your training with attachments and their tactics has granted you the following benefits:</p>
 			<ul>
-				<li>When moving 10ft in a straight line before making an attack with an attached bayonet, you may add +3 damage to the damage.</li>
+				<li>When moving 10ft in a straight line before making an attack with an attached bayonet or axe head, you may add +5 damage to the damage total.</li>
 				<li>When you attach a bayonet to a firearm, the bayonet gains the Reach property.</li>
+				<li>When you attach an axe head to a firearm, the firearm deals an additional 1d4 slashing damage when making an attack with the axe head.</li>
+				<li>You may attach or un-attach a firearm without using an action.</li>
 			</ul>
 		</description>
 		<sheet>
 			<description>When you attach a bayonet to a firearm, the bayonet gains the Reach property.
-			When moving 10ft in a straight line before making an attack with an attached bayonet, you may add +3 damage to the damage.</description>
-		</sheet>
-	</element>
-
-	<element name="Fastest Somatics in Ford" type="Feat" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_FEAT_FASTEST_SOMATICS_FORD">
-		<prerequisite>Mage Gun Cantrip</prerequisite>
-		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS, ID_CONT_CONTINENTIA_SPELL_MAGE_GUN</requirements>
-		<description>
-			<p><i>Prerequisite: Must know the Mage Gun cantrip</i></p>
-			<p>Your quick draw with the cantrip Mage Gun is improved with the following benefits:</p>
-			<ul>
-				<li>You may cast the cantrip, Mage Gun, without using verbal components.</li>
-				<li>The sound of your Mage Gun firing will be silenced to all creatures except the target of the attack. </li>
-				<li>You can make sneak attacks with the cantrip, Mage Gun.</li>
-			</ul>
-		</description>
-		<sheet>
-			<description>You may cast the cantrip, Mage Gun, without using verbal components.
-			The sound of your Mage Gun firing will be silenced to all creatures except the target of the attack.
-			You can make sneak attacks with the cantrip, Mage Gun.</description>
+			When you attach an axe head to a firearm, the firearm deals an additional 1d4 slashing damage when making an attack with the axe head.
+			When moving 10ft in a straight line before making an attack with an attached bayonet or axe head, you may add +5 damage to the damabge total.
+			You may attach or un-attach a firearm without using an action.</description>
 		</sheet>
 	</element>
 
 	<!-- firearm fighting styles -->
-	<element name="Bar Fighter" type="Class Feature" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_CLASS_FEATURE_FIGHTINGSTYLE_BAR_FIGHTER">
+	<element name="Naturalist" type="Class Feature" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_CLASS_FEATURE_FIGHTINGSTYLE_NATURALIST">
 		<supports>Fighting Style, Fighter, Ranger, Paladin</supports>
 		<description>
 			<p>You gain proficiency in Improvised weapons that weigh between 5 and 10 lbs. When making an attack with an improvised weapon it deals 1d4 damage with the damage type left up to the DM's discretion.</p>
