@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Deities</name>
+        <update version="0.0.4">
+			<!-- update notes:	-Fixed the Ican Gods and their spellings
+							    -Added more Ican Gods -->
+		    <description>Gods and Deities worshiped in Continentia.</description>
+		    <author url="https://github.com/pkducklett/">Corey Welch</author>
+			<file name="continentia-deities.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+		</update>
+	</info>
+	
+    <!-- Ican Deities -->
+    <element name="Noi" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_NOI">
+		<description>
+			<p class="flavor">Ican Goddess of War and Justice.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">LN</set>
+			<set name="domains">War, Order</set>
+			<set name="symbol">a Pi'ech</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Ican Goddess of War and Justice.</description>
+		</sheet>
+	</element>
+
+    <element name="Terra" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_TERRA">
+		<description>
+			<p class="flavor">Ican Titaness of the Earth and Nature.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">NG</set>
+			<set name="domains">Life, Nature</set>
+			<set name="symbol">a boulder covered in moss</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Ican Titaness of the Earth and Nature.</description>
+		</sheet>
+	</element>
+
+    <element name="Luna" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_LUNA">
+		<description>
+			<p class="flavor">Ican Titaness of the Moon.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">NG</set>
+			<set name="domains">Light, Nature, Twilight</set>
+			<set name="symbol">the moon</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Ican Titaness of the Moon.</description>
+		</sheet>
+	</element>
+
+	<element name="Ebo" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_EBO">
+		<description>
+			<p class="flavor">Yittian Goddess of Hunting.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">NG</set>
+			<set name="domains">Nature</set>
+			<set name="symbol">A longbow</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Yittian Goddess of Hunting.</description>
+		</sheet>
+	</element>
+
+	<element name="Nuk" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_NUK">
+		<description>
+			<p class="flavor">Ican Goddess of Animals and Animal Husbandry.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">CG</set>
+			<set name="domains">Nature</set>
+			<set name="symbol">A Golden-tailed Hawk</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Ican Goddess of Animals and Animal Husbandry.</description>
+		</sheet>
+	</element>
+
+	<element name="Gar" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_GAR">
+		<description>
+			<p class="flavor">Ican Goddess of Agriculture.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">LG</set>
+			<set name="domains">Nature</set>
+			<set name="symbol">Garden Hoe</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Ican Goddess of Agriculture.</description>
+		</sheet>
+	</element>
+
+	<element name="E’Jek" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_EJEK">
+		<description>
+			<p class="flavor">God of Nature.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">NG</set>
+			<set name="domains">Nature</set>
+			<set name="symbol">A Mossy Green Rock Goat</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>God of Nature</description>
+		</sheet>
+	</element>
+
+    <element name="Graal’ed" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_GRAALED">
+		<description>
+			<p class="flavor">Ican God of Diplomacy and Knowledge.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">LG</set>
+			<set name="domains">Knowledge, Order, Peace</set>
+			<set name="symbol">a scale balanced with a heart on the left and an eye on the right</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>Ican God of Diplomacy and Knowledge.</description>
+		</sheet>
+	</element>
+
+	<element name="Kei" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_KEI">
+		<description>
+			<p class="flavor">Ican Goddess of Law Enforcement.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">LG</set>
+			<set name="domains">Order</set>
+			<set name="symbol">An eye</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Ican Goddess of Law Enforcement.</description>
+		</sheet>
+	</element>
+
+    <element name="Erk’dah" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_ERKDAH">
+		<description>
+			<p class="flavor">Ican God of Fair Combat and Duels.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">LG</set>
+			<set name="domains">Order, Peace, War</set>
+			<set name="symbol">a dull Pi'ech</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>Ican God of Fair Combat and Duels.</description>
+		</sheet>
+	</element>
+
+	<element name="Vre" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_VRE">
+		<description>
+			<p class="flavor">Ican Goddess of Luck and Good Fortune.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">CN</set>
+			<set name="domains">Trickery</set>
+			<set name="symbol">a coin with her face minted on one side and the image of an imp on the other</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Ican Goddess of Luck and Good Fortune.</description>
+		</sheet>
+	</element>
+
+	<element name="Acht" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_ACHT">
+		<description>
+			<p class="flavor">Ican Goddess Time and Fortune.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">LN</set>
+			<set name="domains">Life, Death, Order</set>
+			<set name="symbol">an hourglass</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Ican Goddess Time and Fortune.</description>
+		</sheet>
+	</element>
+
+    <element name="Ru’ay" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_RUAY">
+		<description>
+			<p class="flavor">Ican Goddess of Love and Marriage.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">CG</set>
+			<set name="domains">Light</set>
+			<set name="symbol">Two circles intersecting like a chain</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Ican Goddess of Love and Marriage.</description>
+		</sheet>
+	</element>
+
+	<element name="Zia" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_ZIA">
+		<description>
+			<p class="flavor">Ican Goddess of Fertility, Motherhood, and Puberty.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">LG</set>
+			<set name="domains">Life</set>
+			<set name="symbol">Ash Sprinkled Hearth</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Ican Goddess of Fertility, Motherhood, and Puberty.</description>
+		</sheet>
+	</element>
+
+    <element name="Traadi" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_TRAADI">
+		<description>
+			<p class="flavor">Ican God of Medicine and Healing.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">CN</set>
+			<set name="domains">Life, Trickery</set>
+			<set name="symbol">traadi pills</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>Ican God of Medicine and Healing.</description>
+		</sheet>
+	</element>
+
+    	<element name="Iga and Pyr" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_IGA_PYR">
+		<description>
+			<p class="flavor">Ican Goddess of the Forge and Ican Goddess of Fire.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">N</set>
+			<set name="domains">Forge, Light</set>
+			<set name="symbol">a hammer which is on fire</set>
+			<set name="gender">females</set>
+		</setters>
+		<sheet>
+			<description>Ican Goddess of the Forge and Ican Goddess of Fire.</description>
+		</sheet>
+	</element>
+
+    <element name="Pik" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_PIK">
+		<description>
+			<p class="flavor">Ican Goddess of Ship Crafting and Alcohol.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica, Contan</set>
+			<set name="alignment">CN</set>
+			<set name="domains">Forge</set>
+			<set name="symbol">a pint of ale</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Ican Goddess of Ship Crafting and Alcohol.</description>
+		</sheet>
+	</element>
+
+	<element name="Kar" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_KAR">
+		<description>
+			<p class="flavor">Ican-Illitian Deity of Wind and the Four Cardinal Directions.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica, Contan, Illitius</set>
+			<set name="alignment">CG</set>
+			<set name="domains">Tempest</set>
+			<set name="symbol">a gray feather on a blue breeze</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Ican-Illitian Deity of Wind and the Four Cardinal Directions.</description>
+		</sheet>
+	</element>
+
+	<element name="Und" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_UND">
+		<description>
+			<p class="flavor">Ican Goddess of Chaos and Anarchy.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">CE</set>
+			<set name="domains">Death, Trickery</set>
+			<set name="symbol">a rak’nok</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Ican Goddess of Chaos and Anarchy.</description>
+		</sheet>
+	</element>
+
+    <element name="Ya’ur" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_YAUR">
+		<description>
+			<p class="flavor">Ican Goddess of Love and Passion.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">N</set>
+			<set name="domains">Light</set>
+			<set name="symbol">three circles interconnected like a triangle</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Ican Goddess of Love and Passion.</description>
+		</sheet>
+	</element>
+
+    <element name="Kit" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_KIT">
+		<description>
+			<p class="flavor">Ican-Illitian Messenger Deity.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica, Illitius</set>
+			<set name="alignment">NG</set>
+			<set name="domains">Tempest</set>
+			<set name="symbol">a single white feather</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Ican-Illitian Messenger Deity.</description>
+		</sheet>
+	</element>
+
+    <element name="Teya" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_TEYA">
+		<description>
+			<p class="flavor">Ican Goddess of Monsters.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">CG</set>
+			<set name="domains">Tempest</set>
+			<set name="symbol">a chimera</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Ican Goddess of Monsters.</description>
+		</sheet>
+	</element>
+
+    <element name="Ur’ay" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_URAY">
+		<description>
+			<p class="flavor">Ican God of Divorce and Self-Love.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">LN</set>
+			<set name="domains">Knowledge</set>
+			<set name="symbol">a circle</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>Ican God of Divorce and Self-Love.</description>
+		</sheet>
+	</element>
+
+    <element name="Yan" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_YAN">
+		<description>
+			<p class="flavor">Ican Goddess of Music and Self-Expression.</p>
+		</description>
+		<setters>
+			<set name="setting">Ica</set>
+			<set name="alignment">CN</set>
+			<set name="domains">Trickery</set>
+			<set name="symbol">a lute with rainbow feather beads tied to the pegbox</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Ican Goddess of Music and Self-Expression.</description>
+		</sheet>
+	</element>
+
+ 	<!-- Nagean Deity (Arit has two names he goes by) -->
+    <element name="Arit" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_ARIT">
+		<description>
+			<p class="flavor">Nagean God of Light and Light Magic.</p>
+		</description>
+		<setters>
+			<set name="setting">Arity</set>
+			<set name="alignment">N</set>
+			<set name="domains">Arcana, Knowledge, Life, Light, Tempest</set>
+			<set name="symbol">a nagean dragon</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>Nagean God of Light and Light Magic.</description>
+		</sheet>
+	</element>
+
+	<element name="Arta" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_ARTA">
+		<description>
+			<p class="flavor">Nagean God of Light and Light Magic.</p>
+		</description>
+		<setters>
+			<set name="setting">Northernlands, Oraja</set>
+			<set name="alignment">N</set>
+			<set name="domains">Arcana, Knowledge, Life, Light, Tempest</set>
+			<set name="symbol">a nagean dragon</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>Nagean God of Light and Light Magic.</description>
+		</sheet>
+	</element>
+
+ 	<!-- Orajan Deities -->
+    <element name="Ora" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_ORA">
+		<description>
+			<p class="flavor">Orajan God of Darkness and Dark Magic.</p>
+		</description>
+		<setters>
+			<set name="setting">Oraja</set>
+			<set name="alignment">NE</set>
+			<set name="domains">Arcana, Death, Grave, Trickery</set>
+			<set name="symbol">four stars in line like eyes</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>Orajan God of Darkness and Dark Magic.</description>
+		</sheet>
+	</element>
+
+    <element name="Magi" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_MAGI">
+		<description>
+			<p class="flavor">Orajan God of Anima Magic.</p>
+		</description>
+		<setters>
+			<set name="setting">Oraja, Ica</set>
+			<set name="alignment">CN</set>
+			<set name="domains">Arcana, Knowledge</set>
+			<set name="symbol">rock goat skull</set>
+			<set name="gender">construct</set>
+		</setters>
+		<sheet>
+			<description>Orajan God of Anima Magic.</description>
+		</sheet>
+	</element>
+
+ 	<!-- Eya, the Durgish Goddess -->
+	<element name="Eya" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_EYA">
+		<description>
+			<p class="flavor">Durgish Goddess of Creation.</p>
+		</description>
+		<setters>
+			<set name="setting">Durgish</set>
+			<set name="alignment">N</set>
+			<set name="domains">Life, Nature, Trickery</set>
+			<set name="symbol">a purple tree (durgan), a gold mountain (durgoi)</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Durgish Goddess of Creation.</description>
+		</sheet>
+	</element>
+</elements>
