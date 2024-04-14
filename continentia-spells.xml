@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<update version="0.0.1">
+        <!-- update notes: -->
+            <description>Spells from Continentia.</description>
+		    <author url="https://github.com/pkducklett/">Corey Welch</author>
+		<file name="continentia-spells.xml" url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+		</update>
+	</info>
+
+    <!-- Cantrips: -->
+    <element name="Gilded Insight" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_GILDED_INSIGHT">
+		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You place your finger in your mouth and gain the ability to know the exact amount of gold, silver, copper, or any other object that only exists to display value on a single target within 30ft of you. You can not use this spell to detect magical objects on a person, and it can not be used to know the contents of a bag of holding or any other magical container.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+    <element name="Mage Gun" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_MAGE_GUN">
+		<supports>Bard, Sorcerer, Warlock, Wizard, Artificer</supports>
+		<description>
+			<p>You outstretch your middle and pointer finger with your thumb perpendicular to them. A tiny revolver shaped firearm will appear from your fingers that can float up to 30ft in any direction away from you. When you move your thumb down and say the command word as an action, the firearm will fire and release a shockwave of sound damaging one target within 30ft dealing 1d6 Thunder damage on a hit within range. If the revolver leaves your range, or is reduced to 0 hit points it will disappear. The revolver has an AC of 10 and 1 hitpoint.</p>
+			<p class="indent">This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th (3d6), and 17th (4d6).</p>
+            <p class="indent"><b><i>Notes for Thought.</i></b> The name for this cantrip is Mage Gun, however it’s appearance is not just limited to that of a firearm. Many mages have discovered that as long as it is a tiny object with a hole to have the sound escape, it will work just as fine as it’s standard revolver shape. In my time I have seen small record players, smoking pipes, and once even a roll of toilet paper (The latter of the three resulted in the most disgusting results).</p>
+		</description>
+		<setters>
+			<set name="keywords">Thunder</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+    <element name="Sure Strike" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_SURE_STRIKE">
+		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You point a finger at a target in range and enter a trance like state where you begin exclaiming the movements and attacks of the chosen target before they happen. Allies within 5ft of you gain a bonus to hit equal to your spell casting ability modifier on their next attack. This bonus lasts until the end of your next turn. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn't ended.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>
