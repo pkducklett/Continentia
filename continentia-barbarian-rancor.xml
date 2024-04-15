@@ -6,7 +6,7 @@
 			<!-- Update Notes: -->
 		    	<description>The Rancor Sub-class from Continentia.</description>
 		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
-			<file name="continentia-barbarian-rancor.xml"  url="https://github.com/pkducklett/Continentia/blob/98607ce38cdf514291b3c0d9ec47e673d8c038be/continentia-barbarian-rancor.xml" />
+			<file name="continentia-barbarian-rancor.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-barbarian-rancor.xml" />
 		</update>
 	</info>
 
