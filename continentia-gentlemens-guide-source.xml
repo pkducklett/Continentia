@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="continentia-gentlemens-guide-source.xml" url="https://github.com/pkducklett/Continentia/blob/5e8d7d6b0cd89d1bdd4a4495713e81ff1d1079a6/continentia-gentlemens-guide-source.xml" />
+			<file name="continentia-gentlemens-guide-source.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-gentlemens-guide-source.xml" />
 		</update>
 	</info>
 	<element name="Continentia: Gentleman’s Guide To Firearms" type="Source" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_SOURCE_CONTINENTIA_GENTLEMENS_GUIDE">
