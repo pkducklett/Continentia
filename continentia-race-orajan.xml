@@ -5,8 +5,8 @@
         <update version="0.0.2">
 			<!-- update notes: Tasha's customized rules can now be used-->
 		    	<description>The Orajan Race from Continentia.</description>
-		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
-			<file name="continentia-race-orajan.xml"  url="https://github.com/pkducklett/Continentia/blob/d77812d890aedce495bf6097355e14537a2031fa/continentia-race-orajan.xml" />
+		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
+			<file name="continentia-race-orajan.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-orajan.xml" />
 		</update>
 	</info>
 
