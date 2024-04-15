@@ -5,8 +5,8 @@
         <update version="0.0.1">
 			<!-- Update Notes: -->
 		    	<description>Companion Animals and Familiars from Continentia.</description>
-		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
-			<file name="continentia-companions.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
+			<file name="continentia-companions.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-companions.xml" />
 		</update>
 	</info>
 
