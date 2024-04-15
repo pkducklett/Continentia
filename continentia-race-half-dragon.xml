@@ -6,8 +6,8 @@
 			<!-- Update Notes: -Added appearance descriptions
 							   -Fixed second language not appearing-->
 		    	<description>The Half-Dragon Race from Continentia.</description>
-		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
-			<file name="continentia-race-half-dragon.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
+			<file name="continentia-race-half-dragon.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-half-dragon.xml" />
 		</update>
 	</info>
 
