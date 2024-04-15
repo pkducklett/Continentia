@@ -6,8 +6,8 @@
 			<!-- update notes: Fixed typos
 							   Tasha's customized rules can now be used-->
 		    	<description>The Khalid Race from Continentia.</description>
-		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
-			<file name="continentia-race-khalid.xml"  url="https://github.com/pkducklett/Continentia/blob/c28adff7f7411bf1ea400f57553da152eaa3b59e/continentia-race-khalid.xml" />
+		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
+			<file name="continentia-race-khalid.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-khalid.xml" />
 		</update>
 	</info>
 
