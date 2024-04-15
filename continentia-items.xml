@@ -5,8 +5,8 @@
 		<update version="0.0.1">
             <!-- Update Notes: -  -->
 		    <description>Additional items for Continentia.</description>
-		    <author url="https://github.com/pkducklett/">Corey Welch</author>
-			<file name="continentia-items.xml"  url="https://github.com/pkducklett/Continentia/blob/4607f95fd0483e925cac92896003273a9fbd27c9/continentia-items-firearms.xml" />
+		    <author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
+			<file name="continentia-items.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-items.xml" />
 		</update>
 	</info>
 
