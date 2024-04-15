@@ -5,8 +5,8 @@
         <update version="0.0.1">
 			<!-- Update Notes: -->
 		    	<description>The Experimented Race from Continentia.</description>
-		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
-			<file name="continentia-race-experimented.xml"  url="https://github.com/pkducklett/Continentia/blob/f8899ccdc5237aaa82261fb56a4b1686d8fd2f4e/continentia-race-experimented.xml" />
+		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
+			<file name="continentia-race-experimented.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-experimented.xml" />
 		</update>
 	</info>
 
