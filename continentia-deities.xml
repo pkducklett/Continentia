@@ -6,8 +6,8 @@
 			<!-- update notes:	-Fixed the Ican Gods and their spellings
 							    -Added more Ican Gods -->
 		    <description>Gods and Deities worshiped in Continentia.</description>
-		    <author url="https://github.com/pkducklett/">Corey Welch</author>
-			<file name="continentia-deities.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+		    <author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
+			<file name="continentia-deities.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-deities.xml" />
 		</update>
 	</info>
 	
