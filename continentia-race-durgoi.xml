@@ -5,8 +5,8 @@
         <update version="0.0.4">
 			<!-- update notes:	Tasha's customized rules can now be used -->
 		    <description>The Durgoi Race from Continentia.</description>
-		    <author url="https://github.com/pkducklett/">Corey Welch</author>
-			<file name="continentia-race-durgoi.xml"  url="https://github.com/pkducklett/Continentia/blob/8973eeff8b1c153bbec1e815ee92b0537dbb817b/continentia-race-durgoi.xml" />
+		    <author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
+			<file name="continentia-race-durgoi.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-durgoi.xml" />
 		</update>
 	</info>
 
