@@ -6,8 +6,8 @@
 			<!-- update notes: Tasha's customized rules can now be used
 							   Removed Draconic HP-->
 		    	<description>The Illitian Race from Continentia.</description>
-		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
-			<file name="continentia-race-illitian.xml"  url="https://github.com/pkducklett/Continentia/blob/2cc7ba1104cb35cefcc0c2ca52809dd8c7b06ae3/continentia-race-illitian.xml" />
+		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
+			<file name="continentia-race-illitian.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-illitian.xml" />
 		</update>
 	</info>
 
