@@ -6,8 +6,8 @@
 			<!-- update notes: added height and weight modifier
 							   added more names-->
 		    <description>The Pyruvian Race from Continentia.</description>
-		    <author url="https://github.com/pkducklett/">Corey Welch</author>
-			<file name="continentia-race-pyruvian.xml"  url="https://github.com/pkducklett/Continentia/blob/62d98feebd0e8bf45e927f2a2db1c77af282b52c/continentia-race-pyruvian.xml" />
+		    <author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
+			<file name="continentia-race-pyruvian.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-pyruvian.xml" />
 		</update>
 	</info>
 
