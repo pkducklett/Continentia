@@ -6,8 +6,8 @@
 			<!-- update notes: Tasha's customized rules can now be used
 							   Removed Draconic HP-->
 		    	<description>The Ican Race from Continentia.</description>
-		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
-			<file name="continentia-race-ican.xml"  url="https://github.com/pkducklett/Continentia/blob/783a2a3efafa5ffde66d4a37984bb2abf6e0e6a4/continentia-race-ican.xml" />
+		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
+			<file name="continentia-race-ican.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-ican.xml" />
 		</update>
 	</info>
 
