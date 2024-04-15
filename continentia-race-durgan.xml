@@ -5,8 +5,8 @@
         <update version="0.0.5">
 			<!-- update notes:	Tasha's customized rules can now be used-->
 		    <description>The Durgan Race from Continentia.</description>
-		    <author url="https://github.com/pkducklett/">Corey Welch</author>
-			<file name="continentia-race-durgan.xml"  url="https://github.com/pkducklett/Continentia/blob/c14e6b92e1b570556dc314a9f57cd6d96e5f4a5b/continentia-race-durgan.xml" />
+		    <author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
+			<file name="continentia-race-durgan.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-durgan.xml" />
 		</update>
 	</info>
 
