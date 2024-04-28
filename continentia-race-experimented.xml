@@ -2,15 +2,18 @@
 <elements>
 	<info>
 		<name>Experimented</name>
-        <update version="0.0.1">
-			<!-- Update Notes: -->
+        <update version="0.1.1">
+			<!-- Update Notes: -Experimented can now use Tasha's custom language rules
+							   -Experimented now only use custom ability score 
+							   -Draconic traits are streamlined
+							   -Minor wording changes -->
 		    	<description>The Experimented Race from Continentia.</description>
 		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
 			<file name="continentia-race-experimented.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-experimented.xml" />
 		</update>
 	</info>
 
-    <element name="Experimented" type="Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACE_[RACE]">
+    <element name="Experimented" type="Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACE_EXPERIMENTED">
         <description>
 		    <p class="flavor">Experimented live in the shadows of normal life. Under heavy disguises they attempt to live their life. Even if it can never be the same.</p>
 		    <h4>CREATED FROM GREED</h4>
@@ -19,9 +22,9 @@
 		    <p>Experimented are a mixture of several different races. Because of this they will have the appearance of many  races at once. In some cases the disfigurement is mild and easy to hide. In most, it is overwhelming, covering the entirety of the body. Read the appearances of the races your Experimented is mixed with, and find a balance that fits your character.</p>
 		    <h4>EXPERIMENTED TRAITS</h4>
             <p>Experimented possess the following traits.</p>
-            <p class="indent"><b><i>Ability Score Increase.</i></b> You gain +2 in an ability score of your choice, or +1 in two ability scores of your choice.</p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b> You gain +2 in an ability score of your choice and +1 in an ability score of your choice. Alternatively, you can instead raise three ability scores by +1.</p>
 		    <p class="indent"><b><i>Age.</i></b> The age of Experimented range wildly. Generally their max age is slightly less than the races they are mixed with.</p>
-		    <p class="indent"><b><i>Alignment.</i></b> Describe the alignment range of this race.</p>
+		    <p class="indent"><b><i>Alignment.</i></b> Experimented vary wildly in their alignment, but are generally chaotic.</p>
         	<p class="indent"><b><i>Size.</i></b> Experimented generally range in size from 5 to 8 feet. This, of course, depends on the races they are mixed with. Your size is medium.</p>
 		    <p class="indent"><b><i>Speed.</i></b> Your base walking speed is 30 feet.</p>
 		    <p class="indent"><b><i>Concealment of Self.</i></b> You gain proficiency in Disguise Kits. While undisguised, you are more likely to be perceived as a threat due to your unnatural appearance. You gain a Disguise Kit in your inventory if you do not receive one from your background.</p>
@@ -33,36 +36,17 @@
         <sheet display="false" />
 
         <rules>
-            <select type="Racial Trait" name="Ability Score Increase" supports="ID_CONT_CONTINENTIA_RACIAL_TRAIT_EXPERIMENTED_PLUS_ONE|ID_CONT_CONTINENTIA_RACIAL_TRAIT_EXPERIMENTED_PLUS_TWO" />
+            <select type="Ability Score Improvement" name="Ability Score Improvement Option (Experimented)" supports="Custom Ability Score Improvement Option" />
 			<stat name="innate speed" value="30" bonus="base" />
 		    <grant type="Size" id="ID_SIZE_MEDIUM" />
-            <select type="Language" name="Experimented Language" supports="ID_CONT_CONTINENTIA_LANGUAGE_ARITYIAN|ID_CONT_CONTINENTIA_LANGUAGE_DEUISH|ID_CONT_CONTINENTIA_LANGUAGE_ICAN|ID_CONT_CONTINENTIA_LANGUAGE_KHALID_STANDARD|ID_CONT_CONTINENTIA_LANGUAGE_KHALID_TRADITIONAL|ID_CONT_CONTINENTIA_LANGUAGE_ORAJAN|ID_CONT_CONTINENTIA_LANGUAGE_FLORISH" />
-            <grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_CONSEALMENT_SELF" />
+            <select type="Language" name="Experimented Language" supports= "Contintentian Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_CONSEALMENT_SELF" />
 	    	<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_HIDEOUS_VISAGE" />
-            <select type="Racial Trait" name="Dragon Type" number="2" supports="ID_CONT_CONTINENTIA_RACIAL_TRAIT_ICAN_DRAGON_TYPE|ID_CONT_CONTINENTIA_RACIAL_TRAIT_ILLITIAN_DRAGON_TYPE|ID_CONT_CONTINENTIA_RACIAL_TRAIT_KHALID_DRAGON_TYPE|ID_CONT_CONTINENTIA_RACIAL_TRAIT_NAGEAN_DRAGON_TYPE|ID_CONT_CONTINENTIA_RACIAL_TRAIT_ORAJAN_DRAGON_TYPE|ID_CONT_CONTINENTIA_RACIAL_TRAIT_PYRUVIAN_DRAGON_TYPE" />
+            <select type="Racial Trait" name="Dragon Type" number="2" supports="Experimented Dragon Type" />
             <grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_EXPERIMENTED_CREATURE_TYPE" />
 		</rules>
     </element>
-
-    <element name="Experimented +2" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_EXPERIMENTED_PLUS_TWO">
-		<description>
-			<p>You gain +2 to one ability score of your choice.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-            <select type="Ability Score Improvement" name="Ability Score Increase +2" supports="ID_CONT_CONTINENTIA_EXPERIMENTED_STRENGTH|ID_CONT_CONTINENTIA_EXPERIMENTED_DEXTERITY|ID_CONT_CONTINENTIA_EXPERIMENTED_CONSTITUTION|ID_CONT_CONTINENTIA_EXPERIMENTED_INTELLIGENCE|ID_CONT_CONTINENTIA_EXPERIMENTED_WISDOM|ID_CONT_CONTINENTIA_EXPERIMENTED_CHARISMA" />
-		</rules>
-	</element>
-
-    <element name="Experimented +1" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_EXPERIMENTED_PLUS_ONE">
-		<description>
-            <p>You gain +1 to two ability scores of your choice.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-            <select type="Ability Score Improvement" name="Ability Score Increase +1" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_DEXTERITY|ID_INTERNAL_ASI_CONSTITUTION|ID_INTERNAL_ASI_INTELLIGENCE|ID_INTERNAL_ASI_WISDOM|ID_INTERNAL_ASI_CHARISMA" number="2"/>
-		</rules>
-	</element>
 
     <element name="Consealment of Self" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_CONSEALMENT_SELF">
 		<description>
@@ -98,6 +82,7 @@
 	</element>
 
     <element name="Ican Dragon Type" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_ICAN_DRAGON_TYPE">
+		<supports>Experimented Dragon Type</supports>
 		<description>
 			<p>You are part Ican. You gain one non-draconic racial trait of your choice from the base Ican race.</p>
 		</description>
@@ -110,6 +95,7 @@
 	</element>
 
     <element name="Illitian Dragon Type" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_ILLITIAN_DRAGON_TYPE">
+		<supports>Experimented Dragon Type</supports>
 		<description>
 			<p>You are part Illitian. You gain one non-draconic racial trait of your choice from the base Illitian race.</p>
 		</description>
@@ -122,6 +108,7 @@
 	</element>
 
     <element name="Khalid Dragon Type" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_KHALID_DRAGON_TYPE">
+		<supports>Experimented Dragon Type</supports>
 		<description>
 			<p>You are part Khalid. You gain one non-draconic racial trait of your choice from the base Khalid race.</p>
 		</description>
@@ -134,6 +121,7 @@
 	</element>
 
     <element name="Nagean Dragon Type" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_NAGEAN_DRAGON_TYPE">
+		<supports>Experimented Dragon Type</supports>
 		<description>
 			<p>You are part Nagean. You gain one non-draconic racial trait of your choice from the base Nagean race.</p>
 		</description>
@@ -146,6 +134,7 @@
 	</element>
 
     <element name="Orajan Dragon Type" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_ORAJAN_DRAGON_TYPE">
+		<supports>Experimented Dragon Type</supports>
 		<description>
 			<p>You are part Orajan. You gain one non-draconic racial trait of your choice from the base Orajan race.</p>
 		</description>
@@ -158,6 +147,7 @@
 	</element>
 
     <element name="Pyruvian Dragon Type" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_PYRUVIAN_DRAGON_TYPE">
+		<supports>Experimented Dragon Type</supports>
 		<description>
 			<p>You are part Pyruvian. You gain one non-draconic racial trait of your choice from the base Pyruvian</p>
         </description>
@@ -168,72 +158,6 @@
 			<select type="Racial Trait" name="Racial Traits" supports="ID_CONT_CONTINENTIA_RACIAL_TRAIT_SEARED_HIDE|ID_CONT_CONTINENTIA_RACIAL_TRAIT_GIFT_AHI|ID_CONT_CONTINENTIA_RACIAL_TRAIT_PYRUVIAN_ACIDIC_SALIVA" />
 		</rules>
 	</element>
-
-    <element name="Strength" type="Ability Score Improvement" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_EXPERIMENTED_STRENGTH">
-        <compendium display="false" />
-        <description>
-            <p>Your Strength score increases by 2.</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <stat name="strength" value="2" alt="Experimented" />
-		</rules>
-    </element>
-
-    <element name="Dexterity" type="Ability Score Improvement" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_EXPERIMENTED_DEXTERITY">
-        <compendium display="false" />
-        <description>
-            <p>Your Dexterity score increases by 2.</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <stat name="dexterity" value="2" alt="Experimented" />
-		</rules>
-    </element>
-
-    <element name="Constitution" type="Ability Score Improvement" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_EXPERIMENTED_CONSTITUTION">
-        <compendium display="false" />
-        <description>
-            <p>Your Constitution score increases by 2.</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <stat name="constitution" value="2" alt="Experimented" />
-		</rules>
-    </element>
-
-    <element name="Intelligence" type="Ability Score Improvement" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_EXPERIMENTED_INTELLIGENCE">
-        <compendium display="false" />
-        <description>
-            <p>Your Intelligence score increases by 2.</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <stat name="intelligence" value="2" alt="Experimented" />
-		</rules>
-    </element>
-
-    <element name="Wisdom" type="Ability Score Improvement" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_EXPERIMENTED_WISDOM">
-        <compendium display="false" />
-        <description>
-            <p>Your Wisdom score increases by 2.</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <stat name="wisdom" value="2" alt="Experimented" />
-		</rules>
-    </element>
-
-    <element name="Charisma" type="Ability Score Improvement" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_EXPERIMENTED_CHARISMA">
-        <compendium display="false" />
-        <description>
-            <p>Your Charisma score increases by 2.</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <stat name="charisma" value="2" alt="Experimented" />
-		</rules>
-    </element>
 
     <element name="Dark Vision" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_EXPERIMENTED_DARK_VISION">
 		<compendium display="false" />
