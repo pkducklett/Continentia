@@ -2,19 +2,19 @@
 <elements>
 	<info>
 		<name>Deities</name>
-        <update version="0.0.4">
+        <update version="0.0.5">
 			<!-- update notes:	-Fixed the Ican Gods and their spellings
 							    -Added more Ican Gods -->
 		    <description>Gods and Deities worshiped in Continentia.</description>
-		    <author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
-			<file name="continentia-deities.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-deities.xml" />
+		    <author url="https://github.com/pkducklett/">Corey Welch</author>
+			<file name="continentia-deities.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
 		</update>
 	</info>
 	
     <!-- Ican Deities -->
     <element name="Noi" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_NOI">
 		<description>
-			<p class="flavor">Ican Goddess of War and Justice.</p>
+			<p class="flavor">Ican Goddess of War and Rulership.</p>
 		</description>
 		<setters>
 			<set name="setting">Ica</set>
