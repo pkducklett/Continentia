@@ -2,9 +2,9 @@
 <elements>
 	<info>
 		<name>Half-Dragon</name>
-        <update version="0.0.2">
-			<!-- Update Notes: -Added appearance descriptions
-							   -Fixed second language not appearing-->
+        <update version="0.0.3">
+			<!-- Update Notes: -Edited descriptions
+							   -Added description of half-dragon names-->
 		    	<description>The Half-Dragon Race from Continentia.</description>
 		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
 			<file name="continentia-race-half-dragon.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-half-dragon.xml" />
@@ -22,10 +22,12 @@
 			<p class="indent"><b><i>Half-Nagaens.</i></b> Half-Nagaens will usually have their Nagean parent’s hair and eye color. They rarely will possess wings in their humanoid form. </p>
 			<p class="indent"><b><i>Half-Orajans.</i></b> Half-Orajans often lack the heterochromia trait of their Orajan parent. They will usually have wings in their humanoid form, and may potentially either lack their second set of wings or have them permanently out even in humanoid form.</p>
 			<p class="indent"><b><i>Half-Pyruvians.</i></b> Half-Pyruvians often possess their Pyruvian parent’s hair and eye color. They will usually have wings in their humanoid form, and often will be warmer to the touch. They will have noticeably warmer body temperature. </p>
-			<h4>Of Two Races, But Belonging To Neither</h4>
+			<h4>OF TWO RACES BUT BELONGING TO NEITHER</h4>
 			<p>Though common in Contintentia, Half-Dragons are seen as existing outside both cultures they were conceived from. It's a hard life to never truly belong to either the culture of your mother or your father, but it is the life these folk endure. The nature of their birth and parentage will affect how accepted they are in the overall culture of their land. Contan is by far the most accepting of Half-Dragons, but that's not saying much. Some in the Northernlands also care little about the nature of one's parentage. Arity has gotten better since their Civil War about Half-Dragons, but many provinces still look down upon those of mixed lines. While places like Ica remain to be the most hostile toward those of mixed lineage.</p>
-            <h4>A Culture Built Off Exclusion</h4>
+            <h4>A CULTURE BUILT OFF EXCLUSION</h4>
 			<p>In defiance of their parents' culture, Half-Dragons often carve their own path in life. Some seek to embrace both aspects of their mixed parentage, enjoying the blessings of both parents. Others choose to denounce both parent's individual culture in service to making their own. Either way, many Half-Dragons pride themselves on being their own person, bound to neither side of their lineage.</p>
+			<h4>HALF-DRAGON NAMES</h4>
+			<p>Half-Dragons will typically follow one or both of their parents’ naming conventions. A Half-Dragon wishing to carve their own path away from their parents may instead choose a name after reaching adulthood which does not reflect either parents’ culture.</p>
 			<h4>HALF-DRAGON TRAITS</h4>
             <p>Half-Dragons possess the following traits.</p>
 			<p class="indent"><b><i>Ability Score Increase.</i></b> One ability score of your choice increases by 2, and another by 1.</p>
