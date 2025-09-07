@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magic Items</name>
+        <update version="0.0.1">
+			<!-- Update Notes: -->
+		    	<description>Magic Items from Continentia.</description>
+		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
+			<file name="continentia-magic-items.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+		</update>
+	</info>
+
+	<!-- Dragonstones -->
+	<element name="Dragonstone, Pure" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_DRAGONSTONE_PURE">
+		<description>
+			<p>A palm sized glass-like orb that ranges from a greenish yellow, to almost a brown in color, patterned like a translucent quartz. After extended use the color of the orb will begin to fade, before a large crack will form on the surface rendering the stone unusable.</p>
+			<p class="indent">A Pure Dragonstone has 3 charges, which can be expended as an action to allow a Draconic race to transform. After these three charges are expended the object will break, removing all magic from it. It can not be repaired by a mending cantrip.</p>
+		</description>
+		<setters>
+			<set name="keywords">Dragonstone</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+
+	<element name="Dragonstone, Raw" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_DRAGONSTONE_RAW">
+		<description>
+			<p>A coarse palm sized rock, which has a slight glitter from the jewels within. Use of this rock will cause it to shatter, reducing the jewels inside to have the appearance of scorched glass.</p>
+			<p class="indent">A Raw Dragonstone has 1 charge, which can be expended as an action to allow a Draconic race to transform. After this charge is expended the object will break, removing all magic from it. It can not be repaired by a mending cantrip.</p>
+		</description>
+		<setters>
+			<set name="keywords">Dragonstone</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">60</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="charges">1</set>
+		</setters>
+	</element>
+
+	<element name="Dragon Jewelry" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_DRAGON_JEWELRY">
+		<description>
+			<p>Dragon Jewelry can be any piece of jewelry, so long as it is made of Pure Dragonstone. This includes, but is not limited to; necklaces, rings, bracelets, tiaras, etc.</p>
+			<p class="indent">Due to the innocuous nature of the jewelry, you have advantage on Sleight of Hand and Deception checks to keep your Dragon Jewelry from being discovered.</p>
+			<p class="indent">Dragon Jewelry has 1 charge, which can be expended as an action to allow a Draconic race to transform. After this charge is expended the jewelry will become discolored and tarnished, removing all magic from it.</p>
+		</description>
+		<setters>
+			<set name="keywords">Dragonstone</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="charges">1</set>
+		</setters>
+	</element>
+
+	<element name="Burning Stone" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_BURNING_STONE">
+		<description>
+			<p>This smooth glass-like stone fits perfectly within the palm of your hand. It glows a faint orange, which emanates a small amount of heat. This orange light swirls like a mist within the confines of the stone, which details itself with a red tint.</p>
+			<p class="indent">While attuned to the Burning Stone you have 3 charges, which can be expended as an action to allow a Draconic race to transform. When you transform with the Burning Stone you release a wave of flames causing all creatures within a 10 foot radius around you to make a Dexterity saving throw. Creatures who fail this save take 3d6 fire damage, and half as much on a successful one.</p>
+			<p class="indent">If you would take fire damage you may use your reaction to gain resistance to fire damage until the beginning of your next turn. After taking the damage your Burning Stone gains an additional charge to a maximum of three.</p>
+		</description>
+		<setters>
+			<set name="keywords">Dragonstone, Fire</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+
+	<element name="Frigid Stone" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_FRIGID_STONE">
+		<description>
+			<p>This rough stone is made of a glass-like material that is barely translucent, but glows with a soft white color. This light emanates a slight chill, which can be uncomfortable to the touch. The stone will occasionally crack, but repair itself with its cold aura.</p>
+			<p class="indent">While attuned to the Frigid Stone you have 3 charges, which can be expended as an action to allow a Draconic race to transform. When you transform with the Frigid Stone you release a flurry of snow causing all creatures within a 10 foot radius around you to make a Dexterity saving throw. Creatures who fail this save take 3d6 cold damage, and half as much on a successful one.</p>
+			<p class="indent">If you would take cold damage you may use your reaction to gain resistance to cold damage until the beginning of your next turn. After taking the damage your Frigid Stone gains an additional charge to a maximum of three.</p>
+		</description>
+		<setters>
+			<set name="keywords">Dragonstone, Cold</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+
+	<element name="Storm Stone" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_STORM_STONE">
+		<description>
+			<p>This perfectly round glass-like stone appears to house a small lightning storm within its shell. This storm will occasionally flash light, which will be followed by a faint rumble sound. Touching the stone will cause the lightning inside to arch toward your fingers.</p>
+			<p class="indent">While attuned to the Storm Stone you have 3 charges, which can be expended as an action to allow a Draconic race to transform. When you transform with the Storm Stone you release a shockwave of lightning causing all creatures within a 10 foot radius around you to make a Dexterity saving throw. Creatures who fail this save take 3d6 lightning damage, and half as much on a successful one.</p>
+			<p class="indent">If you would take lightning damage you may use your reaction to gain resistance to lightning damage until the beginning of your next turn. After taking the damage your Storm Stone gains an additional charge to a maximum of three.</p>
+		</description>
+		<setters>
+			<set name="keywords">Dragonstone, Lightning</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+
+	<element name="Vre’s Stone" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_VRE_STONE">
+		<description>
+			<p>A palm sized golden orb with a slot on top large enough to fit a coin. The surface of this object depicts a six sided die, which is a common symbol used by the church of Vre.</p>
+			<p class="indent">Upon entering 25GP into the coin slot as an action the coins inside will disappear, and the user will transform if they are a Draconic race.</p>
+			<p class="indent">Upon transforming roll 1d20. If you roll a 20 you gain a luck point to a maximum of 3.</p>
+			<p class="indent">Whenever you make an attack roll, an ability check, or a saving throw, you can spend this luck point to roll an additional d20. You can choose to spend this luck point after you roll the die, but before the outcome is determined. You choose which of the d20s is used for the attack roll, ability check, or saving throw.</p>
+			<p class="indent">You can also spend this luck point when an attack roll is made against you. Roll a d20 and then choose whether the attack uses the attacker's roll or yours.</p>
+			<p class="indent">If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled.</p>
+			<p class="indent">In order to use the luck points the Vre’s Stone must be on your person, or you transform using it. If the Vre’s Stone is destroyed, it loses all of its luck points.</p>
+		</description>
+		<setters>
+			<set name="keywords">Dragonstone</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<!-- Wondrous Items -->
+	<element name="Infinite Itinerary" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_INFINITE_ITINERARY">
+		<description>
+			<p>This magical book can have any pattern or design on the cover, but it most commonly is found in blank leather with a strap and buckle to hold it closed. The pages of the book always appear about an inch and a half thick when closed, and each page is extremely thin, but surprisingly durable. Despite appearing like a normal book, the Infinite Itinerary has infinite pages, and can be flipped through an indeterminable amount of times. It is still unknown if the book is truly infinite, but since no one has ever been able to fill one to completion it is unknown. Infinite Itineraries are commonly used as spellbooks despite what their name would suggest. It is not known how the name came about, but much like the pages inside there are countless theories.</p>
+			<p class="indent">While attuned to this magic item you can turn to a specific page by thinking about the contents of the page, or thinking of the page number before opening the book. When you open the book you will be on the page you thought of.</p>
+			<p class="indent">The pages of the infinite itinerary can not be stained, or burned, but can be torn. When a page is ripped from the book it will disappear after 1 minute.</p>
+		</description>
+		<setters>
+			<set name="keywords">Book, Spellbook</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Pipe No. 2778" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_INFINITE_ITINERARY">
+		<description>
+			<p>This ornate purple pipe is made of a material similar to resin, but displays a grain pattern as though it was made of wood. The pipe's mouthpiece is silver, and is always tempered to not shock the lips of its user.</p>
+			<p class="indent">While attuned to this magic item you may use a bonus action to have it return to your mouth from any location. This ability does not work across planes.</p>
+			<p class="indent">This pipe has 1 charge, which can be expended as an action to cast the spell <em>Fog Cloud</em> centered 10ft in front of you.</p>
+			<p class="indent">You regain the charge after smoking the pipe for at least 1 hour.</p>
+		</description>
+		<setters>
+			<set name="keywords">Pipe, Fog Cloud</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="charges">1</set>
+		</setters>
+	</element>
+
+	<element name="Rat Duke’s Chaplet" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_RAT_DUKES_CHAPLET">
+		<description>
+			<p>While attuned to this magic item you gain the ability to speak to rats, and you have advantage on all Charisma checks with rats.</p>
+			<p class="indent">Once per day beginning at dusk you can cast the spell <em>Conjure Animals</em> at 3rd level, but only to cast 8 <em>Rats</em>.</p>
+			<p class="indent"><strong><em>Curse.</em></strong>This item is cursed. Attuning to it curses you until you are targeted by a <em>Remove Curse</em> spell or similar magic; or until you die. As long as you remain cursed, you cannot discard this item.</p>
+		</description>
+		<setters>
+			<set name="keywords">Conjure Animals, Rat, Cursed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="cursed">true</set>
+		</setters>
+	</element>
+
+	<element name="Rat King’s Crown" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_RAT_KINGS_CROWN">
+		<description>
+			<p>While attuned to this magic item you gain the ability to speak to rats, and you have advantage on all Charisma checks with rats. You also learn the location of all creatures attuned to the <em>Rat Duke’s Chaplet</em> magic item, and you may speak to them telepathically at any time. You gain the memories of all previous Rat Kings.</p>
+			<p class="indent">If you would take damage from a creature you can see, and you are within 5 feet of a rat, you may instead have the rat take the damage in your place. This does not apply to attacks that have an area of effect.</p>
+			<p class="indent">Once per day beginning at dusk you can cast the spell <em>Conjure Animals</em> at 3rd level, but only to cast 8 <em>Rats</em>, or 8 <em>Giant Rats</em>.</p>
+			<p class="indent"><strong><em>Curse.</em></strong>This item is cursed. Attuning to it curses you until you are targeted by a <em>Remove Curse</em> spell or similar magic; or until you die. As long as you remain cursed, you cannot discard this item.</p>
+		</description>
+		<setters>
+			<set name="keywords">Conjure Animals, Rat, Cursed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Artifact</set>
+			<set name="cursed">true</set>
+		</setters>
+	</element>
+
+	<element name="The Empress’ Crown" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_EMPRESS_CROWN">
+		<description>
+			<p>This silvered crown is covered in various rare jewels representing all lands in the Ican Empire, even some that are no longer under Ican control. This crown is designed to fit the head of a Great Ican, but it will take the shape of whoever it is attuned to.</p>
+			<p class="indent">While attuned to this magic item you become proficient, and gain expertise in Intimidation.</p>
+			<p class="indent">When you pass an intimidation check you can add 1d6 on your next, check, attack, or saving throw. You may only have 1d6 at a time. This magic item can not be detected by <em>Detect Magic</em>.</p>
+			<p class="indent">You learn the spell <em>Command</em> and can cast it at will, your spellcasting ability for this spell is your Charisma, and your saving throw DC is 18. This spell can not be detected by a use of <em>Detect Magic</em>.</p>
+			<p class="indent"><strong><em>Curse.</em></strong>This item is cursed. Attuning to it curses you until you are targeted by a <em>Wish</em> spell or until you die. As long as you remain cursed, you cannot discard this item.</p>
+		</description>
+		<setters>
+			<set name="keywords">Crown, Intimidation, Command, Detect Magic, Cursed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Artifact</set>
+			<set name="cursed">true</set>
+		</setters>
+	</element>
+
+	<element name="Investigator’s Pocket Watch" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_INVESTIGATORS_POCKET_WATCH">
+		<description>
+			<p>This pocket watch is of a cylindrical design, and appears to be made of a platinum like substance with matte black patterns. The lid of the watch depicts a single open eye with an hourglass as the iris. A glass chain hangs off the watch and connects to the wearer's waist.</p>
+			<p class="indent">When this watch is placed upon a track of a creature (Footprint, fingerprint, etc,) it will display an almost hologram like screen which will reveal what the creature has done since leaving the print to the present, which can be sped up or rewound by moving the watch dial.</p>
+			<p class="indent">A print can be no more than 24 hours old, and the trail ends once it reaches the present, or the creature dies. The watch dial will stop ticking and lose this ability after use, until 24 hours have passed.</p>
+		</description>
+		<setters>
+			<set name="keywords">Watch</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<!-- Magic Weapons -->
+	<element name="El Ford" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_EL_FORD">
+		<description>
+			<p>This small iron revolver is aged with rust along its barrel, with a wooden splintered grip. On this grip it has cruelly carved the words “El Ford.”</p>
+			<p class="indent">Once per day beginning at high noon you may choose a number of targets in a 30x60ft Cone up to the number of bullets in the El Ford. These targets must make a Dexterity saving throw. On a failed save they take 2d4 Piercing damage, and take half as much on a successful save.</p>
+		</description>
+		<setters>
+			<set name="keywords">gun, revolver, single-action revolver</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Single-Action Revolver">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Single-Action Revolver</set>
+		</setters>
+	</element>
+
+	<element name="Dispelling Adze" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_DISPELLING_ADZE">
+		<description>
+			<p>You may cast <em>Dispel Magic</em> at 3rd level as an action, or after successfully making an attack (No action required,) your spellcasting ability modifier for the spell is 18 (+4). Upon using this ability it will be unavailable until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">any axe</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any axe">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_AXES</set>
+			<set name="name-format">Dispelling {{parent}}</set>
+		</setters>
+	</element>
+
+	<!-- Magic Armor -->
+	<element name="Ican Leather Plate" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_ICAN_LEATHER_PLATE">
+		<description>
+			<p>Ican Leather Plate is a lightweight leather armor bound with small metal plates that are flexible yet durable to attack. The plates are infused with a small amount of abjuration magic, which gives them an unnatural glitter.</p>
+			<p class="indent">When worn your armor class becomes 18. Ican Leather Plate is considered Light Armor.</p>
+		</description>
+		<setters>
+			<set name="keywords">plate</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="plate">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">Plate</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_IGNORE_STEALTH_DISADVANTAGE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT" />
+		</rules>
+	</element>
+
+	<element name="Illitian Wind Plate" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_ILLITIAN_WIND_PLATE">
+		<description>
+			<p>This light blue set of plate armor is imbued with wind magic, making it supernaturally light. This set of armor does not have a Strength score requirement, and creatures wearing this armor can use any flying speed they have, even if their flying speed normally cannot be used with heavy armor.</p>
+		</description>
+		<setters>
+			<set name="keywords">plate</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="plate">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="armor">Plate</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_IGNORE_STEALTH_DISADVANTAGE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT" />
+		</rules>
+	</element>
+
+	<!-- Consumable Magic Items -->
+	<element name="VanDoran’s Herb" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_VANDORANS_HERB">		
+		<description>
+			<p>Made from a mysterious strong smelling plant from the Durgan Forest, the VanDoran Herb is designed to look like a standard cigar.</p>
+			<p class="indent">As an action you may light and smoke the cigar casting the spell <em>Calm Emotions</em> targeted on yourself. While under the effects of this spell you gain resistance to psychic damage. After the cigar has been smoked it is consumed.</p>
+		</description>
+		<setters>
+			<set name="keywords">Herb, Healing</set>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Potion of Muddling" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_POTION_OF_MUDDLING">		
+		<description>
+			<p>This small potion comes in a faded blue color, which burns the nostrils with the scent of sulfur. Upon consumption you can not be the target of a divination spell, or be talked to telepathically for the next 10 minutes.</p>
+		</description>
+		<setters>
+			<set name="keywords">Divination</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Potion of Greater Muddling" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_POTION_OF_GREATER_MUDDLING">		
+		<description>
+			<p>This potion comes in a foggy dark blue color that swirls with gray, and smells of a faint sulfur. Upon consumption you become immune to all divination spells, and can not be spoken to telepathically for the next 8 hours.</p>
+		</description>
+		<setters>
+			<set name="keywords">Divination</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+</elements>
