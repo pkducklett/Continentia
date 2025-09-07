@@ -2,10 +2,11 @@
 <elements>
 	<info>
 		<name>Spells</name>
-		<update version="0.0.1">
-        <!-- update notes: -->
+		<update version="0.0.2">
+        <!-- update notes: -Mage Gun no longer must now be gun-shaped
+						   -Added, 1st, 2nd, and 4th level spells -->		
             <description>Spells from Continentia.</description>
-		    <author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
+		    <author url="https://github.com/pkducklett/">Corey Welch</author>
 		<file name="continentia-spells.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-spells.xml" />
 		</update>
 	</info>
@@ -37,7 +38,6 @@
 		<description>
 			<p>You outstretch your middle and pointer finger with your thumb perpendicular to them. A tiny revolver shaped firearm will appear from your fingers that can float up to 30ft in any direction away from you. When you move your thumb down and say the command word as an action, the firearm will fire and release a shockwave of sound damaging one target within 30ft dealing 1d6 Thunder damage on a hit within range. If the revolver leaves your range, or is reduced to 0 hit points it will disappear. The revolver has an AC of 10 and 1 hitpoint.</p>
 			<p class="indent">This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th (3d6), and 17th (4d6).</p>
-            <p class="indent"><b><i>Notes for Thought.</i></b> The name for this cantrip is Mage Gun, however it’s appearance is not just limited to that of a firearm. Many mages have discovered that as long as it is a tiny object with a hole to have the sound escape, it will work just as fine as it’s standard revolver shape. In my time I have seen small record players, smoking pipes, and once even a roll of toilet paper (The latter of the three resulted in the most disgusting results).</p>
 		</description>
 		<setters>
 			<set name="keywords">Thunder</set>
@@ -72,6 +72,194 @@
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent" />
 			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<!-- 1st Level Spells: -->
+	<element name="Detect Essence" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_DETECT_ESSENSE">
+		<supports>Artificer, Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>For the duration you sense the magical abilities of a target creature within range.</p>
+			<p class="indent">If they have majority Sorcerer levels you, learn their magic is <i>Sorcratic</i>.</p>
+			<p class="indent">If they have majority Artificer, Bard, or Wizard levels you, learn their magic is <i>Scholastic</i>.</p>
+			<p class="indent">If they have majority Cleric, Paladin, or Warlock levels you, learn their magic is <i>Bestowic</i>.</p>
+			<p class="indent">If they have majority Druid or Ranger levels you, learn their magic is <i>Biologic</i>.</p>
+			<p class="indent">If the target is a creature without class levels but has the Spellcasting or Innate Spellcasting, the DM determines whether its magic is sorcratic, scholastic, bestowic, or biologic.</p>
+			<p class="indent"><i>Eldritch Knight</i> fighters and <i>Arcane Trickster</i> rogues are considered Wizards for the purpose of this spell.</p>
+			<p class="indent">The more powerful a spellcasting creature, the stronger their presence will feel to the caster. You learn if the target's total level in spellcasting classes, or CR if it doesn’t have any, is between 0-5, 6-10, 11-15, or 16+.</p>
+			<p><b>Notes for thought:</b> In Continentia, magic is cast through a person's inherent magical channels. All people have a magic channel (Which is located on the back of your neck,) and your magical prowess determines how strong or wide your channel is. The terms used above are in-universe categories for how the caster has trained their channels to cast spells. They are as follows:</p>
+			<p class="indent"><b>Sorcratic:</b> The channels of the caster were wide enough from birth or soon after that. Their magical abilities are inherent.</p>
+			<p class="indent"><b>Scholastic:</b> The channels of the caster were trained from a young age, so that they have mastery over them in their adulthood.</p>
+			<p class="indent"><b>Bestowic:</b> The caster uses the magic of another being to cast magic through their own channels.</p>
+			<p class="indent"><b>Biologic:</b> The caster can sense the inherent magic in all living things to a degree, and derives their channel's power through that.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+	<element name="Earthly Bastion" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_EARTHLY_BASTION">
+		<supports>Artificer, Druid, Ranger, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You manipulate the ground around you to form a wall of earth. All adjacent spaces become rough terrain, and provide half cover to large creatures and full cover to medium or smaller creatures.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">5 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">Three ounces of Iron or Steel</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Grapeshot" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_GRAPESHOT">
+		<supports>Artificer, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>Flick a bullet into the air and choose a 10 foot area you can see within range. The bullet will disappear into the air, and several small pieces of lead will appear above the chosen area and rain down. Any creature within the area must make a Dexterity saving throw. On a failed save, they take 10 piercing damage. Then roll 1d2 (flip a coin). Everytime you roll a 2 (heads), roll another d2. Repeat this process until you roll a 1 (tails). Then add all the numbers rolled to the damage. On a successful save, they take half the amount of damage.</p>
+			<p class="indent">When you cast this spell using a spell slot of 2nd level or higher, the damage and area increase by 5 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">Piercing</set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A bullet or one ounce of lead</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="McDower’s Mythical Toolbox" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_MCDOWERS_MYTHICAL_TOOLBOX">
+		<supports>Artificer, Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>A piece of metal you are holding forms into a small toolbox-shaped chest. Before opening it, you declare a kind of tool set and then open the small chest. The chest contains a pocket sized version of the declared tools. If you declare something that is not a kind of tool set, the chest contains the most appropriate tools and a note telling you how to create the declared item. The tools last for 24 hours before melting and becoming unusable.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">24 hours</set>
+			<set name="range">N/A</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">One ounce of metal</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<!-- 2nd Level Spells: -->
+	<element name="Combust" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_COMBUST">
+		<supports>Artificer, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You contaminate a 20ft cone in front of you with a combustible gas. Any attack from a firearm or attack that has the Fire damage type will ignite this gas. All targets caught inside the affected area must make a Dexterity saving throw. Those who fail take 4d8 Fire damage, and those who succeed take half as much. The gas of this spell dissipates after 1 minute (10 rounds), or if a strong wind blows it away.</p>
+			<p class="indent">When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">Fire</set>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">20 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">One ounce of Rust and Aluminum, all of which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Ethan’s Lethal Jump" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_COMBUST">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>A gust of wind shoots you 15ft into the air. While airborne you may move 30ft in any direction. If you make a melee attack while airborne you gain -5 to the attack roll, but on a successful hit you deal critical damage regardless of roll. You may only make a melee attack against a creature that is your size, or smaller. You do not take fall damage when hitting the ground.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Melee (5 feet)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Und’s Delight" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_UNDS_DELIGHT">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>Und’s voice resonates within the mind of a creature you choose within 20 feet. The target must make a Wisdom Saving Throw or be charmed by you for the duration. While charmed in this way, they must use their Action to make an unarmed strike against themselves. At the start of their next turn they must make another wisdom saving throw, if they fail they make another unarmed strike against themselves.This continues until they succeed the save or the caster loses concentration.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">20 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A symbol of Und worth at least 50GP</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<!-- 4th Level Spells: -->
+	<element name="Wall of Words" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_WALL_OF_WORDS">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>When casting this spell choose a concept you are fluent in. You create an invisible barrier of madness affected by this concept. The barrier can be up to 60ft long, one foot thick, and 20ft high.</p>
+			<p class="indent">When a creature passes through the barrier they must make an Intelligence Saving Throw. On a failed save, they take 5d6 Psychic damage, and their last 10 minutes of memory are replaced by the chosen concept from before. On a successful save, they take half as much damage, and their memory is not replaced, but they gain the information from the chosen concept.</p>
+			<p class="indent">When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each level above 4th.</p>
+			<p><b>Example Effect:</b> The wizard casting the spell is very knowledgeable of bird watching, and casts Wall of Words with that as the concept. An enemy goblin passes through the wall and fails the save. Their mind is immediately bombarded by several decades worth of bird watching knowledge, destroying their last 10 minutes of memory, and leaving them very confused as to why they are not at the aviary.</p>
+		</description>
+		<setters>
+			<set name="keywords">Psychic</set>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
