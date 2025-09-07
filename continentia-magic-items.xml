@@ -6,7 +6,7 @@
 			<!-- Update Notes: -->
 		    	<description>Magic Items from Continentia.</description>
 		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
-			<file name="continentia-magic-items.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+			<file name="continentia-magic-items.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/refs/heads/main/continentia-magic-items.xml" />
 		</update>
 	</info>
 
