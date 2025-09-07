@@ -20,6 +20,7 @@
 		<file name="continentia-companions.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-companions.xml" />
 		<file name="continentia-items.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-items.xml" />
 		<file name="continentia-spells.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-spells.xml" />
+		<file name="continentia-magic-items.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/refs/heads/main/continentia-magic-items.xml" />
 
 		<!-- Races -->
 		<file name="continentia-race-durgan.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-durgan.xml" />
@@ -36,4 +37,5 @@
 		<!-- Classes -->
 		<file name="continentia-barbarian-rancor.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-barbarian-rancor.xml" />
 	</files>
+
 </index>
