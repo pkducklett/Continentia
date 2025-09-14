@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Vice Mystic</name>
+        <update version="0.0.1">
+			<!-- Update Notes:  -->
+		    	<description>The Experimented Race from Continentia.</description>
+		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
+			<file name="continentia-race-vice-mystic.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-experimented.xml" />
+		</update>
+	</info>
+
+    <element name="Vice Mystic" type="Race" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACE_VICE_MYSTIC">
+        <description>
+		    <p class="flavor">Vice Mystics are from a plane beyond Continentia, who are refugees from an interdimensional war known as “The Conflict.” They are scattered across the world and use their mimicry to lay refuge wherever they can.</p>
+            <h4>APPEARANCE</h4>
+		    <p>The original appearance for Mystics was purely dependent on what role they served in the hive, and varied wildly. Some lacked a physical form altogether, while others held a physical body only suited to their one specific purpose.</p>
+            <p>Vice Mystics however, take the appearance of the race they are trying to mimic. No mimicry is perfect, so, they will always appear somewhat off from their mimicked race. Most claim it is their unblinking yellow eyes that makes them truly unsettling to be around.</p>
+		    <h4>HISTORY OF CONQUEST</h4>
+			<p>Long ago, the being known as the Mystic conquered their way through the known universe. They were a hive mind of assimilated people from the many planets that had been swept into this multi-galactic empire. Each aspect of the Mystic played a specific role in the hive, and gained their power through a magical reservoir known as “the Purity”. The Purity, in its simplest language, can only be described as magic in a condensed energized state. Each aspect tapped into the Purity to fuel their widespread conquest and infect hosts to add new assimilees to the Mystic. This process was very selective, and was based on the intelligence and skill of the assimilee. Those assimilated would have no knowledge of their previous life, and from their perspective, they would become a perfect member of the unending hive.</p>
+			<h4>THE CONFLICT</h4>
+			<p>The Conflict is an event unknown to even the most perceptive of Mystics. In an instant, their Purity, their power, became tainted by an act of deliberate sabotage from an unknown assailant. Those who refused to rip themselves from the Purity’s effects were driven to insanity. Their minds became warped beyond recognition and saving. The unending hive was forcefully severed to save the minds of a fraction of the species.</p>
+			<p>This new race called themselves Vice Mystics. Without the power of the Purity, they hold a fraction of the power that the Mystic once had. Terrified of further attacks from those behind the Conflict, they scattered and used their powers of mimicry to blend into the society that had begun to form on Continentia. What once was a feared tyrant whose empire knew no end had been reduced to a race of immortal, weak monsters. And, for the first time, they were truly alone.</p>
+            <h4>VICE MYSTIC TRAITS</h4>
+            <p>Vice Mystics possess the following traits.</p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b> Your intelligence increases by 2. A stat of your choice increases by 1.</p>
+		    <p class="indent"><b><i>Age.</i></b> Vice Mystics are almost always assimilated adults. They are immortal and can only die from severe damage to their body. (ie, Wounds, Sickness, Starvation, etc)</p>
+		    <p class="indent"><b><i>Alignment.</i></b> Vice Mystic alignments range from true neutral to lawful evil.</p>
+        	<p class="indent"><b><i>Size.</i></b> Vice Mystics vary in size depending on the species they are mimicking.</p>
+		    <p class="indent"><b><i>Speed.</i></b> 30ft walking speed if you are a size medium. 25ft walking speed if you are a size small.</p>
+		    <p class="indent"><b><i>Alter Ego.</i></b> Your background should reflect the person you are imitating rather than the person you are. You are effectively playing two characters: Your true Vice Mystic self and a disguise.</p>
+		    <p class="indent"><b><i>Mimic the Masses.</i></b> The little Purity inside you can be used to change your appearance to more easily disguise yourself among the masses. During a long rest, you can choose to begin the process of changing your appearance. During this process you will resemble a disgusting, in-between state from your former appearance to your desired one. After three subsequent Long Rests in which you focus your effort into shape shifting, you will become your desired form. This ability cannot be used to change your eye color.</p>
+		    <p class="indent">This ability can be used to change either or both of the following: Your appearance and whether you are Small or Medium sized</p>
+			<p class="indent"><b><i>Exiled By the Conflict.</i></b> When the spell Banishment is cast on you, it is treated as though you are native to the plane you currently are on. When using Investigation to inspect people to see if they are from a different plane, you are considered proficient and you may double your proficiency modifier.</p>
+		    <p class="indent"><b><i>Essence of Purity.</i></b> You know the Mind Sliver cantrip. At level 3, you learn one of the following 1st level spells: Cause Fear, Detect Essence, or Disguise Self. At level 5,  you learn the 2nd level spell Mind Spike. Intelligence is your spell casting ability for these spells.</p>
+			<p class="indent"><b><i>Languages.</i></b> You can speak, read, and write in Mystic and one other language of your choice.</p>
+		    <p class="indent"><b><i>Creature Type.</i></b> Your creature type is humanoid.</p>
+        </description>
+        <sheet display="false" />
+
+		<setters>
+			<set name="names" type="male">John</set>
+			<set name="names" type="female">Jane</set>
+			<set name="names" type="surname">Johnson</set>
+			<set name="names-format">{{name}} {{surname}}</set>
+			<set name="height" modifier="2d10">4'8"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Vice Mystic Ability Score Improvement" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_DEXTERITY|ID_INTERNAL_ASI_CONSTITUTION|ID_INTERNAL_ASI_CHARISMA|ID_INTERNAL_ASI_WISDOM" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Vice Mystic)" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Language" id="ID_CONT_CONTINENTIA_LANGUAGE_MYSTIC" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Additional Language (Vice Mystic)" supports = "Contintentian Standard||Contintentian Exotic" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_MIMIC_THE_MASSES" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_EXILED_BY_THE_CONFLICT" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_ESSENCE_OF_PURITY" />
+		</rules>
+	</element>
+
+	<element name="Mimic the Masses" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_MIMIC_THE_MASSES">
+		<description>
+			<p>The little Purity inside you can be used to change your appearance to more easily disguise yourself among the masses. During a long rest, you can choose to begin the process of changing your appearance. During this process you will resemble a disgusting, in-between state from your former appearance to your desired one. After three subsequent Long Rests in which you focus your effort into shape shifting, you will become your desired form. This ability cannot be used to change your eye color.</p>
+		</description>
+		<sheet>
+			<description>You can change your appearance and size to better to more easily disguise yourself among the masses. Using three subsequent long rests, in which you focus your effort into shape shifting, you will become your desired form. During this process you will resemble a disgusting, in-between state from your former appearance to your desired one. This ability cannot be used to change your eye color.</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Mimic the Masses Size" supports="Mimic the Masses Size" />
+		</rules>
+	</element>
+
+	<element name="Mimic the Masses (Small)" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_MIMIC_THE_MASSES_SMALL">
+		<supports>Mimic the Masses Size</supports>
+		<description>
+			<p>You are mimicking a size small race. Your base walking speed is 25.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed" value="25" bonus="base" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+		</rules>
+	</element>
+
+	<element name="Mimic the Masses (Medium)" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_MIMIC_THE_MASSES_MEDIUM">
+		<supports>Mimic the Masses Size</supports>
+		<description>
+			<p>You are mimicking a size medium race. Your base walking speed is 30.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+		</rules>
+	</element>
+
+	<element name="Exiled By the Conflict" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_EXILED_BY_THE_CONFLICT">
+		<description>
+			<p>When the spell Banishment is cast on you, it is treated as though you are native to the plane you currently are on. When using Investigation to inspect people to see if they are from a different plane, you are considered proficient and you may double your proficiency modifier.</p>
+		</description>
+		<sheet>
+			<description>When the spell Banishment is cast on you, it is treated as though you are native to the plane you currently are on. When using Investigation to inspect people to see if they are from a different plane, you are considered proficient and you may double your proficiency modifier.</description>
+		</sheet>
+	</element>
+
+	<element name="Essence of Purity" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_ESSENCE_OF_PURITY">
+		<description>
+			<p>You know the Mind Sliver cantrip. At level 3, you learn one of the following 1st level spells: Cause Fear, Detect Essence, or Disguise Self. At level 5, you learn the 2nd level spell Mind Spike. Intelligence is your spell casting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You know the Mind Sliver cantrip. Intelligence is your spellcasting ability for this spell.</description>
+			<description level="3">You know the Mind Sliver cantrip. You also know one of the following 1st level spells: Cause Fear, Detect Essence, or Disguise Self. Intelligence is your spell casting ability for these spells.</description>
+			<description level="5">You know the Mind Sliver cantrip. You also know one of the following 1st level spells: Cause Fear, Detect Essence, or Disguise Self. You also know the 2nd level spell Mind Spike. Intelligence is your spell casting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_MIND_SLIVER" />
+			<select type="Spell" name= "Essence of Purity" supports="ID_XGTE_SPELL_CAUSE_FEAR|ID_PHB_SPELL_DISGUISE_SELF|ID_CONT_CONTINENTIA_SPELL_DETECT_ESSENSE" level="3"/>
+			<grant type="Spell" id="ID_XGTE_SPELL_MIND_SPIKE" level="5"/>
+		</rules>
+	</element>
+</elements>
