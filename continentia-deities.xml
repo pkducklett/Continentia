@@ -2,12 +2,13 @@
 <elements>
 	<info>
 		<name>Deities</name>
-        <update version="0.0.5">
-			<!-- update notes:	-Fixed the Ican Gods and their spellings
-							    -Added more Ican Gods -->
+        <update version="0.0.6">
+			<!-- update notes:	-Added Pyruvian gods
+							    -Added Twilight domain to Ora
+								-Fixed Ican gods descriptions -->
 		    <description>Gods and Deities worshiped in Continentia.</description>
 		    <author url="https://github.com/pkducklett/">Corey Welch</author>
-			<file name="continentia-deities.xml"  url="https://github.com/pkducklett/Continentia/blob/1a3b121268a18e049b6a85b8f5e84ab69444d544/continentia-languages.xml" />
+			<file name="continentia-deities.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/refs/heads/main/continentia-deities.xml" />
 		</update>
 	</info>
 	
@@ -20,11 +21,11 @@
 			<set name="setting">Ica</set>
 			<set name="alignment">LN</set>
 			<set name="domains">War, Order</set>
-			<set name="symbol">a Pi'ech</set>
+			<set name="symbol">A Pi'ech</set>
 			<set name="gender">female</set>
 		</setters>
 		<sheet>
-			<description>Ican Goddess of War and Justice.</description>
+			<description>Ican Goddess of War and Rulership..</description>
 		</sheet>
 	</element>
 
@@ -36,7 +37,7 @@
 			<set name="setting">Ica</set>
 			<set name="alignment">NG</set>
 			<set name="domains">Life, Nature</set>
-			<set name="symbol">a boulder covered in moss</set>
+			<set name="symbol">A boulder covered in moss</set>
 			<set name="gender">female</set>
 		</setters>
 		<sheet>
@@ -52,7 +53,7 @@
 			<set name="setting">Ica</set>
 			<set name="alignment">NG</set>
 			<set name="domains">Light, Nature, Twilight</set>
-			<set name="symbol">the moon</set>
+			<set name="symbol">The moon</set>
 			<set name="gender">female</set>
 		</setters>
 		<sheet>
@@ -132,7 +133,7 @@
 			<set name="setting">Ica</set>
 			<set name="alignment">LG</set>
 			<set name="domains">Knowledge, Order, Peace</set>
-			<set name="symbol">a scale balanced with a heart on the left and an eye on the right</set>
+			<set name="symbol">A scale balanced with a heart on the left and an eye on the right</set>
 			<set name="gender">male</set>
 		</setters>
 		<sheet>
@@ -164,7 +165,7 @@
 			<set name="setting">Ica</set>
 			<set name="alignment">LG</set>
 			<set name="domains">Order, Peace, War</set>
-			<set name="symbol">a dull Pi'ech</set>
+			<set name="symbol">A sword</set>
 			<set name="gender">male</set>
 		</setters>
 		<sheet>
@@ -180,7 +181,7 @@
 			<set name="setting">Ica</set>
 			<set name="alignment">CN</set>
 			<set name="domains">Trickery</set>
-			<set name="symbol">a coin with her face minted on one side and the image of an imp on the other</set>
+			<set name="symbol">A coin with her face minted on one side and the image of an imp on the other</set>
 			<set name="gender">female</set>
 		</setters>
 		<sheet>
@@ -196,7 +197,7 @@
 			<set name="setting">Ica</set>
 			<set name="alignment">LN</set>
 			<set name="domains">Life, Death, Order</set>
-			<set name="symbol">an hourglass</set>
+			<set name="symbol">An hourglass</set>
 			<set name="gender">female</set>
 		</setters>
 		<sheet>
@@ -244,7 +245,7 @@
 			<set name="setting">Ica</set>
 			<set name="alignment">CN</set>
 			<set name="domains">Life, Trickery</set>
-			<set name="symbol">traadi pills</set>
+			<set name="symbol">Traadi pills</set>
 			<set name="gender">male</set>
 		</setters>
 		<sheet>
@@ -260,7 +261,7 @@
 			<set name="setting">Ica</set>
 			<set name="alignment">N</set>
 			<set name="domains">Forge, Light</set>
-			<set name="symbol">a hammer which is on fire</set>
+			<set name="symbol">A hammer which is on fire</set>
 			<set name="gender">females</set>
 		</setters>
 		<sheet>
@@ -276,7 +277,7 @@
 			<set name="setting">Ica, Contan</set>
 			<set name="alignment">CN</set>
 			<set name="domains">Forge</set>
-			<set name="symbol">a pint of ale</set>
+			<set name="symbol">A pint of ale</set>
 			<set name="gender">female</set>
 		</setters>
 		<sheet>
@@ -292,7 +293,7 @@
 			<set name="setting">Ica, Contan, Illitius</set>
 			<set name="alignment">CG</set>
 			<set name="domains">Tempest</set>
-			<set name="symbol">a gray feather on a blue breeze</set>
+			<set name="symbol">A gray feather on a blue breeze</set>
 			<set name="gender">female</set>
 		</setters>
 		<sheet>
@@ -308,7 +309,7 @@
 			<set name="setting">Ica</set>
 			<set name="alignment">CE</set>
 			<set name="domains">Death, Trickery</set>
-			<set name="symbol">a rak’nok</set>
+			<set name="symbol">A rak’nok</set>
 			<set name="gender">female</set>
 		</setters>
 		<sheet>
@@ -324,7 +325,7 @@
 			<set name="setting">Ica</set>
 			<set name="alignment">N</set>
 			<set name="domains">Light</set>
-			<set name="symbol">three circles interconnected like a triangle</set>
+			<set name="symbol">Three circles interconnected like a triangle</set>
 			<set name="gender">female</set>
 		</setters>
 		<sheet>
@@ -340,7 +341,7 @@
 			<set name="setting">Ica, Illitius</set>
 			<set name="alignment">NG</set>
 			<set name="domains">Tempest</set>
-			<set name="symbol">a single white feather</set>
+			<set name="symbol">A single white feather</set>
 			<set name="gender">female</set>
 		</setters>
 		<sheet>
@@ -356,7 +357,7 @@
 			<set name="setting">Ica</set>
 			<set name="alignment">CG</set>
 			<set name="domains">Tempest</set>
-			<set name="symbol">a chimera</set>
+			<set name="symbol">A chimera</set>
 			<set name="gender">female</set>
 		</setters>
 		<sheet>
@@ -372,7 +373,7 @@
 			<set name="setting">Ica</set>
 			<set name="alignment">LN</set>
 			<set name="domains">Knowledge</set>
-			<set name="symbol">a circle</set>
+			<set name="symbol">A circle</set>
 			<set name="gender">male</set>
 		</setters>
 		<sheet>
@@ -388,7 +389,7 @@
 			<set name="setting">Ica</set>
 			<set name="alignment">CN</set>
 			<set name="domains">Trickery</set>
-			<set name="symbol">a lute with rainbow feather beads tied to the pegbox</set>
+			<set name="symbol">A lute with rainbow feather beads tied to the pegbox</set>
 			<set name="gender">female</set>
 		</setters>
 		<sheet>
@@ -405,7 +406,7 @@
 			<set name="setting">Arity</set>
 			<set name="alignment">N</set>
 			<set name="domains">Arcana, Knowledge, Life, Light, Tempest</set>
-			<set name="symbol">a nagean dragon</set>
+			<set name="symbol">A nagean dragon</set>
 			<set name="gender">male</set>
 		</setters>
 		<sheet>
@@ -421,7 +422,7 @@
 			<set name="setting">Northernlands, Oraja</set>
 			<set name="alignment">N</set>
 			<set name="domains">Arcana, Knowledge, Life, Light, Tempest</set>
-			<set name="symbol">a nagean dragon</set>
+			<set name="symbol">A nagean dragon</set>
 			<set name="gender">male</set>
 		</setters>
 		<sheet>
@@ -437,8 +438,8 @@
 		<setters>
 			<set name="setting">Oraja</set>
 			<set name="alignment">NE</set>
-			<set name="domains">Arcana, Death, Grave, Trickery</set>
-			<set name="symbol">four stars in line like eyes</set>
+			<set name="domains">Arcana, Death, Grave, Trickery, Twilight</set>
+			<set name="symbol">Four stars in line like eyes</set>
 			<set name="gender">male</set>
 		</setters>
 		<sheet>
@@ -454,11 +455,44 @@
 			<set name="setting">Oraja, Ica</set>
 			<set name="alignment">CN</set>
 			<set name="domains">Arcana, Knowledge</set>
-			<set name="symbol">rock goat skull</set>
+			<set name="symbol">A rock goat skull</set>
 			<set name="gender">construct</set>
 		</setters>
 		<sheet>
 			<description>Orajan God of Anima Magic.</description>
+		</sheet>
+	</element>
+
+	<!-- Pyruvian Deities -->
+	<element name="Ahi" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_AHI">
+		<description>
+			<p class="flavor">Pyruvian Goddess of Death and the Ocean.</p>
+		</description>
+		<setters>
+			<set name="setting">Pyruvia</set>
+			<set name="alignment">N</set>
+			<set name="domains">Death, Grave, Nature, Tempest</set>
+			<set name="symbol">A ship on the waves</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Pyruvian Goddess of Death and the Ocean.</description>
+		</sheet>
+	</element>
+
+	<element name="Tao" type="Deity" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_DEITY_TAO">
+		<description>
+			<p class="flavor">Pyruvian God of Life and Volcanoes.</p>
+		</description>
+		<setters>
+			<set name="setting">Pyruvia</set>
+			<set name="alignment">NG</set>
+			<set name="domains">Life, Light, Nature</set>
+			<set name="symbol">A volcano with a flame at the top</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>Pyruvian God of Life and Volcanoes.</description>
 		</sheet>
 	</element>
 
@@ -471,7 +505,7 @@
 			<set name="setting">Durgish</set>
 			<set name="alignment">N</set>
 			<set name="domains">Life, Nature, Trickery</set>
-			<set name="symbol">a purple tree (durgan), a gold mountain (durgoi)</set>
+			<set name="symbol">A purple tree (durgan) or a gold mountain (durgoi)</set>
 			<set name="gender">female</set>
 		</setters>
 		<sheet>
