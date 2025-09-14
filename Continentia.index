@@ -33,6 +33,7 @@
 		<file name="continentia-race-nagean.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-nagean.xml" />
 		<file name="continentia-race-orajan.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-orajan.xml" />
 		<file name="continentia-race-pyruvian.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-pyruvian.xml" />
+		<file name="continentia-race-vice-mystic.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/refs/heads/main/continentia-race-vice-mystic.xml" />
 
 		<!-- Classes -->
 		<file name="continentia-barbarian-rancor.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-barbarian-rancor.xml" />
