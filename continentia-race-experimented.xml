@@ -2,11 +2,8 @@
 <elements>
 	<info>
 		<name>Experimented</name>
-        <update version="0.1.1">
-			<!-- Update Notes: -Experimented can now use Tasha's custom language rules
-							   -Experimented now only use custom ability score 
-							   -Draconic traits are streamlined
-							   -Minor wording changes -->
+        <update version="0.1.2">
+			<!-- Update Notes: -Added setters -->
 		    	<description>The Experimented Race from Continentia.</description>
 		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
 			<file name="continentia-race-experimented.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-experimented.xml" />
@@ -35,6 +32,14 @@
         </description>
         <sheet display="false" />
 
+		<setters>
+			<set name="names" type="male">John</set>
+			<set name="names" type="female">Jane</set>
+			<set name="names" type="surname">Johnson</set>
+			<set name="names-format">{{name}} {{surname}}</set>
+			<set name="height" modifier="2d10">4'8"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
         <rules>
             <select type="Ability Score Improvement" name="Ability Score Improvement Option (Experimented)" supports="Custom Ability Score Improvement Option" />
 			<stat name="innate speed" value="30" bonus="base" />
