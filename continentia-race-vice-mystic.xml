@@ -6,7 +6,7 @@
 			<!-- Update Notes:  -->
 		    	<description>The Experimented Race from Continentia.</description>
 		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
-			<file name="continentia-race-vice-mystic.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-experimented.xml" />
+			<file name="continentia-race-vice-mystic.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/refs/heads/main/continentia-race-vice-mystic.xml" />
 		</update>
 	</info>
 
