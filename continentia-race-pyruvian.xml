@@ -2,9 +2,8 @@
 <elements>
 	<info>
 		<name>Pyruvian</name>
-        <update version="0.0.3">
-			<!-- update notes: added height and weight modifier
-							   added more names-->
+        <update version="0.1.0">
+			<!-- update notes: -Changed Gift from Ahi to Gift from Tao to reflect proper Pyruvian deities -->
 		    <description>The Pyruvian Race from Continentia.</description>
 		    <author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
 			<file name="continentia-race-pyruvian.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-pyruvian.xml" />
@@ -36,7 +35,7 @@
         	<p class="indent"><b><i>Size.</i></b> Pyruvians are typically the same height and weight as humans. Your size is medium.</p>
 			<p class="indent"><b><i>Speed.</i></b> Your base walking speed is 30 feet.</p>
 			<p class="indent"><b><i>Seared Hide and Scale.</i></b> You have resistance to fire damage.</p>
-			<p class="indent"><b><i>Gift From Ahi.</i></b> You learn the Fire Bolt cantrip. Charisma is your spellcasting ability for it. You may cast this spell while in a draconic form.</p>
+			<p class="indent"><b><i>Gift From Tao.</i></b> You learn the Fire Bolt cantrip. Charisma is your spellcasting ability for it. You may cast this spell while in a draconic form.</p>
 			<p class="indent"><b><i>Acidic Saliva.</i></b> Your saliva can be used as a mild acid. When your saliva is exposed to the skin of another creature that creature must make a Constitution saving throw. On a fail they take 2d4 Acid damage. If your saliva is exposed to sunlight for an hour, it dilutes and loses all effects. This Racial Ability does not apply to creatures that share it.</p>
 			<p class="indent"><b><i>Languages.</i></b>You can speak, read, and write in your choice of: Florish or Pyruvian.</p>
 			<h4>PYRUVIAN DRACONIC TRAITS</h4>
@@ -68,7 +67,7 @@
 			<select type="Language" name="Pyruvian Language" supports="ID_CONT_CONTINENTIA_LANGUAGE_FLORISH|ID_CONT_CONTINENTIA_LANGUAGE_PYRUVIAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE"/>
 			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_SEARED_HIDE" />
-			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_GIFT_AHI" />
+			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_GIFT_TAO" />
 			<grant type="Racial Trait" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_PYRUVIAN_ACIDIC_SALIVA" />
    	 	</rules>
 	</element>
@@ -85,7 +84,7 @@
 		</rules>
 	</element>
 
-	<element name="Gift From Ahi" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_GIFT_AHI">
+	<element name="Gift From Tao" type="Racial Trait" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_RACIAL_TRAIT_GIFT_TAO">
 		<description>
 			<p>You learn the Fire Bolt cantrip. Charisma is your spellcasting ability for it. You may cast this spell while in a draconic form.</p>
 		</description>
