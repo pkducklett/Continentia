@@ -2,12 +2,12 @@
 <elements>
 	<info>
 		<name>Feats</name>
-        <update version="0.0.2">
-			<!-- Update Notes: -Fixed Orajan transformation not appearing
-                               -Fixed Pyruvian transformation erroring -->
+        <update version="0.0.3">
+			<!-- Update Notes: -Added Blood of Arit, Constellatory Energy, and Burning Blood
+                               -Editing wording on Nagean transformation -->
 		    	<description>Feats from Contintentia</description>
 		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
-			<file name="continentia-feats.xml"  url="https://github.com/pkducklett/Continentia/blob/98607ce38cdf514291b3c0d9ec47e673d8c038be/continentia-barbarian-rancor.xml" />
+			<file name="continentia-feats.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/refs/heads/main/continentia-feats.xml" />
 		</update>
 	</info>
 
@@ -339,7 +339,7 @@
             <p>Nageans have a breath attack that deals radiant damage to one target within 30 feet of them, dealing 3d6 radiant damage on hit. They have a bonus to hit equal to twice their proficiency modifier.</p>
         </description>
         <sheet action="Breath Attack">
-            <description>You may use this attack up to {{draconic:breath:num}} times per long rest. You release a line of pure light targeting one creature within 30 feet of you. You have {{draconic:breath:hit}} to hit and it deals {{nagean:breath:num}}d{{nagean:breath:die}} radiant damage on hit.</description>
+            <description>You may use this attack up to {{draconic:breath:num}} times per long rest. You release a line of pure light targeting one creature within 30 feet of you. You have +{{draconic:breath:hit}} to hit and it deals {{nagean:breath:num}}d{{nagean:breath:die}} radiant damage on hit.</description>
         </sheet>
         <rules>
             <stat name="nagean:breath:num" value="3"/>
@@ -591,14 +591,141 @@
 		<sheet>
 			<description>When a creature successfully makes an attack against you, as a reaction, you may force that creature to make a constitution saving throw.
 			If they fail they take 2d10 cold damage and their movement speed is cut in half until the end of their next turn. If they succeed they take half as much damage and do not lose movement speed. 
-			Your saving throw DC is {{winters bane:dc}}. You may use this ability {{winters bane:number times}} times.</description>
+			Your saving throw DC is {{winters bane:dc}}. You may use this ability {{winters bane:num}} times.</description>
 		</sheet>
 		<rules>
             <select type="Ability Score Improvement" name="Ability Score Increase (Winter's Bane)" supports="ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_STRENGTH"/>
 
 			<stat name="winters bane:dc" value="10" />
 			<stat name="winters bane:dc" value="proficiency" />
-			<stat name="winters bane:number times" value="proficiency" />
+			<stat name="winters bane:num" value="proficiency" />
+		</rules>
+	</element>
+
+    <!-- Blood of Arit -->
+    <element name="Blood of Arit" type="Feat" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_BLOOD_OF_ARIT">
+	<prerequisite>Nagean, Half-Nagean</prerequisite>
+	<requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_NAGEAN</requirements>
+	<description>
+		<p>You are a descendent of Arit, and you have finally been blessed to harness the godly blood flowing through your veins.</p>
+        <p class="indent">Your godly blood will cause physical changes. Your wings will appear on your back in a humanoid form as well as a tail measuring between 1-2 ft long. Despite these changes, your wings are not long enough to achieve flight outside of your Draconic form.</p>
+            <ul>
+				<li>You learn the spell Detect Evil and Good and can cast it at will.</li>
+				<li>When rolling to hit against an Evil aligned creature, you score a critical hit with a 19 as well as a 20.</li>
+				<li>When dealing critical damage, you deal an additional 1d6 radiant damage.</li>
+                <li>You gain an additional use of your breath weapon.</li>
+            </ul>
+	</description>
+		<sheet>
+			<description>You learn the spell Detect Evil and Good and can cast it at will. 
+            When rolling to hit against an Evil aligned creature, you score a critical hit with a 19 as well as a 20.
+            When dealing critical damage, you deal an additional 1d6 radiant damage.
+            You gain an additional use of your breath weapon.</description>
+		</sheet>
+		<rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" />
+            <stat name="draconic:breath:num" value="1"/>
+		</rules>
+	</element>
+
+    <!-- Constellatory Energy -->
+    <element name="Constellatory Energy" type="Feat" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_CONSTELLATORY_ENERGY">
+	<prerequisite>Orajan, Half-Orajan</prerequisite>
+	<requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_ORAJAN</requirements>
+	<description>
+		<p>By studying the stars, you can draw excess magical energy, which can be expelled in a blast of elemental anima.</p>
+            <ul>
+				<li>You become proficient in Cartographer’s Tools.</li>
+				<li>During a long rest, you may study the stars to affect the damage type of this ability. When studying the stars, you choose a constellation from the list below. During the day, the damage type of your ability will correlate with the chosen constellation. However, during the night it will be random.</li>
+				<li>As part of an attack action, you can exhale a burst of magical energy from deep within yourself in a 15ft cone in front of you. Creatures caught in this cone must make a dexterity saving throw. On a failed save they take 2d10 damage correlating to the constellation of the attack, and half as much on a successful one. Your DC for this ability is equal to spell save DC. You may use this ability a number of times equal to your proficiency modifier.</li>
+                <li><b>Constellations</b>: If this ability is used at night, roll a d6 on the table below to determine the damage type.</li>
+                <table>
+			    <thead>
+			        <tr><td>Constellation (1d6)</td><td>Damage Type</td></tr>
+			    </thead>
+	            <tr><td>1.Eyes of Ora</td><td>Necrotic</td></tr>
+	            <tr><td>2.Sword of the Conqueror</td><td>Radiant</td></tr>
+	            <tr><td>3.The Giant</td><td>Force</td></tr>
+	            <tr><td>4.Wings of the Chimera</td><td>Thunder</td></tr>
+	            <tr><td>5.The Cook’s Pot</td><td>Fire</td></tr>
+	            <tr><td>6.The Eternal Oasis</td><td>Cold</td></tr>
+		    </table>
+            </ul>
+	</description>
+		<sheet>
+			<description>During a long rest, you may study the stars to affect the damage type of this ability. When studying the stars, you choose a constellation from the list. During the day, the damage type of your ability will correlate with the chosen constellation. However, during the night it will be random. 
+            As part of an attack action, you can exhale a burst of magical energy from deep within yourself in a 15ft cone in front of you. Creatures caught in this cone must make a dexterity saving throw. On a failed save they take 2d10 damage correlating to the constellation of the attack, and half as much on a successful one. 
+            Your DC for this ability is {{constellatory:dc}}. You may use this ability {{constellatory:num}} times per long rest.</description>
+		</sheet>
+		<rules>
+            <grant type="proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
+            <stat name="constellatory:num" value="proficiency"/>
+            <select type="Feat Feature" name="Constellatory Energy" supports="Constellatory Energy" />
+		</rules>
+	</element>
+
+    <element name="Constellatory Energy (Charisma)" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_CONSTELLATORY_ENERGY_CHARISMA">
+		<supports>Constellatory Energy</supports>
+		<description>
+			<p>Your saving throw DC is based on your Charisma score.</p>
+		</description>
+		<rules>
+            <stat name="constellatory:dc" value="8" />
+			<stat name="constellatory:dc" value="proficiency" />
+			<stat name="constellatory:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+
+    <element name="Constellatory Energy (Intelligence)" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_CONSTELLATORY_ENERGY_INTELLIGENCE">
+		<supports>Constellatory Energy</supports>
+		<description>
+			<p>Your saving throw DC is based on your Intelligence score.</p>
+		</description>
+		<rules>
+            <stat name="constellatory:dc" value="8" />
+			<stat name="constellatory:dc" value="proficiency" />
+			<stat name="constellatory:dc" value="intelligence:modifier" />
+		</rules>
+	</element>
+
+    <element name="Constellatory Energy (Wisdom)" type="Feat Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_CONSTELLATORY_ENERGY_WISDOM">
+		<supports>Constellatory Energy</supports>
+		<description>
+			<p>Your saving throw DC is based on your Wisdom score.</p>
+		</description>
+		<rules>
+            <stat name="constellatory:dc" value="8" />
+			<stat name="constellatory:dc" value="proficiency" />
+			<stat name="constellatory:dc" value="wisdom:modifier" />
+		</rules>
+	</element>
+
+    <!-- Burning Blood -->
+    <element name="Burning Blood" type="Feat" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_FEAT_BURNING_BLOOD">
+	<prerequisite>Pyruvian, Half-Pyruvian</prerequisite>
+	<requirements>ID_CONT_CONTINENTIA_RACE_HALFDRAGON||ID_CONT_CONTINENTIA_RACE_PYRUVIAN</requirements>
+	<description>
+		<p>Your eternal flame burns brighter than most, allowing you to harness it through your mortal form.</p>
+            <ul>
+				<li>As an action on your turn, you can burst into flames and remain burning. When entering within 5 feet of a creature, or when a creature ends their turn within 5 feet of you, they must make a Dexterity Saving Throw with a DC equal to 10 + your proficiency modifier. On a failed save they take 2d6 fire damage, and half as much on a successful one.</li>
+				<li>While activated, you gain immunity to fire damage, and your unarmed strikes deal fire damage in place of the usual bludgeoning.</li>
+                <li>Objects on your person that cannot survive temperatures of 2000 degrees or higher will melt or burn off yourself. Metallic objects that can survive this heat will deal fire damage instead of their usual damage type.</li>
+                <li>Every time you end your turn while this ability is activated, you lose 1 draconic stamina. This ability can be stopped as a free action, and can be used a number of times equal to your proficiency modifier per long rest.</li>
+                <li>While activated, you cannot take the dash action. When taking cold damage, or being submerged in water, you must make a DC 13 Constitution saving throw to avoid having this ability end early. You cannot transform while this ability is activated.</li>
+            </ul>
+	</description>
+		<sheet>
+			<description>As an action on your turn, you can burst into flames and remain burning. 
+            When entering within 5 feet of a creature, or when a creature ends their turn within 5 feet of you, they must make a DC {{burning blood:dc}} Dexterity Saving Throw. On a failed save, they take 2d6 fire damage, and half as much on a successful one. 
+            While activated, you gain immunity to fire damage, and your unarmed strikes deal fire damage in place of the usual bludgeoning.
+            Objects on your person that cannot survive temperatures of 2000 degrees or higher will melt or burn off yourself. Metallic objects that can survive this heat will deal fire damage instead of their usual damage type.
+            Every time you end your turn while this ability is activated, you lose 1 draconic stamina. This ability can be stopped as a free action, and can be used {{burning blood:num}} times per long rest.
+            While activated, you cannot take the dash action. When taking cold damage, or being submerged in water, you must make a DC 13 Constitution saving throw to avoid having this ability end early. You cannot transform while this ability is activated.</description>
+		</sheet>
+		<rules>
+            <stat name="burning blood:num" value="proficiency"/>
+            <stat name="burning blood:dc" value="10"/>
+            <stat name="burning blood:dc" value="proficiency"/>
 		</rules>
 	</element>
 </elements>
