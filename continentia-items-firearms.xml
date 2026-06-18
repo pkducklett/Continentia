@@ -2,11 +2,8 @@
 <elements>
 	<info>
 		<name>Firearms</name>
-		<update version="0.0.5">
-            <!-- Update Notes: -Revised Ranges and Dice
-							   -Added Blunderbuss
-							   -Changed Bayonet Charger to Attachment Adept
-							   -Changed Bar Fighter to Naturalist -->
+		<update version="0.0.6">
+            <!-- Update Notes: -Revised pricing and dice to match updates for upcoming campaign -->
 		    <description>The firearms rules, options, and proficiencies for Continentia.</description>
 		    <author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
 			<file name="continentia-items-firearms.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-items-firearms.xml" />
@@ -149,7 +146,7 @@
 		<sheet alt="Martial Light Firearms" />
 		<rules>
 			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_DOUBLEACTION_REVOLVER" />
-			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_INFANTRY_SEMIAUTO_PISTOL" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SEMIAUTO_MILITARY_PISTOL" />
 		</rules>
 	</element>
 
@@ -302,11 +299,11 @@
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">20</set>
+			<set name="cost" currency="gp">15</set>
 			<set name="weight" lb="3">3 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="range">100 ft.</set>
-			<set name="damage" type="piercing">3d4</set>
+			<set name="damage" type="piercing">2d6</set>
 			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_DOUBLEACTION_REVOLVER</set>
 		</setters>
 	</element>
@@ -316,23 +313,23 @@
 		<sheet alt="Double-Action Revolver" />
 	</element>
 
-	<element name="Infantry Semi-Auto Pistol" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_INFANTRY_SEMIAUTO_PISTOL">
+	<element name="Semi-Auto Military Pistol" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SEMIAUTO_MILITARY_PISTOL">
 		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_LIGHT_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_SIX, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MAGAZINE</supports>
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">25</set>
+			<set name="cost" currency="gp">20</set>
 			<set name="weight" lb="3">3 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="range">100 ft.</set>
 			<set name="damage" type="piercing">1d10</set>
-			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_INFANTRY_SEMIAUTO_PISTOL</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SEMIAUTO_MILITARY_PISTOL</set>
 		</setters>
 	</element>
-	<element name="Weapon Proficiency (Infantry Semi-Auto Pistol)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_INFANTRY_SEMIAUTO_PISTOL">
+	<element name="Weapon Proficiency (Semi-Auto Military Pistol)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SEMIAUTO_MILITARY_PISTOL">
 		<supports>Weapon, Martial, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_LIGHT_FIREARM, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
 		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS</requirements>
-		<sheet alt="Infantry Semi-Auto Pistol" />
+		<sheet alt="Semi-Auto Military Pistol" />
 	</element>
 
 	<element name="Hunting Rifle" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_HUNTING_RIFLE">
@@ -340,7 +337,7 @@
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">50</set>
+			<set name="cost" currency="gp">30</set>
 			<set name="weight" lb="9">9 lb.</set>
 			<set name="slot">twohand</set>
 			<set name="range">260 ft. </set>
@@ -359,7 +356,7 @@
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">50</set>
+			<set name="cost" currency="gp">30</set>
 			<set name="weight" lb="6">6 lb.</set>
 			<set name="slot">twohand</set>
 			<set name="range">80x10 ft.</set>
@@ -398,7 +395,7 @@
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">75</set>
+			<set name="cost" currency="gp">40</set>
 			<set name="weight" lb="20">20 lb.</set>
 			<set name="slot">twohand</set>
 			<set name="range">160 ft. </set>
@@ -417,11 +414,11 @@
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">75</set>
+			<set name="cost" currency="gp">40</set>
 			<set name="weight" lb="10">10 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="range">20x15 ft. </set>
-			<set name="damage" type="slashing">6d4</set>
+			<set name="damage" type="slashing">4d4</set>
 			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_BLUNDERBUSS</set>
 		</setters>
 	</element>
@@ -436,7 +433,7 @@
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">65</set>
+			<set name="cost" currency="gp">50</set>
 			<set name="weight" lb="9">9 lb.</set>
 			<set name="slot">twohand</set>
 			<set name="range">260 ft. </set>
@@ -455,7 +452,7 @@
 		<description />
 		<setters>
 			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">65</set>
+			<set name="cost" currency="gp">50</set>
 			<set name="weight" lb="8">8 lb.</set>
 			<set name="slot">twohand</set>
 			<set name="range">80x10 ft. </set>
