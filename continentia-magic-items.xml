@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Magic Items</name>
-        <update version="0.0.1">
-			<!-- Update Notes: -->
+        <update version="0.0.2">
+			<!-- Update Notes: -Added EoaP Magic Items-->
 		    	<description>Magic Items from Continentia.</description>
 		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
 			<file name="continentia-magic-items.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/refs/heads/main/continentia-magic-items.xml" />
@@ -244,6 +244,37 @@
 		</setters>
 	</element>
 
+	<element name="Mending Cloth" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_MENDING_CLOTH">
+		<description>
+			<p><i>A simple yet elegant design created by one Simon G. Hardey; the Mending Cloth was created for the purpose of fixing non-magical items quickly. An impressive feat of arcane engineering, which is only undercut by the cloth’s incessant and annoying advertising.</i></p>
+			<p>You may take all pieces of a non-magical broken object and place them inside this 22 x 22in cloth, or tie the cloth around a broken object. As an action the cloth will release a burst of arcane energy destroying itself. However, all items within the cloth will be repaired. All items repaired with the cloth will have a burn branded into them that reads “This item has been magically repaired using Simon G. Hardey’s mending cloth.”</p>
+		</description>
+		<setters>
+			<set name="keywords">Mending, Cloth</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Universal Tri-Fold" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_UNIVERSAL_TRI_FOLD">
+		<description>
+			<p><i>The perfect item for any overbearing provider or significant other. The universal tri-fold makes it easy to keep track of your money, and disway any woman from giving into their greedy impulses.</i></p>
+			<p>Universal-tri folds are made with a uniquely enchanted button clasp. All tri-folds which share this button will share a holding space regardless of distance. The trifold has an interior space when unfolded of 6 x 2in; perfect to fit small paper objects and coins.</p>
+			<p class="indent">If the unique button is destroyed, removed, or placed within a bag of holding or similar item, the tri-fold loses its magical qualities.</p>
+		</description>
+		<setters>
+			<set name="keywords">Tri-Fold, Wallet</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
 	<!-- Magic Weapons -->
 	<element name="El Ford" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_EL_FORD">
 		<description>
@@ -274,6 +305,150 @@
 			<set name="rarity">Rare</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_AXES</set>
 			<set name="name-format">Dispelling {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Reality Shears (Dagger)" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_REALITY_SHEARS">
+		<description>
+			<p><i>These admittedly gaudy scissors used to be owned by Sojourn. Their exact origin is unknown, but their magic is ancient. Although an impressive feat of craftsmanship, they are unfortunately quite dull.</i></p>
+			<p>At night when the barrier between the Overworld and In-Between is thinnest you can use the Reality Shears to go between them.</p>
+			<p class="indent">Reality Shears gain coordinates by cutting through Reality Knots. Anomalies where the skin of reality has been altered.</p>
+			<p class="indent">Reality Shears can only be used to travel when the mind of its wielder is clear.</p>
+		</description>
+		<setters>
+			<set name="keywords">dagger</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Dagger">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="weapon">Dagger</set>
+		</setters>
+	</element>
+
+<!--  	<element name="Reality Shears (Greatsword)" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_REALITY_SHEARS_GREATSWORD">
+		<description>
+			<p><i>These admittedly gaudy scissors used to be owned by Sojourn. Their exact origin is unknown, but their magic is ancient. Although an impressive feat of craftsmanship, they are unfortunately quite dull.</i></p>
+			<p>At night when the barrier between the Overworld and In-Between is thinnest you can use the Reality Shears to go between them.</p>
+			<p class="indent">Reality Shears gain coordinates by cutting through Reality Knots. Anomalies where the skin of reality has been altered.</p>
+			<p class="indent">Reality Shears can only be used to travel when the mind of its wielder is clear.</p>
+		</description>
+		<setters>
+			<set name="keywords">greatsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Greatsword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="weapon">greatsword</set>
+		</setters>
+	</element>
+
+	<element name="Reality Shears (Rapier)" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_REALITY_SHEARS_RAPIER">
+		<description>
+			<p><i>These admittedly gaudy scissors used to be owned by Sojourn. Their exact origin is unknown, but their magic is ancient. Although an impressive feat of craftsmanship, they are unfortunately quite dull.</i></p>
+			<p>At night when the barrier between the Overworld and In-Between is thinnest you can use the Reality Shears to go between them.</p>
+			<p class="indent">Reality Shears gain coordinates by cutting through Reality Knots. Anomalies where the skin of reality has been altered.</p>
+			<p class="indent">Reality Shears can only be used to travel when the mind of its wielder is clear.</p>
+		</description>
+		<setters>
+			<set name="keywords">rapier</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Rapier">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="weapon">rapier</set>
+		</setters>
+	</element>
+
+	<element name="Reality Shears (Shortsword)" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_REALITY_SHEARS_SHORTSWORD">
+		<description>
+			<p><i>These admittedly gaudy scissors used to be owned by Sojourn. Their exact origin is unknown, but their magic is ancient. Although an impressive feat of craftsmanship, they are unfortunately quite dull.</i></p>
+			<p>At night when the barrier between the Overworld and In-Between is thinnest you can use the Reality Shears to go between them.</p>
+			<p class="indent">Reality Shears gain coordinates by cutting through Reality Knots. Anomalies where the skin of reality has been altered.</p>
+			<p class="indent">Reality Shears can only be used to travel when the mind of its wielder is clear.</p>
+		</description>
+		<setters>
+			<set name="keywords">shortsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shortsword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="weapon">shortsword</set>
+		</setters>
+	</element> -->
+
+	<element name="Purifying Bat" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_PURIFYING_BAT">
+		<description>
+			<p><i>This seemingly innocuous baseball bat contains a strong cleansing aura. A small etch of a cat with a wide toothed grin is burned into the butt of the club.</i></p>
+			<p>The Purifying Bat deals an additional 1d8 radiant damage to all enemies.</p>
+			<p class="indent">Critical strikes against undead or creatures with Red brands always deal maximum damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">greatclub</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Greatclub">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">greatclub</set>
+		</setters>
+	</element>
+
+	<element name="The Grandslammer" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_THE_GRANDSLAMMER">
+		<description>
+			<p><i>A very worn baseball bat covered in a spattering of loose wood chips and tobacco spit. The words ‘Big Earl’ can still barely be seen on the bat itself.</i></p>
+			<p>The Grandslammer has a single charge, which is regained by covering it in a mixture of tobacco and water (or just tobacco spit,) and waiting 8 hours.</p>
+			<p class="indent">When successfully hitting a creature your size or smaller may choose to expend the Grandslammers charge. If you do, the creature is launched a number of feet equal to the damage roll x10. If the creature is one size larger than you they are launched the damage roll x5 instead. Creatures more than one size larger as the wielder are unaffected by this ability.</p>
+		</description>
+		<setters>
+			<set name="keywords">greatclub</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Greatclub">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">greatclub</set>
+		</setters>
+	</element>
+
+	<element name="War Saber" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_WAR_SABER">
+		<description>
+			<p><i>Although appearing metallic the War Saber is made from the horn of an Icon of War. The sword has a perfect mixture of weight and balance making it quite fearsome in the correct hands. However, the ivory-like fibers that make up the saber will begin to shed with use, which will inevitably destroy the blade.</i></p>
+			<p>The War Saber has three charges. Whenever you hit with the saber, expend a charge. When the War Saber has no charges, or is in the Overworld it will disintegrate and become dust.</p>
+			<p class="indent">When you roll to hit with the War Saber, roll an additional 1d6 and add it to the roll.</p>
+		</description>
+		<setters>
+			<set name="keywords">shortsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Shortsword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">shortsword</set>
+		</setters>
+	</element>
+
+	<element name="Mist Bringer (Palla’s Glaive)" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_MIST_BRINGER">
+		<description>
+			<p><i>The glaive used by the famed pegasus cavalry general Palla. It is said that when Palla rode over a battlefield even the clouds would bleed. This story would be the inspiration that led to the christening of her glaive, ‘Mist Bringer.’</i></p>
+			<p>While attuned to the Mist Bringer you gain the following:</p>
+			<p class="indent">The Mist Bringer gives a +3 bonus to attack and damage rolls made with it. When you hit an attack using it, the target takes an additional 3d6 Radiant damage.</p>
+			<p class="indent">You have advantage on all initiative rolls.</p>
+			<p class="indent">The Mist Bringer has the versatile property, but lacks the heavy property.</p>
+			<p class="indent">You have advantage on attack rolls made against creatures one size or more smaller than you.</p>
+		</description>
+		<setters>
+			<set name="keywords">glaive</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Glaive">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">glaive</set>
 		</setters>
 	</element>
 
@@ -360,6 +535,24 @@
 			<set name="weight" lb="0.5">½ lb.</set>
 			<set name="type">Potion</set>
 			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Bottle of Ichor" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_BOTTLE_OF_ICHOR">		
+		<description>
+			<p><i>Although the brewer of these fine potions is a mystery there is no doubt of their power. Some say they were brewed by a court physician attempting to extend the life of their king. Others insist they were created by a far off alchemist who threw themself into their cauldron in a fit of madness. Regardless of their creator few remain. I would suggest small sips.</i></p>
+			<p>Upon being consumed you gain the following effects for the next 30 seconds:</p>
+			<p class="indent">You have resistance against all damage.</p>
+			<p class="indent">If you would have 0 or less hitpoints, you do not fall unconscious or make death saves.</p>
+			<p class="indent">If your health would be in the negatives equal to your maximum hitpoints, you do not die.</p>
+		</description>
+		<setters>
+			<set name="keywords">Resistance</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Legendary</set>
 			<set name="stackable">true</set>
 		</setters>
 	</element>
