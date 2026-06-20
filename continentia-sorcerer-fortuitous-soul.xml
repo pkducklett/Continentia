@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Fortuitous Soul</name>
+        <update version="0.0.1">
+			<!-- Update Notes: -->
+		    	<description>The Fortuitous Soul Sub-class from Continentia.</description>
+		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
+			<file name="continentia-sorcerer-fortuitous-soul.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-barbarian-rancor.xml" />
+		</update>
+	</info>
+
+	<element name="Fortuitous Soul" type="Archetype" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FORTUITIOUS_SOUL">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Your innate magic comes from the luck inherant in a magical deck of cards.</p>
+			<div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_BONUS_PROFICIENCIES"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRACONIC_RESILIENCE"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_AFFINITY"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_WINGS"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRACONIC_PRESENCE"/>
+		</description>
+		<sheet display="false">
+			<description>Your innate magic comes from the luck inherant in a magical deck of cards.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRACONIC_RESILIENCE" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_AFFINITY" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_WINGS" level="14" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRACONIC_PRESENCE" level="18" />
+		</rules>
+	</element>
+
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_BONUS_PROFICIENCIES">
+        <description>
+            <p>At 1st level, you gain proficiency in the Playing Cards gaming set and the Deception skill.</p>
+        </description>
+		<sheet display="false" />
+        <rules>
+        	<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_PLAYING_CARD_SET" />
+        </rules>
+    </element>
+
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_BONUS_PROFICIENCIES">
+        <description>
+            <p>At 1st level, you gain proficiency in the Playing Cards gaming set and the Deception skill.</p>
+        </description>
+		<sheet display="false" />
+        <rules>
+        	<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_PLAYING_CARD_SET" />
+        </rules>
+    </element>
+
+</elements>
