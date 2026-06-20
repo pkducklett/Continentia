@@ -3,7 +3,8 @@
 	<info>
 		<name>Firearms</name>
 		<update version="0.0.6">
-            <!-- Update Notes: -Revised pricing and dice to match updates for upcoming campaign -->
+            <!-- Update Notes: -Revised pricing and dice to match updates for upcoming campaign
+							   -Added Elephant Gun -->
 		    <description>The firearms rules, options, and proficiencies for Continentia.</description>
 		    <author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
 			<file name="continentia-items-firearms.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-items-firearms.xml" />
@@ -505,7 +506,7 @@
 		<sheet alt="Compact Infantry Shotgun" />
 	</element>
 
-		<element name="Crank Cannon" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_CRANK_CANNON">
+	<element name="Crank Cannon" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_CRANK_CANNON">
 		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_SIMPLE_HEAVY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING</supports>
 		<description />
 		<setters>
@@ -551,7 +552,7 @@
 			<set name="cost" currency="gp">80</set>
 			<set name="weight" lb="10">10 lb.</set>
 			<set name="slot">twohand</set>
-			<set name="range">100/260 ft.</set>
+			<set name="range">200/400 ft.</set>
 			<set name="damage" type="piercing">1d4*1d10</set>
 			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_HEAVY_SUBMACHINE_GUN</set>
 		</setters>
@@ -560,6 +561,25 @@
 		<supports>Weapon, Martial, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_HEAVY_FIREARM, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
 		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS, [str:13]</requirements>
 		<sheet alt="Heavy Submachine Gun" />
+	</element>
+
+	<element name="Elephant Gun" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_HEAVY_ELEPHANT_GUN">
+		<supports>ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_HEAVY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_CONT_CONTINENTIA_WEAPON_PROPERTY_FIREARM_RELOAD_ONE</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">65</set>
+			<set name="weight" lb="25">25 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/150 ft.</set>
+			<set name="damage" type="piercing">2d12</set>
+			<set name="proficiency">ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_HEAVY_ELEPHANT_GUN</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Elephant Gun)" type="Proficiency" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_HEAVY_ELEPHANT_GUN">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_CONT_CONTINENTIA_WEAPON_CATEGORY_MARTIAL_HEAVY_FIREARM, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+		<requirements>ID_CONT_CONTINENTIA_OPTION_FIREARMS, [str:13]</requirements>
+		<sheet alt="Elephant Gun" />
 	</element>
 
 	<element name="Flammenwerfer" type="Weapon" source="Continentia: Gentleman’s Guide To Firearms" id="ID_CONT_CONTINENTIA_WEAPON_FLAMMENWERFER">
