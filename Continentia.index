@@ -37,6 +37,7 @@
 
 		<!-- Classes -->
 		<file name="continentia-barbarian-rancor.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-barbarian-rancor.xml" />
+		<file name="continentia-monk-black_smoke.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-monk-black_smoke.xml" />
 	</files>
 
 </index>
