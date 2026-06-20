@@ -6,7 +6,7 @@
 			<!-- Update Notes: -->
 		    	<description>The Way of Black Smoke Sub-class from Continentia.</description>
 		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
-			<file name="continentia-monk-black_smoke.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-barbarian-rancor.xml" />
+			<file name="continentia-monk-black_smoke.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-monk-black_smoke.xml" />
 		</update>
 	</info>
 
@@ -16,6 +16,8 @@
 			<p>Those who follow this tradition are masters with their guns and capable of turning their misfortunate misfires against their opponents.</p>
 			<p class="indent">Many monks of this tradition take great pride in their firearm and take extra care to know it inside and out.</p>
 			<div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_BONUS_PROFICIENCIES" />
+            <div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_SHOWBOATING" />
+            <div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_MASTER_OF_MISFORTUNE" />
 		</description>
 		<sheet display="false">
 			<description>You follow a monastic tradition that emphasizes mastery with a firearm.</description>
@@ -23,6 +25,7 @@
 		<rules>
 			<grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_BONUS_PROFICIENCIES" level="3"/>
             <grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_SHOWBOATING" level="3"/>
+            <grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_MASTER_OF_MISFORTUNE" level="3"/>
 		</rules>
 	</element>
 
@@ -44,9 +47,7 @@
 		<description>
             <p>Beginning at 3rd level when you choose this tradition you may choose two abilities from the following list. You gain two more abilities at 6th level, 11th level, and 17th level.</p>
         </description>
-		<sheet>
-			<description>Light firearms are considered Monk Weapons.</description>
-		</sheet>
+        <sheet display="false" />
         <rules>
             <select type="Archetype Feature" name="Showboating (Level 3)" supports="Showboating" number ="2" level="3" />
 			<select type="Archetype Feature" name="Showboating (Level 6)" supports="Showboating" number ="2" level="6" />
@@ -135,3 +136,35 @@
             <description>When you use your Step of the Wind ability, you gain +2 to your AC until the beginning of your next turn.</description>
         </sheet>
     </element>
+
+    <element name="Master of Misfortune" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_MASTER_OF_MISFORTUNE">
+		<description>
+            <p>Beginning at 3rd level, when you choose this tradition, you learn how to turn a mistake into a tactical advantage. When you roll a critical failure (1) while making an attack with a firearm, you instead roll a percentile die on the Master of Misfortune table instead of the Misfire Table.</p>
+            <h5 class="caption">MASTER OF MISFORTUNE</h5>
+			<table>
+				<thead>
+					<tr><td>d100</td><td>Effect</td></tr>
+				</thead>
+                <tr><td>01-06</td><td>Your firearm explodes dealing damage equal to twice the damage dice of the firearm to yourself in fire damage. The firearm becomes unusable until you make a successful DC 15 Gunsmith's Tools check during a long rest.</td></tr>
+				<tr><td>07-13</td><td>You can feel that your firearm is about to explode; as a reaction, you may spend 1 ki to throw the firearm at a range of 20/60 feet. You are considered proficient in this attack. The firearm will explode dealing twice the amount of damage dice of the firearm to the target in fire damage. The firearm becomes unusable until you make a successful DC 15 Gunsmith's Tools check during a long rest.</td></tr>
+				<tr><td>14-20</td><td>Your firearm jams and becomes unusable until you make a successful DC 10 Tinker's or Gunsmith's Tools check as an action.</td></tr>
+				<tr><td>21-27</td><td>Your firearm jams and becomes unusable until you make a successful DC 8 Tinker's or Gunsmith's Tools check as a bonus action.</td></tr>
+				<tr><td>28-34</td><td>Your firearm does not fire, but will work fine on your next attack.</td></tr>
+                <tr><td>35-41</td><td>Reroll the attack.</td></tr>
+				<tr><td>42-48</td><td>The bullet shatters mid air when fired. All creatures in a 20x15 cone in front of you must make a Dexterity saving throw. On a failed save, they take 1d4 piercing damage, and half as much on a successful one.</td></tr>
+				<tr><td>49-55</td><td>The gun fires rapidly seemingly out of nowhere. You may make a number of attacks at disadvantage equal to the amount of bullets you have in the gun. Your attack action ends after this.</td></tr>
+				<tr><td>56-62</td><td>You slip. Reroll the attack at disadvantage against a different target.</td></tr>
+				<tr><td>63-69</td><td>Reroll the attack. If you hit, you deal an additional 1d4 fire damage.</td></tr>
+                <tr><td>70-76</td><td>All of your bullets fall out of your gun.</td></tr>
+				<tr><td>77-83</td><td>Reroll the attack. You may add your Wisdom modifier to the roll.</td></tr>
+				<tr><td>84-90</td><td>Reroll the attack with advantage.</td></tr>
+				<tr><td>91-97</td><td>Reroll the attack. If it hits, the attack ignores resistances.</td></tr>
+				<tr><td>98-100</td><td>You deal critical damage to the chosen target.</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>When you roll a critical failure (1) while making an attack with a firearm, you instead roll a percentile die on the Master of Misfortune table instead of the Misfire Table.</description>
+        </sheet>
+    </element>
+
+</elements>
