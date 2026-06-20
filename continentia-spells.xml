@@ -2,9 +2,8 @@
 <elements>
 	<info>
 		<name>Spells</name>
-		<update version="0.0.2">
-        <!-- update notes: -Mage Gun no longer must now be gun-shaped
-						   -Added, 1st, 2nd, and 4th level spells -->		
+		<update version="0.0.3">
+        <!-- update notes: -Added 3rd, 5th, 7th, 8th, and 9th level spells -->		
             <description>Spells from Continentia.</description>
 		    <author url="https://github.com/pkducklett/">Corey Welch</author>
 		<file name="continentia-spells.xml" url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-spells.xml" />
@@ -77,7 +76,7 @@
 	</element>
 
 	<!-- 1st Level Spells: -->
-	<element name="Detect Essence" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_DETECT_ESSENSE">
+	<element name="Detect Essence" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_DETECT_ESSENCE">
 		<supports>Artificer, Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>For the duration you sense the magical abilities of a target creature within range.</p>
@@ -239,6 +238,52 @@
 		</setters>
 	</element>
 
+	<!-- 3rd Level Spells: -->
+	<element name="Deprive Senses" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_DEPRIVE_SENSES">
+		<supports>Artificer, Cleric, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You create an ear splitting noise originating from a point you can see within 60 feet of you, causing discomfort to those nearby. Creatures within 10ft of the point must make a Constitution saving throw. The creatures who fail this save take 4d6 Thunder damage and are given your choice of either the deafened, blind, or mute conditions until the end of your next turn. Creatures who succeed take half the damage and do not gain a condition.</p>
+			<p class="indent">When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">Thunder</set>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Tilt the Balance" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_TILT_THE_BALANCE">
+		<supports>Cleric, Wizard</supports>
+		<description>
+			<p>You extend both your arms forward and offer a weight to reality to increase your fortune.</p>
+			<p class="indent">Creatures of your choice within 20ft of you now score critical hits on a roll of 19 or 20, and can reroll if they roll a 1, but must keep the new roll. If a creature already scores critical hits on a score of 19 or 20, they instead can now score critical hits on a roll of 18-20.</p>
+			<p class="indent">When you cast this spell using a spell slot of 4th level or higher, the radius increases by 5ft for each slot above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">Thunder</set>
+			<set name="level">3</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A weight of at least one ounce, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 	<!-- 4th Level Spells: -->
 	<element name="Wall of Words" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_WALL_OF_WORDS">
 		<supports>Sorcerer, Warlock, Wizard</supports>
@@ -259,6 +304,95 @@
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<!-- 5th Level Spells: -->
+	<element name="Corrupt Essence" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_CORRUPT_ESSENCE">
+		<supports>Warlock, Wizard</supports>
+		<description>
+			<p>You crush the spine of a spellcaster and rub the dust against the back of your neck.</p>
+			<p class="indent">In doing so, you corrupt magic within 15 feet of you. Whenever a creature within the area casts a spell, it must make a Wisdom saving throw. On a failed save, the target takes 1d4 psychic damage per level of the spell, or 1 psychic damage if the spell is a cantrip. On a successful save, the target takes half damage. This damage happens before the target’s spell effects take hold.</p>
+		</description>
+		<setters>
+			<set name="keywords">Psychic</set>
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">15 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">The spine of a spellcaster</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<!-- 7th Level Spells: -->
+	<element name="The Seven Wives of E’ach" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_THE_SEVEN_WIVES_OF_EACH">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>Seven chains burst through the ground, grappling a creature up to 30 ft in the air before dragging them down to earth. The target must make seven Strength savings throws. A creature that is Large or larger has advantage on the saving throws. If a creature is 15ft or higher in the air they take 2d8 bludgeoning damage when they hit the ground. At the start of each turn they must complete a number of saving throws equal to the number they failed last turn. The target is freed once they have succeeded all seven saving throws.</p>
+		</description>
+		<setters>
+			<set name="keywords">Bludgeoning</set>
+			<set name="level">7</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A length of chain of at least 30ft.</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<!-- 8th Level Spells: -->
+	<element name="Kugelblitz" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_KUGELBLITZ">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>By focusing an incredible amount of magic into a single point, you create a singularity that exists for just long enough to wreak destruction. The singularity appears at a point you can see within range. Nonmagical terrain within 15 feet of the singularity is instantly destroyed. Creatures and objects within 30 feet of the singularity must succeed on a Strength saving throw or be pulled 15 feet toward it. Nonmagical objects that enter the singularity are destroyed. A creature that enters the singularity takes 5d10 force damage and 5d10 cold damage, and is shunted to the nearest unoccupied space next to the singularity. A creature reduced to 0 hit points by this spell is annihilated, along with any nonmagical items it is wearing or carrying.</p>
+		</description>
+		<setters>
+			<set name="keywords">Force, Cold</set>
+			<set name="level">8</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A black conduit crystal, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<!-- 9th Level Spells: -->
+	<element name="Encroaching Death" type="Spell" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_SPELL_ENCROACHING_DEATH">
+		<supports>Druid, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You open a vial of poison and convert the contents into a yellow cloud of dangerous gas. The cloud of gas has a 10 foot radius and a height of 5 feet, and you may place the gas up to 60 feet away from you in any direction. At the start of your turn the gas cloud's radius will increase by 5 feet. After it reaches a radius of 65 feet the gas will dissipate, or if it is blown away by a strong gust of wind. Any creature who can breathe that is caught in the cloud's radius must make a constitution saving throw. On a failed save, they take 4d10 poison damage and gain a level of exhaustion. On a success, they do not gain a level of exhaustion.</p>
+		</description>
+		<setters>
+			<set name="keywords">Poison</set>
+			<set name="level">9</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A vile of poison worth at least 100GP</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
