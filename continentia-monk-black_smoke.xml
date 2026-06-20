@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Way of Black Smoke</name>
+        <update version="0.0.1">
+			<!-- Update Notes: -->
+		    	<description>The Way of Black Smoke Sub-class from Continentia.</description>
+		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
+			<file name="continentia-monk-black_smoke.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-barbarian-rancor.xml" />
+		</update>
+	</info>
+
+	<element name="Way of Black Smoke" type="Archetype" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_WAY_OF_BLACK_SMOKE">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Those who follow this tradition are masters with their guns and capable of turning their misfortunate misfires against their opponents.</p>
+			<p class="indent">Many monks of this tradition take great pride in their firearm and take extra care to know it inside and out.</p>
+			<div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_BONUS_PROFICIENCIES" />
+		</description>
+		<sheet display="false">
+			<description>You follow a monastic tradition that emphasizes mastery with a firearm.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_BONUS_PROFICIENCIES" level="3"/>
+            <grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_SHOWBOATING" level="3"/>
+		</rules>
+	</element>
+
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_BONUS_PROFICIENCIES">
+		<description>
+            <p>Beginning at 3rd level when you choose this tradition, you gain proficiency in Simple and Martial Light Firearms, as well as Gunsmith’s Tools. Light firearms are considered Monk Weapons.</p>
+        </description>
+		<sheet>
+			<description>Light firearms are considered Monk Weapons.</description>
+		</sheet>
+        <rules>
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_SIMPLE_LIGHT_FIREARMS" />
+			<grant type="Proficiency" id="ID_CONT_CONTINENTIA_PROFICIENCY_WEAPON_MARTIAL_LIGHT_FIREARMS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_GUNSMITHS_TOOLS" />
+        </rules>
+    </element>
+
+	<element name="Showboating" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_SHOWBOATING">
+		<description>
+            <p>Beginning at 3rd level when you choose this tradition you may choose two abilities from the following list. You gain two more abilities at 6th level, 11th level, and 17th level.</p>
+        </description>
+		<sheet>
+			<description>Light firearms are considered Monk Weapons.</description>
+		</sheet>
+        <rules>
+            <select type="Archetype Feature" name="Showboating (Level 3)" supports="Showboating" number ="2" level="3" />
+			<select type="Archetype Feature" name="Showboating (Level 6)" supports="Showboating" number ="2" level="6" />
+			<select type="Archetype Feature" name="Showboating (Level 11)" supports="Showboating" number ="2" level="11" />
+			<select type="Archetype Feature" name="Showboating (Level 17)" supports="Showboating" number ="2" level="17" />
+        </rules>
+    </element>
+
+    <!-- Showboating Features -->
+	<element name="Fan the Trigger" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_FAN_THE_TRIGGER">
+        <supports>Showboating</supports>
+        <description>
+            <p>When using the Flurry of Blows ability, you may instead make two attacks with a light firearm or one unarmed strike and one attack with a light firearm.</p>
+        </description>
+        <sheet>
+            <description>When using the Flurry of Blows ability, you may instead make two attacks with a light firearm or one unarmed strike and one attack with a light firearm.</description>
+        </sheet>
+    </element>
+
+	<element name="Curving Bullet" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_CURVING_BULLET">
+        <supports>Showboating</supports>
+        <description>
+            <p>When making an attack with a light firearm, you may spend 2 ki points to allow the bullet to move in any direction equal to its range. The range of the attack is halved. Unless impossible, the attack ignores all cover.</p>
+        </description>
+        <sheet>
+            <description>When making an attack with a light firearm, you may spend 2 ki points to allow the bullet to move in any direction equal to its range. The range of the attack is halved. Unless impossible, the attack ignores all cover.</description>
+        </sheet>
+    </element>
+
+	<element name="Improved Deflect Missiles" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_IMPROVED_DEFLECT_MISSILES">
+        <supports>Showboating</supports>
+        <description>
+            <p>After successfully making a check with deflect missiles, you may make an additional attack with a light firearm as part of the reaction.</p>
+        </description>
+        <sheet>
+            <description>After successfully making a check with deflect missiles, you may make an additional attack with a light firearm as part of the reaction.</description>
+        </sheet>
+    </element>
+
+	<element name="Fast Hands" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_FAST_HANDS">
+        <supports>Showboating</supports>
+        <description>
+            <p>You may expend 1 ki point to reload a light firearm you currently have equipped without using an action.</p>
+        </description>
+        <sheet>
+            <description>You may expend 1 ki point to reload a light firearm you currently have equipped without using an action.</description>
+        </sheet>
+    </element>
+
+    <element name="Fair Rip" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_FAIR_RIP">
+        <supports>Showboating</supports>
+        <description>
+            <p>When rolling for damage with a light firearm, you may expend 3 ki points to do maximum damage instead of rolling.</p>
+        </description>
+        <sheet>
+            <description>When rolling for damage with a light firearm, you may expend 3 ki points to do maximum damage instead of rolling.</description>
+        </sheet>
+    </element>
+
+    <element name="Clearing Leather" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_CLEARING_LEATHER">
+        <supports>Showboating</supports>
+        <description>
+            <p>You may add your Wisdom modifier to your initiative rolls.</p>
+        </description>
+        <sheet>
+            <description>You may add your Wisdom modifier to your initiative rolls.</description>
+        </sheet>
+    </element>
+
+    <element name="Patient Revenge" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_PATIENT_REVENGE">
+        <supports>Showboating</supports>
+        <description>
+            <p>When you use your Patient Defense ability, you may make an attack with a light firearm as a reaction if an enemy misses an attack against you or if you succeed at a Dexterity saving throw.</p>
+        </description>
+        <sheet>
+            <description>When you use your Patient Defense ability, you may make an attack with a light firearm as a reaction if an enemy misses an attack against you or if you succeed at a Dexterity saving throw.</description>
+        </sheet>
+    </element>
+
+    <element name="Run and Gun" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_WAY_OF_BLACK_SMOKE_RUN_AND_GUN">
+        <supports>Showboating</supports>
+        <description>
+            <p>When you use your Step of the Wind ability, you gain +2 to your AC until the beginning of your next turn.</p>
+        </description>
+        <sheet>
+            <description>When you use your Step of the Wind ability, you gain +2 to your AC until the beginning of your next turn.</description>
+        </sheet>
+    </element>
