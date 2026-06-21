@@ -15,20 +15,20 @@
 		<description>
 			<p>Your innate magic comes from the luck inherant in a magical deck of cards.</p>
 			<div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_BONUS_PROFICIENCIES"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRACONIC_RESILIENCE"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_AFFINITY"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_WINGS"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRACONIC_PRESENCE"/>
+			<div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_CARDS_OF_FATE"/>
+			<div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_LUCKY_SUIT"/>
+			<div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_FICKLE_CHOICES"/>
+			<div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_ACE_IN_YOUR_SLEEVE"/>
 		</description>
 		<sheet display="false">
 			<description>Your innate magic comes from the luck inherant in a magical deck of cards.</description>
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_BONUS_PROFICIENCIES" level="1" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRACONIC_RESILIENCE" level="1" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELEMENTAL_AFFINITY" level="6" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRAGON_WINGS" level="14" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_DRACONIC_PRESENCE" level="18" />
+			<grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_CARDS_OF_FATE" level="1" />
+			<grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_LUCKY_SUIT" level="6" />
+			<grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_FICKLE_CHOICES" level="14" />
+			<grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_ACE_IN_YOUR_SLEEVE" level="18" />
 		</rules>
 	</element>
 
@@ -43,15 +43,109 @@
         </rules>
     </element>
 
-	<element name="Bonus Proficiencies" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_BONUS_PROFICIENCIES">
+	<element name="Cards of Fate" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_CARDS_OF_FATE">
         <description>
-            <p>At 1st level, you gain proficiency in the Playing Cards gaming set and the Deception skill.</p>
-        </description>
-		<sheet display="false" />
+            <p>At 1st level a deck of playing cards becomes your spellcasting focus.</p>
+			<p class="indent">When rolling for damage, you may draw a number of cards equal to your proficiency modifier minus 1. Pick a card from the ones you’ve drawn and add it to the damage roll, or activate its effect from the list below. The card's damage type correlates with its suit from the list below. After the damage has been decided, shuffle the deck. You may use this ability a number of times equal to your proficiency modifier per long rest, and you may spend 1 sorcery point to regain a use of this ability.</p>
+			<p class="indent"><i>(Aces equal 1)</i></p>
+			<p class="indent"><b>Clubs = Cold Damage</b></p>
+			<p class="indent"><b>Diamonds = Fire Damage</b></p>
+			<p class="indent"><b>Hearts = Radiant Damage</b></p>
+			<p class="indent"><b>Spades = Necrotic Damage</b></p>
+			<p class="indent"><i>A creature summoned will disappear after 3 turns in combat (18 Seconds,) or when it is reduced to 0 hit points. It has its own initiative.</i></p>
+			<p class="indent"><b>Jack:</b> Summon a Jack from your deck. If you’ve already summoned a creature from your deck, your speed increases by 10ft until the end of your next turn.</p>
+			<p class="indent"><b>Queen:</b> Summon a Queen from your deck. If you’ve already summoned a creature from your deck, you gain temporary hit points equal to 1d6 + your sorcerer level for the next minute.</p>
+			<p class="indent"><b>King:</b> Summon a King from your deck. If you’ve already summoned a creature from your deck, you gain advantage on your next attack roll.</p>
+			<p class="indent"><b>Joker:</b> Roll on the Wild Magic Surge table. Jokers will always activate regardless of if you choose them or not, but they do not count against your cards chosen or drawn.</p>
+		</description>
+		<sheet>
+            <description>When rolling for damage, you may draw {{card:draw}} cards. Pick a card from the ones you’ve drawn and add it to the damage roll, or activate its effect. The card's damage type correlates with its suit - Clubs = Cold damage, Diamonds = Fire damage, Hearts = Radiant damage, and Spades = Necrotic damage. After the damage has been decided, shuffle the deck. You may use this ability {{proficiency}} times per long rest, and you may spend 1 sorcery point to regain a use of this ability. </description>
+        </sheet>
         <rules>
-        	<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_PLAYING_CARD_SET" />
+        	<stat name="card:draw" value="proficiency"/>
+			<stat name="card:draw" value="-1"/>
         </rules>
     </element>
 
+	<element name="Lucky Suit" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_LUCKY_SUIT">
+        <description>
+            <p>Starting at 6th level you may choose a suit to draw your luck from. When you choose a card of that suit, you deal additional damage equal to your Proficiency Modifier.</p>
+			<p class="indent">When you finish a long rest, you may search your deck for a face card of your choice that matches your suit <i>(This does not include Jokers)</i>, and remove it from your deck face up. When using your Cards of Fate ability, you may instead choose the face card you chose earlier. After using this ability, shuffle the face card back into your deck.</p>
+			<p class="indent">You gain resistance to the damage type associated with your suit.</p>
+		</description>
+		<sheet display="false" />
+        <rules>
+			<select type="Archetype Feature" name="Lucky Suit" supports="Lucky Suit" level="6" />
+        </rules>
+    </element>
+
+	<element name="Lucky Suit (Clubs)" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_LUCKY_SUIT_CLUBS">
+		<supports>Lucky Suit</supports>
+        <description>
+            <p>Your lucky suit is clubs. You are resistant to cold damage.</p>
+		</description>
+		<sheet>
+            <description>Your lucky suit is clubs. You are resistant to cold damage. When you've finished a long rest, you may search your deck for a face card that is a in the clubs suit (not including Jokers), and remove it from your deck face up. When using your Cards of Fate ability, you may instead play the chosen face card. After using this ability, shuffle the face card back into your deck.</description>
+        </sheet>
+        <rules>
+        	<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD"/>
+        </rules>
+    </element>
+
+	<element name="Lucky Suit (Diamonds)" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_LUCKY_SUIT_DIAMONDS">
+		<supports>Lucky Suit</supports>
+        <description>
+            <p>Your lucky suit is diamonds. You are resistant to fire damage.</p>
+		</description>
+		<sheet>
+            <description>Your lucky suit is diamonds. You are resistant to fire damage. When you've finished a long rest, you may search your deck for a face card that is a in the diamonds suit (not including Jokers), and remove it from your deck face up. When using your Cards of Fate ability, you may instead play the chosen face card. After using this ability, shuffle the face card back into your deck.</description>
+        </sheet>
+        <rules>
+        	<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE"/>
+        </rules>
+    </element>
+
+	<element name="Lucky Suit (Hearts)" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_LUCKY_SUIT_HEARTS">
+		<supports>Lucky Suit</supports>
+        <description>
+            <p>Your lucky suit is hearts. You are resistant to radiant damage.</p>
+		</description>
+		<sheet>
+            <description>Your lucky suit is hearts. You are resistant to radiant damage. When you've finished a long rest, you may search your deck for a face card that is a in the hearts suit (not including Jokers), and remove it from your deck face up. When using your Cards of Fate ability, you may instead play the chosen face card. After using this ability, shuffle the face card back into your deck.</description>
+        </sheet>
+        <rules>
+        	<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT"/>
+        </rules>
+    </element>
+
+	<element name="Lucky Suit (Spades)" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_LUCKY_SUIT_SPADES">
+		<supports>Lucky Suit</supports>
+        <description>
+            <p>Your lucky suit is spades. You are resistant to necrotic damage.</p>
+		</description>
+		<sheet>
+            <description>Your lucky suit is spades. You are resistant to necrotic damage. When you've finished a long rest, you may search your deck for a face card that is a in the spades suit (not including Jokers), and remove it from your deck face up. When using your Cards of Fate ability, you may instead play the chosen face card. After using this ability, shuffle the face card back into your deck.</description>
+        </sheet>
+        <rules>
+        	<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC"/>
+        </rules>
+    </element>
+
+	<element name="Fickle Choices" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_FICKLE_CHOICES">
+        <description>
+            <p>Starting at 14th level, when using your Cards of Fate ability, you may choose 2 cards instead of 1.</p>
+		</description>
+		<sheet>
+            <description>When using your Cards of Fate ability, you may choose 2 cards instead of 1.</description>
+        </sheet>
+    </element>
+
+	<element name="Ace in Your Sleeve" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_FORTUITIOUS_SOUL_ACE_IN_YOUR_SLEEVE">
+        <description>
+            <p>Starting at 18th level, when using your Cards of Fate ability, you may spend 2 Sorcery points to search your deck for 2 cards of your choice and add them to your damage roll instead of drawing.</p>
+		</description>
+		<sheet>
+            <description>Starting at 18th level, when using your Cards of Fate ability, you may spend 2 Sorcery points to search your deck for 2 cards of your choice and add them to your damage roll instead of drawing.</description>
+        </sheet>
+    </element>
 </elements>
