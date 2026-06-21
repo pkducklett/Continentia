@@ -4,7 +4,7 @@
 		<name>Arditi</name>
         <update version="0.0.1">
 			<!-- Update Notes: -->
-		    	<description>The Rancor Sub-class from Continentia.</description>
+		    	<description>The Arditi Sub-class from Continentia.</description>
 		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
 			<file name="continentia-fighter-arditi.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-fighter-arditi.xml" />
 		</update>
