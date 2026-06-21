@@ -387,7 +387,7 @@
             <p>Beginning at 6th level after successfully hitting an enemy while raging, you may expend a number of Draconic Stamina dealing an additional 1d6 damage for each point spent.</p>
         </description>
         <sheet>
-            <description>Beginning at 6th level after successfully hitting an enemy while raging, you may expend a number of Draconic Stamina, up to {{draconic:stamina}}, dealing an additional 1d6 damage for each point spent, for a maximum of {{draconic:stamina}}d6.</description>
+            <description>After successfully hitting an enemy while raging, you may expend a number of Draconic Stamina, up to {{draconic:stamina}}, dealing an additional 1d6 damage for each point spent, for a maximum of {{draconic:stamina}}d6.</description>
         </sheet>
     </element>
 
@@ -396,7 +396,7 @@
             <p>Starting at 10th level when you enter your rage, all creatures within 30ft of you must make a Wisdom saving throw (DC 8 + Your Proficiency Modifier + Your Constitution modifier) or be frightened of you until the end of your next turn.</p>
         </description>
         <sheet>
-            <description>Starting at 10th level when you enter your rage, all creatures within 30ft of you must make a DC {{aura:fear}} Wisdom saving throw or be frightened of you until the end of your next turn.</description>
+            <description>When you enter your rage, all creatures within 30ft of you must make a DC {{aura:fear}} Wisdom saving throw or be frightened of you until the end of your next turn.</description>
         </sheet>
 	    <rules>
             <stat name="aura:fear" value="8"/>
@@ -410,7 +410,7 @@
             <p>Beginning at 14th level, while you are raging, you can attack three times, instead of twice, whenever you take the attack action on your turn.</p>
         </description>
         <sheet>
-            <description>Beginning at 14th level, while you are raging, you can attack three times, instead of twice, whenever you take the attack action on your turn.</description>
+            <description>While you are raging, you can attack three times, instead of twice, whenever you take the attack action on your turn.</description>
         </sheet>
     </element>
 </elements>
