@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Arditi</name>
+        <update version="0.0.1">
+			<!-- Update Notes: -->
+		    	<description>The Rancor Sub-class from Continentia.</description>
+		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
+			<file name="continentia-fighter-arditi.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-barbarian-rancor.xml" />
+		</update>
+	</info>
+
+	<element name="Arditi" type="Archetype" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_ARDITI">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>The Arditi is a heavy weapons fighter clad in heavy armor laying down supportive fire for their allies.</p>
+			<div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_ARDITI_HEAVY_GUNNER"/>
+			<div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_ARDITI_SUPPORTIVE_FIRE"/>
+			<div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_ARDITI_THROTTLE_THE_TRIGGER"/>
+			<div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_ARDITI_FORTRESS_OF_THE_FIGHT"/>
+			<div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_ARDITI_RICOCHET"/>
+			<div element="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_ARDITI_DARING"/>
+		</description>
+		<sheet display="false">
+			<description>The Arditi is a heavy weapons fighter clad in heavy armor laying down supportive fire for their allies.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_ARDITI_HEAVY_GUNNER" level="3"/>
+			<grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_ARDITI_SUPPORTIVE_FIRE" level="3"/>
+			<grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_ARDITI_THROTTLE_THE_TRIGGER" level="7"/>
+			<grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_ARDITI_FORTRESS_OF_THE_FIGHT" level="7"/>
+			<grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_ARDITI_RICOCHET" level="10"/>
+			<grant type="Archetype Feature" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_ARDITI_DARING" level="15"/>
+		</rules>
+	</element>
+
+	<element name="Heavy Gunner" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_ARDITI_HEAVY_GUNNER">
+        <description>
+            <p>When you choose this archetype at 3rd level, you may use your strength modifier instead of your dexterity modifier when making attacks with medium or heavy firearms.</p>
+        </description>
+        <sheet>
+            <description>You may use your strength modifier instead of your dexterity modifier when making attacks with medium or heavy firearms.</description>
+        </sheet>
+    </element>
+
+	<element name="Supportive Fire" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_ARDITI_SUPPORTIVE_FIRE">
+        <description>
+            <p>Starting at 3rd level, as a bonus action, you may make an additional attack with a Medium or Heavy firearm with the Auto property. The multiplication die of the attack will be 1 regardless of roll.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you may make an additional attack with a Medium or Heavy firearm with the Auto property. The multiplication die of the attack will be 1 regardless of roll.</description>
+        </sheet>
+    </element>
+
+	<element name="Throttle the Trigger" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_ARDITI_THROTTLE_THE_TRIGGER">
+        <description>
+            <p>Starting at 7th level, when you successfully make an attack with a medium or heavy firearm with the Auto property, you may decide the roll of the multiplication die. You may do this a number of times equal to your proficiency modifier per long or short rest.</p>
+        </description>
+        <sheet>
+            <description>When you successfully make an attack with a medium or heavy firearm with the Auto property, you may decide the roll of the multiplication die. You may do this {{throttle:times}} per long or short rest.</description>
+        </sheet>
+	    <rules>
+            <stat name="throttle:times" value="proficiency"/>
+	    </rules>
+    </element>
+
+	<element name="Fortress of the Fight" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_ARDITI_FORTRESS_OF_THE_FIGHT">
+        <description>
+            <p>Starting at 7th level, you gain +1 AC when wearing heavy armor.</p>
+        </description>
+        <sheet>
+            <description>You gain +1 AC when wearing heavy armor.</description>
+        </sheet>
+	    <rules>
+            <stat name="ac:misc" value="1" equipped="[armor:heavy]" />
+	    </rules>
+    </element>
+
+	<element name="Ricochet" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_ARDITI_RICOCHET">
+        <description>
+            <p>Starting at 10th level, if you're wearing heavy armor and an enemy’s ranged weapon attack against you misses, choose one enemy within 5 feet of you. The attacker must roll the damage for their missed attack against you, and deal half damage to the new target instead.</p>
+        </description>
+        <sheet>
+            <description>If you're wearing heavy armor and an enemy’s ranged weapon attack against you misses, choose one enemy within 5 feet of you. The attacker must roll the damage for their missed attack against you, and deal half damage to the new target instead.</description>
+        </sheet>
+    </element>
+
+	<element name="Daring" type="Archetype Feature" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ARCHETYPE_FEATURE_ARDITI_DARING">
+        <description>
+            <p>Starting at 15th level, as a bonus action, you gain resistance to all non-magical damage for the next minute.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you gain resistance to all non-magical damage for the next minute.</description>
+        </sheet>
+    </element>
+</elements>
