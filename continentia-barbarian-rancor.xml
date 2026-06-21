@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Rancor</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
 			<!-- Update Notes: -->
 		    	<description>The Rancor Sub-class from Continentia.</description>
 		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
