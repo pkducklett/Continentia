@@ -145,7 +145,7 @@
             <p>Starting at 18th level, when using your Cards of Fate ability, you may spend 2 Sorcery points to search your deck for 2 cards of your choice and add them to your damage roll instead of drawing.</p>
 		</description>
 		<sheet>
-            <description>Starting at 18th level, when using your Cards of Fate ability, you may spend 2 Sorcery points to search your deck for 2 cards of your choice and add them to your damage roll instead of drawing.</description>
+            <description>When using your Cards of Fate ability, you may spend 2 Sorcery points to search your deck for 2 cards of your choice and add them to your damage roll instead of drawing.</description>
         </sheet>
     </element>
 </elements>
