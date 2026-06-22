@@ -4,9 +4,9 @@
 		<name>Vice Mystic</name>
         <update version="0.0.1">
 			<!-- Update Notes:  -->
-		    	<description>The Experimented Race from Continentia.</description>
+		    	<description>The Vice Mystic Race from Continentia.</description>
 		    	<author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
-			<file name="continentia-race-vice-mystic.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/refs/heads/main/continentia-race-vice-mystic.xml" />
+			<file name="continentia-race-vice-mystic.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-race-vice-mystic.xml" />
 		</update>
 	</info>
 
