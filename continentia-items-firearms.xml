@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Firearms</name>
-		<update version="0.0.6">
+		<update version="0.0.7">
             <!-- Update Notes: -Revised pricing and dice to match updates for upcoming campaign
 							   -Added Elephant Gun -->
 		    <description>The firearms rules, options, and proficiencies for Continentia.</description>
