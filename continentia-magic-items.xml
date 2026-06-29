@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Magic Items</name>
-        <update version="0.0.2">
-			<!-- Update Notes: -Added EoaP Magic Items-->
+        <update version="0.0.3">
+			<!-- Update Notes: -Fixed Infinite Itinerary and Pipe No 2778-->
 		    	<description>Magic Items from Continentia.</description>
 		    	<author url="https://github.com/pkducklett/">Corey Welch</author>
 			<file name="continentia-magic-items.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/refs/heads/main/continentia-magic-items.xml" />
@@ -135,6 +135,7 @@
 	</element>
 
 	<!-- Wondrous Items -->
+	
 	<element name="Infinite Itinerary" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_INFINITE_ITINERARY">
 		<description>
 			<p>This magical book can have any pattern or design on the cover, but it most commonly is found in blank leather with a strap and buckle to hold it closed. The pages of the book always appear about an inch and a half thick when closed, and each page is extremely thin, but surprisingly durable. Despite appearing like a normal book, the Infinite Itinerary has infinite pages, and can be flipped through an indeterminable amount of times. It is still unknown if the book is truly infinite, but since no one has ever been able to fill one to completion it is unknown. Infinite Itineraries are commonly used as spellbooks despite what their name would suggest. It is not known how the name came about, but much like the pages inside there are countless theories.</p>
@@ -142,7 +143,7 @@
 			<p class="indent">The pages of the infinite itinerary can not be stained, or burned, but can be torn. When a page is ripped from the book it will disappear after 1 minute.</p>
 		</description>
 		<setters>
-			<set name="keywords">Book, Spellbook</set>
+			<set name="keywords">Book</set>
 			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="2">2 lb.</set>
@@ -152,7 +153,7 @@
 		</setters>
 	</element>
 
-	<element name="Pipe No. 2778" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_INFINITE_ITINERARY">
+	<element name="Pipe No. 2778" type="Magic Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_MAGIC_ITEM_PIPE_NUM_SPECIAL">
 		<description>
 			<p>This ornate purple pipe is made of a material similar to resin, but displays a grain pattern as though it was made of wood. The pipe's mouthpiece is silver, and is always tempered to not shock the lips of its user.</p>
 			<p class="indent">While attuned to this magic item you may use a bonus action to have it return to your mouth from any location. This ability does not work across planes.</p>
