@@ -2,13 +2,122 @@
 <elements>
 	<info>
 		<name>Continentia Items</name>
-		<update version="0.0.1">
-            <!-- Update Notes: -  -->
+		<update version="0.0.2">
+            <!-- Update Notes: -Added items from the TSFS catalogue  -->
 		    <description>Additional items for Continentia.</description>
 		    <author url="https://github.com/pkducklett/">Corie Welch and the Amazing Dicey Dudes</author>
 			<file name="continentia-items.xml"  url="https://raw.githubusercontent.com/pkducklett/Continentia/main/continentia-items.xml" />
 		</update>
 	</info>
+
+	<!-- Adventuring Gear -->
+	<element name="Can Opener" type="Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ITEM_CAN_OPENER">
+    	<description>
+      		<p>This item can be used to open cans.</p>
+    	</description>
+    	<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+  	</element>
+
+	<element name="Cigar, Box (10)" type="Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ITEM_CIGAR_BOX">
+    	<description>
+      		<p>Box of 10 premium cigars.</p>
+    	</description>
+    	<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+  	</element>
+
+	<element name="Cigar, Single" type="Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ITEM_CIGAR_SINGLE">
+    	<description>
+      		<p>One premium cigar bought at a shop or vending machine.</p>
+    	</description>
+    	<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="cp">25</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+  	</element>
+
+	<element name="Cigarette, Pack (20)" type="Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ITEM_CIGARETTE_PACK">
+    	<description>
+      		<p>Pack of 20 cigarettes.</p>
+    	</description>
+    	<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="cp">15</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+  	</element>
+
+	<element name="Cigarette, Single" type="Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ITEM_CIGARETTE_SINGLE">
+    	<description>
+      		<p>One cigarette bought at a shop or vending machine.</p>
+    	</description>
+    	<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="cp">1</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+  	</element>
+
+	<element name="Tobacco, Loose Leaf (1 Oz Bag)" type="Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ITEM_TOBACCO_LOOSE">
+    	<description>
+      		<p>One oz leather bag of loose leaf tobacco.</p>
+    	</description>
+    	<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+  	</element>
+
+	<element name="Lighter" type="Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ITEM_LIGHTER">
+    	<description>
+      		<p>A silver pocket lighter which burns oil.</p>
+    	</description>
+    	<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+  	</element>
+
+	<element name="Matches, Book (100)" type="Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ITEM_MATCHES_BOOK">
+    	<description>
+      		<p>A book of 100 safety matches.</p>
+    	</description>
+    	<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+  	</element>
+
+	<element name="Pipe, Smoking" type="Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ITEM_PIPE_SMOKING">
+    	<description>
+      		<p>A wooden pipe carved for smoking loose leaf tobacco.</p>
+    	</description>
+    	<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">3</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+  	</element>
 
     <!-- Weapons -->
     <element name="Pi’ech" type="Weapon" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_WEAPON_PIECH">
@@ -38,4 +147,110 @@
 		<supports>Weapon, Martial, Melee, Special, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, </supports>
 		<sheet alt="Pi’ech" />
 	</element>
+
+	<!-- Tool Sets -->
+	<element name="Game of Vre Set" type="Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_ITEM_TOOL_GAME_OF_VRE_SET">
+		<description>
+			<p>If you are proficient with the Game of Vre Set, you can add your proficiency bonus to ability checks you make to play a game.</p>
+		</description>
+		<setters>
+			<set name="keywords">game, gaming set, cards</set>
+			<set name="category">Tools</set>
+			<set name="cost" currency="cp">25</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Gaming Set</set>
+			<set name="proficiency">ID_PROFICIENCY_GAMING_SET_PROFICIENCY_GAME_OF_VRE_SET</set>
+		</setters>
+	</element>
+
+	<!-- Instruments -->
+	<element name="Viola" type="Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_INSTRUMENT_VIOLA">
+    	<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    	<description>
+      		<p>If you have proficiency with the viola, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.</p>
+    	</description>
+   		<setters>
+      		<set name="category">Musical Instruments</set>
+      		<set name="cost" currency="gp">30</set>
+      		<set name="weight" lb="1">1 lbs.</set>
+      		<set name="slot">onehand</set>
+      		<set name="type">Tool</set>
+      		<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_VIOLA</set>
+    	</setters>
+  	</element>
+
+  	<element name="Hurdy Gurdy" type="Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_INSTRUMENT_HURDY_GURDY">
+    	<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    	<description>
+      		<p>If you have proficiency with the hurdy gurdy, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.</p>
+    	</description>
+    	<setters>
+      		<set name="category">Musical Instruments</set>
+     		<set name="cost" currency="gp">5</set>
+     		<set name="weight" lb="4">4 lbs.</set>
+     		<set name="slot">onehand</set>
+     		<set name="type">Tool</set>
+     		<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_HURDY_GURDY</set>
+   		</setters>
+  	</element>
+
+	<element name="Trumpet" type="Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_INSTRUMENT_TRUMPET">
+    	<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    	<description>
+      		<p>If you have proficiency with the trumpet, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.</p>
+    	</description>
+    	<setters>
+      		<set name="category">Musical Instruments</set>
+     		<set name="cost" currency="gp">50</set>
+     		<set name="weight" lb="3">3 lbs.</set>
+     		<set name="slot">onehand</set>
+     		<set name="type">Tool</set>
+     		<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_TRUMPET</set>
+   		</setters>
+  	</element>
+
+	<element name="Saxophone" type="Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_INSTRUMENT_SAXOPHONE">
+    	<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    	<description>
+      		<p>If you have proficiency with the saxophone, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.</p>
+    	</description>
+    	<setters>
+      		<set name="category">Musical Instruments</set>
+     		<set name="cost" currency="gp">50</set>
+     		<set name="weight" lb="3">4 lbs.</set>
+     		<set name="slot">onehand</set>
+     		<set name="type">Tool</set>
+     		<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_SAXOPHONE</set>
+   		</setters>
+  	</element>
+
+	<element name="Trombone" type="Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_INSTRUMENT_TROMBONE">
+    	<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    	<description>
+      		<p>If you have proficiency with the trombone, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.</p>
+    	</description>
+    	<setters>
+      		<set name="category">Musical Instruments</set>
+     		<set name="cost" currency="gp">50</set>
+     		<set name="weight" lb="3">3 lbs.</set>
+     		<set name="slot">onehand</set>
+     		<set name="type">Tool</set>
+     		<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_TROMBONE</set>
+   		</setters>
+  	</element>
+
+	<element name="Clarinet" type="Item" source="Continentia: The Second Cruel War" id="ID_CONT_CONTINENTIA_INSTRUMENT_CLARINET">
+    	<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    	<description>
+      		<p>If you have proficiency with the clarinet, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.</p>
+    	</description>
+    	<setters>
+      		<set name="category">Musical Instruments</set>
+     		<set name="cost" currency="gp">50</set>
+     		<set name="weight" lb="1">1 lbs.</set>
+     		<set name="slot">onehand</set>
+     		<set name="type">Tool</set>
+     		<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_CLARINET</set>
+   		</setters>
+  	</element>
 </elements>
